@@ -1,5 +1,5 @@
 .navContainer {
-  height: 20%;
+  float: inline-start;
   width: 100%;
   background-color: #412804;
   display: flex;
