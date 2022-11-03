@@ -1,0 +1,87 @@
+.navContainer {
+  height: 20%;
+  width: 100%;
+  background-color: #412804;
+  display: flex;
+  flex-direction: row;
+  align-items:flex-end;
+  justify-content: space-evenly;
+}
+
+.left {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.middle {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle-links{
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: baseline;
+}
+
+.header-kingbengals {
+  font-size: 44px;
+  color: white;
+}
+
+.header-cattery {
+  font-size: 22px;
+  color: white;
+  margin-left: 5px;
+}
+
+.right {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation Links */
+.link {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.link-left{
+  font-size: 20px;
+  padding: 8px 8px 8px 8px;
+  color: white;
+  background-color: #e2ae6e98;
+}
+
+.link-right {
+  font-size: 20px;
+  padding: 8px 8px 8px 8px;
+  color: white;
+  background-color: #e2ae6e98;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.link-left:hover {
+  cursor: pointer;
+}
+
+.link-right:hover {
+  cursor: pointer;
+}
