@@ -1,13 +1,15 @@
 import React from 'react';
 import WebNavHeader from '../components/WebNavHeader';
 import "./styles/About.css"
+import background from "../images/pattern.jpg";
 
 const About = () => {
   const fontSizeHeader = {fontSize: "60px"}
   const fontSizeParagraph = {fontSize: "20px"}
-  
+
   return (
-    <div className='aboutPage'>
+    <div className='aboutPage' style={{backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', 
+    backgroundSize: 'cover', backgroundPosition: 'center'}}>
       <WebNavHeader />
       <header style={fontSizeHeader}>KingBengals Cattery</header>
       <body>
