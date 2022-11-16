@@ -1,3 +1,12 @@
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
 .breedInfoPage {
   position: absolute;
   height: 100%;

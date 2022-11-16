@@ -8,7 +8,8 @@ const WebNavHeader = () => {
   return (
     <div className='navContainer'>
       <div className='left'>
-        <div className='link-left' onClick={() => navigate("/breedinfo")}>Breed Info</div>
+        <img alt='cat' src={require("../images/CatWebNavHeader.png")} />
+        <div className='link-left' onClick={() => navigate("/breedinfo")}>Breed Info.</div>
       </div>
       <div className='middle'>
         <div className='header'>

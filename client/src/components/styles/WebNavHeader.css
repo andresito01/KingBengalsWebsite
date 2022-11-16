@@ -1,25 +1,40 @@
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
 .navContainer {
-  float: inline-start;
   width: 100%;
+  height: 187px;
   background-color: #412804;
   display: flex;
   flex-direction: row;
   align-items:flex-end;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .left {
-  margin: auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  height: 100%;
+  width: 15%;
+}
+
+.left img {
+  flex: 2;
 }
 
 .middle {
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  flex: 1;
 }
 
 .middle-links{
@@ -30,46 +45,57 @@
 .header {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
-  margin-bottom: 30px;
   align-items: baseline;
+  margin-top: 10px;
+  margin-bottom: auto;
 }
 
 .header-kingbengals {
-  font-size: 44px;
+  font-family: lancelot;
+  font-size: 64px;
   color: white;
 }
 
 .header-cattery {
-  font-size: 22px;
+  font-family: lancelot;
+  font-size: 32px;
   color: white;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .right {
-  margin: auto;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  width: 14%;
 }
 
 /* Navigation Links */
 .link {
-  font-size: 20px;
+  font-family: inika;
+  font-size: 24px;
   color: white;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .link-left{
-  font-size: 20px;
-  padding: 8px 8px 8px 8px;
+  font-family: inika;
+  font-size: 24px;
   color: white;
   background-color: #e2ae6e98;
+  flex: 1;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .link-right {
-  font-size: 20px;
-  padding: 8px 8px 8px 8px;
+  font-family: inika;
+  font-size: 24px;
+  padding: 5px 0px 5px 0px;
+  margin-top: 50%;
+  margin-right: 25%;
+  text-align: center;
   color: white;
   background-color: #e2ae6e98;
 }

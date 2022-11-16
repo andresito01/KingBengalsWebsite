@@ -1,5 +1,74 @@
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
 .reserveAKittenPage {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url("../../images/Kb-website-background.png"); */
+  background-color: #a87d48f5;
+}
+
+img {
+  background-color: #a87d48f5;
+  margin-bottom: 20px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #4E3A24;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.applyButton {
+  background-color: #D3BEA5;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px 30px 30px 20px;
+}
+
+.instructionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.processContainer {
+  margin: 10px 10px 10px 10px;
+  background-color: #4E3A24;
+  height: 725px;
+  width: 442px;
+}
+
+.paymentContainer {
+  margin: 10px 10px 10px 10px;
+  background-color: #4E3A24;
+  height: 725px;
+  width: 442px;
+}
+
+.deliveryContainer {
+  margin: 10px 10px 10px 10px;
+  background-color: #4E3A24;
+  height: 725px;
+  width: 442px;
+}
+
+.additionalInfoContainer {
+  margin: 10px 10px 10px 10px;
+  background-color: #4E3A24;
+  color: white;
 }
