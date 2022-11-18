@@ -6,9 +6,103 @@
   font-family: lancelot;
   src: url("../../fonts/Lancelot-Regular.ttf");
 }
-
+/*can't do no-repeat because the background image is not big enough*/
 .ourCatsPage {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  background-image: url("../../images/Kb-website-background.png");
+}
+/*
+.headerContainer {
+  
+}*/
+
+.secondaryHeaderContainer {
+  text-align: center;
+  background-color: #6b462a;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 60%;
+  height: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.body {
+  background-color: bisque;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.firstFemaleTitle {
+  padding-left: 1%;
+  background-color: #6b462a;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 24%;
+  margin-left: 6.25%;
+  margin-bottom: 25px;
+}
+
+.secondFemaleTitle {
+  padding-left: 1%;
+  background-color: #6b462a;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 24%;
+  margin-left: 37.5%;
+  margin-top: -135px;
+}
+
+.maleTitle {
+  padding-left: 1%;
+  background-color: #6b462a;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 24%;
+  margin-left: 68.75%;
+  margin-right: 6.25%;
+  margin-top: -135px;
+}
+
+img {
+  margin-left: 6.25%;
+  width: 25%;
+}
+
+.healthBox {
+  padding-top: 10px;
+  text-align: center;
+  background-color: #6b462a;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 6.25%;
+  width: 25%;
+  height: 100px;
+}
+
+.vaccinationBox {
+  padding-top: 10px;
+  text-align: center;
+  background-color: #6b462a;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 37.5%;
+  margin-top: -110px;
+  width: 25%;
+  height: 100px;
+}
+
+.registrationBox {
+  padding-top: 10px;
+  text-align: center;
+  background-color: #6b462a;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 68.75%;
+  margin-top: -110px;
+  width: 25%;
+  height: 100px;
 }
