@@ -1,0 +1,62 @@
+.businessCertificate {
+  display: block;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+  width: 85%;
+  padding: 20px;
+  border-radius: 0.95em;
+  align-items: center;
+  justify-content: center;
+}
+.kbLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+.businessCertificateText {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.certificateContainer {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.certificateContainer img {
+  margin: 10px 10px 30px 30px;
+  width: 80%;
+  align-items: center;
+  background-color: rgba(149, 146, 146, 0.528);
+  border-radius: 0.95em;
+}
+
+.leftCertificate {
+  width: 70%;
+  float: left;
+}
+.leftCertificate img {
+  width: 80%;
+  transform: translate(0%, 10%);
+}
+.rightCertificates {
+  width: 30%;
+  float: right;
+}
+
+.bcLink {
+  color: blue;
+}
