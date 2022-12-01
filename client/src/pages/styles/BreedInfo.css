@@ -12,3 +12,25 @@
   height: 100%;
   width: 100%;
 }
+
+.topPictureContainer {
+  width: 100%;
+}
+.topPicture {
+  width: 100%;
+  height: auto;
+}
+
+.breedInfoTxt {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bottomContainer img {
+  margin: 10px 10px 30px 30px;
+}
