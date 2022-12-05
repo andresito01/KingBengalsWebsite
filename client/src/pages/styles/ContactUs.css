@@ -8,7 +8,64 @@
 }
 
 .contactUsPage {
-  position: absolute;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a87d48f5;
+}
+
+.bg {
+  background-color: #a87d48f5;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.mainContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(235, 206, 178, 1);
+  color: black;
+  margin-bottom: 30px;
   width: 100%;
+  height: 100%;
+  margin-top: 7.5%;
+  
+}
+
+.contactButton {
+  background-color: rgba(78, 58, 36, 0.9);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  width: 320px;
+  height: 70px;
+  align-items: center;
+  padding: 20px 30px 30px 20px;
+}
+
+.bottomContainter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+.additionalInfoContainer {
+  display: flex;
+  flex-direction: column;
+  height: 314px;
+  width: 626px;
+  background-color: #4E3A24;
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
 }
