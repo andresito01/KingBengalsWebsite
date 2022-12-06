@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Kingbengals Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kingbengals Cattery is a family operated local cattery in Sacramento, specialized in breeding the exotic Bengal cats. However, they relied on third party sites to advertise their kittens and make sales. This website for Kingbengals Cattery provides the business their own internet platform to properly advertise their Bengal kittens for sales and expand their business in the process.
 
-## Available Scripts
+![Kingbengal Cattery litter](./src/images/ReserveAKittenHeader.png)
 
-In the project directory, you can run:
+# Contents
 
-### `npm start`
+- [Synopsis](#Synopsis)
+- [Testing](#Testing)
+- [Deployment](#Deployment)
+- [Instructions](#Instructions)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Synopsis
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+An in-depth paragraph about your project and overview of use.
 
-### `npm test`
+### Testing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+- ex. Windows 10
 
-### `npm run build`
+### Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- How/where to download your program
+- Any modifications needed to be made to files/folders
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+code blocks for commands
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Instructions
 
-### `npm run eject`
+- How to run the program
+- Step-by-step bullets
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Figma Prototype Images of Website
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Timeline
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Milestones
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Andres Morocho
+- Abdelrahman Said Yousef Ahmed Mohamed
+- Ben Pennington
+- Chris Mataragas
+- Joshi Ventura Leon
+- Mahdi Noureddine
+- Mehakdeep Singh
+- Wesley Wang
