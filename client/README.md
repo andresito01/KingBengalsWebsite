@@ -80,6 +80,7 @@ code blocks for commands
 ## Timeline and Milestones
 <table>
   <tr>
+    <td>Sprint 5</td>
     <td>Sprint 6</td>
     <td>Sprint 7</td>
     <td>Sprint 8</td>
@@ -87,6 +88,7 @@ code blocks for commands
     <td>Sprint 10</td>
   </tr>
   <tr>
+    <td>Complete the UI for the website.</td>
     <td>Add functionallity to all buttons and links.</td>
     <td>Implement an API for a chosen interest.</td>
     <td>Establish a database for storing images.</td>
