@@ -77,9 +77,23 @@ code blocks for commands
   </tr>
  </table>
 
-## Timeline
-
-### Milestones
+## Timeline and Milestones
+<table>
+  <tr>
+    <td>Sprint 1</td>
+    <td>Sprint 2</td>
+    <td>Sprint 3</td>
+    <td>Sprint 4</td>
+    <td>Sprint 5</td>
+  </tr>
+  <tr>
+    <td>temp</td>
+    <td>temp</td>
+    <td>temp</td>
+    <td>temp</td>
+    <td>temp</td>
+  </tr>
+</table>
 
 ## Authors
 
