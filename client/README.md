@@ -10,6 +10,10 @@ Kingbengals Cattery is a family operated local cattery in Sacramento, specialize
 - [Testing](#Testing)
 - [Deployment](#Deployment)
 - [Instructions](#Instructions)
+- [Prototype](#Prototype)
+- [Timeline](#Timeline)
+- [Milestones](#Milestones)
+- [Authors](#Authors)
 
 ## Synopsis
 
@@ -32,7 +36,7 @@ code blocks for commands
 - How to run the program
 - Step-by-step bullets
 
-### Figma Prototype Images of Website
+### Prototype
 
 <table>
   <tr>
