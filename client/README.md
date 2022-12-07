@@ -80,18 +80,18 @@ code blocks for commands
 ## Timeline and Milestones
 <table>
   <tr>
-    <td>Sprint 1</td>
-    <td>Sprint 2</td>
-    <td>Sprint 3</td>
-    <td>Sprint 4</td>
-    <td>Sprint 5</td>
+    <td>Sprint 6</td>
+    <td>Sprint 7</td>
+    <td>Sprint 8</td>
+    <td>Sprint 9</td>
+    <td>Sprint 10</td>
   </tr>
   <tr>
-    <td>temp</td>
-    <td>temp</td>
-    <td>temp</td>
-    <td>temp</td>
-    <td>temp</td>
+    <td>Add functionallity to all buttons and links.</td>
+    <td>Implement an API for a chosen interest.</td>
+    <td>Establish a database for storing images.</td>
+    <td>Complete admin login and editing capabilities.</td>
+    <td>Web hosting and domain created.</td>
   </tr>
 </table>
 
