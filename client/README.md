@@ -77,7 +77,7 @@ code blocks for commands
   </tr>
  </table>
 
-## Timeline and Milestones
+## Timeline
 <table>
   <tr>
     <td>Sprint 5</td>
