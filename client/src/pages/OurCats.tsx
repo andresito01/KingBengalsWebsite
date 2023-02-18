@@ -1,16 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Modal from '../components/Modal';
 import WebNavHeader from '../components/WebNavHeader';
 import "./styles/OurCats.css"
-const OurCats = () => {
-  const fontSizeHeader = {fontSize: "20px"} //change if need be (Wesley)
-  const fontSizeSecondaryHeader = {fontSize: "20px"}
-  const fontSizeInfo = {fontSize: "20px"}
 
+const OurCats: React.FC = () => {
+  const fontSizeHeader = {fontSize: "20px"}
+  const fontSizeSecondaryHeader = {fontSize: "20px"}
+  const fontSizeInfo = {fontSize: "26px"}
+  const [isModalOpen, setISModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setISModalOpen(true);
+  }
+
+  const handleCloseModal = () => {
+    setISModalOpen(false);
+  }
 
   return (
     <div className='ourCatsPage'>
       <WebNavHeader />
-      <div className='headerContainer' style={fontSizeHeader}>
+      <div className='headerContainerOurCats' style={fontSizeHeader}>
         <h1>OUR CATS</h1>
         <h2 style={fontSizeInfo}>
           We believe in quality genetics and pay close attention to our breeding program to ensure 
@@ -23,6 +33,7 @@ const OurCats = () => {
       </div>
       <div className='secondaryHeaderContainer' style={fontSizeSecondaryHeader}>
         <h1>Click on photos below to see additional information</h1>
+        <h2>V</h2>
       </div>
       <div className='body'>
         <div className='firstFemaleTitle' style={fontSizeSecondaryHeader}>
@@ -37,17 +48,17 @@ const OurCats = () => {
           <h1>Hercules</h1>
           <h2>Male</h2>
         </div>
-        <img alt='firstFemaleImage1' src={require("../images/Placeholder.png")}/>
-        <img alt='secondFemaleImage1' src={require("../images/Placeholder.png")}/>
-        <img alt='maleImage1' src={require("../images/Placeholder.png")}/>
+        
+        <img alt='firstFemaleImage' src={require("../images/Placeholder.png")}/>
+        <img alt='secondFemaleImage' src={require("../images/Placeholder.png")}/>
+        <img alt='maleImage' src={require("../images/Placeholder.png")}/>
+        
+        <button 
+          className='openModalBtn' 
+          onClick={handleOpenModal}>Open
+        </button>
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal}/>
 
-        <img alt='firstFemaleImage2' src={require("../images/Placeholder.png")}/>
-        <img alt='secondFemaleImage2' src={require("../images/Placeholder.png")}/>
-        <img alt='maleImage2' src={require("../images/Placeholder.png")}/>
-
-        <img alt='firstFemaleImage3' src={require("../images/Placeholder.png")}/>
-        <img alt='secondFemaleImage3' src={require("../images/Placeholder.png")}/>
-        <img alt='maleImage3' src={require("../images/Placeholder.png")}/>
         <div className='healthBox'>
           <h1>Health Certificates</h1>
         </div>
@@ -60,7 +71,7 @@ const OurCats = () => {
       </div>
       <div className='socialsBox'>
           <h1>Follow us on</h1>
-        </div>
+      </div>
     </div>
   )
 }

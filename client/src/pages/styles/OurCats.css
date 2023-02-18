@@ -12,25 +12,31 @@
   background-size: cover;
 }
 
-.headerContainer {
+.headerContainerOurCats {
   background-image: url("../../images/OurCatsHeader.png");
   background-size: cover;
-  height: 830px;
+  background-position: center center;
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  top: 150px;
+  height: 700px;
   vertical-align: text-top;
+  padding-top: 50px;
   padding-left: 20%;
   padding-right: 20%;
 }
 
 .secondaryHeaderContainer {
   text-align: center;
-  background-color: rgb(107, 70, 42, .9);
   color: white;
   font-family: 'Times New Roman', Times, serif;
+  line-height: 20px;
   width: 60%;
   height: 50px;
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 60px;
+  margin-top: -110px;
   margin-bottom: 60px;
 }
 
@@ -76,6 +82,61 @@
 img {
   margin-left: 6.25%;
   width: 25%;
+  margin-bottom: 20px;
+}
+
+.openModalBtn {
+  width: 90px;
+  height: 50px;
+  margin-left: 15%;
+}
+
+.modalBackground {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
 }
 
 .healthBox {
@@ -85,6 +146,7 @@ img {
   color: white;
   font-family: 'Times New Roman', Times, serif;
   margin-left: 6.25%;
+  margin-top: 20px;
   width: 25%;
   height: 100px;
 }
