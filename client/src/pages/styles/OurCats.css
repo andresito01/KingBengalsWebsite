@@ -10,6 +10,7 @@
 .ourCatsPage {
   background-image: url("../../images/Kb-website-background.png");
   background-size: cover;
+  height: 1870px;
 }
 
 .headerContainerOurCats {
@@ -23,8 +24,13 @@
   height: 700px;
   vertical-align: text-top;
   padding-top: 50px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 23%;
+  padding-right: 23%;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: black;
 }
 
 .secondaryHeaderContainer {
@@ -42,137 +48,93 @@
 
 .body {
   background-color: rgb(184, 144, 96, .9);
+  border-style: solid;
+  border-color: #6b462a;
+  border-radius: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
   margin-left: 20%;
   width: 60%;
 }
 
 .firstFemaleTitle {
-  padding-left: 1%;
   background-color: #6b462a;
   color: white;
   font-family: 'Times New Roman', Times, serif;
+  padding-left: 1%;
+  padding-top: 0px;
   width: 24%;
+  height: 90px;
   margin-left: 6.25%;
   margin-bottom: 25px;
+  border-radius: 10px;
 }
 
 .secondFemaleTitle {
-  padding-left: 1%;
   background-color: #6b462a;
   color: white;
   font-family: 'Times New Roman', Times, serif;
+  padding-left: 1%;
   width: 24%;
+  height: 90px;
   margin-left: 37.5%;
-  margin-top: -135px;
+  margin-top: -116px;
+  border-radius: 10px;
 }
 
 .maleTitle {
-  padding-left: 1%;
   background-color: #6b462a;
   color: white;
   font-family: 'Times New Roman', Times, serif;
+  padding-left: 1%;
   width: 24%;
+  height: 90px;
   margin-left: 68.75%;
   margin-right: 6.25%;
-  margin-top: -135px;
+  margin-top: -116px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
-img {
+/*Just to change the line height of gender text*/
+.gender {
+  line-height: 0;
+}
+
+.healthBtn {
+  background-color: #6b462a;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
   margin-left: 6.25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 25%;
-  margin-bottom: 20px;
-}
-
-.openModalBtn {
-  width: 90px;
-  height: 50px;
-  margin-left: 15%;
-}
-
-.modalBackground {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(200, 200, 200);
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modalContainer {
-  width: 500px;
-  height: 500px;
-  border-radius: 12px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-}
-
-.modalContainer .title {
-  display: inline-block;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.closeBtn {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.closeBtn button {
-  background-color: transparent;
-  border: none;
-  font-size: 25px;
+  height: 100px;
+  border-color: white;
   cursor: pointer;
 }
 
-.modalContainer .body {
-  flex: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.7rem;
-  text-align: center;
-}
-
-.healthBox {
-  padding-top: 10px;
+.vaccinationBtn {
   text-align: center;
   background-color: #6b462a;
   color: white;
   font-family: 'Times New Roman', Times, serif;
   margin-left: 6.25%;
-  margin-top: 20px;
   width: 25%;
   height: 100px;
+  border-color: white;
+  cursor: pointer;
 }
 
-.vaccinationBox {
-  padding-top: 10px;
+.registrationBtn {
   text-align: center;
   background-color: #6b462a;
   color: white;
   font-family: 'Times New Roman', Times, serif;
-  margin-left: 37.5%;
-  margin-top: -110px;
+  margin-left: 6.25%;
   width: 25%;
   height: 100px;
-}
-
-.registrationBox {
-  padding-top: 10px;
-  text-align: center;
-  background-color: #6b462a;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  margin-left: 68.75%;
-  margin-top: -110px;
-  width: 25%;
-  height: 100px;
+  border-color: white;
+  cursor: pointer;
 }
 
 .socialsBox {
@@ -185,5 +147,20 @@ img {
   height: 200px;
   margin-top: 60px;
   margin-left: 35%;
+  border-style: solid;
+  border-color: rgb(184, 144, 96, .9);
   border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.instagramBtn {
+  width: 80px;
+  margin-top: -10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.instagramImg {
+  border-radius: 16px;
 }

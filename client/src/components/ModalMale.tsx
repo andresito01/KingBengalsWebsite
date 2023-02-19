@@ -1,6 +1,5 @@
 import React from "react";
-import '../pages/styles/OurCats.css';
-//import OurCats from "../pages/OurCats";
+import './styles/Modal.css';
     
 type ModalProps = {
     isOpen: boolean;
@@ -8,7 +7,7 @@ type ModalProps = {
     children?: React.ReactNode;
 }
 
-const Modal: React.FC<ModalProps> = ({isOpen, onClose}) => {
+const ModalMale: React.FC<ModalProps> = ({isOpen, onClose}) => {
     if(!isOpen) return null
     return (
         <div className="modalBackground">
@@ -17,14 +16,18 @@ const Modal: React.FC<ModalProps> = ({isOpen, onClose}) => {
                     <button onClick={onClose}> X </button>
                 </div>
                 <div className="title">
-                    <h1>Female Cat Name</h1>
+                    <h1>Hercules</h1>
                 </div>
                 <div className="body">
-                    <p>Here will be some more info about the cat...</p>
+                    <p>Lineage: ...</p>
+                    <p>Status: ...</p>
+                    <p>Attitude: ...</p>
+                    <p>Pattern: ...</p>
+                    <p>History: ...</p>
                 </div>
             </div>
         </div>
     );
 }
 
-export default Modal;
+export default ModalMale;
