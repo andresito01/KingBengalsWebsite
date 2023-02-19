@@ -1,13 +1,13 @@
 import React from 'react';
 import WebNavHeader from '../components/WebNavHeader';
-import "./styles/Reviews.css"
-const Reviews = () => {
+import "./styles/Testimonials.css"
+const Testimonials = () => {
 
   return (
-    <div className='reviewsPage'>
+    <div className='testimonialsPage'>
       <WebNavHeader />
     </div>
   )
 }
 
-export default Reviews;
+export default Testimonials;

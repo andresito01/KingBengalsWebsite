@@ -10,7 +10,7 @@ const About = () => {
     <div className='aboutPage'>
       <WebNavHeader />
       <header style={fontSizeHeader}>KingBengals Cattery</header>
-      <body>
+      <div className='aboutPageBody'>
         <p id='p1' style={fontSizeParagraph}>
           Location of the business <br></br>
           We are located in Sacramento, California just near the vibrant downtown.
@@ -49,7 +49,7 @@ const About = () => {
           Certificates, limited garantees? Supplies (limited), vaccinations, info packets? Limited amount of food, 
           toys, training guide? etc.<br></br>
         </p>
-      </body>
+      </div>
     </div>
   )
 }

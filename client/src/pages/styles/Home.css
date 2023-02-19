@@ -8,6 +8,15 @@
 }
 
 .homePage {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url("../../images/Kb-website-background.png"); */
+  background-color: #a87d48f5;
+}
+
+.homeHeaderImg {
+  background-color: #a87d48f5;
+  margin-bottom: 20px;
   width: 100%;
 }

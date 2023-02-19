@@ -15,9 +15,10 @@
   background-color: #a87d48f5;
 }
 
-img {
+.img1{
   background-color: #a87d48f5;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .backgroundLayer {
@@ -28,7 +29,7 @@ img {
   width: 100%;
 }
 
-.headerContainer {
+.headerContainerReserve {
   display: flex;
   flex-direction: column;
   justify-content: center;

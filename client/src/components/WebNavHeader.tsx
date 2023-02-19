@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./styles/WebNavHeader.css"
 
@@ -6,7 +6,7 @@ const WebNavHeader = () => {
   let navigate = useNavigate();
 
   return (
-    <div className='navContainer'>
+    <div className='navBar'>
       <div className='left'>
         <img alt='cat' src={require("../images/CatWebNavHeader.png")} />
         <div className='link-left' onClick={() => navigate("/breedinfo")}>Breed Info.</div>
@@ -23,7 +23,7 @@ const WebNavHeader = () => {
           <div className='link' onClick={() => navigate("/reserveakitten")}>Reserve A Kitten</div>
           <div className='link' onClick={() => navigate("/ourcats")}>Our Cats</div>
           <div className='link' onClick={() => navigate("/about")}>About Us</div>
-          <div className='link' onClick={() => navigate("/reviews")}>Reviews</div>
+          <div className='link' onClick={() => navigate("/testimonials")}>Testimonials</div>
           <div className='link' onClick={() => navigate("/litterupdates")}>Litter Updates</div>
         </div>
       </div>
