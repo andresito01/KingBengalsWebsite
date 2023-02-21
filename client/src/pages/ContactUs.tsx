@@ -1,14 +1,14 @@
 import React from 'react';
 import WebNavHeader from '../components/WebNavHeader';
-import "./styles/ContactUs.css"
+import ContactUsCSS from "./styles/ContactUs.module.css"
 
 const ContactUs = () => {
 
   return (
-    <div className='ContactUs'>
+    <div className={ContactUsCSS.ContactUs}>
       <WebNavHeader />
-      <div className='bg'>
-        <div className='mainContentContainer'>
+      <div className={ContactUsCSS.bg}>
+        <div className={ContactUsCSS.mainContentContainer}>
           <h1>Contact us</h1>
           <h2>Kingbengals Cattery</h2> 
           <p>
@@ -19,11 +19,11 @@ const ContactUs = () => {
           
           <br></br>
 
-        <div className='contactButton'>Get In Touch</div><br></br>
+        <div className={ContactUsCSS.contactButton}>Get In Touch</div><br></br>
       </div>
       
-        <div className='bottomContainer'>
-          <div className='additionalInfoContainer'>
+        <div className={ContactUsCSS.bottomContainer}>
+          <div className={ContactUsCSS.additionalInfoContainer}>
             Follow Us on <br></br>
           </div>
         </div>

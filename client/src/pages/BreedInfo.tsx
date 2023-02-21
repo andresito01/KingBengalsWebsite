@@ -1,16 +1,16 @@
 import React from "react";
 import WebNavHeader from "../components/WebNavHeader";
-import "./styles/BreedInfo.css";
+import BreedInfoCSS from "./styles/BreedInfo.module.css";
 import topImage from "../images/SpottedVsMarbled.png";
 import spotted from "../images/SpottedBengals.png";
 import marbled from "../images/MarbledBengals.png";
 
 const BreedInfo = () => {
   return (
-    <div className="breedInfoPage">
+    <div className={BreedInfoCSS.breedInfoPage}>
       <WebNavHeader />
       <BreedInfoTopPic />
-      <div className="bottomContainer">
+      <div className={BreedInfoCSS.bottomContainer}>
         <SpottedBengals />
         <MarbledBengals />
       </div>
@@ -20,9 +20,9 @@ const BreedInfo = () => {
 
 const BreedInfoTopPic = () => {
   return (
-    <div className="topImageContainer">
-      <img className="topPicture" src={topImage} alt="Breed Information" />
-      <div className="breedInfoTxt">Breed Information and History</div>
+    <div className={BreedInfoCSS.topImageContainer}>
+      <img className={BreedInfoCSS.topPicture} src={topImage} alt="Breed Information" />
+      <div className={BreedInfoCSS.breedInfoTxt}>Breed Information and History</div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import './styles/Modal.css';
+import ModalCSS from './styles/Modal.module.css';
     
 type ModalProps = {
     isOpen: boolean;
@@ -10,15 +10,15 @@ type ModalProps = {
 const ModalFemale1: React.FC<ModalProps> = ({isOpen, onClose}) => {
     if(!isOpen) return null
     return (
-        <div className="modalBackground">
-            <div className="modalContainer">
-                <div className="closeBtn">
+        <div className={ModalCSS.modalBackground}>
+            <div className={ModalCSS.modalContainer}>
+                <div className={ModalCSS.closeBtn}>
                     <button onClick={onClose}> X </button>
                 </div>
-                <div className="title">
+                <div className={ModalCSS.title}>
                     <h1>Female1 Cat Name</h1>
                 </div>
-                <div className="body">
+                <div className={ModalCSS.body}>
                     <p>Lineage: ...</p>
                     <p>Status: ...</p>
                     <p>Attitude: ...</p>

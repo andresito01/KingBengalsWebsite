@@ -9,7 +9,8 @@
 
 .aboutPage {
   
-  background-image: url("../../images/Kb-website-background.png");
+  background-image: url("../../images/kbengalsbgGradient.png");
+  background-size: cover;
 }
 header{
   background-color: burlywood;
