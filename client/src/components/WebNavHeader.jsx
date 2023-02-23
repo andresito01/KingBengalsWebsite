@@ -1,5 +1,5 @@
-import React, { useState, useRef} from 'react';
-import {FaBars, FaTimes} from 'react-icons/fa';
+import React, {useRef} from 'react';
+//import {FaBars, FaTimes} from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import WebNavHeaderCSS from "./styles/WebNavHeader.module.css"
 
@@ -8,9 +8,9 @@ const WebNavHeader = () => {
 
   const navRef = useRef();
 
-	const showNavbar = () => {
+	/*const showNavbar = () => {
 		navRef.current.classList.toggle("responsive_nav");
-	};
+	};*/
 
   return (
     <header className={WebNavHeaderCSS.navBar}>
