@@ -1,62 +1,72 @@
-.businessCertificate {
-  display: block;
+/* >>>>>>>>>>>> Business Certificate Container <<<<<<<<<<<<<<<<*/
+.businessCertificateContainer {
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  z-index: 2;
+  background-color: rgba(6, 37, 87, 0.427); /* Black w/opacity/see-through */
+  position: relative;
   width: 85%;
-  padding: 20px;
-  border-radius: 0.95em;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5rem;
 }
-.kbLogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
+
+/* >>>>>>>>>>>>>>>>>> KingBengals' Logo <<<<<<<<<<<<<<<<<<<<<*/
+.kbLogoContainer {
+  width: 20%;
+  margin: auto;
 }
+.kbLogoContainer img {
+  width: 100%;
+  margin: auto;
+}
+
+/* >>>>>>>>>>>> Business Certificate Statement <<<<<<<<<<<<<<<<*/
 .businessCertificateText {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  text-align: center;
-  font-weight: normal;
-  font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 100;
+  font-style: normal;
+  font-family: "Abel", serif;
 }
-
-.certificateContainer {
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.certificateContainer img {
-  margin: 10px 10px 30px 30px;
-  width: 80%;
-  align-items: center;
-  background-color: rgba(149, 146, 146, 0.528);
-  border-radius: 0.95em;
-}
-
-.leftCertificate {
-  width: 70%;
-  float: left;
-}
-.leftCertificate img {
-  width: 80%;
-  transform: translate(0%, 10%);
-}
-.rightCertificates {
-  width: 30%;
-  float: right;
-}
-
+/* statement link */
 .bcLink {
-  color: blue;
+  color: rgba(41, 41, 187, 0.85);
+}
+
+/* >>>>>>>>>>>> Certificates' Container <<<<<<<<<<<<<<<<*/
+.certificateContainer {
+  width: 95%;
+  margin: auto;
+  display: grid;
+}
+@media screen {
+  .certificateContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* >>>>>>>>>>>> Tica's Certificate <<<<<<<<<<<<<<<<*/
+.ticaCertificate {
+  width: 85%;
+  margin: auto;
+}
+.ticaCertificate img {
+  width: 100%;
+  border-radius: 5.5rem;
+  background-color: rgba(238, 247, 248, 0.051);
+}
+
+/* >>>>>>>>>>>> Temp Certificates Container <<<<<<<<<<<<<<<<*/
+.tempCertificates {
+  width: 40%;
+  margin: auto;
+}
+.tempCertificates img {
+  width: 90%;
+  padding: 0.75rem;
+  margin: auto;
+  border-radius: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.01);
 }
