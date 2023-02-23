@@ -3,7 +3,8 @@ import ModalFemale1 from '../components/ModalFemale1';
 import ModalFemale2 from '../components/ModalFemale2';
 import ModalMale from '../components/ModalMale';
 import WebNavHeader from '../components/WebNavHeader';
-import OurCatsCSS from "./styles/OurCats.module.css"
+import OurCatsCSS from "./styles/OurCats.module.css";
+import Modal from "../components/styles/Modal.module.css";
 
 const OurCats: React.FC = () => {
   const fontSizeHeader = {fontSize: "20px"}
@@ -77,17 +78,17 @@ const OurCats: React.FC = () => {
         </div>
         
         <button 
-          className={OurCatsCSS.imageBtn} 
+          className={Modal.imageBtn} 
           onClick={handleOpenModal1}><img alt='firstFemaleImage' src={require("../images/Placeholder.png")}/>
         </button>
 
         <button 
-          className={OurCatsCSS.imageBtn} 
+          className={Modal.imageBtn} 
           onClick={handleOpenModal2}><img alt='secondFemaleImage' src={require("../images/Placeholder.png")}/>
         </button>
 
         <button 
-          className={OurCatsCSS.imageBtn} 
+          className={Modal.imageBtn} 
           onClick={handleOpenModal3}><img alt='maleImage' src={require("../images/Placeholder.png")}/>
         </button>
 
