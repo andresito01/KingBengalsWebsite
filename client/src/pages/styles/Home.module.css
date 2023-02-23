@@ -1,0 +1,22 @@
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url("../../images/Kb-website-background.png"); */
+  background-color: #a87d48f5;
+}
+
+.homeHeaderImg {
+  background-color: #a87d48f5;
+  margin-bottom: 20px;
+  width: 100%;
+}

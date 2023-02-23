@@ -1,0 +1,105 @@
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
+.aboutPage {
+  
+  background-image: url("../../images/kbengalsbgGradient.png");
+  background-size: cover;
+}
+header{
+  background-color: burlywood;
+  color: white;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 20px;
+  height: 100px;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: black;
+}
+#p1{
+  background-color: #6b462a;
+  color: white;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 250px;
+  width: 60%;
+  margin-top: 1px;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: black;
+}
+#p2{
+  background-color: #6b462a;
+  color: white;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 450px;
+  width: 95%;
+  margin-top: 1px;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: black;
+}
+#p3{
+  background-color: #6b462a;
+  color: white;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 100px;
+  margin-top: 100px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 100px;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: black;
+}
+#box1{
+  background-color: #6b462a;
+  height: 250px;
+  width: 250px;
+  margin-top: -250px;
+  margin-left: 70%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  outline-style: solid;
+  outline-width: 10px;
+  outline-color: burlywood;
+}
+#box2{
+  background-color: #6b462a;
+  height: 300px;
+  width: 350px;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  outline-style: solid;
+  outline-width: 10px;
+  outline-color: burlywood;
+}
+#box3{
+  background-color: #6b462a;
+  height: 300px;
+  width: 350px;
+  margin-top: -330px;
+  margin-left: 60%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  outline-style: solid;
+  outline-width: 10px;
+  outline-color: burlywood;
+}

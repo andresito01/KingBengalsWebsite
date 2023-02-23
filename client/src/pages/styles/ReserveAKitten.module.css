@@ -1,0 +1,108 @@
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
+.reserveAKittenPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url("../../images/Kb-website-background.png"); */
+  background-color: #a87d48f5;
+}
+
+.img1{
+  background-color: #a87d48f5;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.backgroundLayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../images/kbengalsbgGradient.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.headerContainerReserve {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #87633d;
+  color: white;
+  font-family: inika;
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 10px;
+}
+
+.applyButton {
+  background-color: #D3BEA5;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: inika;
+  padding: 20px 30px 30px 20px;
+}
+
+.instructionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: inika;
+}
+
+.instructionContainer h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.instructionContainer p {
+  font-size: 28px;
+}
+
+.processContainer {
+  margin: 10px 10px 10px 10px;
+  background-color: #4E3A24;
+  height: 725px;
+  width: 442px;
+}
+
+.paymentContainer {
+  margin: 10px 10px 10px 10px;
+  background-color: #4E3A24;
+  height: 725px;
+  width: 442px;
+}
+
+.deliveryContainer {
+  margin: 10px 10px 10px 10px;
+  background-color: #4E3A24;
+  height: 725px;
+  width: 442px;
+}
+
+.additionalInfoContainer {
+  margin: 10px 10px 10px 10px;
+  background-color: #4E3A24;
+  color: white;
+  font-family: inika;
+  padding: 10px 10px 10px 10px;
+}
+
+.additionalInfoContainer h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.additionalInfoContainer p {
+  font-size: 28px;
+}
