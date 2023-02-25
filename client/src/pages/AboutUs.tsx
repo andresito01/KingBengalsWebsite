@@ -11,7 +11,7 @@ const About = () => {
     <div className='aboutPage' style={{backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', 
     backgroundSize: 'cover', backgroundPosition: 'center'}}>
       <WebNavHeader />
-      {/* <header style={fontSizeHeader}>KingBengals Cattery</header> */}
+      {<header style={fontSizeHeader}>KingBengals Cattery</header>}
       <div className={AboutCSS.aboutPageBody}>
         <p id={AboutCSS.p1} style={fontSizeParagraph}>
           Location of the business <br></br>

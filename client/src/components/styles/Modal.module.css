@@ -1,6 +1,10 @@
 
-  /* 
-   */
+  .ParentModalImg img {
+    width: 100%;
+    position: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
 
   .imageBtn {
     width: 25%;
