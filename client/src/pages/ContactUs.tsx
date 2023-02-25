@@ -10,9 +10,11 @@ const ContactUs = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_p3l5cwr', 'template_n8dohwi', form.current, 'Fnz9NuRAzufrPHXEs')
             .then((result) => {
                 console.log(result.text);
+                console.log("message sent");
+                e.target.reset();
             }, (error) => {
                 console.log(error.text);
             });
