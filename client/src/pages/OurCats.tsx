@@ -3,9 +3,8 @@ import ModalFemale1 from '../components/ModalFemale1';
 import ModalFemale2 from '../components/ModalFemale2';
 import ModalMale from '../components/ModalMale';
 import WebNavHeader from '../components/WebNavHeader';
-import OurCatsCSS from './styles/OurCats.module.css';
-//import "../components/styles/Modal.module.css";
-import Modal from '../components/styles/Modal.module.css';
+import OurCatsCSS from "./styles/OurCats.module.css";
+import Modal from "../components/styles/Modal.module.css";
 
 const OurCats: React.FC = () => {
   const fontSizeHeader = {fontSize: "20px"}
