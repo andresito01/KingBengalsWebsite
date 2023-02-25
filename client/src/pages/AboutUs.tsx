@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className={AboutCSS.aboutPage}>
       <WebNavHeader />
-      <header style={fontSizeHeader}>KingBengals Cattery</header>
+      {/* <header style={fontSizeHeader}>KingBengals Cattery</header> */}
       <div className={AboutCSS.aboutPageBody}>
         <p id={AboutCSS.p1} style={fontSizeParagraph}>
           Location of the business <br></br>
