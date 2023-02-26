@@ -40,8 +40,8 @@ const BusinessCertificateText = () => {
       <h4>
         <p>
           We are proud certified members of <strong>TICA</strong>, The
-          International Cat Association.See all of our cats' health certificates
-          on their individual pages
+          International Cat Association. See all of our cats' health
+          certificates on their individual pages
           <Link className={BusinessCertificateCSS.bcLink} to="/OurCats">
             . here
           </Link>
