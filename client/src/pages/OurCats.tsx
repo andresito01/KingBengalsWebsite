@@ -79,17 +79,17 @@ const OurCats: React.FC = () => {
         
         <button 
           className={Modal.imageBtn} 
-          onClick={handleOpenModal1}><img alt='firstFemaleImage' src={require("../images/Placeholder.png")}/>
+          onClick={handleOpenModal1}><img alt='parentModalImg' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
         </button>
 
         <button 
           className={Modal.imageBtn} 
-          onClick={handleOpenModal2}><img alt='secondFemaleImage' src={require("../images/Placeholder.png")}/>
+          onClick={handleOpenModal2}><img alt='secondFemaleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
         </button>
 
         <button 
           className={Modal.imageBtn} 
-          onClick={handleOpenModal3}><img alt='maleImage' src={require("../images/Placeholder.png")}/>
+          onClick={handleOpenModal3}><img alt='maleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
         </button>
 
         <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>

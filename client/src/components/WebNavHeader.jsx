@@ -1,4 +1,4 @@
-import React, { useState, useRef} from 'react';
+import React, {useState} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import WebNavHeaderCSS from "./styles/WebNavHeader.module.css"
