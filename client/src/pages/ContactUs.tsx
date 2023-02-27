@@ -1,13 +1,27 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import WebNavHeader from '../components/WebNavHeader';
 import ContactUsCSS from "./styles/ContactUs.module.css"
 
 const ContactUs = () => {
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
   return (
     <div className={ContactUsCSS.ContactUs}>
       <WebNavHeader />
       <div className={ContactUsCSS.bg}>
+      <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
         <div className={ContactUsCSS.mainContentContainer}>
           <h1>Contact us</h1>
           <h2>Kingbengals Cattery</h2> 
