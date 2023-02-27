@@ -4,6 +4,9 @@ import WebNavHeader from "../components/WebNavHeader";
 import BusinessCertificate from "../components/BusinessCertificate";
 import Testimonials from "../components/Testimonials";
 
+const fontSizeMissionStatement = {fontSize: '30px'};
+const fontSizeQuote = {fontSize: '20px'};
+
 //>>>>>>>>>>>>>>>>>>>> Home Page <<<<<<<<<<<<<<<<<<<<<<<<<<<
 const Home = () => {
   return (
@@ -52,9 +55,9 @@ const MissionStatement = () => {
   return (
     <div className={HomeCSS.missionStatement}>
       <div className={HomeCSS.missionStatementText}>
-        <h3>Mission Statement Here</h3>
+        <h3 style={fontSizeMissionStatement}>KingBengals' Mission Statement</h3>
         <hr></hr>
-        <p>
+        <p style={fontSizeQuote}>
           “A quote or a paraphrase about Bengal cats that describes them well
           (personality, uniqueness, drive, other traits, etc)”.- Lidiya
           Zapuskalov, owner of KingBengals Cattery
