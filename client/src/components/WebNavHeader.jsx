@@ -38,6 +38,7 @@ const WebNavHeader = () => {
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/about")}>About Us</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/contact")}>Contact Us</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/breedinfo")}>Breed Info</div>
+          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ownersinfo")}>Owners Info</div>
         </div>
       <button className={WebNavHeaderCSS.navBtn} onClick={() => setMobile(!Mobile)}>
         {Mobile ? <FaTimes /> : <FaBars />}
