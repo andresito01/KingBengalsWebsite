@@ -31,7 +31,9 @@ const LitterUpdates: React.FC = () => {
 
   return (
     <div className={LitterUpdatesCSS.litterUpdatesPage}>
-      <WebNavHeader />
+      <ModalLitter1 isOpen={isModalOpen1} onClose={handleCloseModal1}/>
+      <ModalLitter2 isOpen={isModalOpen2} onClose={handleCloseModal2}/>
+      <WebNavHeader/>
       <div className={LitterUpdatesCSS.litterInstructionContainer}>
         <h1 style={fontSizeHeader}>Check Out Our Litters!</h1>
         <p style={fontSizeParagraph}>Below you will find the information for the litter that are currently available for picking.<br/>Litter planning & info regarding cat pregnancy<br/>Explaining the litter characteristics: range of kittens in each litter<br/>Expected delivery dates will be provided<br/>Please read how to 'Reserve a Kitten' page thoroughly! Kitten photos and videos will be updated bi-weekly.</p>

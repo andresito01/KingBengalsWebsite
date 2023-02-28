@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutCSS from "./styles/About.module.css";
+import WebNavHeader from '../components/WebNavHeader';
 import background from "../images/pattern.jpg";
 
 const About = () => {
@@ -9,6 +10,7 @@ const About = () => {
   return (
     <div className='aboutPage' style={{backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', 
     backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      <WebNavHeader/>
       <header className={AboutCSS.header} style={fontSizeHeader}>Learn More About Us!</header>
       <div className={AboutCSS.aboutPageBody}>
         <p className={AboutCSS.p1} style={fontSizeParagraph}>
