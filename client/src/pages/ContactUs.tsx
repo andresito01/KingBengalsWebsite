@@ -35,11 +35,14 @@ const ContactUs = () => {
         <div className={ContactUsCSS.contactButton}>Get In Touch</div><br></br>
       </div>
       
-        <div className={ContactUsCSS.bottomContainer}>
-          <div className={ContactUsCSS.additionalInfoContainer}>
-            Follow Us on <br></br>
-          </div>
-        </div>
+      <div className={ContactUsCSS.socialsBox}>
+          <h1>Checkout our<br></br>Instagram!</h1>
+          <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'>
+            <button className={ContactUsCSS.instagramBtn}>
+              <img alt='instaImg' className={ContactUsCSS.instagramImg} src={require("../images/instagramlogo.png")}/>
+            </button>
+          </a>
+      </div>
 
     </div>
     </div>
@@ -47,4 +50,3 @@ const ContactUs = () => {
 }
 
 export default ContactUs;
-;
