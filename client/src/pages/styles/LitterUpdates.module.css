@@ -8,19 +8,27 @@
 }
 
 .litterUpdatesPage {
-  position: absolute;
+  background-image: url("../../images/kbengalsbgGradient.png");
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
 
 .litterInstructionContainer {
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
   flex-direction: column;
-  color: black
-  ;
+  color: black;
   background-color: #a87d48f5;
   justify-content: center;
   align-items: center;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 20px;
+  border-color: #EBCEB2;
 }
 
 .litterCardWrapper {
@@ -38,13 +46,40 @@
   height: 50vh;
   width: 80vw;
   margin: 20px;
+  margin-top: -55px;
+  border-radius: 10px;
 }
 
 .parent {
   margin: 10px;
   height: 90%;
   width: 100%;
-  background-color: #a87d48f5;
+}
+
+.parentName1 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  width: 47.4%;
+  height: 80px;
+  background-color: #EBCEB2;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.parentName2 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  width: 47.35%;
+  height: 80px;
+  background-color: #EBCEB2;
+  margin-top: -110px;
+  margin-left: calc(30px + 47.4% + 40px);
+  border-radius: 10px;
 }
 
 .parent img {
