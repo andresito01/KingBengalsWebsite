@@ -31,8 +31,6 @@ const LitterUpdates: React.FC = () => {
 
   return (
     <div className={LitterUpdatesCSS.litterUpdatesPage}>
-      <ModalLitter1 isOpen={isModalOpen1} onClose={handleCloseModal1}/>
-      <ModalLitter2 isOpen={isModalOpen2} onClose={handleCloseModal2}/>
       <WebNavHeader />
       <div className={LitterUpdatesCSS.litterInstructionContainer}>
         <h1 style={fontSizeHeader}>Check Out Our Litters!</h1>

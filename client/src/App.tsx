@@ -8,10 +8,13 @@ import About from './pages/AboutUs';
 import LitterUpdates from './pages/LitterUpdates';
 import ContactUs from './pages/ContactUs';
 import BreedInfo from './pages/BreedInfo';
+import OwnerGuide from './pages/OwnerGuide';
+import WebNavHeader from './components/WebNavHeader';
 
 function App() {
   return (
     <div className="App">
+      <WebNavHeader />
       <Routes>
         <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Home />} />
@@ -21,6 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/breedinfo" element={<BreedInfo />} />
+        <Route path="/breedinfo" element={<OwnerGuide />} />
       </Routes>
     </div>
   );
