@@ -1,26 +1,49 @@
-import React, { useState, useRef} from 'react';
+import React, { useState} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import WebNavHeaderCSS from "./styles/WebNavHeader.module.css"
-
 const WebNavHeader = () => {
-  let navigate = useNavigate();
 
+  let navigate = useNavigate();
   const [Mobile, setMobile] = useState(false)
 
+  const checkResponsiveView = () => {
+    var x = document.getElementById("navLinks")
+    var y = document.getElementById("middle")
+    var z = document.getElementById("leftHeaderImg")
+
+    if (x.className === `${WebNavHeaderCSS.navLinks}`) {
+      x.className = `${WebNavHeaderCSS.navLinksResponsive}`;
+      y.className = `${WebNavHeaderCSS.middleResponsive}`;
+      z.className = `${WebNavHeaderCSS.leftHeaderImgResponsive}`;
+      setMobile(true)
+    } else {
+      x.className = `${WebNavHeaderCSS.navLinks}`
+      y.className = `${WebNavHeaderCSS.middle}`;
+      z.className = `${WebNavHeaderCSS.leftHeaderImg}`;
+      setMobile(false)
+    }
+  }
+
   const windowWidthCheck = () => {
-    if (window.innerWidth > 944) 
+    if (window.innerWidth > 1110) 
+      var x = document.getElementById("navLinks")
+      var y = document.getElementById("middle")
+      var z = document.getElementById("leftHeaderImg")
+      x.className = `${WebNavHeaderCSS.navLinks}`
+      y.className = `${WebNavHeaderCSS.middle}`;
+      z.className = `${WebNavHeaderCSS.leftHeaderImg}`;
       setMobile(false)
   }
   window.addEventListener('resize', windowWidthCheck)
 
   return (
-    <div className={WebNavHeaderCSS.navBar}>
-      <div className={WebNavHeaderCSS.leftImgContainer}>
+    <div className={WebNavHeaderCSS.headerContainer}>
+      <img className={WebNavHeaderCSS.leftHeaderImg} id="leftHeaderImg" alt='cat' src={require("../images/CatWebNavHeaderNoBackground.png")} />
+      {/* <div className={WebNavHeaderCSS.leftImgContainer}>
         <img id={WebNavHeaderCSS.leftHeaderImg} alt='cat' src={require("../images/CatWebNavHeaderNoBackground.png")} />
-        {/* <div className='link-left' onClick={() => navigate("/breedinfo")}>Breed Info.</div> */}
-      </div>
-      <div className={WebNavHeaderCSS.middle}>
+      </div> */}
+      <div className={WebNavHeaderCSS.middle} id="middle">
         <div className={WebNavHeaderCSS.headerTitleContainer}>
           <div className={WebNavHeaderCSS.headerKingBengals}>
           KingBengals</div>
@@ -30,7 +53,7 @@ const WebNavHeader = () => {
           </div>
         </div>
         
-        <div className={Mobile ? WebNavHeaderCSS.navLinksMobile : WebNavHeaderCSS.navLinks} onClick={() => setMobile(false)}>
+        <div className={WebNavHeaderCSS.navLinks} id="navLinks">
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/home")}>Home</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/reserveakitten")}>Reserve A Kitten</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ourcats")}>Our Cats</div>
@@ -38,17 +61,12 @@ const WebNavHeader = () => {
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/about")}>About Us</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/contact")}>Contact Us</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/breedinfo")}>Breed Info</div>
-        </div>
-      <button className={WebNavHeaderCSS.navBtn} onClick={() => setMobile(!Mobile)}>
-        {Mobile ? <FaTimes /> : <FaBars />}
-      </button>
-        {/* <button className={WebNavHeaderCSS.navBtn} onClick={showNavbar}>
-            <FaBars />
-        </button> */}
+          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ownersguide")}>Owner's Guide</div>
+        </div> 
+        <button className={WebNavHeaderCSS.navBtn} onClick={checkResponsiveView}>
+            {Mobile ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
-      {/* <div className='right'>
-        <div className='link-right' onClick={() => navigate("/contact")}>Contact Us</div>
-      </div> */}
     </div>
   )
 }

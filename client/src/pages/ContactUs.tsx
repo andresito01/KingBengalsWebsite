@@ -1,12 +1,10 @@
 import React from 'react';
-import WebNavHeader from '../components/WebNavHeader';
 import ContactUsCSS from "./styles/ContactUs.module.css"
 
 const ContactUs = () => {
 
   return (
     <div className={ContactUsCSS.ContactUs}>
-      <WebNavHeader />
       <div className={ContactUsCSS.bg}>
         <div className={ContactUsCSS.mainContentContainer}>
           <h1>Contact us</h1>

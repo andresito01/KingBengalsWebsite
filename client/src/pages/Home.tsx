@@ -1,6 +1,5 @@
 import React from "react";
 import HomeCSS from "./styles/Home.module.css";
-import WebNavHeader from "../components/WebNavHeader";
 import BusinessCertificate from "../components/BusinessCertificate";
 import Testimonials from "../components/Testimonials";
 
@@ -8,8 +7,6 @@ import Testimonials from "../components/Testimonials";
 const Home = () => {
   return (
     <div className={HomeCSS.homePage}>
-      {/*>>>>>>>>>>>>> Navigation Header <<<<<<<<<<<<*/}
-      <WebNavHeader />
 
       {/*>>>>>>>>>>>> Home's top Image <<<<<<<<<<<<*/}
       <img

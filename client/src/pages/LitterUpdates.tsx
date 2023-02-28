@@ -1,11 +1,9 @@
 import React from 'react';
-import WebNavHeader from '../components/WebNavHeader';
 import LitterUpdatesCSS from "./styles/LitterUpdates.module.css"
 const LitterUpdates = () => {
 
   return (
     <div className={LitterUpdatesCSS.litterUpdatesPage}>
-      <WebNavHeader />
       <div className={LitterUpdatesCSS.litterInstructionContainer}>
         <h1>Litter Updates</h1>
         <p>Below you will find the information for the litter that are currently available for picking.<br/>Litter planning & info regarding cat pregnancy<br/>Explaining the litter characteristics: range of kittens in each litter<br/>Expected delivery dates will be provided<br/>lease read how to 'Reserve a Kitten' page thoroughly!<b/>Puppy photos and videos will be updated bi-weekly.</p>
