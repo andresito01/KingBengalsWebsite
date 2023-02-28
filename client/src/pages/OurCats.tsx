@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import ModalFemale1 from '../components/ModalFemale1';
 import ModalFemale2 from '../components/ModalFemale2';
 import ModalMale from '../components/ModalMale';
-import WebNavHeader from '../components/WebNavHeader';
 import OurCatsCSS from "./styles/OurCats.module.css";
 import Modal from "../components/styles/Modal.module.css";
 
@@ -47,7 +46,6 @@ const OurCats: React.FC = () => {
       <ModalFemale1 isOpen={isModalOpen1} onClose={handleCloseModal1}/>
       <ModalFemale2 isOpen={isModalOpen2} onClose={handleCloseModal2}/>
       <ModalMale isOpen={isModalOpen3} onClose={handleCloseModal3}/>
-      <WebNavHeader />
       <div className={OurCatsCSS.headerContainerOurCats} style={fontSizeHeader}>
         <h1>Meet The Parents!</h1>
         <h2 style={fontSizeInfo}>

@@ -1,5 +1,4 @@
 import React from "react";
-import WebNavHeader from "../components/WebNavHeader";
 import BreedInfoCSS from "./styles/BreedInfo.module.css";
 import topImage from "../images/SpottedVsMarbled.png";
 import spotted from "../images/SpottedBengals.png";
@@ -9,8 +8,6 @@ import redstar from "../images/1024px-Paintedcats_Red_Star_standing.jpg";
 const BreedInfo = () => {
   return (
     <div className="breedInfoPage">
-      
-      <WebNavHeader />
       <div className='backgroundLayer'>
         <div className = "bengalsIntroContainer">
         <img className = "bengalsIntroPic" src={redstar} alt="" />
