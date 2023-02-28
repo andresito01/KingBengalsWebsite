@@ -1,12 +1,12 @@
 import React, {useRef} from 'react';
 import WebNavHeader from '../components/WebNavHeader';
-import ContactUsCSS from "./styles/ContactUs.module.css"
+import ContactUsCSS from "./styles/ContactUs.module.css";
 
 const ContactUs = () => {
 
-    /*const form = useRef();
+    const form = useRef();
 
-    const sendEmail = (e) => {
+    /*const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
@@ -19,6 +19,7 @@ const ContactUs = () => {
 
   return (
     <div className={ContactUsCSS.ContactUs}>
+      <WebNavHeader/>
       <div className={ContactUsCSS.bg}>
         <div className={ContactUsCSS.mainContentContainer}>
           <h1>Contact us</h1>

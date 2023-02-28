@@ -9,12 +9,11 @@ import LitterUpdates from './pages/LitterUpdates';
 import ContactUs from './pages/ContactUs';
 import BreedInfo from './pages/BreedInfo';
 import OwnerGuide from './pages/OwnerGuide';
-import WebNavHeader from './components/WebNavHeader';
+
 
 function App() {
   return (
     <div className="App">
-      <WebNavHeader />
       <Routes>
         <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Home />} />
