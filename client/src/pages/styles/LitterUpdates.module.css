@@ -10,7 +10,6 @@
 .litterUpdatesPage {
   background-image: url("../../images/kbengalsbgGradient.png");
   background-size: cover;
-  height: 100%;
   width: 100%;
 }
 
@@ -31,13 +30,13 @@
   border-color: #EBCEB2;
 }
 
-.litterCardWrapper {
+.parentCardWrapper {
   display: flex;
   flex-direction: row;
   padding: 10px;
 }
 
-.litterCard {
+.parentCard {
   justify-content: center;
   align-items: center;
   background-color: #EBCEB2;
@@ -85,4 +84,80 @@
 .parent img {
   height: 100%;
   width: 100%;
+}
+
+.litterInfo1 {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #a87d48f5;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  line-height: 0;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #EBCEB2;
+  border-radius: 10px;
+  margin-left: -18px;
+  margin-top: -10px;
+}
+
+.litterInfo1 img{
+  width: 55%;
+  margin-left: 42%;
+  margin-top: -208px;
+}
+
+.litterInfo2 {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #a87d48f5;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  line-height: 0;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #EBCEB2;
+  border-radius: 10px;
+  margin-left: -18px;
+  margin-top: -10px;
+}
+
+.litterInfo2 img{
+  width: 55%;
+  margin-left: 42%;
+  margin-top: -208px;
+}
+
+.socialsBox {
+  padding-top: 10px;
+  text-align: center;
+  background-color: rgb(107, 70, 42, .9);
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 30%;
+  height: 200px;
+  margin-top: 60px;
+  margin-left: 35%;
+  border-style: solid;
+  border-color: rgb(184, 144, 96, .9);
+  border-radius: 50%;
+}
+
+.instagramBtn {
+  width: 80px;
+  margin-top: -10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.instagramImg {
+  width: 100%;
+  border-radius: 16px;
 }
