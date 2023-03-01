@@ -1,0 +1,107 @@
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
+/* >>>>>>>>>>>>>>>>>>>> Homepage Container <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: conic-gradient(
+    rgb(64, 29, 2),
+    rgb(255, 174, 0),
+    rgb(64, 29, 2)
+  );
+  background-image: url("../../images/kbengalsbgGradient.png");
+  background-size: cover;
+}
+
+/* >>>>>>>>>>>>>>>>>>>> Homepage Header Image <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.homeHeader {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: rgba(28, 14, 1, 0.611);
+}
+.homeHeader Img {
+  width: 100%;
+}
+.homeHeaderQuestion {
+  width: 100%;
+  position: absolute;
+  top: 0.1vw;
+  text-align: center;
+  font-size: 2.25vw;
+  color: rgb(235, 191, 137);
+}
+
+/* >>>>>>>>>>>>>>>>>>>> Mission Statement  <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.missionStatement {
+  font-family: 'Times New Roman', Times, serif;
+  width: 80%;
+  position: relative;
+  margin-top: 10px;
+  background-color: rgba(32, 19, 1, 0.856);
+  color: rgb(255, 255, 255);
+  /* bottom: 0.2vw;
+  left: 0.2vw; */
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+.missionStatementText {
+  font-family: 'Times New Roman', Times, serif;
+  width: 90%;
+  margin: auto;
+}
+/* >>>>>>>>>>>>>>>>>>>> Owner's Imageand her Cat <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.ownerPicture {
+  width: 80%;
+  margin: 2rem auto;
+}
+.ownerPicture img {
+  width: 100%;
+  border-color: rgb(243, 214, 172);
+  border-width: 2vw;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+/* >>>>>>>>>>>>>>>>>>    Past Litters' Title   <<<<<<<<<<<<<<<<<<*/
+.pastLittersTitle {
+  width: 60vw;
+  height: auto;
+  margin: auto;
+  color: rgba(247, 231, 205, 0.946);
+  font-size: 7vw;
+  font-weight: bolder;
+  font-family: "Babylonica", cursive;
+  text-align: center;
+  text-shadow: 0.15vw 0.15vw rgba(242, 147, 31, 0.734);
+  background-color: rgba(48, 26, 2, 0.909);
+  border-radius: 4.5vw;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>  Past Litters    <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.pastLitters {
+  width: 90%;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem;
+}
+@media screen {
+  .pastLitters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.pastLitters img {
+  width: 90%;
+  margin: auto;
+  border-color: rgba(248, 209, 152, 0.989);
+  border-width: 2vw;
+  border-style: solid;
+}

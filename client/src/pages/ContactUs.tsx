@@ -1,14 +1,27 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import WebNavHeader from '../components/WebNavHeader';
-import "./styles/ContactUs.css"
+import ContactUsCSS from "./styles/ContactUs.module.css";
 
 const ContactUs = () => {
 
+    const form = useRef();
+
+    /*const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };*/
+
   return (
-    <div className='ContactUs'>
-      <WebNavHeader />
-      <div className='bg'>
-        <div className='mainContentContainer'>
+    <div className={ContactUsCSS.ContactUs}>
+      <WebNavHeader/>
+      <div className={ContactUsCSS.bg}>
+        <div className={ContactUsCSS.mainContentContainer}>
           <h1>Contact us</h1>
           <h2>Kingbengals Cattery</h2> 
           <p>
@@ -19,14 +32,17 @@ const ContactUs = () => {
           
           <br></br>
 
-        <div className='contactButton'>Get In Touch</div><br></br>
+        <div className={ContactUsCSS.contactButton}>Get In Touch</div><br></br>
       </div>
       
-        <div className='bottomContainer'>
-          <div className='additionalInfoContainer'>
-            Follow Us on <br></br>
-          </div>
-        </div>
+      <div className={ContactUsCSS.socialsBox}>
+          <h1>Checkout our<br></br>Instagram!</h1>
+          <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'>
+            <button className={ContactUsCSS.instagramBtn}>
+              <img alt='instaImg' className={ContactUsCSS.instagramImg} src={require("../images/instagramlogo.png")}/>
+            </button>
+          </a>
+      </div>
 
     </div>
     </div>
@@ -34,4 +50,3 @@ const ContactUs = () => {
 }
 
 export default ContactUs;
-;

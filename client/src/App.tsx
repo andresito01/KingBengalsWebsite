@@ -8,7 +8,8 @@ import About from './pages/AboutUs';
 import LitterUpdates from './pages/LitterUpdates';
 import ContactUs from './pages/ContactUs';
 import BreedInfo from './pages/BreedInfo';
-import Testimonials from './pages/Testimonials';
+import OwnerGuide from './pages/OwnerGuide';
+
 
 function App() {
   return (
@@ -18,11 +19,11 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/reserveakitten" element={<ReserveAKitten />} />
         <Route path="/ourcats" element={<OurCats />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/litterupdates" element={<LitterUpdates />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/breedinfo" element={<BreedInfo />} />
+        <Route path="/breedinfo" element={<OwnerGuide />} />
       </Routes>
     </div>
   );

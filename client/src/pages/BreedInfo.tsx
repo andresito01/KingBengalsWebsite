@@ -1,16 +1,15 @@
 import React from "react";
-import WebNavHeader from "../components/WebNavHeader";
-import "./styles/BreedInfo.css";
+import BreedInfoCSS from "./styles/BreedInfo.module.css";
 import topImage from "../images/SpottedVsMarbled.png";
 import spotted from "../images/SpottedBengals.png";
 import marbled from "../images/MarbledBengals.png";
 import redstar from "../images/1024px-Paintedcats_Red_Star_standing.jpg";
+import WebNavHeader from "../components/WebNavHeader";
 
 const BreedInfo = () => {
   return (
     <div className="breedInfoPage">
-      
-      <WebNavHeader />
+      <WebNavHeader/>
       <div className='backgroundLayer'>
         <div className = "bengalsTextContainer">
           <img className = "bengalsIntroPic" src={redstar} 

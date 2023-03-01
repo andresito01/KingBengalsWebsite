@@ -8,9 +8,9 @@
 }
 
 .ourCatsPage {
-  background-image: url("../../images/Kb-website-background.png");
+  background-image: url("../../images/kbengalsbgGradient.png");
   background-size: cover;
-  height: 1870px;
+  height: 100%;
 }
 
 .headerContainerOurCats {
@@ -150,7 +150,6 @@
   border-style: solid;
   border-color: rgb(184, 144, 96, .9);
   border-radius: 50%;
-  margin-bottom: 30px;
 }
 
 .instagramBtn {
@@ -162,5 +161,6 @@
 }
 
 .instagramImg {
+  width: 100%;
   border-radius: 16px;
 }

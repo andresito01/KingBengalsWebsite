@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
+import WebNavHeader from '../components/WebNavHeader';
 import ModalFemale1 from '../components/ModalFemale1';
 import ModalFemale2 from '../components/ModalFemale2';
 import ModalMale from '../components/ModalMale';
-import WebNavHeader from '../components/WebNavHeader';
-import "./styles/OurCats.css"
+import OurCatsCSS from "./styles/OurCats.module.css";
+import Modal from "../components/styles/Modal.module.css";
 
 const OurCats: React.FC = () => {
   const fontSizeHeader = {fontSize: "20px"}
@@ -42,12 +43,12 @@ const OurCats: React.FC = () => {
   }
 
   return (
-    <div className='ourCatsPage'>
+    <div className={OurCatsCSS.ourCatsPage}>
       <ModalFemale1 isOpen={isModalOpen1} onClose={handleCloseModal1}/>
       <ModalFemale2 isOpen={isModalOpen2} onClose={handleCloseModal2}/>
       <ModalMale isOpen={isModalOpen3} onClose={handleCloseModal3}/>
-      <WebNavHeader />
-      <div className='headerContainerOurCats' style={fontSizeHeader}>
+      <WebNavHeader/>
+      <div className={OurCatsCSS.headerContainerOurCats} style={fontSizeHeader}>
         <h1>Meet The Parents!</h1>
         <h2 style={fontSizeInfo}>
           We believe in quality genetics and pay close attention to our breeding program to ensure 
@@ -58,54 +59,54 @@ const OurCats: React.FC = () => {
           Treatment and care is given to our cats to boost energy, behavior, and quality of life.
         </h3>
       </div>
-      <div className='secondaryHeaderContainer' style={fontSizeSecondaryHeader}>
+      <div className={OurCatsCSS.secondaryHeaderContainer} style={fontSizeSecondaryHeader}>
         <h1>Click the photos below to see additional information</h1>
         <h2>V</h2>
       </div>
-      <div className='body'>
-        <div className='firstFemaleTitle' style={fontSizeSecondaryHeader}>
+      <div className={OurCatsCSS.body}>
+        <div className={OurCatsCSS.firstFemaleTitle} style={fontSizeSecondaryHeader}>
           <h1>Name 1</h1>
-          <p className='gender' style={fontSizeInfo}>Female</p>
+          <p className={OurCatsCSS.gender} style={fontSizeInfo}>Female</p>
         </div>
-        <div className='secondFemaleTitle' style={fontSizeSecondaryHeader}>
+        <div className={OurCatsCSS.secondFemaleTitle} style={fontSizeSecondaryHeader}>
           <h1>Name 2</h1>
-          <p className='gender' style={fontSizeInfo}>Female</p>
+          <p className={OurCatsCSS.gender} style={fontSizeInfo}>Female</p>
         </div>
-        <div className='maleTitle' style={fontSizeSecondaryHeader}>
+        <div className={OurCatsCSS.maleTitle} style={fontSizeSecondaryHeader}>
           <h1>Hercules</h1>
-          <p className='gender' style={fontSizeInfo}>Male</p>
+          <p className={OurCatsCSS.gender} style={fontSizeInfo}>Male</p>
         </div>
         
         <button 
-          className='imageBtn' 
-          onClick={handleOpenModal1}><img alt='firstFemaleImage' src={require("../images/Placeholder.png")}/>
+          className={Modal.imageBtn} 
+          onClick={handleOpenModal1}><img alt='parentModalImg' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
         </button>
 
         <button 
-          className='imageBtn' 
-          onClick={handleOpenModal2}><img alt='secondFemaleImage' src={require("../images/Placeholder.png")}/>
+          className={Modal.imageBtn} 
+          onClick={handleOpenModal2}><img alt='secondFemaleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
         </button>
 
         <button 
-          className='imageBtn' 
-          onClick={handleOpenModal3}><img alt='maleImage' src={require("../images/Placeholder.png")}/>
+          className={Modal.imageBtn} 
+          onClick={handleOpenModal3}><img alt='maleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
         </button>
 
         <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className='healthBtn' style={fontSizeBtn}>Health Records</button>
+        <button className={OurCatsCSS.healthBtn} style={fontSizeBtn}>Health Records</button>
         </a>
         <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className='vaccinationBtn' style={fontSizeBtn}>Vaccination Records</button>
+        <button className={OurCatsCSS.vaccinationBtn} style={fontSizeBtn}>Vaccination Records</button>
         </a>
         <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className='registrationBtn' style={fontSizeBtn}>Registration Records</button>
+        <button className={OurCatsCSS.registrationBtn} style={fontSizeBtn}>Registration Records</button>
         </a>
       </div>
-      <div className='socialsBox'>
+      <div className={OurCatsCSS.socialsBox}>
           <h1>Checkout our<br></br>Instagram!</h1>
           <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'>
-            <button className='instagramBtn'>
-              <img alt='instaImg' className='instagramImg' src={require("../images/instagramlogo.png")}/>
+            <button className={OurCatsCSS.instagramBtn}>
+              <img alt='instaImg' className={OurCatsCSS.instagramImg} src={require("../images/instagramlogo.png")}/>
             </button>
           </a>
       </div>
