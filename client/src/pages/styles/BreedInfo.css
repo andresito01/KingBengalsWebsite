@@ -29,21 +29,23 @@
   height: auto;
 }
 
-.bengalsIntroContainer{
+.sectionHeader{
+  margin:20px;
+}
+
+.bengalsTextContainer{
   background-color: #a87d48f5;
+  font-size: 20px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
 }
 
 .bengalsIntroPic{
   float: right;
-  width: 300px;
+  width: 33%;
   margin-right: 30px;
-}
-
-.bengalsIntroText{
-  font-size: 20px;
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 20px 20px 20px 20px;
+  margin-left: 30px;
 }
 
 .breedInfoTxt {
@@ -60,4 +62,8 @@
   display: flex;
   width: 50%;
   margin: 10px 10px 30px 30px;
+}
+
+p.text{
+  margin:20px;
 }
