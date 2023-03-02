@@ -19,11 +19,6 @@ const Testimonials = () => {
           testifierName={secondTestimony.testifierName}
           testifierQuote={secondTestimony.testifierQuote}
         />
-        <Testimony
-          img1={thirdTestimony.img1}
-          testifierName={thirdTestimony.testifierName}
-          testifierQuote={thirdTestimony.testifierQuote}
-        />
       </section>
     </div>
   );
@@ -74,10 +69,5 @@ const secondTestimony = {
   testifierQuote:
     "I bought my first Bengal cat at Kingbengals and I really appreciate Lidia’s guidance on how to care for him.",
 };
-const thirdTestimony = {
-  img1: require("../images/TempTestimony.jpg"),
-  testifierName: "May Tang",
-  testifierQuote:
-    "I highly recommend getting your first Bengal cat from Lidia, she makes sure all her Bengals kitten have their proper immunizations.",
-};
+
 export default Testimonials;

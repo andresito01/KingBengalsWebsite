@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
+import WebNavHeader from '../components/WebNavHeader';
 import ModalFemale1 from '../components/ModalFemale1';
 import ModalFemale2 from '../components/ModalFemale2';
 import ModalMale from '../components/ModalMale';
-import WebNavHeader from '../components/WebNavHeader';
 import OurCatsCSS from "./styles/OurCats.module.css";
 import Modal from "../components/styles/Modal.module.css";
 
@@ -47,7 +47,7 @@ const OurCats: React.FC = () => {
       <ModalFemale1 isOpen={isModalOpen1} onClose={handleCloseModal1}/>
       <ModalFemale2 isOpen={isModalOpen2} onClose={handleCloseModal2}/>
       <ModalMale isOpen={isModalOpen3} onClose={handleCloseModal3}/>
-      <WebNavHeader />
+      <WebNavHeader/>
       <div className={OurCatsCSS.headerContainerOurCats} style={fontSizeHeader}>
         <h1>Meet The Parents!</h1>
         <h2 style={fontSizeInfo}>
@@ -79,17 +79,17 @@ const OurCats: React.FC = () => {
         
         <button 
           className={Modal.imageBtn} 
-          onClick={handleOpenModal1}><img alt='firstFemaleImage' src={require("../images/Placeholder.png")}/>
+          onClick={handleOpenModal1}><img alt='parentModalImg' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
         </button>
 
         <button 
           className={Modal.imageBtn} 
-          onClick={handleOpenModal2}><img alt='secondFemaleImage' src={require("../images/Placeholder.png")}/>
+          onClick={handleOpenModal2}><img alt='secondFemaleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
         </button>
 
         <button 
           className={Modal.imageBtn} 
-          onClick={handleOpenModal3}><img alt='maleImage' src={require("../images/Placeholder.png")}/>
+          onClick={handleOpenModal3}><img alt='maleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
         </button>
 
         <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
