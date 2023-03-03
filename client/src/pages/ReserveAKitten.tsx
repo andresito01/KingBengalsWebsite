@@ -6,9 +6,14 @@ const ReserveAKitten = () => {
 
   return (
     <div className={ReserveAKittenCSS.reserveAKittenPage}>
-      <WebNavHeader/>
-      <img className={ReserveAKittenCSS.img1} alt='headerImage' src={require("../images/ReserveAKittenHeader.png")} />
+//<<<<<<< ReserveAKittenPage
       <div className={ReserveAKittenCSS.backgroundLayer}>
+      <WebNavHeader />
+=======
+      
+//>>>>>>> master
+      <img className={ReserveAKittenCSS.img1} alt='headerImage' src={require("../images/ReserveAKittenHeader.png")} />
+      
         <div className={ReserveAKittenCSS.headerContainerReserve}>
           <h1 className={ReserveAKittenCSS.underline}>How to Reserve a Kitten</h1>
           <h3>Please read the entire page before filling out the application</h3>
