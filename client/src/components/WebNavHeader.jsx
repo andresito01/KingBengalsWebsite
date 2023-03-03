@@ -61,15 +61,13 @@ const WebNavHeader = () => {
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/about")}>About Us</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/contact")}>Contact Us</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/breedinfo")}>Breed Info</div>
-
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ownersinfo")}>Owner's Info</div>
         </div> 
         <button className={WebNavHeaderCSS.navBtn} onClick={checkResponsiveView}>
             {Mobile ? <FaTimes /> : <FaBars />}
         </button>
-
+        
       </div>
-
     </div>
   )
 }
