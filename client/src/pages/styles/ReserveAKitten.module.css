@@ -21,6 +21,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: conic-gradient(
+    rgb(64, 29, 2),
+    rgb(255, 174, 0),
+    rgb(64, 29, 2)
+  );
   background-image: url("../../images/kbengalsbgGradient.png");
   background-size: cover;
   width: 100%;
@@ -34,17 +39,31 @@
   background-color: #87633d;
   color: white;
   font-family: inika;
+  margin-top: 1rem;
   margin-bottom: 30px;
   padding: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: #4E3A24;
+  border-width: 4px;
+  border-radius: 20px;
+}
+
+.underline{
+  text-decoration: underline;
 }
 
 .applyButton {
   background-color: #D3BEA5;
+  text-align: center;
   color: black;
   font-size: 40px;
   font-weight: bold;
   font-family: inika;
-  padding: 20px 30px 30px 20px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
 }
 
 .instructionContainer {
@@ -70,18 +89,21 @@
   margin: 10px 10px 10px 10px;
   background-color: #4E3A24;
   flex: 1;
+  border-radius: 10px;
 }
 
 .paymentContainer {
   margin: 10px 10px 10px 10px;
   background-color: #4E3A24;
   flex: 1;
+  border-radius: 10px;
 }
 
 .deliveryContainer {
   margin: 10px 10px 10px 10px;
   background-color: #4E3A24;
   flex: 1;
+  border-radius: 10px;
 }
 
 .additionalInfoContainer {
@@ -90,11 +112,13 @@
   color: white;
   font-family: inika;
   padding: 10px 10px 10px 10px;
+  border-radius: 10px;
 }
 
 .additionalInfoContainer h3 {
   font-size: 40px;
   font-weight: bold;
+  padding-left: 10px;
 }
 
 .additionalInfoContainer p {

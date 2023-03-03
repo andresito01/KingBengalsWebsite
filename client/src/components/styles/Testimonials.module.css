@@ -7,9 +7,9 @@
 /* >>>>>>>>>>>>>>>>>>    Testimonials' Title   <<<<<<<<<<<<<<<<<<*/
 .testimonialTitle {
   width: 65vw;
-  margin: auto;
+  margin-left: 15%;
   color: rgba(246, 201, 139, 0.946);
-  font-size: 15vw;
+  font-size: 10vw;
   font-weight: bolder;
   font-family: "Babylonica", cursive;
   text-align: center;
@@ -22,7 +22,6 @@
   width: 100%;
   margin: auto;
   display: grid;
-  gap: 0.15vw;
 }
 
 @media screen {
@@ -33,8 +32,9 @@
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Container   <<<<<<<<<<<<<<<<<<*/
 .testimonyContainer {
-  width: 85%;
-  margin: auto;
+  width: 65%;
+  margin-left: 18%;
+  margin-top: -50px;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Image   <<<<<<<<<<<<<<<<<<*/
@@ -57,12 +57,12 @@
 .testimonyContainer h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: "Times New Roman", Times, serif;
 }
 .testimonyContainer h4 {
   text-align: left;
-  font-size: 2.5vw;
+  font-size: 1vw;
   font-weight: lighter;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

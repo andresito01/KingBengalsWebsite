@@ -36,21 +36,25 @@
   position: absolute;
   top: 0.1vw;
   text-align: center;
-  font-size: 3.25vw;
+  font-size: 2.25vw;
   color: rgb(235, 191, 137);
 }
 
 /* >>>>>>>>>>>>>>>>>>>> Mission Statement  <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .missionStatement {
-  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  width: 80%;
   position: relative;
+  margin-top: 10px;
   background-color: rgba(32, 19, 1, 0.856);
   color: rgb(255, 255, 255);
   /* bottom: 0.2vw;
   left: 0.2vw; */
   font-size: 1.1rem;
+  border-radius: 10px;
 }
 .missionStatementText {
+  font-family: 'Times New Roman', Times, serif;
   width: 90%;
   margin: auto;
 }
@@ -64,6 +68,7 @@
   border-color: rgb(243, 214, 172);
   border-width: 2vw;
   border-style: solid;
+  border-radius: 20px;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Past Litters' Title   <<<<<<<<<<<<<<<<<<*/
@@ -71,7 +76,6 @@
   width: 60vw;
   height: auto;
   margin: auto;
-
   color: rgba(247, 231, 205, 0.946);
   font-size: 7vw;
   font-weight: bolder;
