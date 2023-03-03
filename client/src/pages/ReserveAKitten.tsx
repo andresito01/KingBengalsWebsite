@@ -1,12 +1,17 @@
 import React from 'react';
-import WebNavHeader from '../components/WebNavHeader';
 import ReserveAKittenCSS from "./styles/ReserveAKitten.module.css"
+import WebNavHeader from '../components/WebNavHeader';
+
 const ReserveAKitten = () => {
 
   return (
     <div className={ReserveAKittenCSS.reserveAKittenPage}>
+//<<<<<<< ReserveAKittenPage
       <div className={ReserveAKittenCSS.backgroundLayer}>
       <WebNavHeader />
+=======
+      
+//>>>>>>> master
       <img className={ReserveAKittenCSS.img1} alt='headerImage' src={require("../images/ReserveAKittenHeader.png")} />
       
         <div className={ReserveAKittenCSS.headerContainerReserve}>

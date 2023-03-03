@@ -1,8 +1,8 @@
 import React from "react";
 import HomeCSS from "./styles/Home.module.css";
-import WebNavHeader from "../components/WebNavHeader";
 import BusinessCertificate from "../components/BusinessCertificate";
 import Testimonials from "../components/Testimonials";
+import WebNavHeader from "../components/WebNavHeader";
 
 const fontSizeMissionStatement = {fontSize: '30px'};
 const fontSizeQuote = {fontSize: '20px'};
@@ -11,9 +11,8 @@ const fontSizeQuote = {fontSize: '20px'};
 const Home = () => {
   return (
     <div className={HomeCSS.homePageContainer}>
-      {/*>>>>>>>>>>>>> Navigation Header <<<<<<<<<<<<*/}
-      <WebNavHeader />
-
+      <WebNavHeader/>
+  
       {/*>>>>>>>>>>>> Homepage Header Image <<<<<<<<<<<<*/}
       <HomepageHeader />
 
