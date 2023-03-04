@@ -22,11 +22,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10000;
   }
   
   .modalContainer {
-    width: 600px;
-    height: 600px;
+    width: 35%;
+    height: 70%;
     border-radius: 12px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
