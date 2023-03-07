@@ -21,12 +21,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: conic-gradient(
+  background-color: #a87d48f5;
+  /*background-color: #a87d48f5;
+  /*background-image: conic-gradient(
     rgb(64, 29, 2),
-    rgb(255, 174, 0),
+    rgb(226, 173, 10),
     rgb(64, 29, 2)
   );
-  background-image: url("../../images/kbengalsbgGradient.png");
+  /*background-image: url("../../images/kbengalsbgGradient.png");*/
   background-size: cover;
   width: 100%;
 }
@@ -36,18 +38,18 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #87633d;
+  background-color: #4E3A24;
   color: white;
   font-family: inika;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 30px;
   padding: 10px 10px 10px 10px;
   border-style: solid;
-  border-color: #4E3A24;
-  border-width: 4px;
-  border-radius: 20px;
+  border-color: #87633dc7;
+  border-width: 20px;
+  border-radius: 40px;
 }
 
-.underline{
-  text-decoration: underline;
+.bold{
+  text-decoration: bold;
 }
