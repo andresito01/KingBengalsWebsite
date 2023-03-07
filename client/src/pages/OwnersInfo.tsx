@@ -9,7 +9,7 @@ const OwnersInfo = () => {
   return (
     <div className = {OwnersInfoCSS.ownersInfoPage}>
       <WebNavHeader/>
-      <img className={OwnersInfoCSS.img1} alt='headerImage' src={require("../images/bengal-cat-1.jpg")}/>
+      <img className={OwnersInfoCSS.img1} alt='headerImage' src={require("../images/bencat.jpg")}/>
       <div className={OwnersInfoCSS.backgroundLayer}>
         <div className={OwnersInfoCSS.headerContainerProducts}>
           <h1 className={OwnersInfoCSS.underline}>Products we Recommend</h1>
