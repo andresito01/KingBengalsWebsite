@@ -11,7 +11,7 @@ const OwnersInfo: React.FC = () => {
   return (
     <div className = {OwnersInfoCSS.ownersInfoPage}>
       <WebNavHeader/>
-      <img className={OwnersInfoCSS.img1} alt='headerImage' src={require("../images/bencat.jpg")}/>
+      <img className={OwnersInfoCSS.img1} alt='headerImage' src={require("../images/bencat - OwnersInfo header.jpg")}/>
       <div className={OwnersInfoCSS.headerContainerOwnersInfo} style={fontSizeHeader}>
         <h1> Owner's Info </h1>
       </div>
