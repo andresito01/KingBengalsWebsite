@@ -7,6 +7,8 @@
   src: url("../../fonts/Lancelot-Regular.ttf");
 }
 
+/***************************************************************************/
+
 .ownersInfoPage {
   background-color: #a87d48f5;
 }
@@ -50,6 +52,45 @@
   border-radius: 40px;
 }
 
+.headerContainerOwnersInfo {
+  background-image: url("../../images/bencat.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-align: left;
+  color: white;
+  font-family: inika;
+  top: 150px;
+  height: 700px;
+  vertical-align: text-top;
+  padding-top: 50px;
+  padding-left: 23%;
+  padding-right: 23%;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: black;
+}
+
 .bold{
-  text-decoration: bold;
+  font: bold;
+  font-size: 3rem
+}
+
+.headerOwnersInfoImg {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: rgba(160, 119, 81, 0.94);
+}
+
+.headerOwnersInfo {
+  width: 100%;
+  position: absolute;
+  bottom: 8.5rem;
+  margin-left: 1.5rem;
+  text-align: left;
+  font-family: inika;
+  font-size: 3vw;
+  color:#4E3A24;
 }
