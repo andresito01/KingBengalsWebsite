@@ -1,0 +1,58 @@
+.container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.item {
+  display: flex;
+  max-height: auto;
+  width: 100%;
+  border-width: 0.5rem;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: #412804;
+}
+
+.itemImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#catteryImgs .item {
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 0px;
+  opacity: 0.2;
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+#catteryImgs .owl-item.active.center .item {
+  opacity: 1;
+  transform: scale3d(1.0, 1.0, 1);
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #56423D;
+  transform: translate3d(0px, -50%, 0px) scale(0.8);
+}
+.owl-carousel .owl-dots {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.owl-carousel .owl-dots .owl-dot{ 
+  display: inline-block;
+}
+.owl-carousel .owl-dots .owl-dot span{ 
+  /* background: #eaa400; */
+  background: #56423D;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+}

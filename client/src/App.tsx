@@ -23,7 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/breedinfo" element={<BreedInfo />} />
-        <Route path="/breedinfo" element={<OwnerGuide />} />
+        <Route path="/ownersguide" element={<OwnerGuide />} />
       </Routes>
     </div>
   );

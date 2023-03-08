@@ -2,6 +2,7 @@ import React from "react";
 import HomeCSS from "./styles/Home.module.css";
 import BusinessCertificate from "../components/BusinessCertificate";
 import Testimonials from "../components/Testimonials";
+import ImageCarousel from "../components/ImageCarousel";
 import WebNavHeader from "../components/WebNavHeader";
 
 const fontSizeMissionStatement = {fontSize: '30px'};
@@ -20,6 +21,9 @@ const Home = () => {
 
       {/*>>>>>>>>>>>> Owners Picture and her Cat <<<<<<<<<<<<*/}
       <OwnerPicture />
+
+       {/*>>>>>>>>>>>> Scrollable Picture Component <<<<<<<<<<<<*/}
+       <ImageCarousel />
 
       {/*>>>>>>>>>>>> Past Litters <<<<<<<<<<<<*/}
       <PastLittersTitle />
