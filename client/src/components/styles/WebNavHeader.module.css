@@ -55,16 +55,16 @@
 
 .headerKingBengals {
   font-family: lancelot;
-  font-size: 4rem;
+  font-size: 6rem;
   color: white;
   margin-bottom: 2rem;
 }
 
 .headerCattery {
   font-family: lancelot;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
-  margin-left: 8px;
+  margin-left: 9px;
   margin-bottom: 2rem;
 }
 
@@ -84,13 +84,13 @@
 .navLinks{
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 1.6rem;
   margin-bottom: 1rem;
 }
 
 .link {
   font-family: inika;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: white;
 }
 
