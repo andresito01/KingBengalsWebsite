@@ -7,9 +7,9 @@
   src: url("../../fonts/Lancelot-Regular.ttf");
 }
 
-/***************************************************************************/
+/***************************** Owner's Info header ********************************/
 
-.ownersInfoPage {
+/*.ownersInfoPage {
   background-color: #a87d48f5;
 }
 
@@ -17,7 +17,7 @@
   background-color: #a87d48f5;
   margin-bottom: 20px;
   width: 100%;
-}
+}*/
 
 .backgroundLayer {
   display: flex;
@@ -35,24 +35,7 @@
   width: 100%;
 }
 
-.headerContainerProducts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: #4E3A24;
-  color: white;
-  font-family: inika;
-  margin-top: 1rem;
-  margin-bottom: 30px;
-  padding: 10px 10px 10px 10px;
-  border-style: solid;
-  border-color: #87633dc7;
-  border-width: 20px;
-  border-radius: 40px;
-}
-
-.headerContainerOwnersInfo {
+/*.headerContainerOwnersInfo {
   background-image: url("../../images/bencat.jpg");
   background-size: cover;
   background-position: center center;
@@ -70,12 +53,7 @@
   border-left: 0;
   border-right: 0;
   border-color: black;
-}
-
-.bold{
-  font: bold;
-  font-size: 3rem
-}
+}*/
 
 .headerOwnersInfoImg {
   width: 100%;
@@ -93,4 +71,80 @@
   font-family: inika;
   font-size: 3vw;
   color:#4E3A24;
+}
+
+/***************************** Products we Recommend ********************************/
+
+.containerProductsRecom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(78, 58, 36, 0.85); /*#4E3A24;*/
+  color: white;
+  font-family: inika;
+  margin-top: 1rem;
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: rgba(160, 119, 81, 0.94);
+  border-width: 20px;
+  border-radius: 40px;
+}
+
+.bold{
+  font: bold;
+  font-size: 3rem
+}
+
+
+/*.fixedOwnInfoHeaderImg {
+  background-image: url("../images/bencat - OwnersInfo header image.jpg");
+  position: fixed;
+}*/
+
+/*.productsRecommend {
+  font-family: 'Times New Roman', Times, serif;
+  width: 80%;
+  position: relative;
+  margin-top: 10px;
+  background-color: rgba(32, 19, 1, 0.856);
+  color: rgb(255, 255, 255);
+  /* bottom: 0.2vw;
+  left: 0.2vw; /
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.productsRecommendText {
+  font-family: 'Times New Roman', Times, serif;
+  width: 90%;
+  margin: auto;
+}*/
+
+/****************************** Kitten Development *************************************/
+
+.containerKittenDev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #4E3A24;
+  color: white;
+  font-family: inika;
+  margin-top: 1rem;
+  margin-bottom: 30px;
+  padding: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: #ebceb2;
+  border-width: 20px;
+  border-radius: 40px;
+}
+
+.imgKittenDev {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  position: right;
+  background-color: rgba(160, 119, 81, 0.94);
 }

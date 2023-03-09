@@ -8,7 +8,9 @@
 }
 
 .headerContainer {
-  position: relative;
+  position: sticky; /*absolute;/*fixed; /*relative;*/
+  position: -webkit-sticky; /* For Safari */
+  top: 0;
   width: 100%;
   height: auto;
   background-color: #412804;
@@ -116,7 +118,7 @@
 
 	.navBtn{
     display: block;
-		position: absolute;
+		position: sticky; /*absolute;*/
     right: 0;
     top: 0;
     margin-top: 3%;
@@ -192,7 +194,7 @@
 
 
   .leftHeaderImgResponsive {
-    position: absolute;
+    position: sticky; /*absolute;*/
     top: 0px;
     left: 0px;
     height: 90px;

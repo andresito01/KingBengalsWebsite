@@ -12,6 +12,7 @@ import WebNavHeader from "../components/WebNavHeader";
 const OwnersInfo = () => {
   return (
     <div className = {OwnersInfoCSS.backgroundLayer}>
+
       <WebNavHeader/>
 
       {/*<img className={OwnersInfoCSS.img1} alt='headerImage' src={require("../images/bencat - OwnersInfo header image.jpg")}/>
@@ -22,13 +23,17 @@ const OwnersInfo = () => {
       <OwnersInfoPageHeader/>
 
       <div className={OwnersInfoCSS.backgroundLayer}> 
-        <div className={OwnersInfoCSS.headerContainerProducts}>
+        {/*<div className={OwnersInfoCSS.headerContainerProducts}>
           <h1 className={OwnersInfoCSS.bold}> Products We Recommend </h1>
           <h3>___________________________________________________________________________________________________________________</h3>
           <h3> Below is a list of/link to products we recommend for your kitten. From toys, treats, catteries?, bedding, and training accessories? </h3>
-          {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3>*/}
+          {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> }
           <h2> o==o  Link/List  o==o </h2>
-        </div>
+        </div>*/}
+
+        <ProductsRecommend/>
+
+        <KittenDevelopment/>
 
       </div>
     </div>
@@ -40,6 +45,8 @@ const OwnersInfoPageHeader = () => {
   return (
     <div className={OwnersInfoCSS.headerOwnersInfoImg}>
       <img alt="headerImage" src={require("../images/bencat - OwnersInfo header image.jpg")} />
+      {/*<div className={OwnersInfoCSS.fixedOwnInfoHeaderImg}> 
+      </div>*/}
         
       <div className={OwnersInfoCSS.headerOwnersInfo}>
         <h1> Owner's Info </h1>
@@ -48,5 +55,44 @@ const OwnersInfoPageHeader = () => {
     </div>
   )
 }
-  
+
+const ProductsRecommend = () => {
+
+  return (
+    <div className={OwnersInfoCSS.containerProductsRecom}>
+      <h1 className={OwnersInfoCSS.bold}> Products We Recommend </h1>
+      <h3>___________________________________________________________________________________________________________________</h3>
+      <h3> Below is a list of/link to products we recommend for your kitten. From toys, treats, catteries?, bedding, and training accessories? </h3>
+      {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> */}
+      <h2> o==o  Link/List  o==o </h2>
+    </div>
+
+    /*<div className={OwnersInfoCSS.procuctsRecommend}>
+        <h1 className={OwnersInfoCSS.bold}> Products We Recommend </h1>
+          <h3>___________________________________________________________________________________________________________________</h3>
+          <h3> Below is a list of/link to products we recommend for your kitten. From toys, treats, catteries?, bedding, and training accessories? </h3>
+          {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> }
+          <h2> o==o  Link/List  o==o </h2>*/
+    /*</div>*/
+  );
+
+}
+
+
+const KittenDevelopment = () => {
+  return (
+    <div className={OwnersInfoCSS.containerProductsRecom}>
+      <h1 className={OwnersInfoCSS.bold}> Kitten Development Stages </h1>
+      <h3>___________________________________________________________________________________________________________________</h3>
+      <h3> Here you can see the entire process your kitten will take from birth to the day it goes home. </h3>
+      <h2> Link / Lay out the process</h2>
+    <div className={OwnersInfoCSS.imgKittenDev}>
+      <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")}/>
+    </div>
+  </div>
+  );
+
+}
+
+
 export default OwnersInfo;
