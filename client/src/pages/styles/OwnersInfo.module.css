@@ -84,10 +84,10 @@
   color: white;
   font-family: inika;
   margin-top: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding: 10px 10px 10px 10px;
   border-style: solid;
-  border-color: rgba(160, 119, 81, 0.94);
+  border-color: rgba(255, 230, 207, 0.94);
   border-width: 20px;
   border-radius: 40px;
 }
@@ -133,18 +133,72 @@
   color: white;
   font-family: inika;
   margin-top: 1rem;
-  margin-bottom: 30px;
-  padding: 10px 10px 10px 10px;
+  margin-bottom: 60px;
+  padding: 20px 40px 20px 40px;
   border-style: solid;
-  border-color: #ebceb2;
-  border-width: 20px;
+  border-color: #ffe3c8;
+  border-width: 20px 50px 20px 50px;
   border-radius: 40px;
 }
 
 .imgKittenDev {
-  border-radius: 8px;
-  width: 100%;
-  height: auto;
-  position: right;
-  background-color: rgba(160, 119, 81, 0.94);
+  /*background-image: url("../images/cute bengal kitten.jpg");*/
+  /*border-radius: 50%;*/
+  width: 450px;
+  height: 400px;
+  right: 1rem
+  /*object-fit: cover;*/
+  /*background-color: rgba(160, 119, 81, 0.94);*/
 }
+
+.txtKittenDev {
+  text-align: right;
+}
+
+/************************** Prepare For Kitten *****************************************/
+
+.containerPrepareForKitten {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  /*right: 1rem;*/
+  background-color:#4E3A24;
+  color: white;
+  font-family: inika;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 60px;
+}
+
+.containerPrepare {
+  margin: 10px 10px 10px 10px;
+  background-color:  #4E3A24;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.containerPrepare2 {
+  margin: 10px 10px 10px 10px;
+  background-color:  #ffe3c8;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #4E3A24;
+  border-width: 20px 0px 20px 20px;
+}
+
+/****************************** Medical Info / Vet Stuff ***************************************************/
+
+
+/****************************** Training ***************************************************/
+
+
+/****************************** Pet Insurance ***************************************************/
+
+
+/****************************** Social Media ***************************************************/
