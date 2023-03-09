@@ -84,7 +84,7 @@
   color: white;
   font-family: inika;
   margin-top: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding: 10px 10px 10px 10px;
   border-style: solid;
   border-color: rgba(255, 230, 207, 0.94);
@@ -133,7 +133,7 @@
   color: white;
   font-family: inika;
   margin-top: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding: 20px 40px 20px 40px;
   border-style: solid;
   border-color: #ffe3c8;
@@ -163,7 +163,7 @@
   justify-content: center;
   text-align: center;
   /*right: 1rem;*/
-  background-color:#ffe3c8;
+  background-color:#4E3A24;
   color: white;
   font-family: inika;
   margin-top: 1rem;
@@ -178,3 +178,27 @@
   flex: 1;
   border-radius: 10px;
 }
+
+.containerPrepare2 {
+  margin: 10px 10px 10px 10px;
+  background-color:  #ffe3c8;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #4E3A24;
+  border-width: 20px 0px 20px 20px;
+}
+
+/****************************** Medical Info / Vet Stuff ***************************************************/
+
+
+/****************************** Training ***************************************************/
+
+
+/****************************** Pet Insurance ***************************************************/
+
+
+/****************************** Social Media ***************************************************/
