@@ -84,11 +84,13 @@ const KittenDevelopment = () => {
     <div className={OwnersInfoCSS.containerProductsRecom}>
       <h1 className={OwnersInfoCSS.bold}> Kitten Development Stages </h1>
       <h3>___________________________________________________________________________________________________________________</h3>
-      <h3> Here you can see the entire process your kitten will take from birth to the day it goes home. </h3>
+      <div className={OwnersInfoCSS.imgKittenDev}>
+      <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
+      </div>
+      {/*<div className={OwnersInfoCSS.txtKittenDev}>*/}
+      <h3>  Here you can see the entire process your kitten will take from birth to the day it goes home. </h3>
       <h2> Link / Lay out the process</h2>
-    <div className={OwnersInfoCSS.imgKittenDev}>
-      <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")}/>
-    </div>
+      {/*</div>*/}
   </div>
   );
 

@@ -87,7 +87,7 @@
   margin-bottom: 30px;
   padding: 10px 10px 10px 10px;
   border-style: solid;
-  border-color: rgba(160, 119, 81, 0.94);
+  border-color: rgba(255, 230, 207, 0.94);
   border-width: 20px;
   border-radius: 40px;
 }
@@ -134,17 +134,23 @@
   font-family: inika;
   margin-top: 1rem;
   margin-bottom: 30px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 40px 20px 40px;
   border-style: solid;
-  border-color: #ebceb2;
-  border-width: 20px;
+  border-color: #ffe3c8;
+  border-width: 20px 50px 20px 50px;
   border-radius: 40px;
 }
 
 .imgKittenDev {
-  border-radius: 8px;
-  width: 100%;
-  height: auto;
-  position: right;
-  background-color: rgba(160, 119, 81, 0.94);
+  /*background-image: url("../images/cute bengal kitten.jpg");*/
+  /*border-radius: 50%;*/
+  width: 450px;
+  height: 400px;
+  right: 1rem
+  /*object-fit: cover;*/
+  /*background-color: rgba(160, 119, 81, 0.94);*/
+}
+
+.textKittenDev {
+  text-align: right;
 }
