@@ -35,6 +35,8 @@ const OwnersInfo = () => {
 
         <KittenDevelopment/>
 
+        <PrepareForKitten/>
+
       </div>
     </div>
   )
@@ -61,10 +63,10 @@ const ProductsRecommend = () => {
   return (
     <div className={OwnersInfoCSS.containerProductsRecom}>
       <h1 className={OwnersInfoCSS.bold}> Products We Recommend </h1>
-      <h3>___________________________________________________________________________________________________________________</h3>
-      <h3> Below is a list of/link to products we recommend for your kitten. From toys, treats, catteries?, bedding, and training accessories? </h3>
+      <h3>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h3>
+      <h3> Below is a list of/link to products we recommend for your kitten. <br/> Toys and Treats <br/>Catteries? and crates <br/> Bedding and grooming products<br/> Training accessories? </h3>
       {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> */}
-      <h2> o==o  Link/List  o==o </h2>
+      <h2> A Link or List </h2>
     </div>
 
     /*<div className={OwnersInfoCSS.procuctsRecommend}>
@@ -94,6 +96,23 @@ const KittenDevelopment = () => {
   </div>
   );
 
+}
+
+const PrepareForKitten = () => {
+  return (
+  <div className={OwnersInfoCSS.containerPrepareForKitten}>
+    <div className={OwnersInfoCSS.containerPrepare}>
+      <h1 className={OwnersInfoCSS.bold}> Preparing For Your Kitten </h1>
+      <h3> ___________________________________</h3>
+      <h3> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
+            Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h3>
+      <h2> Video for preparing (link)</h2>
+    </div>
+    <div className={OwnersInfoCSS.containerPrepare}>
+      <h1 className={OwnersInfoCSS.bold}> Pic of a Kitten </h1>
+    </div>
+  </div>
+  );
 }
 
 
