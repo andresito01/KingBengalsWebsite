@@ -22,13 +22,15 @@ const OwnersInfo = () => {
       <OwnersInfoPageHeader/>
 
       <div className={OwnersInfoCSS.backgroundLayer}> 
-        <div className={OwnersInfoCSS.headerContainerProducts}>
+        {/*<div className={OwnersInfoCSS.headerContainerProducts}>
           <h1 className={OwnersInfoCSS.bold}> Products We Recommend </h1>
           <h3>___________________________________________________________________________________________________________________</h3>
           <h3> Below is a list of/link to products we recommend for your kitten. From toys, treats, catteries?, bedding, and training accessories? </h3>
-          {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3>*/}
+          {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> }
           <h2> o==o  Link/List  o==o </h2>
-        </div>
+        </div>*/}
+
+        <ProductsRecommend/>
 
       </div>
     </div>
@@ -50,5 +52,26 @@ const OwnersInfoPageHeader = () => {
     </div>
   )
 }
+
+const ProductsRecommend = () => {
   
+  return (
+    <div className={OwnersInfoCSS.headerContainerProducts}>
+      <h1 className={OwnersInfoCSS.bold}> Products We Recommend </h1>
+      <h3>___________________________________________________________________________________________________________________</h3>
+      <h3> Below is a list of/link to products we recommend for your kitten. From toys, treats, catteries?, bedding, and training accessories? </h3>
+      {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> */}
+      <h2> o==o  Link/List  o==o </h2>
+    </div>
+
+    /*<div className={OwnersInfoCSS.procuctsRecommend}>
+        <h1 className={OwnersInfoCSS.bold}> Products We Recommend </h1>
+          <h3>___________________________________________________________________________________________________________________</h3>
+          <h3> Below is a list of/link to products we recommend for your kitten. From toys, treats, catteries?, bedding, and training accessories? </h3>
+          {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> }
+          <h2> o==o  Link/List  o==o </h2>*/
+    /*</div>*/
+  );
+};
+
 export default OwnersInfo;
