@@ -71,7 +71,7 @@ const KittenDevelopment = () => {
       </div>
       {/*<div className={OwnersInfoCSS.txtKittenDev}>*/}
       <h3>  Here you can see the entire process your kitten will take from birth to the day it goes home. </h3>
-      <h2> Link / Lay out the process</h2>
+      <h2> Link / Lay out the process on weekly or biweekly, AND monthly basis</h2>
       {/*</div>*/}
   </div>
   );
