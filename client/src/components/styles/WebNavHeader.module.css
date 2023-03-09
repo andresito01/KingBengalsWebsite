@@ -8,7 +8,7 @@
 }
 
 .headerContainer {
-  position: relative;
+  position: fixed; /*relative;*/
   width: 100%;
   height: auto;
   background-color: #412804;
