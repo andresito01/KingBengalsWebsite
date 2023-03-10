@@ -124,7 +124,7 @@
 
 /****************************** Kitten Development *************************************/
 
-.containerKittenDev {
+/*.containerKittenDev {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,7 +139,7 @@
   border-color: #ffe3c8;
   border-width: 20px 50px 20px 50px;
   border-radius: 40px;
-}
+}*/
 
 .imgKittenDev {
   /*background-image: url("../images/cute bengal kitten.jpg");*/
@@ -159,7 +159,7 @@
 
 /************************** Prepare For Kitten *****************************************/
 
-.containerPrepareForKitten {
+.containerRowBox {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -174,14 +174,14 @@
   margin-bottom: 60px;
 }
 
-.containerPrepare {
+.containerRow1 {
   margin: 10px 10px 10px 10px;
   background-color:  #4E3A24;
   flex: 1;
   border-radius: 10px;
 }
 
-.containerPrepare2 {
+.containerRow2 {
   margin: 10px 10px 10px 10px;
   background-color:  #ffe3c8;
   flex: 1;
@@ -196,7 +196,13 @@
 
 /****************************** Medical Info / Vet Stuff ***************************************************/
 
-
+.imgVetInfo {
+  /*width: 1000;
+  height: 500;*/
+  justify-content: center;
+  /*top: 1rem;
+  right: 1rem*/
+}
 
 /****************************** Training ***************************************************/
 

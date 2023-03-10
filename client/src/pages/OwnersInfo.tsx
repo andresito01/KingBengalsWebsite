@@ -66,22 +66,22 @@ const KittenDevelopment = () => {
     <div className={OwnersInfoCSS.containerBox}>
       <h1 className={OwnersInfoCSS.bold}> Kitten Development Stages </h1>
       <h3>___________________________________________________________________________________________________________________</h3>
-      <div className={OwnersInfoCSS.containerPrepareForKitten}>
-        <div className={OwnersInfoCSS.containerPrepare2}>
+      <div className={OwnersInfoCSS.containerRowBox}>
+        <div className={OwnersInfoCSS.containerRow2}>
          <h1 className={OwnersInfoCSS.bold}> Age: 1 - 2 weeks </h1>
          <h3> ___________________________________</h3>
          <div className={OwnersInfoCSS.imgKittenDev}>
           <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
          </div>
         </div>
-        <div className={OwnersInfoCSS.containerPrepare2}>
+        <div className={OwnersInfoCSS.containerRow2}>
           <h1 className={OwnersInfoCSS.bold}> Age: 2 - 4 weeks </h1>
           <h3> ___________________________________</h3>
           <div className={OwnersInfoCSS.imgKittenDev}>
             <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
           </div>
         </div>
-        <div className={OwnersInfoCSS.containerPrepare2}>
+        <div className={OwnersInfoCSS.containerRow2}>
           <h1 className={OwnersInfoCSS.bold}> Age: 2 Months </h1>
           <h3> ___________________________________</h3>
           <div className={OwnersInfoCSS.imgKittenDev}>
@@ -103,15 +103,15 @@ const KittenDevelopment = () => {
 
 const PrepareForKitten = () => {
   return (
-  <div className={OwnersInfoCSS.containerPrepareForKitten}>
-    <div className={OwnersInfoCSS.containerPrepare2}>
+  <div className={OwnersInfoCSS.containerRowBox}>
+    <div className={OwnersInfoCSS.containerRow2}>
       <h1 className={OwnersInfoCSS.bold}> Preparing For Your Kitten </h1>
       <h3> ___________________________________</h3>
       <h3> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
             Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h3>
       <h2> Video for preparing (link)</h2>
     </div>
-    <div className={OwnersInfoCSS.containerPrepare}>
+    <div className={OwnersInfoCSS.containerRow1}>
       <h1 className={OwnersInfoCSS.bold}> Pic of a Kitten </h1>
     </div>
   </div>
@@ -124,11 +124,13 @@ const VetInfo = () => {
     <div className={OwnersInfoCSS.containerBox}>
       <h1 className={OwnersInfoCSS.bold}> Medical Information and Vet Things </h1>
       <h2>_________________________</h2>
-      <h2> Vaccinations and Deworming (probably it’s own section)<br/> Spaying and Neutering, OR <br/>Hysterectomy (for girls) or a Vasectomy (for boys) 
-          <br/> At what age should it be performed? Benefits? Drawbacks? <br/> 
+      <h2> Vaccinations and Deworming (probably it’s own section) <br/> Shots: Parvo, Distemper, Flu, etc.<br/> <br/> Spaying and Neutering, OR <br/>Hysterectomy (for girls) or a Vasectomy (for boys) 
+          <br/> At what age should it be performed? Benefits? Drawbacks? <br/> <br/>
           Any health concerns with the breed or kittens in general that new owners need to be aware of or be on the lookout for. </h2>
       <h2> _________________________</h2>
-      <div className={OwnersInfoCSS.imgKittenDev}> </div>
+      <div className={OwnersInfoCSS.imgCenter}>
+      <img alt="headerImage" src={require("../images/bengal-cat.jpg")} width = "1000" height = "500"/>
+      </div>
     </div>
   );
 
