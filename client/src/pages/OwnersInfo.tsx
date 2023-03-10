@@ -191,7 +191,7 @@ const SocialMedia = () => {
         <h3>________________________________</h3>
         <h1 className = {OwnersInfoCSS.textLeftBold}> Follow Us On </h1> <br/>
         <div className = {OwnersInfoCSS.imgInsta}>
-        <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "90" height = "85" />
+        <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "85" height = "75" />
         </div>
       </div> 
     </div>
