@@ -3,11 +3,7 @@ import React from 'react';
 import OwnersInfoCSS from "./styles/OwnersInfo.module.css";
 import WebNavHeader from "../components/WebNavHeader";
 
-/*******************************Owner's Info***************************** Note: A link on line 15 for pro-recomm*/
-/**/
-
-/*const OwnersInfo: React.FC = () => {
-  const fontSizeHeader = {fontSize: "50px"}*/
+/******************************* Owner's Info ***************************** Note: A link for pro-recomm*/
 
 const OwnersInfo = () => {
   return (
@@ -16,8 +12,6 @@ const OwnersInfo = () => {
       <WebNavHeader/>
 
       <OwnersInfoPageHeader/>
-
-     {/*<div className={OwnersInfoCSS.backgroundLayer}> */}
 
       <ProductsRecommend/>
 
@@ -29,11 +23,13 @@ const OwnersInfo = () => {
 
       <KittenTraining/>
 
+      <PetInsurance/>
+
     </div>
   )
 }
 
-/**************************************** Owner's Info Header section ******************************************************** */
+/**************************************** Owner's Info Header section *********************************************************/
 const OwnersInfoPageHeader = () => {
 
   return (
@@ -50,7 +46,7 @@ const OwnersInfoPageHeader = () => {
   )
 }
 
-/**************************************** Products we Recommend ******************************************************** */
+/**************************************** Products we Recommend *********************************************************/
 const ProductsRecommend = () => {
 
   return (
@@ -65,7 +61,7 @@ const ProductsRecommend = () => {
 
 }
 
-/**************************************** Kitten Development Stages ******************************************************** */
+/**************************************** Kitten Development Stages *********************************************************/
 const KittenDevelopment = () => {
   return (
     <div className={OwnersInfoCSS.containerBox}>
@@ -109,7 +105,7 @@ const KittenDevelopment = () => {
 
 }
 
-/**************************************** Preparing For Your Kitten ******************************************************** */
+/**************************************** Preparing For Your Kitten *********************************************************/
 const PrepareForKitten = () => {
   return (
   <div className={OwnersInfoCSS.containerRowBox}>
@@ -127,7 +123,7 @@ const PrepareForKitten = () => {
   );
 }
 
-/**************************************** Medical Information & Vet Things ******************************************************** */
+/**************************************** Medical Information & Vet Things *********************************************************/
 const VetInfo = () => {
 
   return (
@@ -146,7 +142,7 @@ const VetInfo = () => {
 
 }
 
-/**************************************** Training Your Kitten ******************************************************** */
+/**************************************** Training Your Kitten *********************************************************/
 const KittenTraining = () => {
   return (
   <div className={OwnersInfoCSS.containerRowBox}>
@@ -167,4 +163,33 @@ const KittenTraining = () => {
   </div>
   );
 }
+ 
+/**************************************** Pet Insurance *********************************************************/
+const PetInsurance = () => {
+
+  return (
+    <div className={OwnersInfoCSS.containerRowBox2}>
+      <div className={OwnersInfoCSS.containerRow1}>
+        <h1 className={OwnersInfoCSS.bold}> ~~~~~~~~~~~~~ Pet Insurance ~~~~~~~~~~~~~ </h1>
+        {/*<h3>_________________________________________________________________________________________</h3>*/}
+        <h3> Benefits of pet insurance and, <br/> 
+             Recommendations for different insurance companies.<br/> 
+             Trupanion? ASPCA? etc.</h3>
+      </div>
+    </div>
+  );
+}
+
+/**************************************** Social Media *********************************************************/
+/*const SocialMedia = () => {
+
+  return (
+    <div> 
+      <h1 className = {OwnersInfoCSS.bold}> Follow Us On</h1>
+      <img alt="headerImage" src={require("../images/realistic-social-media-logotype-collection.jpg")} width = "700" height = "450"/>
+    </div>
+  )
+}*/
+
+
 export default OwnersInfo;

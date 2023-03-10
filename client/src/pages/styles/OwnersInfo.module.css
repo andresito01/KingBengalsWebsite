@@ -196,18 +196,27 @@
 
 /****************************** Medical Info / Vet Stuff ***************************************************/
 
-.imgVetInfo {
-  /*width: 1000;
-  height: 500;*/
+.imgCenter {
   justify-content: center;
-  /*top: 1rem;
-  right: 1rem*/
 }
 
 /****************************** Training ***************************************************/
 
 
 /****************************** Pet Insurance ***************************************************/
-
+.containerRowBox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  /*right: 1rem;*/
+  background-color: #ffe3c8;
+  color: white;
+  font-family: inika;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 60px;
+}
 
 /****************************** Social Media ***************************************************/
