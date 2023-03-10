@@ -25,6 +25,8 @@ const OwnersInfo = () => {
 
       <PetInsurance/>
 
+      <SocialMedia/>
+
     </div>
   )
 }
@@ -181,15 +183,20 @@ const PetInsurance = () => {
 }
 
 /**************************************** Social Media *********************************************************/
-/*const SocialMedia = () => {
+const SocialMedia = () => {
 
   return (
-    <div> 
-      <h1 className = {OwnersInfoCSS.bold}> Follow Us On</h1>
-      <img alt="headerImage" src={require("../images/realistic-social-media-logotype-collection.jpg")} width = "700" height = "450"/>
+    <div className={OwnersInfoCSS.containerBottom}>
+      <div className={OwnersInfoCSS.containerRow1}>
+        <h3>________________________________</h3>
+        <h1 className = {OwnersInfoCSS.textLeftBold}> Follow Us On </h1> <br/>
+        <div className = {OwnersInfoCSS.imgInsta}>
+        <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "90" height = "85" />
+        </div>
+      </div> 
     </div>
   )
-}*/
+}
 
 
 export default OwnersInfo;
