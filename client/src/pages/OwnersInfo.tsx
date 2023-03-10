@@ -27,10 +27,13 @@ const OwnersInfo = () => {
 
       <VetInfo/>
 
+      <KittenTraining/>
+
     </div>
   )
 }
 
+/**************************************** Owner's Info Header section ******************************************************** */
 const OwnersInfoPageHeader = () => {
 
   return (
@@ -47,6 +50,7 @@ const OwnersInfoPageHeader = () => {
   )
 }
 
+/**************************************** Products we Recommend ******************************************************** */
 const ProductsRecommend = () => {
 
   return (
@@ -61,6 +65,7 @@ const ProductsRecommend = () => {
 
 }
 
+/**************************************** Kitten Development Stages ******************************************************** */
 const KittenDevelopment = () => {
   return (
     <div className={OwnersInfoCSS.containerBox}>
@@ -73,6 +78,7 @@ const KittenDevelopment = () => {
          <div className={OwnersInfoCSS.imgKittenDev}>
           <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
          </div>
+         <h3> Text </h3>
         </div>
         <div className={OwnersInfoCSS.containerRow2}>
           <h1 className={OwnersInfoCSS.bold}> Age: 2 - 4 weeks </h1>
@@ -80,6 +86,7 @@ const KittenDevelopment = () => {
           <div className={OwnersInfoCSS.imgKittenDev}>
             <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
           </div>
+          <h3> Text </h3>
         </div>
         <div className={OwnersInfoCSS.containerRow2}>
           <h1 className={OwnersInfoCSS.bold}> Age: 2 Months </h1>
@@ -87,6 +94,7 @@ const KittenDevelopment = () => {
           <div className={OwnersInfoCSS.imgKittenDev}>
             <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
           </div>
+          <h3> Text </h3>
         </div>
       </div>
       {/*<div className={OwnersInfoCSS.imgKittenDev}>
@@ -101,6 +109,7 @@ const KittenDevelopment = () => {
 
 }
 
+/**************************************** Preparing For Your Kitten ******************************************************** */
 const PrepareForKitten = () => {
   return (
   <div className={OwnersInfoCSS.containerRowBox}>
@@ -118,6 +127,7 @@ const PrepareForKitten = () => {
   );
 }
 
+/**************************************** Medical Information & Vet Things ******************************************************** */
 const VetInfo = () => {
 
   return (
@@ -136,4 +146,25 @@ const VetInfo = () => {
 
 }
 
+/**************************************** Training Your Kitten ******************************************************** */
+const KittenTraining = () => {
+  return (
+  <div className={OwnersInfoCSS.containerRowBox}>
+    <div className={OwnersInfoCSS.containerRow1}>
+      <h2 className={OwnersInfoCSS.bold}> Pic of a kitten in training </h2>
+      <img alt="headerImage" src={require("../images/How-Do-I-Exercise-a-Bengal-Cat.jpg")} width = "700" height = "450"/>
+    </div>
+    <div className={OwnersInfoCSS.containerRow2}>
+      <h1 className={OwnersInfoCSS.bold}> Training </h1>
+      <h2> ___________________________________</h2>
+      <h3> How to train a kitten? <br/>
+           Training courses? <br/>
+           Training resources? <br/>
+           Any offers with training? <br/>
+           Benefits of training you kitten. </h3>
+
+    </div>
+  </div>
+  );
+}
 export default OwnersInfo;
