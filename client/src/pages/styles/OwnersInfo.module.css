@@ -75,7 +75,7 @@
 
 /***************************** Products we Recommend ********************************/
 
-.containerProductsRecom {
+.containerBox { /*ProductsRecom {*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,6 +146,7 @@
   /*border-radius: 50%;*/
   width: 450px;
   height: 400px;
+  top: 1rem;
   right: 1rem
   /*object-fit: cover;*/
   /*background-color: rgba(160, 119, 81, 0.94);*/
@@ -153,6 +154,7 @@
 
 .txtKittenDev {
   text-align: right;
+  right: 1rem;
 }
 
 /************************** Prepare For Kitten *****************************************/
@@ -193,6 +195,7 @@
 }
 
 /****************************** Medical Info / Vet Stuff ***************************************************/
+
 
 
 /****************************** Training ***************************************************/

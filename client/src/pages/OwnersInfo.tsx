@@ -25,7 +25,7 @@ const OwnersInfo = () => {
 
       <PrepareForKitten/>
 
-
+      <VetInfo/>
 
     </div>
   )
@@ -50,7 +50,7 @@ const OwnersInfoPageHeader = () => {
 const ProductsRecommend = () => {
 
   return (
-    <div className={OwnersInfoCSS.containerProductsRecom}>
+    <div className={OwnersInfoCSS.containerBox}> {/*ProductsRecom}>*/}
       <h1 className={OwnersInfoCSS.bold}> Products We Recommend </h1>
       <h3>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h3>
       <h3> Below is a list of/link to products we recommend for your kitten. <br/> Toys and Treats <br/>Catteries? and crates <br/> Bedding and grooming products<br/> Training accessories? </h3>
@@ -63,12 +63,35 @@ const ProductsRecommend = () => {
 
 const KittenDevelopment = () => {
   return (
-    <div className={OwnersInfoCSS.containerProductsRecom}>
+    <div className={OwnersInfoCSS.containerBox}>
       <h1 className={OwnersInfoCSS.bold}> Kitten Development Stages </h1>
       <h3>___________________________________________________________________________________________________________________</h3>
-      <div className={OwnersInfoCSS.imgKittenDev}>
-      <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
+      <div className={OwnersInfoCSS.containerPrepareForKitten}>
+        <div className={OwnersInfoCSS.containerPrepare2}>
+         <h1 className={OwnersInfoCSS.bold}> Age: 1 - 2 weeks </h1>
+         <h3> ___________________________________</h3>
+         <div className={OwnersInfoCSS.imgKittenDev}>
+          <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
+         </div>
+        </div>
+        <div className={OwnersInfoCSS.containerPrepare2}>
+          <h1 className={OwnersInfoCSS.bold}> Age: 2 - 4 weeks </h1>
+          <h3> ___________________________________</h3>
+          <div className={OwnersInfoCSS.imgKittenDev}>
+            <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
+          </div>
+        </div>
+        <div className={OwnersInfoCSS.containerPrepare2}>
+          <h1 className={OwnersInfoCSS.bold}> Age: 2 Months </h1>
+          <h3> ___________________________________</h3>
+          <div className={OwnersInfoCSS.imgKittenDev}>
+            <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
+          </div>
+        </div>
       </div>
+      {/*<div className={OwnersInfoCSS.imgKittenDev}>
+      <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} width = "350" height = "400"/>
+  </div>*/}
       {/*<div className={OwnersInfoCSS.txtKittenDev}>*/}
       <h3>  Here you can see the entire process your kitten will take from birth to the day it goes home. </h3>
       <h2> Link / Lay out the process on weekly or biweekly, AND monthly basis</h2>
@@ -95,5 +118,20 @@ const PrepareForKitten = () => {
   );
 }
 
+const VetInfo = () => {
+
+  return (
+    <div className={OwnersInfoCSS.containerBox}>
+      <h1 className={OwnersInfoCSS.bold}> Medical Information and Vet Things </h1>
+      <h2>_________________________</h2>
+      <h2> Vaccinations and Deworming (probably it’s own section)<br/> Spaying and Neutering, OR <br/>Hysterectomy (for girls) or a Vasectomy (for boys) 
+          <br/> At what age should it be performed? Benefits? Drawbacks? <br/> 
+          Any health concerns with the breed or kittens in general that new owners need to be aware of or be on the lookout for. </h2>
+      <h2> _________________________</h2>
+      <div className={OwnersInfoCSS.imgKittenDev}> </div>
+    </div>
+  );
+
+}
 
 export default OwnersInfo;
