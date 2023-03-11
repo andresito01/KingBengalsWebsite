@@ -2,11 +2,7 @@ import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import WebNavHeader from '../components/WebNavHeader';
 import ContactUsCSS from "./styles/ContactUs.module.css";
-
-const SERVICE_ID = "service_qczbh6v"
-const TEMPLATE_ID = "template_kkpoh9i"
-const PUBLIC_KEY = "b0_XUMrx1n8p7oMbQ"
-
+require('dotenv').config()
 const ContactUs = () => {
 
   const form = useRef<HTMLFormElement>(null);
@@ -15,10 +11,10 @@ const ContactUs = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      SERVICE_ID,
-      TEMPLATE_ID,
+      "service_qczbh6v",
+      "template_kkpoh9i",
       form.current!,
-      PUBLIC_KEY
+      "b0_XUMrx1n8p7oMbQ"
     )
     .then(
       (result) => {

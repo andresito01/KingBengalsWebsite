@@ -23,11 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/breedinfo" element={<BreedInfo />} />
-<<<<<<< HEAD
-        <Route path="/ownersinfo" element={<OwnerGuide />} />
-=======
         <Route path="/ownersinfo" element={<OwnersInfo />} />
->>>>>>> 9b966bf39b7dbcd84487a7a8cabbc244ca0a7b2d
       </Routes>
     </div>
   );
