@@ -10,12 +10,8 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.3",
     "@types/react-dom": "^18.0.8",
-<<<<<<< HEAD
-    "bootstrap": "^5.2.3",
-=======
     "emailjs-com": "^3.2.0",
     "html": "^1.0.0",
->>>>>>> a3014dbbe21bb77851f18837d7e323ac8fab9fb5
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
@@ -53,10 +49,6 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@types/react-slick": "^0.23.10"
-=======
     "@types/react": "^18.0.28"
->>>>>>> a3014dbbe21bb77851f18837d7e323ac8fab9fb5
   }
 }

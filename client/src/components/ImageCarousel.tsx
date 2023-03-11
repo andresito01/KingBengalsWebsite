@@ -22,7 +22,7 @@ const ImageCarousel = () => {
     margin: 0,
     autoplay: true,
     dots: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 5000,
     smartSpeed: 450,
     nav: false,
     responsive: {

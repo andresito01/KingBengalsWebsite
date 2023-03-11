@@ -30,31 +30,31 @@
 }
 .homeHeader Img {
   width: 100%;
+  height: 100%;
 }
-.homeHeaderQuestion {
+/* .homeHeaderQuestion {
   width: 100%;
   position: absolute;
   top: 0.1vw;
   text-align: center;
   font-size: 2.25vw;
   color: rgb(235, 191, 137);
-}
+} */
 
 /* >>>>>>>>>>>>>>>>>>>> Mission Statement  <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .missionStatement {
-  font-family: 'Times New Roman', Times, serif;
-  width: 80%;
+  width: 95%;
+  height: auto;
   position: relative;
-  margin-top: 10px;
-  background-color: rgba(32, 19, 1, 0.856);
+  margin: 1rem;
+  padding-top: 3rem;
+  background-color: #412804;
   color: rgb(255, 255, 255);
   /* bottom: 0.2vw;
   left: 0.2vw; */
-  font-size: 1.1rem;
-  border-radius: 10px;
 }
 .missionStatementText {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: inika, lancelot;
   width: 90%;
   margin: auto;
 }
@@ -77,9 +77,9 @@
   height: auto;
   margin: auto;
   color: rgba(247, 231, 205, 0.946);
-  font-size: 7vw;
+  font-size: 8vw;
   font-weight: bolder;
-  font-family: "Babylonica", cursive;
+  font-family: inika, lancelot;
   text-align: center;
   text-shadow: 0.15vw 0.15vw rgba(242, 147, 31, 0.734);
   background-color: rgba(48, 26, 2, 0.909);

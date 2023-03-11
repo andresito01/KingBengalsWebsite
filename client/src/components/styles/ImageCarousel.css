@@ -1,6 +1,6 @@
 .container {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 0px;
   background-color: transparent;
 }
@@ -18,12 +18,10 @@
 .itemImg {
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 
 #catteryImgs .item {
   text-align: center;
-  padding: 50px;
   margin-bottom: 0px;
   opacity: 0.2;
   transform: scale3d(0.8, 0.8, 1);
