@@ -2,8 +2,15 @@ import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import WebNavHeader from '../components/WebNavHeader';
 import ContactUsCSS from "./styles/ContactUs.module.css";
-require('dotenv').config()
+
+
 const ContactUs = () => {
+
+  let emailJSVariables = {
+    serviceId: process.env.REACT_APP_SERVICE_ID as string,
+    templateID: process.env.REACT_APP_TEMPLATE_ID as string,
+    publicKey: process.env.REACT_APP_PUBLIC_KEY as string,
+  }
 
   const form = useRef<HTMLFormElement>(null);
   
@@ -11,10 +18,10 @@ const ContactUs = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_qczbh6v",
-      "template_kkpoh9i",
+      emailJSVariables.serviceId,
+      emailJSVariables.templateID,
       form.current!,
-      "b0_XUMrx1n8p7oMbQ"
+      emailJSVariables.publicKey
     )
     .then(
       (result) => {
