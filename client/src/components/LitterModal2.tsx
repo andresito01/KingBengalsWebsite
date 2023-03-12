@@ -32,32 +32,47 @@ const ModalLitter2: React.FC<ModalProps> = ({isOpen, onClose}) => {
                     <img alt="litterDad" src={require("../images/Placeholder.png")}/>
                 </div>
                 <div className={LitterModalCSS.momAndDadText}>MOM & DAD</div>
-                <div className={LitterModalCSS.kitten1}>
-                    <img alt='kitten1' src={require("../images/pattern.jpg")}/>
-                </div>
-                <div className={LitterModalCSS.kitten2}>
-                    <img alt='kitten2' src={require("../images/pattern.jpg")}/>
-                </div>
-                <div className={LitterModalCSS.kitten3}>
-                    <img alt='kitten3' src={require("../images/pattern.jpg")}/>
-                </div>
-                <div className={LitterModalCSS.kittenInfo1}>
-                    <p><b>Color:</b> Carmel/Tan</p>
-                    <p><b>Pattern:</b> Spotted</p>
-                    <p><b>Sex:</b> Male</p>
-                    <p><b>Status:</b> Available</p>
-                </div>
-                <div className={LitterModalCSS.kittenInfo2}>
-                    <p><b>Color:</b> Brown/Tan</p>
-                    <p><b>Pattern:</b> Spotted</p>
-                    <p><b>Sex:</b> Female</p>
-                    <p><b>Status:</b> Reserved</p>
-                </div>
-                <div className={LitterModalCSS.kittenInfo3}>
-                    <p><b>Color:</b> Carmel/Black</p>
-                    <p><b>Pattern:</b> Marble</p>
-                    <p><b>Sex:</b> Male</p>
-                    <p><b>Status:</b> Reserved</p>
+
+                {/* Individual Kitten Pictures and Info */}
+                <div className={LitterModalCSS.kittenContainer}>
+                    {/* Kitten Pictures */}
+                    <div className={LitterModalCSS.kittenPicture}>
+                        <img alt='kitten1' src={require("../images/pattern.jpg")}/>
+                    </div>
+                    <div className={LitterModalCSS.kittenPicture}>
+                        <img alt='kitten2' src={require("../images/pattern.jpg")}/>
+                    </div>
+                    <div className={LitterModalCSS.kittenPicture}>
+                        <img alt='kitten3' src={require("../images/pattern.jpg")}/>
+                    </div>
+                    <div className={LitterModalCSS.kittenPicture}>
+                        <img alt='kitten4' src={require("../images/pattern.jpg")}/>
+                    </div>
+                    {/* Kitten Info */}
+                    <div className={LitterModalCSS.kittenInfo}>
+                        <p><b>Color:</b> Carmel/Tan</p>
+                        <p><b>Pattern:</b> Spotted</p>
+                        <p><b>Sex:</b> Male</p>
+                        <p><b>Status:</b> Available</p>
+                    </div>
+                    <div className={LitterModalCSS.kittenInfo}>
+                        <p><b>Color:</b> Brown/Tan</p>
+                        <p><b>Pattern:</b> Spotted</p>
+                        <p><b>Sex:</b> Female</p>
+                        <p><b>Status:</b> Reserved</p>
+                    </div>
+                    <div className={LitterModalCSS.kittenInfo}>
+                        <p><b>Color:</b> Carmel/Black</p>
+                        <p><b>Pattern:</b> Marble</p>
+                        <p><b>Sex:</b> Male</p>
+                        <p><b>Status:</b> Reserved</p>
+                    </div>
+                    <div className={LitterModalCSS.kittenInfo}>
+                        <p><b>Color:</b> Brown/Black</p>
+                        <p><b>Pattern:</b> Spotted</p>
+                        <p><b>Sex:</b> Male</p>
+                        <p><b>Status:</b> Pending</p>
+                    </div>
                 </div>
             </div>
         </div>
