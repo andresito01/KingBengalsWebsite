@@ -3,11 +3,14 @@ import emailjs from '@emailjs/browser';
 import WebNavHeader from '../components/WebNavHeader';
 import ContactUsCSS from "./styles/ContactUs.module.css";
 
-const SERVICE_ID = "service_qczbh6v"
-const TEMPLATE_ID = "template_kkpoh9i"
-const PUBLIC_KEY = "b0_XUMrx1n8p7oMbQ"
 
 const ContactUs = () => {
+
+  let emailJSVariables = {
+    serviceId: process.env.REACT_APP_SERVICE_ID as string,
+    templateID: process.env.REACT_APP_TEMPLATE_ID as string,
+    publicKey: process.env.REACT_APP_PUBLIC_KEY as string,
+  }
 
   const form = useRef<HTMLFormElement>(null);
   
@@ -15,10 +18,10 @@ const ContactUs = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      SERVICE_ID,
-      TEMPLATE_ID,
+      emailJSVariables.serviceId,
+      emailJSVariables.templateID,
       form.current!,
-      PUBLIC_KEY
+      emailJSVariables.publicKey
     )
     .then(
       (result) => {
