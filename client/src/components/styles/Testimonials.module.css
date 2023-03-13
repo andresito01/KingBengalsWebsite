@@ -1,17 +1,26 @@
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
 /* >>>>>>>>>>>>>>>>>>    Testimonials' Container    <<<<<<<<<<<<<<<<<<*/
 .testimonialsContainer {
   position: relative;
   width: 95%;
-  margin: auto;
+  margin: 2rem;
 }
 /* >>>>>>>>>>>>>>>>>>    Testimonials' Title   <<<<<<<<<<<<<<<<<<*/
 .testimonialTitle {
   width: 65vw;
   margin-left: 15%;
   color: rgba(246, 201, 139, 0.946);
-  font-size: 10vw;
+  font-size: 5vw;
   font-weight: bolder;
-  font-family: "Babylonica", cursive;
+  font-family: inika, lancelot;
   text-align: center;
   text-shadow: 0.15vw 0.15vw rgba(197, 117, 6, 0.89);
   background-color: rgba(55, 29, 2, 0.835);
@@ -34,7 +43,7 @@
 .testimonyContainer {
   width: 65%;
   margin-left: 18%;
-  margin-top: -50px;
+  margin-top: 1rem;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Image   <<<<<<<<<<<<<<<<<<*/

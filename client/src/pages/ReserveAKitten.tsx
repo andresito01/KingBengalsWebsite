@@ -5,6 +5,7 @@ import WebNavHeader from '../components/WebNavHeader';
 
 const ReserveAKitten = () => {
 
+<<<<<<< HEAD
     let emailJSVariables = {
         serviceId: process.env.REACT_APP_SERVICE_ID as string,
         templateID: process.env.REACT_APP_RESERVE_TEMPLATE_ID as string,
@@ -81,6 +82,19 @@ const ReserveAKitten = () => {
                     <p>Your kitten will come with Registration? Vaccination? Other documents? Kitten-pack? Toys? Other goodies?</p>
                 </div>
             </div>
+=======
+  return (
+    <div className={ReserveAKittenCSS.reserveAKittenPage}>
+      <div className={ReserveAKittenCSS.backgroundLayer}>
+        <WebNavHeader/>
+        <img className={ReserveAKittenCSS.img1} alt='headerImage' src={require("../images/ReserveAKittenHeader.png")} />
+        <div className={ReserveAKittenCSS.headerContainerReserve}>
+          <h1 className={ReserveAKittenCSS.underline}>How to Reserve a Kitten</h1>
+          <h3>Please read the entire page before filling out the application</h3>
+          <h3>Our prices range from $$$-$$$$</h3>
+          <h3>Each kitten is priced individually</h3>
+          <h2>We are now taking applications for Fall 2022 litters!</h2>
+>>>>>>> 4479a5aadae29c7c3481dde3b790a983e28854af
         </div>
     )
 }

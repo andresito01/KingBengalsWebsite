@@ -56,16 +56,18 @@ const WebNavHeader = () => {
         <div className={WebNavHeaderCSS.navLinks} id="navLinks">
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/home")}>Home</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/reserveakitten")}>Reserve A Kitten</div>
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ourcats")}>Our Cats</div>
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/litterupdates")}>Litter Updates</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/about")}>About Us</div>
+          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ourcats")}>Our Cats</div>
+          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/litterupdates")}>Litter Updates</div>   
+          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ownersinfo")}>Owner's Info</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/contact")}>Contact Us</div>
           <div className={WebNavHeaderCSS.link} onClick={() => navigate("/breedinfo")}>Breed Info</div>
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ownersguide")}>Owner's Guide</div>
+        
         </div> 
         <button className={WebNavHeaderCSS.navBtn} onClick={checkResponsiveView}>
             {Mobile ? <FaTimes /> : <FaBars />}
         </button>
+        
       </div>
     </div>
   )

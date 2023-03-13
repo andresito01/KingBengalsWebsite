@@ -1,52 +1,37 @@
 import React, {useState} from 'react';
 import WebNavHeader from '../components/WebNavHeader';
-import ModalFemale1 from '../components/ModalFemale1';
-import ModalFemale2 from '../components/ModalFemale2';
-import ModalMale from '../components/ModalMale';
 import OurCatsCSS from "./styles/OurCats.module.css";
-import Modal from "../components/styles/Modal.module.css";
+import DropDownStyle from "../components/styles/DropDownInfo.module.css"
+import DropDownInfo1 from "../components/DropDownInfo1"
+import DropDownInfo2 from "../components/DropDownInfo2"
+import DropDownInfo3 from "../components/DropDownInfo3"
 
 const OurCats: React.FC = () => {
   const fontSizeHeader = {fontSize: "20px"}
   const fontSizeSecondaryHeader = {fontSize: "20px"}
   const fontSizeInfo = {fontSize: "26px"}
   const fontSizeBtn = {fontSize: "30px"}
-  const [isModalOpen1, setIsModalOpen1] = useState(false);
-  const [isModalOpen2, setIsModalOpen2] = useState(false);
-  const [isModalOpen3, setIsModalOpen3] = useState(false);
-  
-  //For handling the first female modal open/close
-  const handleOpenModal1 = () => {
-    setIsModalOpen1(true);
+  const [isDropDownOpen1, setIsDropDownOpen1] = useState(false);
+  const [isDropDownOpen2, setIsDropDownOpen2] = useState(false);
+  const [isDropDownOpen3, setIsDropDownOpen3] = useState(false);
+
+  //Handle dropdown open/close for firstFemale
+  const handleDropDownClick1 = () => {
+    setIsDropDownOpen1(!isDropDownOpen1);
   }
 
-  const handleCloseModal1 = () => {
-    setIsModalOpen1(false);
+  //Handle dropdown open/close for secondFemale
+  const handleDropDownClick2 = () => {
+    setIsDropDownOpen2(!isDropDownOpen2);
   }
 
-  //For handling the second female modal open/close
-  const handleOpenModal2 = () => {
-    setIsModalOpen2(true);
-  }
-
-  const handleCloseModal2 = () => {
-    setIsModalOpen2(false);
-  }
-
-  //For handling the male modal open/close
-  const handleOpenModal3 = () => {
-    setIsModalOpen3(true);
-  }
-
-  const handleCloseModal3 = () => {
-    setIsModalOpen3(false);
+  //Handle dropdown open/close for male
+  const handleDropDownClick3 = () => {
+    setIsDropDownOpen3(!isDropDownOpen3);
   }
 
   return (
     <div className={OurCatsCSS.ourCatsPage}>
-      <ModalFemale1 isOpen={isModalOpen1} onClose={handleCloseModal1}/>
-      <ModalFemale2 isOpen={isModalOpen2} onClose={handleCloseModal2}/>
-      <ModalMale isOpen={isModalOpen3} onClose={handleCloseModal3}/>
       <WebNavHeader/>
       <div className={OurCatsCSS.headerContainerOurCats} style={fontSizeHeader}>
         <h1>Meet The Parents!</h1>
@@ -63,35 +48,46 @@ const OurCats: React.FC = () => {
         <h1>Click the photos below to see additional information</h1>
         <h2>V</h2>
       </div>
+
+      {/* Parent Container */}
       <div className={OurCatsCSS.body}>
-        <div className={OurCatsCSS.firstFemaleTitle} style={fontSizeSecondaryHeader}>
+        <div className={OurCatsCSS.firstFemaleTitle}>
           <h1>Name 1</h1>
-          <p className={OurCatsCSS.gender} style={fontSizeInfo}>Female</p>
+          <p>Female</p>
         </div>
-        <div className={OurCatsCSS.secondFemaleTitle} style={fontSizeSecondaryHeader}>
+        <div className={OurCatsCSS.secondFemaleTitle}>
           <h1>Name 2</h1>
-          <p className={OurCatsCSS.gender} style={fontSizeInfo}>Female</p>
+          <p>Female</p>
         </div>
-        <div className={OurCatsCSS.maleTitle} style={fontSizeSecondaryHeader}>
+        <div className={OurCatsCSS.maleTitle}>
           <h1>Hercules</h1>
-          <p className={OurCatsCSS.gender} style={fontSizeInfo}>Male</p>
+          <p>Male</p>
         </div>
         
-        <button 
-          className={Modal.imageBtn} 
-          onClick={handleOpenModal1}><img alt='parentModalImg' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
-        </button>
+        {/* Buttons for the DropDown info */}
+        <div className={DropDownStyle.dropdownContainer}>
+          <button 
+            className={DropDownStyle.containerBtn} 
+            onClick={handleDropDownClick1}><img alt='parentImg1' src={require("../images/Placeholder.png")}/>
+          </button>
+          <DropDownInfo1 isOpen={isDropDownOpen1} onClose={handleDropDownClick1}/>
+        </div>
+        <div className={DropDownStyle.dropdownContainer}>
+          <button 
+            className={DropDownStyle.containerBtn} 
+            onClick={handleDropDownClick2}><img alt='parentImg2' className={DropDownStyle.containerImg} src={require("../images/Placeholder.png")}/>
+          </button>
+          <DropDownInfo2 isOpen={isDropDownOpen2} onClose={handleDropDownClick2}/>
+        </div>
+        <div className={DropDownStyle.dropdownContainer}>
+          <button 
+            className={DropDownStyle.containerBtn} 
+            onClick={handleDropDownClick3}><img alt='parentImg3' className={DropDownStyle.containerImg} src={require("../images/Placeholder.png")}/>
+          </button>
+          <DropDownInfo3 isOpen={isDropDownOpen3} onClose={handleDropDownClick3}/>
+        </div>
 
-        <button 
-          className={Modal.imageBtn} 
-          onClick={handleOpenModal2}><img alt='secondFemaleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
-        </button>
-
-        <button 
-          className={Modal.imageBtn} 
-          onClick={handleOpenModal3}><img alt='maleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
-        </button>
-
+        {/* Links to various records (probably change links to official organizations)*/}
         <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
         <button className={OurCatsCSS.healthBtn} style={fontSizeBtn}>Health Records</button>
         </a>
@@ -102,6 +98,8 @@ const OurCats: React.FC = () => {
         <button className={OurCatsCSS.registrationBtn} style={fontSizeBtn}>Registration Records</button>
         </a>
       </div>
+
+      {/* Universal Socials Box Footer */}
       <div className={OurCatsCSS.socialsBox}>
           <h1>Checkout our<br></br>Instagram!</h1>
           <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'>

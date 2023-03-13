@@ -2,10 +2,11 @@ import React from "react";
 import HomeCSS from "./styles/Home.module.css";
 import BusinessCertificate from "../components/BusinessCertificate";
 import Testimonials from "../components/Testimonials";
+import ImageCarousel from "../components/ImageCarousel";
 import WebNavHeader from "../components/WebNavHeader";
 
-const fontSizeMissionStatement = {fontSize: '30px'};
-const fontSizeQuote = {fontSize: '20px'};
+const fontSizeMissionStatement = {fontSize: '2rem'};
+const fontSizeQuote = {fontSize: '1rem'};
 
 //>>>>>>>>>>>>>>>>>>>> Home Page <<<<<<<<<<<<<<<<<<<<<<<<<<<
 const Home = () => {
@@ -20,6 +21,9 @@ const Home = () => {
 
       {/*>>>>>>>>>>>> Owners Picture and her Cat <<<<<<<<<<<<*/}
       <OwnerPicture />
+
+       {/*>>>>>>>>>>>> Scrollable Picture Component <<<<<<<<<<<<*/}
+       <ImageCarousel />
 
       {/*>>>>>>>>>>>> Past Litters <<<<<<<<<<<<*/}
       <PastLittersTitle />
@@ -40,11 +44,6 @@ const HomepageHeader = () => {
     <div className={HomeCSS.homeHeader}>
       {/* Header Image */}
       <img alt="headerImage" src={require("../images/HomepageHeader.png")} />
-
-      {/* Header Question */}
-      <div className={HomeCSS.homeHeaderQuestion}>
-        <h1> Tiny leopard? A cat? or both?</h1>
-      </div>
     </div>
   );
 };

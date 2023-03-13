@@ -1,52 +1,61 @@
 import React, {useRef} from 'react';
-//import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import WebNavHeader from '../components/WebNavHeader';
 import ContactUsCSS from "./styles/ContactUs.module.css";
 
 
 const ContactUs = () => {
 
-  const form = useRef();
+  let emailJSVariables = {
+    serviceId: process.env.REACT_APP_SERVICE_ID as string,
+    templateID: process.env.REACT_APP_TEMPLATE_ID as string,
+    publicKey: process.env.REACT_APP_PUBLIC_KEY as string,
+  }
+
+  const form = useRef<HTMLFormElement>(null);
   
   const sendEmail = (e: React.SyntheticEvent) => {
     e.preventDefault();
-    /*
-    emailjs.sendForm('service_gl7djk6', 'template_n8dohwi', form.current, 'Fnz9NuRAzufrPHXEs')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });*/
-      
+
+    emailjs.sendForm(
+      emailJSVariables.serviceId,
+      emailJSVariables.templateID,
+      form.current!,
+      emailJSVariables.publicKey
+    )
+    .then(
+      (result) => {
+        console.log(result.text)
+        console.log("message sent successfully")
+      },
+      (error) => {
+        console.log(error.text)
+        console.log("messsage failed to send")
+      }
+    ) 
   };
 
-  //Belongs in the return statement
-      /*<form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>*/
   
   return (
     
-    <div className={ContactUsCSS.ContactUs}>
+    <div className={ContactUsCSS.contactUsPage}>
       <WebNavHeader />
       <div className={ContactUsCSS.bg}>
         <div className={ContactUsCSS.mainContentContainer}>
-          <h1>Contact us</h1>
-          <h2>Kingbengals Cattery</h2>
+          <h1>Contact Us</h1>
           <p>
             Located in Downtown Sacramento<br></br>
             <br></br>
-            Email: KingbengalsCattery@hotmail.com<br></br>
           </p>
-          <div className={ContactUsCSS.contactButton}>
-            Get In Touch
-          </div><br></br>
+          <form className={ContactUsCSS.formContainer} ref={form} onSubmit={sendEmail}>
+            <label id={ContactUsCSS.formLabel}>Name</label>
+            <input id={ContactUsCSS.userName} type="text" name="user_name" />
+            <label id={ContactUsCSS.formLabel}>Email</label>
+            <input id={ContactUsCSS.userEmail} type="email" name="user_email" />
+            <label id={ContactUsCSS.formLabel}>Message</label>
+            <textarea id={ContactUsCSS.userMessage} name="message" />
+            <input id={ContactUsCSS.submitButton} type="submit" value="Send" />
+          </form>
         </div>
       </div>
     

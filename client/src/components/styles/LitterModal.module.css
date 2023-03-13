@@ -1,16 +1,10 @@
-  .containerBtn1 {
-    width: 30%;
-    height: 230px;
-    margin-left: 10%;
-    position: center;
-    cursor: pointer;
-  }
-
-  .containerBtn2 {
-    width: 30%;
-    height: 230px;
-    margin-left: 20%;
-    position: center;
+  .containerBtn {
+    width: 100%;
+    height: 23vh;
+    padding: 0%;
+    border-radius: 10px;
+    border-width: 0;
+    position: relative;
     cursor: pointer;
   }
 
@@ -28,8 +22,9 @@
   .modalContainer {
     width: 50%;
     height: 90%;
+    overflow: hidden;
     border-radius: 12px;
-    background-color: rgb(110, 89, 61);
+    background-color: #a87d48f5;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
@@ -39,24 +34,22 @@
   .modalContainer .title {
     width: 90%;
     display: inline-block;
-    background-color: rgb(206, 175, 135);
+    background-color: #e2b78e;
     text-align: center;
     margin-top: -30px;
     margin-left: 5%;
-    line-height: 1;
+    line-height: 0.8;
     border-radius: 10px;
   }
 
   .modalContainer .litterImg {
-    width: 50%;
-    margin-top: 10px;
-    margin-left: 2%;
+    width: 42vh;
+    margin-top: 1vh;
+    margin-left: 7vh;
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(206, 175, 135);
+    border-color: #e2b78e;
     border-radius: 10px;
-    font-size: 1.7rem;
-    text-align: left;
   }
 
   .litterImg img{
@@ -65,9 +58,9 @@
   }
 
   .modalContainer .litterMom {
-    width: 20%;
-    margin-left: 55%;
-    margin-top: -30%;
+    width: 20vh;
+    margin-left: 52vh;
+    margin-top: -29vh;
   }
 
   .litterMom img {
@@ -75,13 +68,13 @@
     border-radius: 50%;
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(206, 175, 135);
+    border-color: #e2b78e;
   }
 
   .modalContainer .litterDad {
-    width: 20%;
-    margin-left: 78%;
-    margin-top: -21.5%;
+    width: 20vh;
+    margin-left: 75vh;
+    margin-top: -21.5vh;
   }
 
   .litterDad img {
@@ -89,96 +82,45 @@
     border-radius: 50%;
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(206, 175, 135);
+    border-color: #e2b78e;
   }
 
   .momAndDadText {
-    margin-top: 10px;
-    margin-left: 60%;
+    margin-top: 1vh;
+    margin-left: 56vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2vw;
     word-spacing: 1.2em;
   }
+
+  .kittenContainer{
+    margin-top: 4vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2vh;
+  }
   
-  .kitten1 {
-    margin-left: 6.25%;
-    margin-top: 1.9vw;
+  .kittenPicture {
     overflow: hidden;
-    width: 25%;
     height: 10vw;
     border-radius: 10px;
     border-style: solid;
     border-width: 5px;
-    border-color: rgb(206, 175, 135);
+    border-color: #e2b78e;
   }
 
-  .kitten1 img {
+  .kitten img {
     width: 100%;
+    height: 100%;
   }
 
-  .kitten2 {
-    margin-left: 37.5%;
-    margin-top: -10.5vw;
-    overflow: hidden;
-    width: 25%;
-    height: 10vw;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(206, 175, 135);
-  }
-
-  .kitten2 img {
-    width: 100%;
-  }
-
-  .kitten3 {
-    margin-left: 68.75%;
-    margin-top: -10.5vw;
-    overflow: hidden;
-    width: 25%;
-    height: 10vw;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(206, 175, 135);
-  }
-
-  .kitten3 img {
-    width: 100%;
-  }
-
-  .kittenInfo1 {
-    background-color: rgb(206, 175, 135);
+  .kittenInfo {
+    background-color: #e2b78e;
     font-size: 0.9vw;
-    width: 25%;
     height: 5.6vw;
-    margin-top: 0.4vw;
-    margin-left: 6.25%;
-    line-height: 0.4;
-    padding-left: 10px;
-    border-radius: 10px;
-  }
-
-  .kittenInfo2 {
-    background-color: rgb(206, 175, 135);
-    font-size: 0.9vw;
-    width: 25%;
-    height: 5.6vw;
-    margin-top: -5.6vw;
-    margin-left: 37.5%;
-    line-height: 0.4;
-    padding-left: 10px;
-    border-radius: 10px;
-  }
-
-  .kittenInfo3 {
-    background-color: rgb(206, 175, 135);
-    font-size: 0.9vw;
-    width: 25%;
-    height: 5.6vw;
-    margin-top: -5.6vw;
-    margin-left: 68.75%;
+    margin-top: -1vh;
     line-height: 0.4;
     padding-left: 10px;
     border-radius: 10px;
