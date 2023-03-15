@@ -89,13 +89,13 @@ const OurCats: React.FC = () => {
 
         {/* Links to various records (probably change links to official organizations)*/}
         <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className={OurCatsCSS.healthBtn} style={fontSizeBtn}>Health Records</button>
+        <button className={OurCatsCSS.healthBtn}>Health Records</button>
         </a>
         <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className={OurCatsCSS.vaccinationBtn} style={fontSizeBtn}>Vaccination Records</button>
+        <button className={OurCatsCSS.vaccinationBtn}>Vaccination Records</button>
         </a>
         <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className={OurCatsCSS.registrationBtn} style={fontSizeBtn}>Registration Records</button>
+        <button className={OurCatsCSS.registrationBtn}>Registration Records</button>
         </a>
       </div>
 

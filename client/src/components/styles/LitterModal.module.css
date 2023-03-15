@@ -1,7 +1,8 @@
   .containerBtn {
     width: 100%;
-    height: 23vh;
     padding: 0%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     border-radius: 10px;
     border-width: 0;
     position: relative;
@@ -33,6 +34,8 @@
 
   .modalContainer .title {
     width: 90%;
+    height: 18vh;
+    font-size: 2.2vh;
     display: inline-block;
     background-color: #e2b78e;
     text-align: center;
@@ -42,10 +45,19 @@
     border-radius: 10px;
   }
 
+  .gridLitterandParents {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr;
+    grid-template-rows: 33vh;
+    gap: 3vh;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
   .modalContainer .litterImg {
-    width: 42vh;
-    margin-top: 1vh;
-    margin-left: 7vh;
+    width: 100%;
+    height: 30vh;
     border-style: solid;
     border-width: 5px;
     border-color: #e2b78e;
@@ -58,9 +70,9 @@
   }
 
   .modalContainer .litterMom {
-    width: 20vh;
-    margin-left: 52vh;
-    margin-top: -29vh;
+    width: 100%;
+    padding-top: 3vh;
+    text-align: center;
   }
 
   .litterMom img {
@@ -72,9 +84,9 @@
   }
 
   .modalContainer .litterDad {
-    width: 20vh;
-    margin-left: 75vh;
-    margin-top: -21.5vh;
+    width: 100%;
+    padding-top: 3vh;
+    text-align: center;
   }
 
   .litterDad img {
@@ -86,15 +98,13 @@
   }
 
   .momAndDadText {
-    margin-top: 1vh;
-    margin-left: 56vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2vw;
     word-spacing: 1.2em;
   }
 
   .kittenContainer{
-    margin-top: 4vh;
+    margin-top: 2vh;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

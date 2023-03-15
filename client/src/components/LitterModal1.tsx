@@ -8,7 +8,6 @@ type ModalProps = {
 }
 
 const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose}) => {
-    const fontSizeParagraph = {fontSize: '20px'};
 
     if(!isOpen) return null
     return (
@@ -19,19 +18,24 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose}) => {
                 </div>
                 <div className={LitterModalCSS.title}>
                     <h1>Kittens for Sale!</h1>
-                    <p style={fontSizeParagraph}><b>Date of Birth:</b> January 5, 2023</p>
-                    <p style={fontSizeParagraph}><b>Approximate Go Home Date:</b> April 20, 2023</p>
+                    <p><b>Date of Birth:</b> January 5, 2023</p>
+                    <p><b>Approximate Go Home Date:</b> April 20, 2023</p>
                 </div>
-                <div className={LitterModalCSS.litterImg}>
-                    <img alt="litterImg1" src={require("../images/Litter1.png")}/>
+                
+                {/* Litter picture and both of the Parents */}
+                <div className={LitterModalCSS.gridLitterandParents}>
+                    <div className={LitterModalCSS.litterImg}>
+                        <img alt="litterImg1" src={require("../images/Litter1.png")}/>
+                    </div>
+                    <div className={LitterModalCSS.litterMom}>
+                        <img alt="litterMom" src={require("../images/Placeholder.png")}/>
+                        <div className={LitterModalCSS.momAndDadText}>MOM</div>
+                    </div>
+                    <div className={LitterModalCSS.litterDad}>
+                        <img alt="litterDad" src={require("../images/Placeholder.png")}/>
+                        <div className={LitterModalCSS.momAndDadText}>DAD</div>
+                    </div>
                 </div>
-                <div className={LitterModalCSS.litterMom}>
-                    <img alt="litterMom" src={require("../images/Placeholder.png")}/>
-                </div>
-                <div className={LitterModalCSS.litterDad}>
-                    <img alt="litterDad" src={require("../images/Placeholder.png")}/>
-                </div>
-                <div className={LitterModalCSS.momAndDadText}>MOM & DAD</div>
 
                 {/* Individual Kitten Pictures and Info */}
                 <div className={LitterModalCSS.kittenContainer}>
