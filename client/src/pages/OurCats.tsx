@@ -2,15 +2,12 @@ import React, {useState} from 'react';
 import WebNavHeader from '../components/WebNavHeader';
 import OurCatsCSS from "./styles/OurCats.module.css";
 import DropDownStyle from "../components/styles/DropDownInfo.module.css"
-import DropDownInfo1 from "../components/DropDownInfo1"
-import DropDownInfo2 from "../components/DropDownInfo2"
-import DropDownInfo3 from "../components/DropDownInfo3"
+import DropDownInfo from "../components/DropDownInfo"
 
 const OurCats: React.FC = () => {
   const fontSizeHeader = {fontSize: "20px"}
   const fontSizeSecondaryHeader = {fontSize: "20px"}
   const fontSizeInfo = {fontSize: "26px"}
-  const fontSizeBtn = {fontSize: "30px"}
   const [isDropDownOpen1, setIsDropDownOpen1] = useState(false);
   const [isDropDownOpen2, setIsDropDownOpen2] = useState(false);
   const [isDropDownOpen3, setIsDropDownOpen3] = useState(false);
@@ -46,7 +43,6 @@ const OurCats: React.FC = () => {
       </div>
       <div className={OurCatsCSS.secondaryHeaderContainer} style={fontSizeSecondaryHeader}>
         <h1>Click the photos below to see additional information</h1>
-        <h2>V</h2>
       </div>
 
       {/* Parent Container */}
@@ -70,21 +66,21 @@ const OurCats: React.FC = () => {
             className={DropDownStyle.containerBtn} 
             onClick={handleDropDownClick1}><img alt='parentImg1' src={require("../images/Placeholder.png")}/>
           </button>
-          <DropDownInfo1 isOpen={isDropDownOpen1} onClose={handleDropDownClick1}/>
+          <DropDownInfo isOpen={isDropDownOpen1} onClose={handleDropDownClick1} id={1}/>
         </div>
         <div className={DropDownStyle.dropdownContainer}>
           <button 
             className={DropDownStyle.containerBtn} 
             onClick={handleDropDownClick2}><img alt='parentImg2' className={DropDownStyle.containerImg} src={require("../images/Placeholder.png")}/>
           </button>
-          <DropDownInfo2 isOpen={isDropDownOpen2} onClose={handleDropDownClick2}/>
+          <DropDownInfo isOpen={isDropDownOpen2} onClose={handleDropDownClick2} id={2}/>
         </div>
         <div className={DropDownStyle.dropdownContainer}>
           <button 
             className={DropDownStyle.containerBtn} 
             onClick={handleDropDownClick3}><img alt='parentImg3' className={DropDownStyle.containerImg} src={require("../images/Placeholder.png")}/>
           </button>
-          <DropDownInfo3 isOpen={isDropDownOpen3} onClose={handleDropDownClick3}/>
+          <DropDownInfo isOpen={isDropDownOpen3} onClose={handleDropDownClick3} id={3}/>
         </div>
 
         {/* Links to various records (probably change links to official organizations)*/}

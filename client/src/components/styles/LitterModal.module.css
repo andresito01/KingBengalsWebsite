@@ -23,6 +23,7 @@
   .modalContainer {
     width: 50%;
     height: 90%;
+    color: black;
     overflow: hidden;
     border-radius: 12px;
     background-color: #a87d48f5;
@@ -32,14 +33,14 @@
     padding: 15px;
   }
 
-  .modalContainer .title {
+  .title {
     width: 90%;
     height: 18vh;
-    font-size: 2.2vh;
+    font-size: 1vw;
     display: inline-block;
     background-color: #e2b78e;
     text-align: center;
-    margin-top: -30px;
+    margin-top: -4vh;
     margin-left: 5%;
     line-height: 0.8;
     border-radius: 10px;
@@ -48,14 +49,14 @@
   .gridLitterandParents {
     display: grid;
     grid-template-columns: 1fr 0.4fr 0.4fr;
-    grid-template-rows: 33vh;
+    grid-template-rows: 30vh;
     gap: 3vh;
     margin-top: 2vh;
     margin-left: 5vh;
     margin-right: 5vh;
   }
 
-  .modalContainer .litterImg {
+  .litterImg {
     width: 100%;
     height: 30vh;
     border-style: solid;
@@ -69,42 +70,41 @@
     height: 100%;
   }
 
-  .modalContainer .litterMom {
-    width: 100%;
+  .litterParent {
     padding-top: 3vh;
-    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
-  .litterMom img {
+  .litterParentPicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     width: 100%;
+    height: 70%;
     border-radius: 50%;
     border-style: solid;
     border-width: 5px;
     border-color: #e2b78e;
   }
 
-  .modalContainer .litterDad {
-    width: 100%;
-    padding-top: 3vh;
-    text-align: center;
-  }
-
-  .litterDad img {
-    width: 100%;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #e2b78e;
+  .litterParentPicture img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
 
   .momAndDadText {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
     font-size: 2vw;
     word-spacing: 1.2em;
   }
 
   .kittenContainer{
-    margin-top: 2vh;
+    margin-top: 1vh;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -113,26 +113,29 @@
   }
   
   .kittenPicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    height: 10vw;
     border-radius: 10px;
     border-style: solid;
     border-width: 5px;
     border-color: #e2b78e;
   }
 
-  .kitten img {
-    width: 100%;
-    height: 100%;
+  .kittenPicture img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
 
   .kittenInfo {
     background-color: #e2b78e;
     font-size: 0.9vw;
-    height: 5.6vw;
+    height: 10vh;
     margin-top: -1vh;
     line-height: 0.4;
-    padding-left: 10px;
+    padding: 1.2vh;
     border-radius: 10px;
   }
 
@@ -146,7 +149,7 @@
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    font-size: 25px;
+    font-size: 2.5vh;
     border-radius: 5px;
     cursor: pointer;
   }

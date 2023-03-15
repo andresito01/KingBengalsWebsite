@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "lineage": "Asian Leopard/Egyptian Mau",
+        "status": "Postpartum",
+        "attitude": "Sassy",
+        "pattern": "Marbled",
+        "history": "Champion"
+    },
+    {
+        "id": 2,
+        "lineage": "Asian Leopard/Egyptian Mau",
+        "status": "Pregnant",
+        "attitude": "Dramatic",
+        "pattern": "Spotted",
+        "history": "N/A"
+    },
+    {
+        "id": 3,
+        "lineage": "Asian Leopard/Egyptian Mau",
+        "status": "Idle",
+        "attitude": "Passive",
+        "pattern": "Marbled",
+        "history": "Champion"
+    }
+]

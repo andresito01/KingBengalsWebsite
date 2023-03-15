@@ -15,6 +15,7 @@
 
 .litterInstructionContainer {
   font-family: 'Times New Roman', Times, serif;
+  padding: 1%;
   display: flex;
   width: 70%;
   margin: auto;
@@ -54,6 +55,7 @@
 .parentName{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
+  color: black;
   font-size: 4vh;
 }
 
@@ -76,11 +78,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 20vh;
   margin-left: 10%;
+  margin-top: -10vh;
+  margin-bottom: 20vh;
   width: 80%;
 }
 
 .litterInfo {
   font-family: 'Times New Roman', Times, serif;
+  color: black;
   background-color: #a87d48f5;
   position: fixed;
   text-align: left;
@@ -92,17 +97,16 @@
   border-color: #e2b78e;
   border-radius: 10px;
   position: absolute;
-  margin-top: -11.5vh;
 }
 
 .litterInfo h1{
   font-size: 5vh;
-  line-height: .8vh;
+  line-height: 4vh;
 }
 
 .litterInfo p{
   font-size: 3vh;
-  line-height: .6vh;
+  line-height: 2.5vh;
 }
 
 .litterInfo img{
