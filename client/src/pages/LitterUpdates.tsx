@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import WebNavHeader from '../components/WebNavHeader';
 import LitterUpdatesCSS from "./styles/LitterUpdates.module.css";
 import ModalStyle from "../components/styles/LitterModal.module.css"
-import Modal1 from "../components/LitterModal1"
-import Modal2 from "../components/LitterModal2"
+import Modal from "../components/LitterModal"
 
 const LitterUpdates: React.FC = () => {
   const fontSizeHeader = {fontSize: "50px"};
@@ -29,8 +28,8 @@ const LitterUpdates: React.FC = () => {
 
   return (
     <div className={LitterUpdatesCSS.litterUpdatesPage}>
-      <Modal1 isOpen={isModalOpen1} onClose={handleModalClose1}/>
-      <Modal2 isOpen={isModalOpen2} onClose={handleModalClose2}/>
+      <Modal isOpen={isModalOpen1} onClose={handleModalClose1} id={1}/>
+      <Modal isOpen={isModalOpen2} onClose={handleModalClose2} id={2}/>
       <WebNavHeader/>
       <div className={LitterUpdatesCSS.litterInstructionContainer}>
         <h1 style={fontSizeHeader}>Check Out Our Litters!</h1>
@@ -65,7 +64,7 @@ const LitterUpdates: React.FC = () => {
         <button className={ModalStyle.containerBtn} onClick={handleModalOpen1}>
           <div className={LitterUpdatesCSS.litterInfo}>
             <div>
-              <h1><b>Litter A</b></h1>
+              <h1><b><u>Litter A</u></b></h1>
               <p><b>Total Kittens:</b> 5</p>
               <p><b>Available:</b> 4</p>
               <p><b>Already Sold:</b> 1</p>
@@ -76,7 +75,7 @@ const LitterUpdates: React.FC = () => {
         <button className={ModalStyle.containerBtn} onClick={handleModalOpen2}>
           <div className={LitterUpdatesCSS.litterInfo}>
             <div>
-              <h1>Litter B</h1>
+              <h1><b><u>Litter B</u></b></h1>
               <p><b>Total Kittens:</b> 4</p>
               <p><b>Available:</b> 2</p>
               <p><b>Already Sold:</b> 2</p>

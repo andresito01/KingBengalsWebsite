@@ -110,6 +110,7 @@
 
 .healthBtn {
   text-align: center;
+  font-size: 2.5vh;
   width: 72%;
   height: 8vh;
   margin-left: 14%;
@@ -122,6 +123,7 @@
 
 .vaccinationBtn {
   text-align: center;
+  font-size: 2.5vh;
   line-height: 1;
   width: 72%;
   height: 8vh;
@@ -135,6 +137,7 @@
 
 .registrationBtn {
   text-align: center;
+  font-size: 2.5vh;
   line-height: 1;
   width: 72%;
   height: 8vh;
