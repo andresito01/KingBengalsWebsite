@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "testifierImg": "images/TempTestimony.jpg",
+    "testifierName": "Amanda Smith",
+    "testifierQuote": "I Love this place, I got a starting kit courtesy from Lidia to care for my little kitten."
+  },
+  {
+    "id": 2,
+    "testifierImg": "images/TempTestimony.jpg",
+    "testifierName": "Ely White",
+    "testifierQuote": "I bought my first Bengal cat at Kingbengals and I really appreciate Lidia’s guidance on how to care for him."
+  },
+  {
+    "id": 3,
+    "testifierImg": "images/TempTestimony.jpg",
+    "testifierName": "Amanda Smith",
+    "testifierQuote": "I Love this place, I got a starting kit courtesy from Lidia to care for my little kitten."
+  }
+]
