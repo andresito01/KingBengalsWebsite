@@ -8,14 +8,14 @@ import WebNavHeader from "../components/WebNavHeader";
 
 const BreedInfo = () => {
   return (
-    <div className="breedInfoPage">
+    <div className={BreedInfoCSS.breedInfoPage}>
       <WebNavHeader/>
-      <div className='backgroundLayer'>
-        <div className = "bengalsTextContainer">
-          <img className = "bengalsIntroPic" src={redstar} 
+      <div className={BreedInfoCSS.backgroundLayer}>
+        <div className = {BreedInfoCSS.bengalsTextContainer}>
+          <img className = {BreedInfoCSS.bengalsIntroPic} src={redstar} 
             alt="Bengal cat by LightBurst" />
-          <h2 className = "sectionHeader">The Bengal Cat</h2>
-          <p className="text">
+          <h2 className = {BreedInfoCSS.sectionHeader}>The Bengal Cat</h2>
+          <p className={BreedInfoCSS.text}> 
             The Bengal breed of cats gets their name from the Asian leopard cat, 
             taxonomic name: <i>Prionailurus bengalensis</i>, from which they 
             are bred together with domestic cat breeds and usually again with 
@@ -32,23 +32,29 @@ const BreedInfo = () => {
         </div>
       
         <BreedInfoTopPic />
-        <div className="bottomContainer">
+        <div className={BreedInfoCSS.bottomContainer}>
           <img src = {spotted} style={{float:"left", width:500 }} 
             alt="Spotted coats example"/>
           <img src = {marbled} style={{float:"right", width:500 }} 
             alt="Marbled coats example"/>
         </div>
-        <div className="bengalsTextContainer">
-          <h2 className = "sectionHeader">Personality and Caretaking</h2>
-          <p className="text">
-            The Bengal is a medium-to-high maintenance cat, as they have are very 
-            active, energetic, and jealous for attention. Bengals do not do well when left
-            alone for long periods of time. They require a decent amount of space as well 
-            as forms of entertainment to keep content.
+        <div className={BreedInfoCSS.bengalsTextContainer}>
+          <h2 className = {BreedInfoCSS.sectionHeader}>Personality and Caretaking</h2>
+          <p className={BreedInfoCSS.text}>
+          The Bengal is a medium-to-high maintenance cat, as they have are very 
+            active, energetic, and very affectionate with their owner. Though not 
+            typically lap cats, Bengals very much enjoy the company on their owners, 
+            and do best with another cat buddy to keep them company. 
+            <br/><br/>
+            Bengals remain athletic even into their senior years, and require a decent amount
+            of space and forms of entertainment to keep content; plenty of second-story territory 
+            in the form of catwalks, perches, and cat trees are great ways to satisfy a Bengal's 
+            explorative spirit. Unlike most cat breeds, Bengals like the water, and could opt to 
+            join their owner in the shower to play in the running water!
             <br/><br/>
             In terms of grooming and nutrition, the Bengal does not demand any particular 
             care. Routine coat brushing and monthly claw trimming, and ideally teeth-
-            brushing will be well for most Bengals.
+            brushing, will be enough for most Bengals. 
           </p>
         </div>
       </div>
@@ -58,8 +64,8 @@ const BreedInfo = () => {
 
 const BreedInfoTopPic = () => {
   return (
-    <div className="topImageContainer">
-      <img className="topPicture" src={topImage} alt="Breed Information" width={200}/>
+    <div className={BreedInfoCSS.topImageContainer}>
+      <img className={BreedInfoCSS.topPicture} src={topImage} alt="Breed Information" width={200}/>
     </div>
   );
 };
