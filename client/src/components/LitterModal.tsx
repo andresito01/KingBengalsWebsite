@@ -12,6 +12,9 @@ type ModalProps = {
 interface Data {
     // Condensed view to not waste space (change back if preferred)
     id: number;
+    // Info for button containers
+    litterName: string; totalKittens: string;
+    availableKittens: string; soldKittens: string;
     // Litter and Parents
     birthDate: string; pickupDate: string; litterPicture: string;
     momPicture: string; dadPicture: string;
@@ -28,6 +31,10 @@ interface Data {
     kitten4Picture: string; kitten4Color: string; kitten4Pattern: string; 
     kitten4Sex: string; kitten4Status: string;
 }
+
+//Export jsonData to LitterUpdates.tsx so paretn photos and litter status
+//can be displayed on the page rather than the modal
+export const jsonData = litterupdatesmodaljson as Data[];
 
 const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
     const data: Data | undefined = litterupdatesmodaljson.find(kitten => kitten.id === id);

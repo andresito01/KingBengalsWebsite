@@ -3,6 +3,7 @@ import WebNavHeader from '../components/WebNavHeader';
 import LitterUpdatesCSS from "./styles/LitterUpdates.module.css";
 import ModalStyle from "../components/styles/LitterModal.module.css"
 import Modal from "../components/LitterModal"
+import { jsonData } from "../components/LitterModal"
 
 const LitterUpdates: React.FC = () => {
   const fontSizeHeader = {fontSize: "50px"};
@@ -37,25 +38,21 @@ const LitterUpdates: React.FC = () => {
       </div>
       
       <div className={LitterUpdatesCSS.parentCardWrapper}>
+        {/* Container for the first litter parents */}
+        {/* jsonData[0] is used because litter 1 is at index 0 in the json file */}
         <div className={LitterUpdatesCSS.parentCard}>
           <div className={LitterUpdatesCSS.parentName}>Mom</div>
           <div className={LitterUpdatesCSS.parentName}>Dad</div>
-          <div className={LitterUpdatesCSS.parent}>
-            <img className={LitterUpdatesCSS.parent1Image} alt='parentImage' src={require("../images/Placeholder.png")} />
-          </div>
-          <div className={LitterUpdatesCSS.parent}>
-            <img className={LitterUpdatesCSS.parent2Image} alt='parentImage' src={require("../images/Placeholder.png")} />
-          </div>
+          <img className={LitterUpdatesCSS.parentImage} alt='parentImage' src={jsonData[0].momPicture} />
+          <img className={LitterUpdatesCSS.parentImage} alt='parentImage' src={jsonData[0].dadPicture} />
         </div>
+        {/* Container for the second litter parents */}
+        {/* jsonData[1] is used because litter 2 is at index 1 in the json file */}
         <div className={LitterUpdatesCSS.parentCard}>
           <div className={LitterUpdatesCSS.parentName}>Mom</div>
           <div className={LitterUpdatesCSS.parentName}>Dad</div>
-          <div className={LitterUpdatesCSS.parent}>
-            <img className={LitterUpdatesCSS.parent1Image} alt='parentImage' src={require("../images/Placeholder.png")} />
-          </div>
-          <div className={LitterUpdatesCSS.parent}>
-            <img className={LitterUpdatesCSS.parent2Image} alt='parentImage' src={require("../images/Placeholder.png")} />
-          </div>
+          <img className={LitterUpdatesCSS.parentImage} alt='parentImage' src={jsonData[1].momPicture} />
+          <img className={LitterUpdatesCSS.parentImage} alt='parentImage' src={jsonData[1].dadPicture} />
         </div>
       </div>
 
@@ -64,30 +61,32 @@ const LitterUpdates: React.FC = () => {
         <button className={ModalStyle.containerBtn} onClick={handleModalOpen1}>
           <div className={LitterUpdatesCSS.litterInfo}>
             <div>
-              <h1><b><u>Litter A</u></b></h1>
-              <p><b>Total Kittens:</b> 5</p>
-              <p><b>Available:</b> 4</p>
-              <p><b>Already Sold:</b> 1</p>
+              {/* jsonData[0] is used because litter 1 is at index 0 in the json file */}
+              <h1><b><u>{jsonData[0].litterName}</u></b></h1>
+              <p><b>Total Kittens: </b>{jsonData[0].totalKittens}</p>
+              <p><b>Available: </b>{jsonData[0].availableKittens}</p>
+              <p><b>Already Sold: </b>{jsonData[0].soldKittens}</p>
             </div>
-            <img alt='litter1image' src={require("../images/Litter1.png")}/>
+            <img alt='litter1image' src={jsonData[0].litterPicture}/>
           </div>
         </button>
         <button className={ModalStyle.containerBtn} onClick={handleModalOpen2}>
           <div className={LitterUpdatesCSS.litterInfo}>
             <div>
-              <h1><b><u>Litter B</u></b></h1>
-              <p><b>Total Kittens:</b> 4</p>
-              <p><b>Available:</b> 2</p>
-              <p><b>Already Sold:</b> 2</p>
+              {/* jsonData[1] is used because litter 2 is at index 1 in the json file */}
+              <h1><b><u>{jsonData[1].litterName}</u></b></h1>
+              <p><b>Total Kittens: </b>{jsonData[1].totalKittens}</p>
+              <p><b>Available: </b>{jsonData[1].availableKittens}</p>
+              <p><b>Already Sold: </b>{jsonData[1].soldKittens}</p>
             </div>
-            <img alt='litter2image' src={require("../images/Litter2.png")}/>
+            <img alt='litter2image' src={jsonData[1].litterPicture}/>
           </div>
         </button>
       </div>
 
       {/* Universal Socials Box Footer */}
       <div className={LitterUpdatesCSS.socialsBox}>
-          <h1>Checkout our<br></br>Instagram!</h1>
+          <h1>Check out our<br></br>Instagram!</h1>
           <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'>
             <button className={LitterUpdatesCSS.instagramBtn}>
               <img alt='instaImg' className={LitterUpdatesCSS.instagramImg} src={require("../images/instagramlogo.png")}/>
