@@ -1,6 +1,10 @@
 [
     {
         "id": 1,
+        "litterName": "Litter A",
+        "totalKittens": "5",
+        "availableKittens": "4",
+        "soldKittens": "1",
         "birthDate": "January 5, 2023",
         "pickupDate": "April 20, 2023",
         "litterPicture": "images/Litter1.png",
@@ -29,6 +33,10 @@
     },
     {
         "id": 2,
+        "litterName": "Litter B",
+        "totalKittens": "4",
+        "availableKittens": "2",
+        "soldKittens": "2",
         "birthDate": "November 12, 2022",
         "pickupDate": "March 20, 2023",
         "litterPicture": "images/Litter2.png",
