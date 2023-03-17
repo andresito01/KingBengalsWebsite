@@ -133,7 +133,6 @@
   padding: 1rem;
   display: flex;
   flex-direction: row;
- 
   width: 80%;
   font-size: 1rem;
   background: #4E3A24;
@@ -153,6 +152,7 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 #userName, #userEmail {

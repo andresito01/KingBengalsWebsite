@@ -1,11 +1,25 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ReserveAKittenCSS from "./styles/ReserveAKitten.module.css"
+import KittenOfInterestDropdown from '../components/KittenOfInterestDropdown';
 import WebNavHeader from '../components/WebNavHeader';
 
 const ReserveAKitten = () => {
 
-<<<<<<< HEAD
+
+    const [selectedKittenValues, setSelectedKittenValues] = useState('')
+
+    const kittenSelectOptions = [
+        { value: "green", label: "Green" },
+        { value: "blue", label: "Blue" },
+        { value: "red", label: "Red" },
+        { value: "yellow", label: "Yellow" },
+        { value: "orange", label: "Orange" },
+        { value: "pink", label: "Pink" },
+        { value: "purple", label: "Purple" },
+        { value: "grey", label: "Grey" }
+      ];
+
     let emailJSVariables = {
         serviceId: process.env.REACT_APP_SERVICE_ID as string,
         templateID: process.env.REACT_APP_RESERVE_TEMPLATE_ID as string,
@@ -57,9 +71,15 @@ const ReserveAKitten = () => {
                         <label id={ReserveAKittenCSS.formLabel}>Message</label>
                         <textarea id={ReserveAKittenCSS.userMessage} name="message" />
                         <input id={ReserveAKittenCSS.submitButton} type="submit" value="Send" />
+                        
                     </div>
                     <div className={ReserveAKittenCSS.formKittenSelect}>
-                        ajdfaf
+                    <KittenOfInterestDropdown isSearchable isMulti placeHolder="Select..." options={kittenSelectOptions} onChange={(value:any) => {
+                                setSelectedKittenValues(value)
+                                var str = selectedKittenValues.toString();
+                                console.log(str);
+                            } 
+                        }/>
                     </div>
                 </form>
 
@@ -82,19 +102,6 @@ const ReserveAKitten = () => {
                     <p>Your kitten will come with Registration? Vaccination? Other documents? Kitten-pack? Toys? Other goodies?</p>
                 </div>
             </div>
-=======
-  return (
-    <div className={ReserveAKittenCSS.reserveAKittenPage}>
-      <div className={ReserveAKittenCSS.backgroundLayer}>
-        <WebNavHeader/>
-        <img className={ReserveAKittenCSS.img1} alt='headerImage' src={require("../images/ReserveAKittenHeader.png")} />
-        <div className={ReserveAKittenCSS.headerContainerReserve}>
-          <h1 className={ReserveAKittenCSS.underline}>How to Reserve a Kitten</h1>
-          <h3>Please read the entire page before filling out the application</h3>
-          <h3>Our prices range from $$$-$$$$</h3>
-          <h3>Each kitten is priced individually</h3>
-          <h2>We are now taking applications for Fall 2022 litters!</h2>
->>>>>>> 4479a5aadae29c7c3481dde3b790a983e28854af
         </div>
     )
 }

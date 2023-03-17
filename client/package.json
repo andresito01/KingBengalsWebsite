@@ -10,10 +10,7 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.3",
     "@types/react-dom": "^18.0.8",
-<<<<<<< HEAD
-=======
-    "bootstrap": "^5.2.3",
->>>>>>> 4479a5aadae29c7c3481dde3b790a983e28854af
+    "bootstrap": "^3.4.1",
     "dotenv": "^16.0.3",
     "emailjs-com": "^3.2.0",
     "html": "^1.0.0",
