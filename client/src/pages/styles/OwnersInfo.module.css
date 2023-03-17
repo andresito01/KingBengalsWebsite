@@ -23,16 +23,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   background-color: #a87d48f5;
-  /*background-color: #a87d48f5;
   /*background-image: conic-gradient(
     rgb(64, 29, 2),
     rgb(226, 173, 10),
     rgb(64, 29, 2)
-  );
-  /*background-image: url("../../images/kbengalsbgGradient.png");*/
-  background-size: cover;
-  width: 100%;
+  );*/
+  background-image: url("../../images/pattern - b&w warm + wc edited.jpg");
+  background-size:contain;
+  /*overflow: hidden;
+  /*width: 100%;*/
 }
 
 /*.headerContainerOwnersInfo {
@@ -55,49 +56,67 @@
   border-color: black;
 }*/
 
-.headerOwnersInfoImg {
-  width: 100%;
+.backgroundLayer Img {
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;*/
+  max-width: 100%;
   height: auto;
-  position: relative;
-  background-color: rgba(160, 119, 81, 0.94);
+  /*position: relative;
+  background-color: rgba(28, 14, 1, 0.611);*/
+  /*background-size: contain;*/
+  
+  /*background-image: ulr("../images/pattern-edited.jpg");*/
+  /*position: relative;
+  background-color: rgba(160, 119, 81, 0.94);*/
 }
 
 .headerOwnersInfo {
   width: 100%;
   position: absolute;
-  bottom: 8.5rem;
-  margin-left: 1.5rem;
+  /*bottom: 1vw;*/
+  top: 30vw;
+  margin-left: 5vw;
   text-align: left;
   font-family: inika;
   font-size: 3vw;
+  font-weight: bold;
   color:#4E3A24;
 }
 
 /***************************** Products we Recommend ********************************/
 
-.containerBox { /*ProductsRecom {*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: rgba(78, 58, 36, 0.85); /*#4E3A24;*/
-  color: white;
-  font-family: inika;
-  margin-top: 1rem;
-  margin-bottom: 60px;
-  padding: 10px 10px 10px 10px;
-  border-style: solid;
-  border-color: rgba(255, 230, 207, 0.94);
-  border-width: 20px;
-  border-radius: 40px;
-}
 
 .bold{
   font: bold;
   font-size: 3rem;
   font-family: inika;
+  width: auto;
+  position: relative;
 }
 
+.containerFullWidth {
+  display: flex;
+  flex-direction: column;
+  /*position:relative;*/
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
+  /*right: 1rem;*/
+  background-color:rgba(78, 58, 36);
+  color: white;
+  font-family: inika;
+  margin-top: 5vw;
+  /*margin-left: 5rem;
+  margin-right: 5rem;*/
+  margin-bottom: 60px;
+  border-style:inset; /*solid;*/
+  border-color: rgba(255, 230, 207, 0.94);
+  border-width: 20px;
+  border-radius: 40px
+}
 
 /*.fixedOwnInfoHeaderImg {
   background-image: url("../images/bencat - OwnersInfo header image.jpg");
@@ -142,15 +161,46 @@
   border-radius: 40px;
 }*/
 
+.containerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: relative; /*90vw;*/
+  position: relative;
+  background-color: rgba(78, 58, 36);/*, 0.99); /*#4E3A24;*/
+  color: white;
+  font-family: inika;
+  margin-top: 2vw;
+  margin-bottom: 60px;
+  padding: 10px 10px 10px 10px;
+  border-style:inset; /*solid;*/
+  border-color: rgba(255, 230, 207, 0.94);
+  border-width: 20px;
+  border-radius: 40px;
+}
+
 .imgKittenDev {
   /*background-image: url("../images/cute bengal kitten.jpg");*/
   /*border-radius: 50%;*/
-  width: 450px;
-  height: 400px;
-  top: 1rem;
-  right: 1rem
+  position: relative;
+  justify-content: center;
+  width: 25vw; /*250px;*/
+  height: auto; /*300px;*/
+  /*background-size: contain;*/
+  /*top: 1rem;
+  right: 1rem*/
   /*object-fit: cover;*/
   /*background-color: rgba(160, 119, 81, 0.94);*/
+}
+
+.imgContainer {
+  max-width: 100%;
+  height: auto;
+  /*background-image: url("../images/bengal-cat.jpg");*/
+  background-size: contain;
+  border-style: double;
+  /*position: relative;*/
 }
 
 .txtKittenDev {
@@ -165,13 +215,15 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  width: 80vw;
+  position: relative;
   /*right: 1rem;*/
   background-color:#4E3A24;
   color: white;
   font-family: inika;
-  margin-top: 1rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-top: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
   margin-bottom: 60px;
 }
 
@@ -179,26 +231,37 @@
   margin: 10px 10px 10px 10px;
   background-color:  #4E3A24;
   flex: 1;
+  width: 45vw;
+  /*height: auto;*/
+  position: relative;
   border-radius: 10px;
+  /*justify-content: center;
+  border-width: 20px 20px 20px 20px;*/
 }
 
 .containerRow2 {
   margin: 10px 10px 10px 10px;
   background-color:  #ffe3c8;
   flex: 1;
+  width: 30vw;
+  height:auto;
+  position: relative;
   justify-content: center;
+  padding: 15px 15px 15px 15px;
   text-align: center;
   color: black;
   border-radius: 20px;
   border-style: solid;
   border-color: #4E3A24;
-  border-width: 20px 0px 20px 20px;
+  border-width: 20px 20px 20px 20px;
 }
 
 /****************************** Medical Info / Vet Stuff ***************************************************/
 
 .imgCenter {
   justify-content: center;
+  max-width: 100%;
+  height: auto;
 }
 
 /****************************** Training ***************************************************/
@@ -210,6 +273,7 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  width: 70vw;
   /*right: 1rem;*/
   background-color: #ffe3c8;
   color: white;
@@ -226,6 +290,7 @@
   font: bold;
   text-align: left;
   margin-left: 1rem;
+  width: 30vw;
 }
 
 .containerBottom {
@@ -238,10 +303,10 @@
   background-color:rgba(78, 58, 36, 0.5);
   color: white;
   font-family: inika;
-  margin-top: 5rem;
-  /*margin-left: 5rem;
-  margin-right: 5rem;
-  margin-bottom: 60px;*/
+  margin-top: 5vw;
+  /*margin-left: 0;
+  margin-right: 0;
+  /*margin-bottom: 60px;*/
 }
 
 .imgInsta {
