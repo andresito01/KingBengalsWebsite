@@ -57,11 +57,24 @@ const ProductsRecommend = () => {
 
   return (
     <div className={OwnersInfoCSS.containerFullWidth} > {/*ProductsRecom}>*/}
-      <h1 className={OwnersInfoCSS.bold}> Products We Recommend </h1>
       <h3> _______________</h3>
-      <h3> Below is a list of/link to products we recommend for your kitten. <br/> Toys and Treats <br/>Catteries? and crates <br/> Bedding and grooming products<br/> Training accessories? </h3>
+      <h3> Below is a list of/link to products we recommend for your kitten. <br/> From toys, treats, catteries, crates, bedding, grooming products, and accessories. </h3>
       {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> */}
-      <h2> A Link or List </h2>
+      <h3> _______________</h3>
+      {/*<div className={OwnersInfoCSS.containerBox}>*/}
+        <div className={OwnersInfoCSS.containerRow}>
+          <div className={OwnersInfoCSS.imgArrow}>
+            <img alt="headerImage" src={require("../images/glowing arrow flipped.png")} width = "150" />
+          </div>
+          <div className={OwnersInfoCSS.button}>
+          <h1 className={OwnersInfoCSS.bold}> < h1 className={OwnersInfoCSS.underline}> Products We Recommend </h1> </h1>
+          </div>
+        <div className={OwnersInfoCSS.imgArrow}>
+            <img alt="headerImage" src={require("../images/glowing arrow.png")} width = "150" />
+          </div>
+        {/*<h2 className={OwnersInfoCSS.underline}> A Link or List </h2>*/}
+        </div>
+      {/*</div>*/}
     </div>
   );
 
@@ -116,7 +129,7 @@ const PrepareForKitten = () => {
       <h3> _______________</h3>
       <h3> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
             Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h3>
-      <h2> Video for preparing (link)</h2>
+      <h2 className={OwnersInfoCSS.underline}> Video for preparing (link)</h2>
     </div>
     <div className={OwnersInfoCSS.containerRow1}>
       <h1 className={OwnersInfoCSS.bold}> Pic of a Kitten </h1>
@@ -137,10 +150,13 @@ const VetInfo = () => {
       <h3> _______________</h3>
       <h2> Vaccinations and Deworming (probably it’s own section) <br/> Vaccination Schedule <br/> Shots: Parvo, Distemper, Flu, etc.<br/> <br/> Spaying and Neutering, OR <br/>Hysterectomy (for girls) or a Vasectomy (for boys) 
           <br/> At what age should it be performed? Benefits? Drawbacks? <br/> <br/>
-          Any health concerns with the breed or kittens in general? </h2>
+          Any health concerns regarding the breed or kittens in general?
+          <br/> Bengal cat health problems and diseases that owners need to be aware of.
+          <br/> Bengal cats can be prone to, such as : Heart disease, Eye disease, Joint problems, Kidney disease, </h2>
           <h3> _______________</h3>
       <div className={OwnersInfoCSS.imgCenter}>
-      <img alt="headerImage" src={require("../images/bengal-cat.jpg")} width = "1200" height = "800" />
+       {/*<div className={OwnersInfoCSS.imgContainer}>*/}
+          <img alt="headerImage" src={require("../images/bengal-cat.jpg")} width = "700" height = "500" />
       </div>
     </div>
   );
@@ -185,6 +201,9 @@ const PetInsurance = () => {
     </div>
   );
 }
+
+/**************************************** Naming your Kitten ************************************************* */
+
 
 /**************************************** Social Media *********************************************************/
 const SocialMedia = () => {
