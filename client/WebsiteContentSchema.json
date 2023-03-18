@@ -1,0 +1,102 @@
+{
+  "HomePage": {
+    "headerImg": "",
+    "missionStatement": "",
+    "clientWithLitterImg": "",
+    "imageCarouselImgs": [
+
+    ],
+    "pastLitterImgs": [
+      {
+        "id": "1",
+        "litterImg": ""
+      }
+    ], 
+    "testimonials": [
+      {
+        "id": "1",
+        "name": "",
+        "message": ""
+      }
+    ]
+  },
+  "ReserveAKittenPage": {
+    "headerImg": "",
+    "processInstructions": "",
+    "paymentInstructions": "",
+    "deliveryInstructions": "",
+    "additionalInformation": ""
+  },
+  "AboutUsPage": {
+    "img1": "",
+    "img2": "",
+    "img3": "",
+    "businessLocation": "",
+    "businessHistory": "",
+    "businessApproachToCatsTreatment": "",
+    "businessKindOfCatsProduced": ""
+  },
+  "OurCatsPage": {
+    "headerImg": "",
+    "parents": [
+      {
+        "id": "1",
+        "name": "",
+        "sex": "female",
+        "profileImg": "",
+        "lineage": "",
+        "status": "",
+        "attitude": "",
+        "pattern": "",
+        "history": ""
+      },
+      {
+        "id": "2",
+        "name": "",
+        "sex": "female",
+        "profileImg": "",
+        "lineage": "",
+        "status": "",
+        "attitude": "",
+        "pattern": "",
+        "history": ""
+      },
+      {
+        "id": "3",
+        "name": "",
+        "sex": "male",
+        "profileImg": "",
+        "lineage": "",
+        "status": "",
+        "attitude": "",
+        "pattern": "",
+        "history": ""
+      }
+    ]
+  },
+  "LitterUpdatesPage": {
+    "litters": [
+      {
+        "id": "1",
+        "totalKittens": "",
+        "availableKittens": "",
+        "soldKittens": "",
+        "dateOfBirth": "",
+        "goHomeDate": "",
+        "litterImg": "",
+        "femaleParentImg": "",
+        "maleParentImg": "",
+        "kittens": [
+          {
+            "id": "1",
+            "kittenImg": "",
+            "sex": "",
+            "color": "",
+            "pattern": "",
+            "status": ""
+          }
+        ]
+      }
+    ]
+  }
+}

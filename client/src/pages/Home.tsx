@@ -4,6 +4,8 @@ import BusinessCertificate from "../components/BusinessCertificate";
 import Testimonials from "../components/Testimonials";
 import ImageCarousel from "../components/ImageCarousel";
 import WebNavHeader from "../components/WebNavHeader";
+import homePageJSON from "../json/homePage.json";
+
 
 const fontSizeMissionStatement = {fontSize: '2rem'};
 const fontSizeQuote = {fontSize: '1rem'};
@@ -43,7 +45,7 @@ const HomepageHeader = () => {
   return (
     <div className={HomeCSS.homeHeader}>
       {/* Header Image */}
-      <img alt="headerImage" src={require("../images/HomepageHeader.png")} />
+      <img alt="headerImage" src={homePageJSON.headerImg} />
     </div>
   );
 };
@@ -55,11 +57,7 @@ const MissionStatement = () => {
       <div className={HomeCSS.missionStatementText}>
         <h3 style={fontSizeMissionStatement}>KingBengals' Mission Statement</h3>
         <hr></hr>
-        <p style={fontSizeQuote}>
-          “A quote or a paraphrase about Bengal cats that describes them well
-          (personality, uniqueness, drive, other traits, etc)”.- Lidiya
-          Zapuskalov, owner of KingBengals Cattery
-        </p>
+        <p style={fontSizeQuote}>{homePageJSON.missionStatement}</p>
       </div>
     </div>
   );
@@ -69,7 +67,7 @@ const MissionStatement = () => {
 const OwnerPicture = () => {
   return (
     <div className={HomeCSS.ownerPicture}>
-      <img alt="headerImage" src={require("../images/HomepageHeader.png")} />
+      <img alt="headerImage" src={homePageJSON.ownerImg} />
     </div>
   );
 };
@@ -87,8 +85,13 @@ const PastLittersTitle = () => {
 const PastLitters = () => {
   return (
     <div className={HomeCSS.pastLitters}>
-      <img alt="headerImage" src={require("../images/Litter1.png")} />
-      <img alt="headerImage" src={require("../images/Litter2.png")} />
+      {homePageJSON.pastLitterImgs.map((litterImg, index) => {
+        return (
+          <div key={index}>
+             <img className="litterImg" alt="litterImg" src={litterImg.image} />
+          </div>
+        )
+      })}
     </div>
   );
 };

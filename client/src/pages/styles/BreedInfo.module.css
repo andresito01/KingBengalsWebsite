@@ -44,8 +44,8 @@
 .bengalsIntroPic{
   float: right;
   width: 33%;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin: 30px;
+  
 }
 
 .breedInfoTxt {
