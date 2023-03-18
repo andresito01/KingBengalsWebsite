@@ -10,7 +10,6 @@ import ContactUs from './pages/ContactUs';
 import BreedInfo from './pages/BreedInfo';
 import OwnersInfo from './pages/OwnersInfo';
 
-
 function App() {
   return (
     <div className="App">

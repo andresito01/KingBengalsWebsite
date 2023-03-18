@@ -9,6 +9,7 @@ import cx from 'classnames';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import imageCarouselImages from  "../json/imageCarousel.json"
 
 const images = [cat1, cat2, cat3];
 
@@ -42,14 +43,14 @@ const ImageCarousel = () => {
     <div className='container'>
       <OwlCarousel id="catteryImgs" className="owl-carousel owl-theme" {...options}>
         {
-          images.length === 0 ?
+          imageCarouselImages.length === 0 ?
             <div className="item">
               <h3>No Images</h3>
             </div> :
-            images.map((catImg, index) => {
+            imageCarouselImages.map((catImg, index) => {
               return (
-                <div className="item" key={index}>
-                   <img className="itemImg" alt="sliderImg" src={catImg} />
+                <div className=" item" key={index}>
+                   <img className="itemImg" alt="sliderImg" src={catImg.image} />
                 </div>
               )
             })
