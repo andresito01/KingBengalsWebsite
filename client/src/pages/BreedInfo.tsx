@@ -5,13 +5,39 @@ import spotted from "../images/SpottedBengals.png";
 import marbled from "../images/MarbledBengals.png";
 import redstar from "../images/1024px-Paintedcats_Red_Star_standing.jpg";
 import WebNavHeader from "../components/WebNavHeader";
-import litter2 from '../images/Litter2.png'
+import bengalKitten from '../images/Bengal-Cats.jpg'
+import { positional } from "yargs";
 
 const BreedInfo = () => {
   return (
     <div className={BreedInfoCSS.breedInfoPage}>
       <WebNavHeader/>
       <div className={BreedInfoCSS.backgroundLayer}>
+      
+      <BreedHistory/>
+        
+      <PatternsSpotMarble/>
+
+      <Personality/>
+
+      <FunFacts/>
+
+      <BengalCatHealth/>
+
+      <OwnerCompatibility/>
+
+      <SocialMedia/>
+
+      </div>
+    </div>
+  )
+}
+
+/**************************************** Breed History *************************************************/
+
+const BreedHistory = () => {
+
+  return (
         <div className = {BreedInfoCSS.bengalsTextContainer}>
           <h2 className = {BreedInfoCSS.sectionHeader}>The Bengal Cat</h2>
           <img className = {BreedInfoCSS.bengalsIntroPic} src={redstar} 
@@ -46,22 +72,21 @@ const BreedInfo = () => {
             generations and achieved a fertile F5 Bengal with a domestic cat temperament.
           </p>
         </div>
-      
-        <BreedInfoTopPic />
-        <div className={BreedInfoCSS.bottomContainer}>
-          <img src = {spotted} style={{float:"left", width:500}} 
-            alt="Spotted coats example"/>
-          <img src = {marbled} style={{float:"right", width:500}} 
-            alt="Marbled coats example"/>
-        </div>
+  )
+}
+
+/**************************************** Bengal Cat Personality and Caretaking *************************************************/
+
+const Personality = () => {
+
+  return (
         <div className={BreedInfoCSS.bengalsTextContainer}>
           <h2 className = {BreedInfoCSS.sectionHeader}>Personality and Caretaking</h2>
-          <img className = {BreedInfoCSS.bengalsIntroPic} src = {litter2} 
-            alt="Placeholder" style ={{float:"right", height:300}}/>
+          <img className = {BreedInfoCSS.bengalsIntroPic} src = {bengalKitten} alt="Placeholder" style ={{float:"right", height:300}}/>
           <p className={BreedInfoCSS.text}>
             The Bengal is a medium-to-high maintenance cat, as they have are very 
             active, energetic, and very affectionate with their owner. Though not 
-            typically lap cats, Bengals very much enjoy the company on their owners, 
+            typically lap cats, Bengals very much enjoy the company on their Breed, 
             and do best with another cat buddy to keep them company. 
             <br/><br/>
             Bengals remain athletic even into their senior years, and require a decent amount
@@ -75,17 +100,136 @@ const BreedInfo = () => {
             brushing, will be enough for most Bengals. 
           </p>
         </div>
+  )
+}
+
+
+/**************************************** Patterns - Spotted & Marble *********************************************************/
+const PatternsSpotMarble = () => {
+
+  return (
+    <div className={BreedInfoCSS.containerBox}>
+      <h1 className={BreedInfoCSS.bold}> Bengal Cat Patterns </h1>
+      <h3> _______________</h3>
+      <h2> Bengal Cat are born with one of two patterns: Spotted or Marbled.
+          <br/> Along with their personality, it's one of their defining features that make them unique.
+          <br/> Althought, some may say 'exotic'.
+          <br/> Below are pictures of each pattern with different combinations of colors they can be born with. </h2>
+      <h3> _______________</h3>
+      {/*<div className={BreedInfoCSS.imgCenter}>
+          <div className={BreedInfoCSS.bottomContainer}>
+          <img src = {spotted} style={{float:"left", width:500}} 
+            alt="Spotted coats example"/>
+          <img src = {marbled} style={{float:"right", width:500}} 
+            alt="Marbled coats example"/>
+        </div>
+        <div className={BreedInfoCSS.topImageContainer}>
+          <img className={BreedInfoCSS.topPicture} src={topImage} alt="Breed Information" width={100}/>
+        </div>
+      </div>*/}
+{/*********************************************************************************************************************/}
+    <div className={BreedInfoCSS.containerRowBox}>
+      <div className={BreedInfoCSS.containerRow2}>
+        <h1 className={BreedInfoCSS.bold}> Spotted </h1>
+        <h3> _______________</h3>
+        <div className={BreedInfoCSS.imgKittenDev}>
+         <img src = {spotted} style={{float:"left", width:500}} 
+            alt="Spotted coats example"/> 
+        </div>
+      </div>
+
+      <div className={BreedInfoCSS.imgCenter}></div>
+      <div className={BreedInfoCSS.topImageContainer}>
+        <img className={BreedInfoCSS.topPicture} src={topImage} alt="Breed Information" width={100}/>
+      </div>
+
+    <div className={BreedInfoCSS.containerRow2}>
+      <h1 className={BreedInfoCSS.bold}> Marbled </h1>
+      <h3> _______________</h3>
+      <div className={BreedInfoCSS.imgKittenDev}>
+      <img src = {marbled} style={{float:"right", width:500}} 
+            alt="Marbled coats example"/>
+      </div>
+    </div>
+  </div>
+</div>
+);
+
+}
+
+
+/**************************************** Fun Facts about Bengal Cats *********************************************************/
+const FunFacts = () => {
+  return (
+  <div className={BreedInfoCSS.containerRowBox}>
+    <div className={BreedInfoCSS.containerRow1}>
+      <h2 className={BreedInfoCSS.bold}> Goofy Bengal kitten pic </h2>
+      <img alt="headerImage" src={require("../images/cute cat on back.jpg")} width = "700" height = "450"/>
+    </div>
+    <div className={BreedInfoCSS.containerRow2}>
+      <h1 className={BreedInfoCSS.bold}> 10 Fun Facts about Bengal Cats </h1>
+      <h3> _______________</h3>
+
+    </div>
+  </div>
+  );
+}
+ 
+
+/**************************************** Bengal Cat Health *********************************************************/
+const BengalCatHealth = () => {
+
+  return (
+    <div className={BreedInfoCSS.containerRowBox2}>
+      <div className={BreedInfoCSS.containerRow1}>
+        <h1 className={BreedInfoCSS.bold}> Bengal Cat Health </h1>
+        <h3> _______________</h3>
+        <h3> Heart disease <br/> 
+             Eye disease<br/> 
+             Joint problems <br/>
+             kidney disease </h3>
+        <img alt="headerImage" src={require("../images/Bengal-cat-health-problems-and-diseases.jpg")} width = "500" height = "auto" />
       </div>
     </div>
   );
-};
+}
 
-const BreedInfoTopPic = () => {
+
+/**************************************** Owner compatibility *********************************************************/
+const OwnerCompatibility = () => {
+
   return (
-    <div className={BreedInfoCSS.topImageContainer}>
-      <img className={BreedInfoCSS.topPicture} src={topImage} alt="Breed Information" width={200}/>
+  <div className={BreedInfoCSS.containerRowBox}>
+    <div className={BreedInfoCSS.containerRow2}>
+      <h1 className={BreedInfoCSS.bold}> Owner Compatibility </h1>
+      <h3> _______________</h3>
     </div>
+    <div className={BreedInfoCSS.containerRow1}>
+      <h1 className={BreedInfoCSS.bold}> Pic of an active Cat </h1>
+      <div className={BreedInfoCSS.imgContainer}>
+      <img alt="headerImage" src={require("../images/bengalcatleash.jpg") } />{/*} width = "600" height = "300" />*/}
+      </div>
+    </div>
+  </div>
   );
-};
+}
+
+
+/**************************************** Social Media *********************************************************/
+const SocialMedia = () => {
+
+  return (
+    <div className={BreedInfoCSS.containerBottom}>
+      <div className={BreedInfoCSS.containerRow1}>
+        <h3>________________________________</h3>
+        <h1 className = {BreedInfoCSS.textLeftBold}> Follow Us On </h1> <br/>
+        <div className = {BreedInfoCSS.imgInsta}>
+        <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "85" height = "75" />
+        </div>
+      </div> 
+    </div>
+  )
+}
+
 
 export default BreedInfo;

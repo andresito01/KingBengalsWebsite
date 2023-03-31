@@ -17,12 +17,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../images/Kb-website-background.png");
+  position: relative;
+  background-image: url("../../images/pattern\ -\ b&w\ warm\ +\ wc\ edited.jpg");
   width: 100%;
+  background-size: contain;
 }
 
 .topPictureContainer {
   width: 100%;
+  margin-top: 1rem;
 }
 .topPicture {
   width: 100%;
@@ -56,12 +59,153 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.bottomContainer img {
+/*.bottomContainer img {
   display: flex;
   width: 50%;
   margin: 10px 10px 30px 30px;
-}
+}*/
 
 p.text{
   margin:20px;
+}
+
+/*********************************************************************************/
+
+.backgroundLayer Img {
+  max-width: 100%;
+  height: auto;
+}
+
+.containerBox {               /*WebNaveHeader color: #412804*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: relative;
+  position: relative;
+  background-color:#a87d48f5; /* rgba(78, 58, 36);/*, 0.99); /*#4E3A24;*/
+  color: white;
+  font-family: inika;
+  margin-top: 2vw;
+  margin-bottom: 60px;
+  padding: 10px 10px 10px 10px;
+  border-style:groove; /*solid;*/
+  border-color: rgba(255, 230, 207, 0.94);
+  border-width: 20px;
+  border-radius: 40px;
+}
+
+.containerRowBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+  position: relative;
+  /*right: 1rem;*/
+  background-color:#a87d48f5; /*#4E3A24;*/
+  color: white;
+  font-family: inika;
+  margin-top: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 60px;
+}
+
+.containerRow1 {
+  margin: 10px 10px 10px 10px;
+  background-color: #a87d48f5; /* #4E3A24;*/
+  flex: 1;
+  width: 45vw;
+  /*height: auto;*/
+  position: relative;
+  border-radius: 10px;
+  /*justify-content: center;
+  border-width: 20px 20px 20px 20px;*/
+}
+
+.containerRow2 {
+  margin: 10px 10px 10px 10px;
+  background-color:  #ffe3c8;
+  flex: 1;
+  width: 30vw;
+  height:auto;
+  position: relative;
+  justify-content: center;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #4E3A24;
+  border-width: 20px 20px 20px 20px;
+}
+
+.imgContainer {
+  max-width: 100%;
+  height: auto;
+  /*background-image: url("../images/bengal-cat.jpg");*/
+  /*background-size: contain;*/
+  border-style: double;
+  /*position: relative;*/
+}
+
+.bold{
+  font: bold;
+  font-size: 3rem;
+  font-family: inika;
+  width: auto;
+  position: relative;
+  justify-content: center;
+}
+
+.underline{
+  text-decoration: underline;
+  font: italic
+  /*font: bold;*/
+}
+
+.textLeftBold {
+  font: bold;
+  text-align: left;
+  margin-left: 1rem;
+  width: 30vw;
+}
+
+.containerRowBox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 70vw;
+  /*right: 1rem;*/
+  background-color: #ffe3c8;
+  color: white;
+  font-family: inika;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 60px;
+}
+
+.containerBottom {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: left;
+  text-align: left;
+  /*right: 1rem;*/
+  background-color:rgba(78, 58, 36, 0.5);
+  color: white;
+  font-family: inika;
+  margin-top: 5vw;
+  /*margin-left: 0;
+  margin-right: 0;
+  /*margin-bottom: 60px;*/
+}
+
+.imgInsta {
+  justify-content: left;
+  margin-left: 3%;
+  margin-bottom: 5%;
 }
