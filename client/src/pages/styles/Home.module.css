@@ -1,3 +1,5 @@
+@import "../../theme.css";
+
 @font-face {
   font-family: inika;
   src: url("../../fonts/Inika-Regular.ttf");
@@ -48,8 +50,13 @@
   position: relative;
   margin: 1rem;
   padding-top: 3rem;
-  background-color: #412804;
+  background-color: var(--dark-primary-color);
+  opacity: var(--dark-bg-opacity);
   color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+  border-color: var(--light-primary-color);
   /* bottom: 0.2vw;
   left: 0.2vw; */
 }
@@ -65,10 +72,10 @@
 }
 .ownerPicture img {
   width: 100%;
-  border-color: rgb(243, 214, 172);
-  border-width: 2vw;
+  border-color: var(--light-primary-color);
+  border-width: var(--border-width);
+  border-radius: var(--border-radius);
   border-style: solid;
-  border-radius: 20px;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Past Litters' Title   <<<<<<<<<<<<<<<<<<*/
@@ -101,7 +108,7 @@
 .pastLitters img {
   width: 90%;
   margin: auto;
-  border-color: rgba(248, 209, 152, 0.989);
-  border-width: 2vw;
+  border-color: var(--light-primary-color);
+  border-width: var(--border-width);
   border-style: solid;
 }
