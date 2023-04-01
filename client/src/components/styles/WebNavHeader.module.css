@@ -8,7 +8,9 @@
 }
 
 .headerContainer {
-  position: relative;
+  position: relative; /*absolute;/*fixed; /*relative;*/
+  position: -webkit-sticky; /* For Safari */
+  top: 0;
   width: 100%;
   height: auto;
   background-color: #412804;
@@ -55,16 +57,16 @@
 
 .headerKingBengals {
   font-family: lancelot;
-  font-size: 4rem;
+  font-size: 6rem;
   color: white;
   margin-bottom: 2rem;
 }
 
 .headerCattery {
   font-family: lancelot;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
-  margin-left: 8px;
+  margin-left: 9px;
   margin-bottom: 2rem;
 }
 
@@ -84,13 +86,13 @@
 .navLinks{
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 1.6rem;
   margin-bottom: 1rem;
 }
 
 .link {
   font-family: inika;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -112,11 +114,11 @@
   margin-right: 1rem;
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1213px) {
 
 	.navBtn{
     display: block;
-		position: absolute;
+		position: absolute; /*absolute;*/
     right: 0;
     top: 0;
     margin-top: 3%;
@@ -192,7 +194,7 @@
 
 
   .leftHeaderImgResponsive {
-    position: absolute;
+    position: sticky; /*absolute;*/
     top: 0px;
     left: 0px;
     height: 90px;

@@ -1,0 +1,15 @@
+{
+    "headerImg": "images/HomepageHeader.png",
+    "missionStatement": "This is the mission statement",
+    "ownerImg": "images/HomepageHeader.png",
+    "pastLitterImgs": [
+      {
+        "id": 1,
+        "image": "images/Litter1.png"
+      },
+      {
+        "id": 2,
+        "image": "images/Litter2.png"
+      }
+    ]
+}

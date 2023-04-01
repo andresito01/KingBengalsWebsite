@@ -1,0 +1,8 @@
+:root {
+  --light-primary-color: #e2b78e;
+  --dark-primary-color: #a87d48f5;
+  --dark-bg-opacity: 0.9;
+  --light-bg-opacity: 0.85;
+  --border-radius: 20px;
+  --border-width: 3px;
+}
