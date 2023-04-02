@@ -117,30 +117,3 @@
   align-items: center;
 
 }
-
-.socialsBox {
-  padding-top: 10px;
-  text-align: center;
-  background-color: rgb(107, 70, 42, .9);
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  width: 30%;
-  height: 200px;
-  margin-top: 60px;
-  border-style: solid;
-  border-color: rgb(184, 144, 96, .9);
-  border-radius: 50%;
-}
-
-.instagramBtn {
-  width: 80px;
-  margin-top: -10px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.instagramImg {
-  width: 100%;
-  border-radius: 16px;
-}

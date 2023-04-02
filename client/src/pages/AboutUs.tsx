@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutCSS from "./styles/About.module.css";
 import WebNavHeader from '../components/WebNavHeader';
+import Footer from "../components/Footer";
 import background from "../images/pattern.jpg";
 
 const About = () => {
@@ -51,6 +52,7 @@ const About = () => {
           toys, training guide? etc.<br></br>
         </p>
       </div>
+      <Footer/>
     </div>
   )
 }
