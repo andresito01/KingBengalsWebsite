@@ -1,11 +1,5 @@
-@font-face {
-  font-family: inika;
-  src: url("../../fonts/Inika-Regular.ttf");
-}
-@font-face {
-  font-family: lancelot;
-  src: url("../../fonts/Lancelot-Regular.ttf");
-}
+@import "../../theme.css";
+
 
 .breedInfoPage {
   position: absolute;
@@ -38,9 +32,9 @@
 
 .bengalsTextContainer{
   background-color: #a87d48f5;
-  font-size: 20px;
+  font-size: var(--generic-text-size);
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--generic-website-text);
   text-align: justify;
 }
 
@@ -54,9 +48,9 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 28px;
+  font-size: var(--header-font-size);
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--header-text-font);
 }
 
 /*.bottomContainer img {
@@ -85,7 +79,8 @@ p.text{
   position: relative;
   background-color:#a87d48f5; /* rgba(78, 58, 36);/*, 0.99); /*#4E3A24;*/
   color: white;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   margin-top: 2vw;
   margin-bottom: 60px;
   padding: 10px 10px 10px 10px;
@@ -105,7 +100,8 @@ p.text{
   /*right: 1rem;*/
   background-color:#a87d48f5; /*#4E3A24;*/
   color: white;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   margin-top: 2vw;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -150,23 +146,23 @@ p.text{
   /*position: relative;*/
 }
 
-.bold{
-  font: bold;
-  font-size: 3rem;
-  font-family: inika;
+.bold {
+  font: var(--generic-text-property);
+  font-size: var(--largest-header-size);
+  font-family: var(--generic-website-text);
   width: auto;
   position: relative;
   justify-content: center;
 }
 
-.underline{
+.underline {
   text-decoration: underline;
   font: italic
   /*font: bold;*/
 }
 
 .textLeftBold {
-  font: bold;
+  font: var(--generic-text-property);
   text-align: left;
   margin-left: 1rem;
   width: 30vw;
@@ -181,7 +177,8 @@ p.text{
   /*right: 1rem;*/
   background-color: #ffe3c8;
   color: white;
-  font-family: inika;
+  font-family: var(--header-text-font);
+  font-size: var(--header-font-size);
   margin-top: 1rem;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -197,7 +194,8 @@ p.text{
   /*right: 1rem;*/
   background-color:rgba(78, 58, 36, 0.5);
   color: white;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   margin-top: 5vw;
   /*margin-left: 0;
   margin-right: 0;

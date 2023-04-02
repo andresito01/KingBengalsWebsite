@@ -1,11 +1,5 @@
-@font-face {
-  font-family: inika;
-  src: url("../../fonts/Inika-Regular.ttf");
-}
-@font-face {
-  font-family: lancelot;
-  src: url("../../fonts/Lancelot-Regular.ttf");
-}
+@import "../../theme.css";
+
 
 .aboutPage {
   display: flex;
@@ -24,7 +18,8 @@
   background-color: burlywood;
   color: white;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--header-text-font);
+  font-size: var(--large-header-size);
   padding-top: 20px;
   height: 100px;
   outline-style: solid;
@@ -36,7 +31,8 @@
   background-color: #6b462a;
   color: white;
   text-align: left;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   padding-top: 10px;
   padding-left: 20px;
   height: 250px;
@@ -72,7 +68,8 @@
   background-color: #6b462a;
   color: white;
   text-align: left;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   padding-top: 10px;
   padding-left: 20px;
   height: 450px;
@@ -128,7 +125,8 @@
   background-color: #6b462a;
   color: white;
   text-align: left;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   padding-top: 10px;
   padding-left: 20px;
   height: 100px;

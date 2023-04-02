@@ -109,9 +109,9 @@ const PatternsSpotMarble = () => {
 
   return (
     <div className={BreedInfoCSS.containerBox}>
-      <h1 className={BreedInfoCSS.bold}> Bengal Cat Patterns </h1>
+      <h1 className={BreedInfoCSS.sectionHeader}> Bengal Cat Patterns </h1>
       <h3> _______________</h3>
-      <h2> Bengal Cat are born with one of two patterns: Spotted or Marbled.
+      <h2 className={BreedInfoCSS.bengalsTextContainer}> Bengal Cat are born with one of two patterns: Spotted or Marbled.
           <br/> Along with their personality, it's one of their defining features that make them unique.
           <br/> Althought, some may say 'exotic'.
           <br/> Below are pictures of each pattern with different combinations of colors they can be born with. </h2>

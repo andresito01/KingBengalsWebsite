@@ -1,11 +1,5 @@
-@font-face {
-  font-family: inika;
-  src: url("../../fonts/Inika-Regular.ttf");
-}
-@font-face {
-  font-family: lancelot;
-  src: url("../../fonts/Lancelot-Regular.ttf");
-}
+@import "../../theme.css";
+
 
 .ourCatsPage {
   background-image: url("../../images/kbengalsbgGradient.png");
@@ -19,7 +13,9 @@
   background-position: center center;
   text-align: center;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--header-text-font);
+  font-size: var(--large-header-size);
+  font-weight: var(--header-text-property);
   top: 150px;
   height: 700px;
   vertical-align: text-top;
@@ -32,17 +28,18 @@
   border-right: 0;
   border-color: black;
 }
-.headerContainerOurCats h1{
-  font-size: 3vw;
+.h1{
+  font-size: var(--large-header-size);
 }
-.headerContainerOurCats h2{
-  font-size: 1.8vw;
+.h2{
+  font-size: var(--header-font-size);
 }
 
 .secondaryHeaderContainer {
   text-align: center;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--header-text-font);
+  font-size: var(--header-font-size);
   line-height: 20px;
   width: 60%;
   height: 50px;
@@ -52,7 +49,7 @@
   margin-bottom: 60px;
 }
 .secondaryHeaderContainer h1{
-  font-size: 1.8vw;
+  font-size: var(--header-font-size);
 }
 
 .body {
@@ -83,8 +80,8 @@
   border-width: 2px;
   padding-left: 1vw;
   color: black;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2vw;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   line-height: 1.1;
 }
 
@@ -117,7 +114,8 @@
 .parentTile {
   background-color: #6b462a;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   line-height: 0.5;
   padding-left: 7%;
   padding-right: 7%;
@@ -148,7 +146,8 @@
   text-align: center;
   background-color: rgb(107, 70, 42, .9);
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   width: 30%;
   height: 200px;
   margin-top: 60px;
