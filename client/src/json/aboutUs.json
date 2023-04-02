@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "note": "location",
+        "question-sectionHeader": "Where are we located?",
+        "answer": "We are located in Sacramento, California just near the vibrant downtown. Brief description of the physical location, such as venue, view, landmarks nearby."
+    },
+    {
+        "id": 2,
+        "note": "business",
+        "question-sectionHeader": "How long have we been in the business?",
+        "answer": "KingBengals acquired its tom and queen cats in [year1], and started breeding since [year2]. We are a TICA-certified cattery since [year3]."
+    },
+    {
+        "id": 3,
+        "note": "inventory",
+        "question-sectionHeader": "What kind of kittens/cats do we produce?",
+        "answer": "Our Bengal cats sport the wide variety of patterns, from vibrant rosettes to swirls of marbling. Our cattery has sold over [number] kittens and cats, and have won over [number] cat show awards across the United States. We can even deliver your new feline family member to you long-distance!"
+    },
+    {
+        "id": 4,
+        "note": "inventory",
+        "question-sectionHeader": "What kind of kittens/cats do we produce?",
+        "answer": "Our Bengal cats sport the wide variety of patterns, from vibrant rosettes to swirls of marbling. Our cattery has sold over [number] kittens and cats, and have won over [number] cat show awards across the United States. We can even deliver your new feline family member to you long-distance!"
+    }
+]
+  
