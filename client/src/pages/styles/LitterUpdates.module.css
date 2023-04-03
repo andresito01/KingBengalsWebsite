@@ -1,11 +1,4 @@
-@font-face {
-  font-family: inika;
-  src: url("../../fonts/Inika-Regular.ttf");
-}
-@font-face {
-  font-family: lancelot;
-  src: url("../../fonts/Lancelot-Regular.ttf");
-}
+@import "../../theme.css";
 
 .litterUpdatesPage {
   background-image: url("../../images/kbengalsbgGradient.png");
@@ -14,7 +7,8 @@
 }
 
 .litterInstructionContainer {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-website-size);
   opacity: 0.9;
   padding: 1%;
   display: flex;
@@ -63,7 +57,7 @@
 
 .parentName{
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--header-text-font);
   color: black;
   font-size: 4vh;
 }
@@ -100,7 +94,8 @@
 }
 
 .litterInfo {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-website-size);
   color: black;
   background-color: #a87d48f5;
   margin-top: -15vh;
@@ -119,12 +114,12 @@
 }
 
 .litterInfo h1{
-  font-size: 5vh;
+  font-size: var(--header-font-size);
   line-height: 4vh;
 }
 
 .litterInfo p{
-  font-size: 3vh;
+  font-size: var(--generic-website-size);
   line-height: 2.5vh;
 }
 
@@ -136,3 +131,4 @@
   margin: .1vh;
   border-radius: 20px;
 }
+

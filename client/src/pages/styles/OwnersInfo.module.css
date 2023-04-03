@@ -1,12 +1,4 @@
-@font-face {
-  font-family: inika;
-  src: url("../../fonts/Inika-Regular.ttf");
-}
-@font-face {
-  font-family: lancelot;
-  src: url("../../fonts/Lancelot-Regular.ttf");
-}
-
+@import "../../theme.css";
 /***************************** Owner's Info header ********************************/
 
 /*.ownersInfoPage {
@@ -68,9 +60,9 @@
   text-align: left;
   top: 30vw;
   margin-left: 5vw;
-  font-family: inika;
-  font-size: 50pt;
-  font-weight: bold;
+  font-family: var(--header-text-font);
+  font-size: var(--header-font-size);
+  font-weight: var(--header-text-property);
   color:#4E3A24;
 }
 
@@ -78,12 +70,32 @@
 
 .bold{
   font: bold;
-  font-size: 3rem;
+  font-size: 3vw;
+  font-family: inika;
+  font: var(--header-text-property);
+  font-size: var(--header-font-size);
+  font-family: var(--header-text-font);
+  width: auto;
+  position: relative;
+  justify-content: center;
+}
+
+.boldSub{
+  font: bold;
+  font-size: 2vw;
   font-family: inika;
   width: auto;
   position: relative;
   justify-content: center;
 }
+
+/*.text{
+  font-size: 2vw;
+  font-family: inika;
+  width: auto;
+  position: relative;
+  justify-content: center;
+}*/
 
 .underline{
   text-decoration: underline;
@@ -102,7 +114,8 @@
   /*right: 1rem;*/
   background-color:rgba(78, 58, 36);
   color: white;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   /*margin-top: 5vw;
   /*margin-left: 5rem;
   margin-right: 5rem;*/
@@ -118,7 +131,7 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  width: 100%;
+  width: relative;
   position: relative;
   /*right: 1rem;*/
   background-color:#4E3A24;
@@ -139,6 +152,8 @@
   background-color: #412804;
   justify-content: center;
   border-style: double;
+  color: white;
+  cursor: pointer;
 }
 /*.fixedOwnInfoHeaderImg {
   background-image: url("../images/bencat - OwnersInfo header image.jpg");
@@ -192,7 +207,8 @@
   position: relative;
   background-color: rgba(78, 58, 36);/*, 0.99); /*#4E3A24;*/
   color: white;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   margin-top: 2vw;
   margin-bottom: 60px;
   padding: 10px 10px 10px 10px;
@@ -202,19 +218,19 @@
   border-radius: 40px;
 }
 
-.imgKittenDev {
+/*.imgKittenDev {
   /*background-image: url("../images/cute bengal kitten.jpg");*/
-  /*border-radius: 50%;*/
+  /*border-radius: 50%;
   position: relative;
   justify-content: center;
-  width: 25vw; /*250px;*/
+  width: 25vw; /*250px;
   height: auto; /*300px;*/
   /*background-size: contain;
   /*top: 1rem;
   right: 1rem*/
   /*object-fit: cover;*/
-  /*background-color: rgba(160, 119, 81, 0.94);*/
-}
+  /*background-color: rgba(160, 119, 81, 0.94);
+}*/
 
 .txtKittenDev {
   text-align: right;
@@ -233,7 +249,8 @@
   /*right: 1rem;*/
   background-color:#4E3A24;
   color: white;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   margin-top: 2vw;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -298,9 +315,11 @@
   /*right: 1rem;*/
   background-color: #ffe3c8;
   color: white;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   margin-top: 1rem;
   margin-left: 5rem;
   margin-right: 5rem;
   margin-bottom: 60px;
 }
+

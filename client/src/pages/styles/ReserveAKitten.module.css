@@ -1,11 +1,4 @@
-@font-face {
-  font-family: inika;
-  src: url("../../fonts/Inika-Regular.ttf");
-}
-@font-face {
-  font-family: lancelot;
-  src: url("../../fonts/Lancelot-Regular.ttf");
-}
+@import "../../theme.css";
 
 .reserveAKittenPage {
   background-color: #a87d48f5;
@@ -38,7 +31,8 @@
   text-align: center;
   background-color: #87633d;
   color: white;
-  font-family: inika;
+  font-family: var(--header-text-font);
+  font-size: var(--large-header-size);
   margin-top: 1rem;
   margin-bottom: 30px;
   padding: 10px 10px 10px 10px;
@@ -50,15 +44,16 @@
 
 .underline{
   text-decoration: underline;
+  font-size: var(--header-font-size);
 }
 
 .applyButton {
   background-color: #D3BEA5;
   text-align: center;
   color: black;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: inika;
+  font-size: var(--large-header-size);
+  font-weight: var(--header-text-property);
+  font-family: var(--header-text-font);
   padding: 20px 20px 20px 20px;
   margin-bottom: 20px;
   border-style: solid;
@@ -73,16 +68,17 @@
   justify-content: center;
   text-align: center;
   color: white;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
 }
 
 .instructionContainer h3 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: var(--header-font-size);
+  font-weight: var(--header-text-property);
 }
 
 .instructionContainer p {
-  font-size: 1.75rem;
+  font-size: var(--header-font-size);
 }
 
 .processContainer {
@@ -110,7 +106,8 @@
   margin: 10px 10px 10px 10px;
   background-color: #4E3A24;
   color: white;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
 }

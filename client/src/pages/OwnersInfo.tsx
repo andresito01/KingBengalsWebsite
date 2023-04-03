@@ -67,9 +67,11 @@ const ProductsRecommend = () => {
           <div className={OwnersInfoCSS.imgArrow}>
             <img alt="headerImage" src={require("../images/glowing arrow flipped.png")} width = "150" />
           </div>
-          <div className={OwnersInfoCSS.button}>
-          <h1 className={OwnersInfoCSS.bold}> < h1 className={OwnersInfoCSS.underline}> Products We Recommend </h1> </h1>
-          </div>
+          <a href="https://www.amazon.com/" target="_blank" rel='noreferrer'> {/*Link to 'Amazon'*/}
+            <div className={OwnersInfoCSS.button}>
+            <h1 className={OwnersInfoCSS.bold}> < h1 className={OwnersInfoCSS.underline}> Products&nbsp;We&nbsp;Recommend (link) </h1> </h1>
+            </div>
+          </a>
         <div className={OwnersInfoCSS.imgArrow}>
             <img alt="headerImage" src={require("../images/glowing arrow.png")} width = "150" />
           </div>
@@ -90,25 +92,25 @@ const KittenDevelopment = () => {
       <h3>  Here you can see the entire process your kitten will take from birth to the day it goes home. </h3>
       <div className={OwnersInfoCSS.containerRowBox}>
         <div className={OwnersInfoCSS.containerRow2}>
-         <h1 className={OwnersInfoCSS.bold}> Age: 1 - 2 weeks </h1>
+         <h1 className={OwnersInfoCSS.boldSub}> Age: 1 - 2 weeks </h1>
          <h3> _______________</h3>
-         <div className={OwnersInfoCSS.imgKittenDev}>
+         <div className={OwnersInfoCSS.imgContainer}>
           <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} /> 
         </div>
          <h3> [Text] </h3>
         </div>
         <div className={OwnersInfoCSS.containerRow2}>
-          <h1 className={OwnersInfoCSS.bold}> Age: 2 - 4 weeks </h1>
+          <h1 className={OwnersInfoCSS.boldSub}> Age: 2 - 4 weeks </h1>
           <h3> _______________</h3>
-          <div className={OwnersInfoCSS.imgKittenDev}>
+          <div className={OwnersInfoCSS.imgContainer}>
             <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} />
           </div>
           <h3> [Text] </h3>
         </div>
         <div className={OwnersInfoCSS.containerRow2}>
-          <h1 className={OwnersInfoCSS.bold}> Age: 2 Months </h1>
+          <h1 className={OwnersInfoCSS.boldSub}> Age: 2 Months </h1>
           <h3> _______________</h3>
-          <div className={OwnersInfoCSS.imgKittenDev}>
+          <div className={OwnersInfoCSS.imgContainer}>
             <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} />
           </div>
           <h3> [Text] </h3>
@@ -130,7 +132,11 @@ const PrepareForKitten = () => {
       <h3> _______________</h3>
       <h3> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
             Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h3>
-      <h2 className={OwnersInfoCSS.underline}> Video for preparing (link)</h2>
+      <a href="https://www.youtube.com/watch?v=A_MjCqQoLLA" target="_blank" rel='noreferrer'> {/*Link to 'Hey Jude - The Beatles'*/}
+        <div className={OwnersInfoCSS.button}>
+          <h2 className={OwnersInfoCSS.underline}> Video for preparing (link)</h2>
+        </div>
+      </a>
     </div>
     <div className={OwnersInfoCSS.containerRow1}>
       <h1 className={OwnersInfoCSS.bold}> Pic of a Kitten </h1>
@@ -142,19 +148,22 @@ const PrepareForKitten = () => {
   );
 }
 
-/**************************************** Medical Information & Vet Things *********************************************************/
+/**************************************** Medical Information & Vet Things *********************************************/
 const VetInfo = () => {
 
   return (
     <div className={OwnersInfoCSS.containerBox}>
       <h1 className={OwnersInfoCSS.bold}> Medical Information and Vet Things </h1>
       <h3> _______________</h3>
-      <h2> Vaccinations and Deworming (probably it’s own section) <br/> Vaccination Schedule <br/> Shots: Parvo, Distemper, Flu, etc.<br/> <br/> Spaying and Neutering, OR <br/>Hysterectomy (for girls) or a Vasectomy (for boys) 
-          <br/> At what age should it be performed? Benefits? Drawbacks? <br/> <br/>
-          Any health concerns regarding the breed or kittens in general?
-          <br/> Bengal cat health problems and diseases that owners need to be aware of.
-          <br/> Bengal cats can be prone to, such as : Heart disease, Eye disease, Joint problems, Kidney disease, </h2>
-          <h3> _______________</h3>
+      <h3> Vaccinations and Deworming (probably it’s own section) 
+        <br/> Vaccination Schedule <br/> Shots: Parvo, Distemper, Flu, etc.<br/> 
+        <br/> Spaying and Neutering, OR 
+        <br/> Hysterectomy (for girls) or a Vasectomy (for boys) 
+        <br/> At what age should it be performed? Benefits? Drawbacks? <br/> 
+        <br/> Any health concerns regarding the breed or kittens in general?
+        <br/> Bengal cat health problems and diseases that owners need to be aware of.
+        <br/> Bengal cats can be prone to, such as : Heart disease, Eye disease, Joint problems, Kidney disease, </h3>
+      <h3> _______________</h3>
       <div className={OwnersInfoCSS.imgCenter}>
        {/*<div className={OwnersInfoCSS.imgContainer}>*/}
           <img alt="headerImage" src={require("../images/bengal-cat.jpg")} width = "700" height = "500" />

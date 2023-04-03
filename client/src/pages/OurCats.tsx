@@ -29,6 +29,7 @@ const OurCats: React.FC = () => {
     <div className={OurCatsCSS.ourCatsPage}>
       <WebNavHeader/>
       <div className={OurCatsCSS.headerContainerOurCats}>
+      
         <h1>Meet The Parents!</h1>
         <h2>
           We believe in quality genetics and pay close attention to our breeding program to ensure 

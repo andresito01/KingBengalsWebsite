@@ -8,7 +8,7 @@
 }
 
 .headerContainer {
-  position: sticky; /*absolute;/*fixed; /*relative;*/
+  position: relative; /*absolute;/*fixed; /*relative;*/
   position: -webkit-sticky; /* For Safari */
   top: 0;
   width: 100%;
@@ -90,10 +90,16 @@
   margin-bottom: 1rem;
 }
 
-.link {
+.link a{
   font-family: inika;
   font-size: 1.3rem;
   color: white;
+}
+
+.link a.active{
+  background-color: brown;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .link:hover {
@@ -114,11 +120,11 @@
   margin-right: 1rem;
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1213px) {
 
 	.navBtn{
     display: block;
-		position: sticky; /*absolute;*/
+		position: absolute; /*absolute;*/
     right: 0;
     top: 0;
     margin-top: 3%;
