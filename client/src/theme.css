@@ -12,7 +12,7 @@
   --dark-primary-color: #a87d48f5;
   --header-text-font: lancelot;
   --header-font-size: 1.75em;
-  --largest-header-size: 3;
+  --largest-header-size: 3em;
   --large-header-size: 2em;
   --header-text-property: bold;
   --generic-website-text: inika;
@@ -20,7 +20,7 @@
   --generic-text-property: bold;
   --dark-bg-opacity: 0.9;
   --light-bg-opacity: 0.85;
-  --border-radius: 20px;
-  --border-width: 3px;
+  --border-radius: 1.25rem;
+  --border-width: 0.1875rem;
 
 }

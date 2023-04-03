@@ -22,7 +22,7 @@ const About = () => {
           What are the bengal cats bred for? pets, companionship, house cats, competitions, family pets, etc.
         </p>
         <div className={AboutCSS.box1}><img alt='box1Image' src={require('../images/Placeholder.png')}/></div>
-        <p className={AboutCSS.p2} style={fontSizeParagraph}>
+        <p className={AboutCSS.p2} /*style={fontSizeParagraph}*/>
           What kind of approach does the business take with training and working with all the cats? What does 
           the business believe in when it comes to the treatment of all their cats? <br></br>
           <br></br>
