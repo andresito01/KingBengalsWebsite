@@ -100,7 +100,7 @@ p.text{
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  width: 80vw;
+  width: relative;
   position: relative;
   /*right: 1rem;*/
   background-color:#a87d48f5; /*#4E3A24;*/
@@ -152,11 +152,12 @@ p.text{
 
 .bold{
   font: bold;
-  font-size: 3rem;
+  font-size: 3vw;
   font-family: inika;
   width: auto;
   position: relative;
   justify-content: center;
+  padding: 10px 10px 10px 10px;
 }
 
 .underline{
