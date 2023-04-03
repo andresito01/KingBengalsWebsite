@@ -95,7 +95,7 @@ p.text{
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  width: 80vw;
+  width: relative;
   position: relative;
   /*right: 1rem;*/
   background-color:#a87d48f5; /*#4E3A24;*/
@@ -146,6 +146,10 @@ p.text{
   /*position: relative;*/
 }
 
+.bold{
+  font: bold;
+  font-size: 3vw;
+  font-family: inika;
 .bold {
   font: var(--generic-text-property);
   font-size: var(--largest-header-size);
@@ -153,6 +157,7 @@ p.text{
   width: auto;
   position: relative;
   justify-content: center;
+  padding: 10px 10px 10px 10px;
 }
 
 .underline {

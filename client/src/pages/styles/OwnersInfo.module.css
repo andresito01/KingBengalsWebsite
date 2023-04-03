@@ -69,6 +69,9 @@
 /***************************** Products we Recommend ********************************/
 
 .bold{
+  font: bold;
+  font-size: 3vw;
+  font-family: inika;
   font: var(--header-text-property);
   font-size: var(--header-font-size);
   font-family: var(--header-text-font);
@@ -76,6 +79,23 @@
   position: relative;
   justify-content: center;
 }
+
+.boldSub{
+  font: bold;
+  font-size: 2vw;
+  font-family: inika;
+  width: auto;
+  position: relative;
+  justify-content: center;
+}
+
+/*.text{
+  font-size: 2vw;
+  font-family: inika;
+  width: auto;
+  position: relative;
+  justify-content: center;
+}*/
 
 .underline{
   text-decoration: underline;
@@ -196,19 +216,19 @@
   border-radius: 40px;
 }
 
-.imgKittenDev {
+/*.imgKittenDev {
   /*background-image: url("../images/cute bengal kitten.jpg");*/
-  /*border-radius: 50%;*/
+  /*border-radius: 50%;
   position: relative;
   justify-content: center;
-  width: 25vw; /*250px;*/
+  width: 25vw; /*250px;
   height: auto; /*300px;*/
   /*background-size: contain;
   /*top: 1rem;
-  right: 1rem*/
-  /*object-fit: cover;*/
-  /*background-color: rgba(160, 119, 81, 0.94);*/
-}
+  right: 1rem
+  /*object-fit: cover;
+  /*background-color: rgba(160, 119, 81, 0.94);
+}*/
 
 .txtKittenDev {
   text-align: right;
