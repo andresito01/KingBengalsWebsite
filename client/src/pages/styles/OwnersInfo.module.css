@@ -131,7 +131,7 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  width: 100%;
+  width: relative;
   position: relative;
   /*right: 1rem;*/
   background-color:#4E3A24;
@@ -152,6 +152,8 @@
   background-color: #412804;
   justify-content: center;
   border-style: double;
+  color: white;
+  cursor: pointer;
 }
 /*.fixedOwnInfoHeaderImg {
   background-image: url("../images/bencat - OwnersInfo header image.jpg");
@@ -225,8 +227,8 @@
   height: auto; /*300px;*/
   /*background-size: contain;
   /*top: 1rem;
-  right: 1rem
-  /*object-fit: cover;
+  right: 1rem*/
+  /*object-fit: cover;*/
   /*background-color: rgba(160, 119, 81, 0.94);
 }*/
 

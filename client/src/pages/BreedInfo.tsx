@@ -120,9 +120,6 @@ const PatternsSpotMarble = () => {
       <h1 className={BreedInfoCSS.bold}> Patterns </h1>
     </div>
 
-    <h2> Bengal cats are born with one of two patterns: spotted or marbled.
-      <h1 className={BreedInfoCSS.sectionHeader}> Bengal Cat Patterns </h1>
-      <h3> _______________</h3>
       <h2 className={BreedInfoCSS.bengalsTextContainer}> Bengal Cat are born with one of two patterns: Spotted or Marbled.
           <br/> Along with their personality, it's one of their defining features that make them unique.
           <br/> Althought, some may use the word 'exotic' to refer to their uniqueness.
@@ -159,7 +156,7 @@ const PatternsSpotMarble = () => {
     
   </div>
 </div>
-);
+)
 
 }
 

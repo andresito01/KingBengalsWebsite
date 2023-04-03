@@ -150,10 +150,6 @@ p.text{
   font: bold;
   font-size: 3vw;
   font-family: inika;
-.bold {
-  font: var(--generic-text-property);
-  font-size: var(--largest-header-size);
-  font-family: var(--generic-website-text);
   width: auto;
   position: relative;
   justify-content: center;

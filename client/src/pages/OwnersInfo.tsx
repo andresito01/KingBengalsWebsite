@@ -66,9 +66,11 @@ const ProductsRecommend = () => {
           <div className={OwnersInfoCSS.imgArrow}>
             <img alt="headerImage" src={require("../images/glowing arrow flipped.png")} width = "150" />
           </div>
-          <div className={OwnersInfoCSS.button}>
-          <h1 className={OwnersInfoCSS.bold}> < h1 className={OwnersInfoCSS.underline}> Products We Recommend </h1> </h1>
-          </div>
+          <a href="https://www.amazon.com/" target="_blank" rel='noreferrer'> {/*Link to 'Amazon'*/}
+            <div className={OwnersInfoCSS.button}>
+            <h1 className={OwnersInfoCSS.bold}> < h1 className={OwnersInfoCSS.underline}> Products&nbsp;We&nbsp;Recommend (link) </h1> </h1>
+            </div>
+          </a>
         <div className={OwnersInfoCSS.imgArrow}>
             <img alt="headerImage" src={require("../images/glowing arrow.png")} width = "150" />
           </div>
@@ -129,7 +131,11 @@ const PrepareForKitten = () => {
       <h3> _______________</h3>
       <h3> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
             Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h3>
-      <h2 className={OwnersInfoCSS.underline}> Video for preparing (link)</h2>
+      <a href="https://www.youtube.com/watch?v=A_MjCqQoLLA" target="_blank" rel='noreferrer'> {/*Link to 'Hey Jude - The Beatles'*/}
+        <div className={OwnersInfoCSS.button}>
+          <h2 className={OwnersInfoCSS.underline}> Video for preparing (link)</h2>
+        </div>
+      </a>
     </div>
     <div className={OwnersInfoCSS.containerRow1}>
       <h1 className={OwnersInfoCSS.bold}> Pic of a Kitten </h1>
