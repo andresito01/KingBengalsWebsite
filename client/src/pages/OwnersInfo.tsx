@@ -2,6 +2,7 @@
 import React from 'react';
 import OwnersInfoCSS from "./styles/OwnersInfo.module.css";
 import WebNavHeader from "../components/WebNavHeader";
+import Footer from "../components/Footer";
 
 /******************************* Owner's Info ***************************** Note: A link for pro-recomm*/
 
@@ -27,7 +28,7 @@ const OwnersInfo = () => {
 
       <PetInsurance/>
 
-      <SocialMedia/>
+      <Footer/>
 
       {/*</div>*/}
 
@@ -212,23 +213,6 @@ const PetInsurance = () => {
 }
 
 /**************************************** Naming your Kitten ************************************************* */
-
-
-/**************************************** Social Media *********************************************************/
-const SocialMedia = () => {
-
-  return (
-    <div className={OwnersInfoCSS.containerBottom}>
-      <div className={OwnersInfoCSS.containerRow1}>
-        <h3>________________________________</h3>
-        <h1 className = {OwnersInfoCSS.textLeftBold}> Follow Us On </h1> <br/>
-        <div className = {OwnersInfoCSS.imgInsta}>
-        <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "85" height = "75" />
-        </div>
-      </div> 
-    </div>
-  )
-}
 
 
 export default OwnersInfo;

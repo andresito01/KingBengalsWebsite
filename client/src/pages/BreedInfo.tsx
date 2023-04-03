@@ -5,6 +5,7 @@ import spotted from "../images/SpottedBengals.png";
 import marbled from "../images/MarbledBengals.png";
 import redstar from "../images/1024px-Paintedcats_Red_Star_standing.jpg";
 import WebNavHeader from "../components/WebNavHeader";
+import Footer from "../components/Footer";
 import bengalKitten from '../images/Bengal-Cats.jpg'
 import { positional } from "yargs";
 
@@ -26,7 +27,7 @@ const BreedInfo = () => {
 
       <OwnerCompatibility/>
 
-      <SocialMedia/>
+      <Footer/>
 
       </div>
     </div>
@@ -216,23 +217,5 @@ const OwnerCompatibility = () => {
   </div>
   );
 }
-
-
-/**************************************** Social Media *********************************************************/
-const SocialMedia = () => {
-
-  return (
-    <div className={BreedInfoCSS.containerBottom}>
-      <div className={BreedInfoCSS.containerRow1}>
-        <h3>________________________________</h3>
-        <h1 className = {BreedInfoCSS.textLeftBold}> Follow Us On </h1> <br/>
-        <div className = {BreedInfoCSS.imgInsta}>
-        <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "85" height = "75" />
-        </div>
-      </div> 
-    </div>
-  )
-}
-
 
 export default BreedInfo;
