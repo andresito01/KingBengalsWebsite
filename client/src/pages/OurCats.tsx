@@ -1,98 +1,111 @@
 import React, {useState} from 'react';
 import WebNavHeader from '../components/WebNavHeader';
 import OurCatsCSS from "./styles/OurCats.module.css";
-import DropDownStyle from "../components/styles/DropDownInfo.module.css"
-import DropDownInfo from "../components/DropDownInfo"
+import SliderStyle from "../components/styles/SliderInfo.module.css"
+import SliderInfo from "../components/SliderInfo"
 
 const OurCats: React.FC = () => {
-  const fontSizeHeader = {fontSize: "20px"}
-  const fontSizeSecondaryHeader = {fontSize: "20px"}
-  const fontSizeInfo = {fontSize: "26px"}
-  const [isDropDownOpen1, setIsDropDownOpen1] = useState(false);
-  const [isDropDownOpen2, setIsDropDownOpen2] = useState(false);
-  const [isDropDownOpen3, setIsDropDownOpen3] = useState(false);
+  const [isSliderOpen1, setIsSliderOpen1] = useState(false);
+  const [isSliderOpen2, setIsSliderOpen2] = useState(false);
+  const [isSliderOpen3, setIsSliderOpen3] = useState(false);
 
-  //Handle dropdown open/close for firstFemale
-  const handleDropDownClick1 = () => {
-    setIsDropDownOpen1(!isDropDownOpen1);
+  //Handle Slider open/close for firstFemale
+  const handleSliderClick1 = () => {
+    setIsSliderOpen1(!isSliderOpen1);
   }
 
-  //Handle dropdown open/close for secondFemale
-  const handleDropDownClick2 = () => {
-    setIsDropDownOpen2(!isDropDownOpen2);
+  //Handle slider open/close for secondFemale
+  const handleSliderClick2 = () => {
+    setIsSliderOpen2(!isSliderOpen2);
   }
 
-  //Handle dropdown open/close for male
-  const handleDropDownClick3 = () => {
-    setIsDropDownOpen3(!isDropDownOpen3);
+  //Handle slider open/close for male
+  const handleSliderClick3 = () => {
+    setIsSliderOpen3(!isSliderOpen3);
   }
 
   return (
     <div className={OurCatsCSS.ourCatsPage}>
       <WebNavHeader/>
-      <div className={OurCatsCSS.headerContainerOurCats} style={fontSizeHeader}>
+      <div className={OurCatsCSS.headerContainerOurCats}>
+      
         <h1>Meet The Parents!</h1>
-        <h2 style={fontSizeInfo}>
+        <h2>
           We believe in quality genetics and pay close attention to our breeding program to ensure 
           those quality results we strive for. We provide our cats with the best care and nutrition 
           possible. We give them lots of love and affection so they feel right at home.
-        </h2>
-        <h3 style={fontSizeInfo}>
+          <br></br><br></br>
           Treatment and care is given to our cats to boost energy, behavior, and quality of life.
-        </h3>
+        </h2>
       </div>
-      <div className={OurCatsCSS.secondaryHeaderContainer} style={fontSizeSecondaryHeader}>
+      <div className={OurCatsCSS.secondaryHeaderContainer}>
         <h1>Click the photos below to see additional information</h1>
       </div>
 
-      {/* Parent Container */}
+      {/* Parent Container and Records */}
       <div className={OurCatsCSS.body}>
-        <div className={OurCatsCSS.firstFemaleTitle}>
-          <h1>Name 1</h1>
-          <p>Female</p>
-        </div>
-        <div className={OurCatsCSS.secondFemaleTitle}>
-          <h1>Name 2</h1>
-          <p>Female</p>
-        </div>
-        <div className={OurCatsCSS.maleTitle}>
-          <h1>Hercules</h1>
-          <p>Male</p>
-        </div>
-        
-        {/* Buttons for the DropDown info */}
-        <div className={DropDownStyle.dropdownContainer}>
-          <button 
-            className={DropDownStyle.containerBtn} 
-            onClick={handleDropDownClick1}><img alt='parentImg1' src={require("../images/Placeholder.png")}/>
-          </button>
-          <DropDownInfo isOpen={isDropDownOpen1} onClose={handleDropDownClick1} id={1}/>
-        </div>
-        <div className={DropDownStyle.dropdownContainer}>
-          <button 
-            className={DropDownStyle.containerBtn} 
-            onClick={handleDropDownClick2}><img alt='parentImg2' className={DropDownStyle.containerImg} src={require("../images/Placeholder.png")}/>
-          </button>
-          <DropDownInfo isOpen={isDropDownOpen2} onClose={handleDropDownClick2} id={2}/>
-        </div>
-        <div className={DropDownStyle.dropdownContainer}>
-          <button 
-            className={DropDownStyle.containerBtn} 
-            onClick={handleDropDownClick3}><img alt='parentImg3' className={DropDownStyle.containerImg} src={require("../images/Placeholder.png")}/>
-          </button>
-          <DropDownInfo isOpen={isDropDownOpen3} onClose={handleDropDownClick3} id={3}/>
+        {/* Organizations Column */}
+        <div className={OurCatsCSS.organizations}>
+          <p className={OurCatsCSS.organizationText}>
+            The International Cat Association (TICA) is the world's largest genetic registry of pedigreed 
+            and household cats. As an official cat registrar, TICA maintains accurate records of cat breeding 
+            and pedigrees, provides cat shows and competitions, and offers a variety of educational resources 
+            for cat enthusiasts.
+            <br></br><br></br>
+            It is important for cat breeders and owners to register their cats 
+            with TICA to ensure the cat's pedigree and genetic history are accurately recorded, and to 
+            participate in TICA events and competitions, which can help promote and improve the breed.
+            <br></br><br></br>
+            To learn more about TICA and what they do or what they stand for, click the logo here.
+          </p>
+          {/* Links to official organizations */}
+          <a href="https://tica.org/index.php/resources/our-association/about-tica" target="_blank" rel='noreferrer'>
+            <button className={OurCatsCSS.ticaBtn}>
+              <img alt='ticaLogo' className={OurCatsCSS.ticaLogo} src={require("../images/ticalogo.jpg")}/>
+            </button>
+          </a>
         </div>
 
-        {/* Links to various records (probably change links to official organizations)*/}
-        <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className={OurCatsCSS.healthBtn}>Health Records</button>
-        </a>
-        <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className={OurCatsCSS.vaccinationBtn}>Vaccination Records</button>
-        </a>
-        <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className={OurCatsCSS.registrationBtn}>Registration Records</button>
-        </a>
+        {/* Parents Column */}
+        <div className={OurCatsCSS.parents}>
+          {/* First Female Parent */}
+          <div className={OurCatsCSS.parentTile}>
+            <h1>Cleopatra, The Queen</h1>
+            <p>Female</p>
+            <button className={SliderStyle.containerBtn} onClick={handleSliderClick1}>
+              <img alt='parentImg1' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+            </button>
+          </div>
+          {/* Second Female Parent */}
+          <div className={OurCatsCSS.parentTile}>
+            <h1>Tsarina, The Precious</h1>
+            <p>Female</p>
+            <button className={SliderStyle.containerBtn} onClick={handleSliderClick2}>
+              <img alt='parentImg2' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+            </button>
+          </div>
+          {/* Male Parent */}
+          <div className={OurCatsCSS.parentTile}>
+            <h1>Hercules, The King</h1>
+            <p>Male</p>
+            <button className={SliderStyle.containerBtn} onClick={handleSliderClick3}>
+              <img alt='parentImg3' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+            </button>
+          </div>
+        </div>
+
+        {/* Slider Column */}
+        <div className={OurCatsCSS.sliderColumn}>
+          <div className={SliderStyle.slider}>
+            <SliderInfo isOpen={isSliderOpen1} onClose={handleSliderClick1} id={1}/>
+          </div>
+          <div className={SliderStyle.slider}>
+            <SliderInfo isOpen={isSliderOpen2} onClose={handleSliderClick2} id={2}/>
+          </div>
+          <div className={SliderStyle.slider}>
+            <SliderInfo isOpen={isSliderOpen3} onClose={handleSliderClick3} id={3}/>
+          </div>
+        </div>
       </div>
 
       {/* Universal Socials Box Footer */}
