@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "lineage": "Asian Leopard/Egyptian Mau",
+        "lineage": "Asian Leopard / Egyptian Mau",
         "status": "Postpartum",
         "attitude": "Sassy",
         "pattern": "Marbled",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "lineage": "Asian Leopard/Egyptian Mau",
+        "lineage": "Asian Leopard / Egyptian Mau",
         "status": "Pregnant",
         "attitude": "Dramatic",
         "pattern": "Spotted",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "lineage": "Asian Leopard/Egyptian Mau",
+        "lineage": "Asian Leopard / Egyptian Mau",
         "status": "Idle",
         "attitude": "Passive",
         "pattern": "Marbled",

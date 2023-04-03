@@ -1,3 +1,5 @@
+@import "../../theme.css";
+
 @font-face {
   font-family: inika;
   src: url("../../fonts/Inika-Regular.ttf");
@@ -17,7 +19,7 @@
 .testimonialTitle {
   width: 65vw;
   margin-left: 15%;
-  color: rgba(246, 201, 139, 0.946);
+  color: var(--light-primary-color);
   font-size: 5vw;
   font-weight: bolder;
   font-family: inika, lancelot;

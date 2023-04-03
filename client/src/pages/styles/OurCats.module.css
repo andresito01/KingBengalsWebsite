@@ -1,11 +1,5 @@
-@font-face {
-  font-family: inika;
-  src: url("../../fonts/Inika-Regular.ttf");
-}
-@font-face {
-  font-family: lancelot;
-  src: url("../../fonts/Lancelot-Regular.ttf");
-}
+@import "../../theme.css";
+
 
 .ourCatsPage {
   background-image: url("../../images/kbengalsbgGradient.png");
@@ -19,7 +13,9 @@
   background-position: center center;
   text-align: center;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--header-text-font);
+  font-size: var(--large-header-size);
+  font-weight: var(--header-text-property);
   top: 150px;
   height: 700px;
   vertical-align: text-top;
@@ -32,11 +28,18 @@
   border-right: 0;
   border-color: black;
 }
+.h1{
+  font-size: var(--large-header-size);
+}
+.h2{
+  font-size: var(--header-font-size);
+}
 
 .secondaryHeaderContainer {
   text-align: center;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--header-text-font);
+  font-size: var(--header-font-size);
   line-height: 20px;
   width: 60%;
   height: 50px;
@@ -45,108 +48,97 @@
   margin-top: -110px;
   margin-bottom: 60px;
 }
+.secondaryHeaderContainer h1{
+  font-size: var(--header-font-size);
+}
 
 .body {
   background-color: rgb(184, 144, 96, .9);
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 0.1fr;
-  gap: 6vh;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 1fr;
   row-gap: 2vh;
   align-self: start;
-  padding: 5vh;
+  padding: 2vw;
   border-style: solid;
   border-color: #6b462a;
   border-radius: 10px;
-  margin-left: 23%;
-  width: 50%;
+  margin: auto;
+  width: 60%;
+  height: fit-content;
 }
 
-.firstFemaleTitle {
-  background-color: #6b462a;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  line-height: 0.5;
-  padding-left: 7%;
+.organizations{
+  width: 100%;
+  padding: 2vw;
+}
+
+.organizationText{
+  border-left: #6b462a;
+  border-left-style: solid;
+  border-width: 2px;
+  padding-left: 1vw;
+  color: black;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  line-height: 1.1;
+}
+
+.ticaBtn {
+  width: 60%;
+  height: 18%;
+  margin-left: 20%;
+  background-color: white;
+  border-style: solid;
+  border-color: #6b462a;
   border-radius: 10px;
-}
-.firstFemaleTitle h1 {
-  font-size: 5vh;
-}
-.firstFemaleTitle p {
-  font-size: 3vh;
-}
-
-.secondFemaleTitle {
-  background-color: #6b462a;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  line-height: 0.5;
-  padding-left: 7%;
-  border-radius: 10px;
-}
-.secondFemaleTitle h1 {
-  font-size: 5vh;
-}
-.secondFemaleTitle p {
-  font-size: 3vh;
-}
-
-.maleTitle {
-  background-color: #6b462a;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  line-height: 0.5;
-  padding-left: 7%;
-  border-radius: 10px;
-}
-.maleTitle h1 {
-  font-size: 5vh;
-}
-.maleTitle p {
-  font-size: 3vh;
-}
-
-.healthBtn {
-  text-align: center;
-  font-size: 2.5vh;
-  width: 72%;
-  height: 8vh;
-  margin-left: 14%;
-  background-color: #6b462a;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  border-color: white;
+  border-width: 3px;
   cursor: pointer;
 }
 
-.vaccinationBtn {
-  text-align: center;
-  font-size: 2.5vh;
+.ticaLogo{
+  width: 100%;
+  height: 100%;
+}
+
+.parents{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 1vw;
+  padding-left: 1vw;
+}
+
+.parentTile {
+  background-color: #6b462a;
+  color: white;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  line-height: 0.5;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 7%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.parentTile h1 {
+  margin-top: 0.5vw;
+  font-size: 1.8vw;
   line-height: 1;
-  width: 72%;
-  height: 8vh;
-  margin-left: 14%;
-  background-color: #6b462a;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  border-color: white;
-  cursor: pointer;
+}
+.parentTile p {
+  font-size: 1.3vw;
 }
 
-.registrationBtn {
-  text-align: center;
-  font-size: 2.5vh;
-  line-height: 1;
-  width: 72%;
-  height: 8vh;
-  margin-left: 14%;
-  background-color: #6b462a;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  border-color: white;
-  cursor: pointer;
+.sliderColumn{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1vw;
+  width: 100%;
+  overflow: hidden;
 }
 
 .socialsBox {
@@ -154,7 +146,8 @@
   text-align: center;
   background-color: rgb(107, 70, 42, .9);
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   width: 30%;
   height: 200px;
   margin-top: 60px;
