@@ -10,26 +10,40 @@
         "litterPicture": "images/Litter1.png",
         "momPicture": "images/bengalcatgrooming.jpg",
         "dadPicture": "images/bengal cat climbing tree.jpg",
-        "kitten1Picture": "images/cute bengal kitten.jpg",
-        "kitten1Color": "Carmel/Tan",
-        "kitten1Pattern": "Spotted",
-        "kitten1Sex": "Male",
-        "kitten1Status": "Available",
-        "kitten2Picture": "images/bengal-cat.jpg",
-        "kitten2Color": "Brown/Tan",
-        "kitten2Pattern": "Spotted",
-        "kitten2Sex": "Female",
-        "kitten2Status": "Reserved",
-        "kitten3Picture": "images/bencat.jpg",
-        "kitten3Color": "Cramel/Black",
-        "kitten3Pattern": "Marble",
-        "kitten3Sex": "Male",
-        "kitten3Status": "Reserved",
-        "kitten4Picture": "images/bengal-cat-1.jpg",
-        "kitten4Color": "Brown/Black",
-        "kitten4Pattern": "Spotted",
-        "kitten4Sex": "Male",
-        "kitten4Status": "Pending"
+        "kittens": [
+            {
+                "id": 1,
+                "kittenPicture": "images/cute bengal kitten.jpg",
+                "kittenColor": "Carmel/Tan",
+                "kittenPattern": "Spotted",
+                "kittenSex": "Male",
+                "kittenStatus": "Available"
+            },
+            {
+                "id": 2,
+                "kittenPicture": "images/bengal-cat.jpg",
+                "kittenColor": "Brown/Tan",
+                "kittenPattern": "Spotted",
+                "kittenSex": "Female",
+                "kittenStatus": "Reserved"
+            },
+            {
+                "id": 3,
+                "kittenPicture": "images/bencat.jpg",
+                "kittenColor": "Cramel/Black",
+                "kittenPattern": "Marble",
+                "kittenSex": "Male",
+                "kittenStatus": "Reserved"
+            },
+            {
+                "id": 4,
+                "kittenPicture": "images/bengal-cat-1.jpg",
+                "kittenColor": "Brown/Black",
+                "kittenPattern": "Spotted",
+                "kittenSex": "Male",
+                "kittenStatus": "Pending"
+            }
+        ]
     },
     {
         "id": 2,
@@ -42,25 +56,39 @@
         "litterPicture": "images/Litter2.png",
         "momPicture": "images/catface.jpg",
         "dadPicture": "images/bengal cat climbing tree.jpg",
-        "kitten1Picture": "images/cute bengal kitten.jpg",
-        "kitten1Color": "Carmel/Tan",
-        "kitten1Pattern": "Spotted",
-        "kitten1Sex": "Male",
-        "kitten1Status": "Available",
-        "kitten2Picture": "images/bengal-cat.jpg",
-        "kitten2Color": "Brown/Tan",
-        "kitten2Pattern": "Spotted",
-        "kitten2Sex": "Female",
-        "kitten2Status": "Reserved",
-        "kitten3Picture": "images/bencat.jpg",
-        "kitten3Color": "Cramel/Black",
-        "kitten3Pattern": "Marble",
-        "kitten3Sex": "Male",
-        "kitten3Status": "Reserved",
-        "kitten4Picture": "images/bengal-cat-1.jpg",
-        "kitten4Color": "Brown/Black",
-        "kitten4Pattern": "Spotted",
-        "kitten4Sex": "Male",
-        "kitten4Status": "Pending"
+        "kittens": [
+            {
+                "id": 1,
+                "kittenPicture": "images/cute bengal kitten.jpg",
+                "kittenColor": "Carmel/Tan",
+                "kittenPattern": "Spotted",
+                "kittenSex": "Male",
+                "kittenStatus": "Available"
+            },
+            {
+                "id": 2,
+                "kittenPicture": "images/bengal-cat.jpg",
+                "kittenColor": "Brown/Tan",
+                "kittenPattern": "Spotted",
+                "kittenSex": "Female",
+                "kittenStatus": "Reserved"
+            },
+            {
+                "id": 3,
+                "kittenPicture": "images/bengal-cat-1.jpg",
+                "kittenColor": "Cramel/Black",
+                "kittenPattern": "Marble",
+                "kittenSex": "Male",
+                "kittenStatus": "Reserved"
+            },
+            {
+                "id": 4,
+                "kittenPicture": "images/bencat.jpg",
+                "kittenColor": "Brown/Black",
+                "kittenPattern": "Spotted",
+                "kittenSex": "Male",
+                "kittenStatus": "Pending"
+            }
+        ]
     }
 ]
