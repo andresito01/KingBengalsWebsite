@@ -1,10 +1,11 @@
 import React from "react";
 import BreedInfoCSS from "./styles/BreedInfo.module.css";
-import topImage from "../images/SpottedVsMarbled.png";
+import topImage from "../images/SpottedVsMarbled_edited.png";
 import spotted from "../images/SpottedBengals.png";
 import marbled from "../images/MarbledBengals.png";
 import redstar from "../images/1024px-Paintedcats_Red_Star_standing.jpg";
 import WebNavHeader from "../components/WebNavHeader";
+import Footer from "../components/Footer";
 import bengalKitten from '../images/Bengal-Cats.jpg'
 import { positional } from "yargs";
 
@@ -26,7 +27,7 @@ const BreedInfo = () => {
 
       <OwnerCompatibility/>
 
-      <SocialMedia/>
+      <Footer/>
 
       </div>
     </div>
@@ -109,13 +110,22 @@ const PatternsSpotMarble = () => {
 
   return (
     <div className={BreedInfoCSS.containerBox}>
-      <h1 className={BreedInfoCSS.bold}> Bengal Cat Patterns </h1>
-      <h3> _______________</h3>
-      <h2> Bengal Cat are born with one of two patterns: Spotted or Marbled.
+      <div className={BreedInfoCSS.containerRowBox}>
+      <h1 className={BreedInfoCSS.bold}> Bengal </h1>
+
+      {/*<div className={BreedInfoCSS.imgCenter}> */}
+      <div className={BreedInfoCSS.imgContainer}>
+        <img className={BreedInfoCSS.topPicture} src={topImage} alt="Breed Information"/>
+      </div>
+
+      <h1 className={BreedInfoCSS.bold}> Patterns </h1>
+    </div>
+
+      <h2 className={BreedInfoCSS.bengalsTextContainer}> Bengal Cat are born with one of two patterns: Spotted or Marbled.
           <br/> Along with their personality, it's one of their defining features that make them unique.
-          <br/> Althought, some may say 'exotic'.
+          <br/> Althought, some may use the word 'exotic' to refer to their uniqueness.
           <br/> Below are pictures of each pattern with different combinations of colors they can be born with. </h2>
-      <h3> _______________</h3>
+    <h3> _______________</h3>
       {/*<div className={BreedInfoCSS.imgCenter}>
           <div className={BreedInfoCSS.bottomContainer}>
           <img src = {spotted} style={{float:"left", width:500}} 
@@ -131,29 +141,23 @@ const PatternsSpotMarble = () => {
     <div className={BreedInfoCSS.containerRowBox}>
       <div className={BreedInfoCSS.containerRow2}>
         <h1 className={BreedInfoCSS.bold}> Spotted </h1>
-        <h3> _______________</h3>
-        <div className={BreedInfoCSS.imgKittenDev}>
-         <img src = {spotted} style={{float:"left", width:500}} 
-            alt="Spotted coats example"/> 
-        </div>
+        {/*<div className={BreedInfoCSS.imgContainer}>*/}
+         <img src = {spotted} style={{width:500}} 
+            alt="Spotted coats example"/>  
       </div>
 
-      <div className={BreedInfoCSS.imgCenter}></div>
-      <div className={BreedInfoCSS.topImageContainer}>
-        <img className={BreedInfoCSS.topPicture} src={topImage} alt="Breed Information" width={100}/>
-      </div>
+      <h2> <br/> <br/> VS. </h2>  
 
     <div className={BreedInfoCSS.containerRow2}>
       <h1 className={BreedInfoCSS.bold}> Marbled </h1>
-      <h3> _______________</h3>
-      <div className={BreedInfoCSS.imgKittenDev}>
-      <img src = {marbled} style={{float:"right", width:500}} 
+      {/*<div className={BreedInfoCSS.imgContainer}>*/}
+      <img src = {marbled} style={{width:500}} 
             alt="Marbled coats example"/>
-      </div>
     </div>
+    
   </div>
 </div>
-);
+)
 
 }
 
@@ -213,23 +217,5 @@ const OwnerCompatibility = () => {
   </div>
   );
 }
-
-
-/**************************************** Social Media *********************************************************/
-const SocialMedia = () => {
-
-  return (
-    <div className={BreedInfoCSS.containerBottom}>
-      <div className={BreedInfoCSS.containerRow1}>
-        <h3>________________________________</h3>
-        <h1 className = {BreedInfoCSS.textLeftBold}> Follow Us On </h1> <br/>
-        <div className = {BreedInfoCSS.imgInsta}>
-        <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "85" height = "75" />
-        </div>
-      </div> 
-    </div>
-  )
-}
-
 
 export default BreedInfo;

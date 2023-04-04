@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import ReserveAKittenCSS from "./styles/ReserveAKitten.module.css"
 import KittenOfInterestDropdown from '../components/KittenOfInterestDropdown';
 import WebNavHeader from '../components/WebNavHeader';
+import Footer from "../components/Footer";
 
 const ReserveAKitten = () => {
 
@@ -101,7 +102,8 @@ const ReserveAKitten = () => {
                     <h3 className={ReserveAKittenCSS.underline}>Additional information</h3>
                     <p>Your kitten will come with Registration? Vaccination? Other documents? Kitten-pack? Toys? Other goodies?</p>
                 </div>
-            </div>
+              <Footer/>
+      </div>
         </div>
     )
 }

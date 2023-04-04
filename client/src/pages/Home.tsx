@@ -4,18 +4,18 @@ import BusinessCertificate from "../components/BusinessCertificate";
 import Testimonials from "../components/Testimonials";
 import ImageCarousel from "../components/ImageCarousel";
 import WebNavHeader from "../components/WebNavHeader";
+import Footer from "../components/Footer";
 import homePageJSON from "../json/homePage.json";
 
-
-const fontSizeMissionStatement = {fontSize: '2rem'};
-const fontSizeQuote = {fontSize: '1rem'};
+const fontSizeMissionStatement = { fontSize: "2rem" };
+const fontSizeQuote = { fontSize: "1rem" };
 
 //>>>>>>>>>>>>>>>>>>>> Home Page <<<<<<<<<<<<<<<<<<<<<<<<<<<
 const Home = () => {
   return (
     <div className={HomeCSS.homePageContainer}>
-      <WebNavHeader/>
-  
+      <WebNavHeader />
+
       {/*>>>>>>>>>>>> Homepage Header Image <<<<<<<<<<<<*/}
       <HomepageHeader />
 
@@ -24,8 +24,8 @@ const Home = () => {
       {/*>>>>>>>>>>>> Owners Picture and her Cat <<<<<<<<<<<<*/}
       <OwnerPicture />
 
-       {/*>>>>>>>>>>>> Scrollable Picture Component <<<<<<<<<<<<*/}
-       <ImageCarousel />
+      {/*>>>>>>>>>>>> Scrollable Picture Component <<<<<<<<<<<<*/}
+      <ImageCarousel />
 
       {/*>>>>>>>>>>>> Past Litters <<<<<<<<<<<<*/}
       <PastLittersTitle />
@@ -36,6 +36,9 @@ const Home = () => {
 
       {/*>>>>>>>>>>>>   Testimonials   <<<<<<<<<<<<<<<<*/}
       <Testimonials />
+
+      {/*>>>>>>>>>>>>   Footer   <<<<<<<<<<<<<<<<*/}
+      <Footer />
     </div>
   );
 };
@@ -88,9 +91,9 @@ const PastLitters = () => {
       {homePageJSON.pastLitterImgs.map((litterImg, index) => {
         return (
           <div key={index}>
-             <img className="litterImg" alt="litterImg" src={litterImg.image} />
+            <img className="litterImg" alt="litterImg" src={litterImg.image} />
           </div>
-        )
+        );
       })}
     </div>
   );

@@ -1,13 +1,5 @@
 @import "../../theme.css";
 
-@font-face {
-  font-family: inika;
-  src: url("../../fonts/Inika-Regular.ttf");
-}
-@font-face {
-  font-family: lancelot;
-  src: url("../../fonts/Lancelot-Regular.ttf");
-}
 
 .aboutPage {
   display: flex;
@@ -26,11 +18,12 @@
   background-color: var(--light-primary-color);
   color: white;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  padding-top: 20px;
-  height: 100px;
+  font-family: var(--header-text-font);
+  font-size: var(--large-header-size);
+  padding-top: 1.25rem;
+  height: 6.25rem;
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: 0.0625rem;
   outline-color: black;
 }
 
@@ -38,28 +31,29 @@
   background-color: var(--light-primary-color);
   color: white;
   text-align: left;
-  font-family: 'Times New Roman', Times, serif;
-  padding-top: 10px;
-  padding-left: 20px;
-  height: 250px;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  padding-top: 0.625rem;
+  padding-left: 1.25rem;
+  height: 15.625rem;
   width: 60%;
-  margin-top: 1px;
+  margin-top: .0625rem;
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: .0625rem;
   outline-color: black;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .box1{
   background-color: var(--light-primary-color);
   align-items: center;
   overflow: hidden;
-  height: 250px;
-  width: 300px;
-  margin-top: -250px;
+  height: 15.625rem;
+  width: 18.75rem;
+  margin-top: -15.625rem;
   margin-left: 70%;
-  margin-right: 20px;
-  margin-bottom: 30px;
+  margin-right: 1.25rem;
+  margin-bottom: 1.875rem;
   outline-style: solid;
   outline-width: 10px;
   outline-color: var(--light-primary-color);
@@ -74,28 +68,29 @@
   background-color: var(--light-primary-color);
   color: white;
   text-align: left;
-  font-family: 'Times New Roman', Times, serif;
-  padding-top: 10px;
-  padding-left: 20px;
-  height: 450px;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  padding-top: 0.625rem;
+  padding-left: 1.25rem;
+  height: 28.125rem;
   width: 95%;
-  margin-top: 1px;
+  margin-top: 0.0625rem;
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: 0.0625rem;
   outline-color: black;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .box2{
   background-color: var(--light-primary-color);
   align-items: center;
   overflow: hidden;
-  height: 300px;
-  width: 350px;
-  margin-top: 50px;
+  height: 18.75rem;
+  width: 21.875rem;
+  margin-top: 3.125rem;
   margin-left: 20%;
-  margin-right: 20px;
-  margin-bottom: 30px;
+  margin-right: 1.25rem;
+  margin-bottom: 1.875rem;
   outline-style: solid;
   outline-width: 10px;
   outline-color: var(--light-primary-color);
@@ -110,12 +105,12 @@
   background-color: var(--light-primary-color);
   align-items: center;
   overflow: hidden;
-  height: 300px;
-  width: 350px;
+  height: 18.75rem;
+  width: 21.875rem;
   margin-top: -330px;
   margin-left: 60%;
-  margin-right: 20px;
-  margin-bottom: 30px;
+  margin-right: 1.25rem;
+  margin-bottom: 1.875rem;
   outline-style: solid;
   outline-width: 10px;
   outline-color: var(--light-primary-color);
@@ -124,4 +119,23 @@
 .box3 img{
   width: 100%;
   height: 100%;
+}
+
+.p3{
+  background-color: #6b462a;
+  color: white;
+  text-align: left;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  padding-top: 0.625rem;
+  padding-left: 1.25rem;
+  height: 6.25rem;
+  margin-top: 6.25rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: -1.875rem;
+  outline-style: solid;
+  outline-width: 0.0625rem;
+  outline-color: black;
+  border-radius: 0.625rem;
 }

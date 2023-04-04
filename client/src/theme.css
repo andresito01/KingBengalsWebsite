@@ -13,10 +13,21 @@
   --light-secondary-color: #ffe3c8;
   --dark-primary-color: #a87d48f5;
   --dark-secondary-color: #4E3A24;
-  --dark-bg-opacity: 0.9;
-  --light-bg-opacity: 0.85;
-  --border-radius: 20px;
-  --border-width: 3px;
+  /* --border-radius: 20px;
+  --border-width: 3px; */
   --font-inika: inika;
   --font-lancelot: lancelot;
+  --header-text-font: lancelot;
+  --header-font-size: 1.75em;
+  --largest-header-size: 3em;
+  --large-header-size: 2em;
+  --header-text-property: bold;
+  --generic-website-text: inika;
+  --generic-text-size: 0.875em;
+  --generic-text-property: bold;
+  --dark-bg-opacity: 0.9;
+  --light-bg-opacity: 0.85;
+  --border-radius: 1.25rem;
+  --border-width: 0.1875rem;
+
 }

@@ -90,10 +90,16 @@
   margin-bottom: 1rem;
 }
 
-.link {
+.link a{
   font-family: inika;
   font-size: 1.3rem;
   color: white;
+}
+
+.link a.active{
+  background-color: brown;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .link:hover {

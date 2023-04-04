@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import WebNavHeader from '../components/WebNavHeader';
+import Footer from "../components/Footer";
 import OurCatsCSS from "./styles/OurCats.module.css";
 import SliderStyle from "../components/styles/SliderInfo.module.css"
 import SliderInfo from "../components/SliderInfo"
@@ -28,6 +29,7 @@ const OurCats: React.FC = () => {
     <div className={OurCatsCSS.ourCatsPage}>
       <WebNavHeader/>
       <div className={OurCatsCSS.headerContainerOurCats}>
+      
         <h1>Meet The Parents!</h1>
         <h2>
           We believe in quality genetics and pay close attention to our breeding program to ensure 
@@ -107,15 +109,7 @@ const OurCats: React.FC = () => {
         </div>
       </div>
 
-      {/* Universal Socials Box Footer */}
-      <div className={OurCatsCSS.socialsBox}>
-          <h1>Checkout our<br></br>Instagram!</h1>
-          <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'>
-            <button className={OurCatsCSS.instagramBtn}>
-              <img alt='instaImg' className={OurCatsCSS.instagramImg} src={require("../images/instagramlogo.png")}/>
-            </button>
-          </a>
-      </div>
+      <Footer/>
     </div>
   )
 }
