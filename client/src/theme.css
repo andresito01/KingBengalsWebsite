@@ -1,8 +1,22 @@
+@font-face {
+  font-family: inika;
+  src: url("./fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("./fonts/Lancelot-Regular.ttf");
+}
+
 :root {
+  --bg-image: url("./images/kbengalsbgGradient.png");
   --light-primary-color: #e2b78e;
+  --light-secondary-color: #ffe3c8;
   --dark-primary-color: #a87d48f5;
+  --dark-secondary-color: #4E3A24;
   --dark-bg-opacity: 0.9;
   --light-bg-opacity: 0.85;
   --border-radius: 20px;
   --border-width: 3px;
+  --font-inika: inika;
+  --font-lancelot: lancelot;
 }

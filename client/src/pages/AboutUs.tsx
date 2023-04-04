@@ -45,11 +45,6 @@ const About = () => {
         </p>
         <div className={AboutCSS.box2}><img alt='box2Image' src={require('../images/Litter1.png')}/></div>
         <div className={AboutCSS.box3}><img alt='box3Image' src={require('../images/Litter2.png')}/></div>
-        <p className={AboutCSS.p3} style={fontSizeParagraph}>
-          What will the business provide with every kitten?<br></br>
-          Certificates, limited garantees? Supplies (limited), vaccinations, info packets? Limited amount of food, 
-          toys, training guide? etc.<br></br>
-        </p>
       </div>
     </div>
   )

@@ -1,3 +1,5 @@
+@import "../../theme.css";
+
 @font-face {
   font-family: inika;
   src: url("../../fonts/Inika-Regular.ttf");
@@ -12,7 +14,7 @@
 }
 
 .bg {
-  background-color: #a87d48f5;
+  background-image: var(--bg-image);
   align-items: center;
   text-align: center;
   display: flex;
@@ -25,7 +27,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: rgba(235, 206, 178, 1);
+  background-color: var(--light-primary-color);
   color: black;
   margin-bottom: 50px;
   width: 100%;
@@ -115,32 +117,4 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-
-}
-
-.socialsBox {
-  padding-top: 10px;
-  text-align: center;
-  background-color: rgb(107, 70, 42, .9);
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  width: 30%;
-  height: 200px;
-  margin-top: 60px;
-  border-style: solid;
-  border-color: rgb(184, 144, 96, .9);
-  border-radius: 50%;
-}
-
-.instagramBtn {
-  width: 80px;
-  margin-top: -10px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.instagramImg {
-  width: 100%;
-  border-radius: 16px;
 }
