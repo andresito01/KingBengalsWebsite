@@ -28,12 +28,6 @@
   border-right: 0;
   border-color: black;
 }
-.h1{
-  font-size: var(--large-header-size);
-}
-.h2{
-  font-size: var(--header-font-size);
-}
 
 .secondaryHeaderContainer {
   text-align: center;
@@ -47,9 +41,6 @@
   margin-right: 20%;
   margin-top: -110px;
   margin-bottom: 60px;
-}
-.secondaryHeaderContainer h1{
-  font-size: var(--header-font-size);
 }
 
 .body {
