@@ -223,12 +223,9 @@ const SocialMedia = () => {
         <h3>________________________________</h3>
         <h1 className = {OwnersInfoCSS.textLeftBold}> Follow Us On </h1> <br/>
         <div className = {OwnersInfoCSS.imgInsta}>
-        <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'> {/* Should be a link to KB Instagram account */}
-            {/*<button className={LitterUpdatesCSS.instagramBtn}>*/}
+          <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'> {/* Should be a link to KB Instagram account */}
             <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "85" height = "75" /> 
-            {/*</button>*/}
           </a>
-        
         </div>
       </div> 
     </div>
