@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import WebNavHeaderCSS from "./styles/WebNavHeader.module.css"
 const WebNavHeader = () => {
 
@@ -54,16 +54,48 @@ const WebNavHeader = () => {
         </div>
         
         <div className={WebNavHeaderCSS.navLinks} id="navLinks">
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/home")}>Home</div>
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/reserveakitten")}>Reserve A Kitten</div>
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/about")}>About Us</div>
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ourcats")}>Our Cats</div>
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/litterupdates")}>Litter Updates</div>   
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/ownersinfo")}>Owner's Info</div>
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/contact")}>Contact Us</div>
-          <div className={WebNavHeaderCSS.link} onClick={() => navigate("/breedinfo")}>Breed Info</div>
+          <div className={WebNavHeaderCSS.link}>
+            <NavLink to="/home" 
+              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                Home</NavLink>
+          </div>
+          <div className={WebNavHeaderCSS.link}>
+            <NavLink to="/reserveakitten" 
+              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                Reserve a Kitten</NavLink>
+          </div>
+          <div className={WebNavHeaderCSS.link}>
+            <NavLink to="/about" 
+              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                About Us</NavLink>
+          </div>
+          <div className={WebNavHeaderCSS.link}>
+            <NavLink to="/ourcats" 
+              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                Our Cats</NavLink>
+          </div>
+          <div className={WebNavHeaderCSS.link}>
+            <NavLink to="/litterupdates" 
+              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                Litter Updates</NavLink>
+          </div>
+          <div className={WebNavHeaderCSS.link}>
+            <NavLink to="/ownersinfo" 
+              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                Info for Owners</NavLink>
+          </div>
+          <div className={WebNavHeaderCSS.link}>
+            <NavLink to="/contact" 
+              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                Contact Us</NavLink>
+          </div>
+          <div className={WebNavHeaderCSS.link}>
+            <NavLink to="/breedinfo" 
+              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                Breed Info</NavLink>
+          </div>
+        </div>
         
-        </div> 
         <button className={WebNavHeaderCSS.navBtn} onClick={checkResponsiveView}>
             {Mobile ? <FaTimes /> : <FaBars />}
         </button>

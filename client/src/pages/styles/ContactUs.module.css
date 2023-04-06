@@ -1,11 +1,5 @@
-@font-face {
-  font-family: inika;
-  src: url("../../fonts/Inika-Regular.ttf");
-}
-@font-face {
-  font-family: lancelot;
-  src: url("../../fonts/Lancelot-Regular.ttf");
-}
+@import "../../theme.css";
+
 
 .contactUsPage {
   background-color: #a87d48f5;
@@ -31,23 +25,24 @@
   width: 100%;
   height: 100%;
   margin-top: 3%;
-  font-family: inika;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
   gap: 1rem;
 
 }
 
 .mainContentContainer h1 {
-  font-size: 50px;
+  font-size: var(--large-header-font-size);
   font-weight: bolder;
 }
 
 .mainContentContainer h2 {
-  font-size: 35px;
+  font-size: var(--header-font-size);
   font-weight: bolder;
 }
 
 .mainContentContainer p {
-  font-size: 30px;
+  font-size: var(--header-font-size);
   font-weight: bolder;
 }
 
@@ -118,29 +113,3 @@
 
 }
 
-.socialsBox {
-  padding-top: 10px;
-  text-align: center;
-  background-color: rgb(107, 70, 42, .9);
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  width: 30%;
-  height: 200px;
-  margin-top: 60px;
-  border-style: solid;
-  border-color: rgb(184, 144, 96, .9);
-  border-radius: 50%;
-}
-
-.instagramBtn {
-  width: 80px;
-  margin-top: -10px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.instagramImg {
-  width: 100%;
-  border-radius: 16px;
-}

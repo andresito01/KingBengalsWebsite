@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import WebNavHeader from '../components/WebNavHeader';
+import Footer from "../components/Footer";
 import ContactUsCSS from "./styles/ContactUs.module.css";
 
 
@@ -58,6 +59,7 @@ const ContactUs = () => {
           </form>
         </div>
       </div>
+      <Footer/>
     
     </div>
   );

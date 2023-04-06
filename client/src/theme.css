@@ -1,0 +1,26 @@
+@font-face {
+  font-family: inika;
+  src: url("./fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("./fonts/Lancelot-Regular.ttf");
+}
+
+:root {
+  --light-primary-color: #e2b78e;
+  --dark-primary-color: #a87d48f5;
+  --header-text-font: lancelot;
+  --header-font-size: 1.75em;
+  --largest-header-size: 3em;
+  --large-header-size: 2vw;
+  --header-text-property: bold;
+  --generic-website-text: inika;
+  --generic-text-size: 0.875vw;
+  --generic-text-property: bold;
+  --dark-bg-opacity: 0.9;
+  --light-bg-opacity: 0.85;
+  --border-radius: 1.25rem;
+  --border-width: 0.1875rem;
+
+}
