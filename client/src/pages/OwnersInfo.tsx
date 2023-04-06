@@ -2,6 +2,7 @@
 import React from 'react';
 import OwnersInfoCSS from "./styles/OwnersInfo.module.css";
 import WebNavHeader from "../components/WebNavHeader";
+import Footer from "../components/Footer";
 
 /******************************* Owner's Info ***************************** Note: A link for pro-recomm*/
 
@@ -27,7 +28,7 @@ const OwnersInfo = () => {
 
       <PetInsurance/>
 
-      <SocialMedia/>
+      <Footer/>
 
       {/*</div>*/}
 
@@ -231,6 +232,5 @@ const SocialMedia = () => {
     </div>
   )
 }
-
 
 export default OwnersInfo;

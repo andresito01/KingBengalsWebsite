@@ -28,12 +28,6 @@
   border-right: 0;
   border-color: black;
 }
-.h1{
-  font-size: var(--large-header-size);
-}
-.h2{
-  font-size: var(--header-font-size);
-}
 
 .secondaryHeaderContainer {
   text-align: center;
@@ -47,9 +41,6 @@
   margin-right: 20%;
   margin-top: -110px;
   margin-bottom: 60px;
-}
-.secondaryHeaderContainer h1{
-  font-size: var(--header-font-size);
 }
 
 .body {
@@ -141,31 +132,3 @@
   overflow: hidden;
 }
 
-.socialsBox {
-  padding-top: 10px;
-  text-align: center;
-  background-color: rgb(107, 70, 42, .9);
-  color: white;
-  font-family: var(--generic-website-text);
-  font-size: var(--generic-text-size);
-  width: 30%;
-  height: 200px;
-  margin-top: 60px;
-  margin-left: 35%;
-  border-style: solid;
-  border-color: rgb(184, 144, 96, .9);
-  border-radius: 50%;
-}
-
-.instagramBtn {
-  width: 80px;
-  margin-top: -10px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.instagramImg {
-  width: 100%;
-  border-radius: 16px;
-}
