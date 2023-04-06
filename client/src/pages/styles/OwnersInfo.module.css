@@ -16,16 +16,19 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: #a87d48f5;
+  /*background-position:0%;*/
+  /*background-repeat:round;*/
+  background-attachment: fixed;
+  background-color: #a87d48f5; /*border color: #e2b78e;*/
   /*background-image: conic-gradient(
     rgb(64, 29, 2),
     rgb(226, 173, 10),
     rgb(64, 29, 2)
   );*/
-  background-image: url("../../images/pattern - b&w warm + wc edited.jpg");
-  background-size:contain;
-  /*overflow: hidden;
-  /*width: 100%;*/
+  background-image: url("../../images/kbengalsbgGradient.png"); /*pattern - b&w warm + wc edited.jpg");*/
+  background-size: contain;
+  /*overflow: hidden;*/
+  width: 100%;
 }
 
 /*.headerContainerOwnersInfo {
@@ -112,7 +115,8 @@
   justify-content: center;
   text-align: center;
   /*right: 1rem;*/
-  background-color:rgba(78, 58, 36);
+  /*opacity: 0.9;*/
+  background-color: rgba(78, 58, 36); /*<= for dark mode maybe */
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);

@@ -60,7 +60,7 @@ const ProductsRecommend = () => {
       <h3> _______________</h3>
       <h3> Below is a list of/link to products we recommend for your kitten. <br/> From toys, treats, catteries, crates, bedding, grooming products, and accessories. </h3>
       {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> */}
-      <h3> _______________</h3>
+      <h3> ________</h3>
       {/*<div className={OwnersInfoCSS.containerBox}>*/}
         <div className={OwnersInfoCSS.containerRow}>
           <div className={OwnersInfoCSS.imgArrow}>
@@ -92,27 +92,27 @@ const KittenDevelopment = () => {
       <div className={OwnersInfoCSS.containerRowBox}>
         <div className={OwnersInfoCSS.containerRow2}>
          <h1 className={OwnersInfoCSS.boldSub}> Age: 1 - 2 weeks </h1>
-         <h3> _______________</h3>
+         <h3> ________</h3>
          <div className={OwnersInfoCSS.imgContainer}>
           <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} /> 
         </div>
-         <h3> [Text] </h3>
+         <h3> <br/> [Text] </h3>
         </div>
         <div className={OwnersInfoCSS.containerRow2}>
           <h1 className={OwnersInfoCSS.boldSub}> Age: 2 - 4 weeks </h1>
-          <h3> _______________</h3>
+          <h3> ________</h3>
           <div className={OwnersInfoCSS.imgContainer}>
             <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} />
           </div>
-          <h3> [Text] </h3>
+          <h3> <br/> [Text] </h3>
         </div>
         <div className={OwnersInfoCSS.containerRow2}>
           <h1 className={OwnersInfoCSS.boldSub}> Age: 2 Months </h1>
-          <h3> _______________</h3>
+          <h3> ________</h3>
           <div className={OwnersInfoCSS.imgContainer}>
             <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} />
           </div>
-          <h3> [Text] </h3>
+          <h3> <br/> [Text] </h3>
         </div>
       </div>
       <h2> Link / Lay out the process on weekly or biweekly, AND monthly basis</h2>
@@ -128,10 +128,10 @@ const PrepareForKitten = () => {
   <div className={OwnersInfoCSS.containerRowBox}>
     <div className={OwnersInfoCSS.containerRow2}>
       <h1 className={OwnersInfoCSS.bold}> Preparing For Your Kitten </h1>
-      <h3> _______________</h3>
+      <h3> ________</h3>
       <h3> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
             Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h3>
-      <a href="https://www.youtube.com/watch?v=A_MjCqQoLLA" target="_blank" rel='noreferrer'> {/*Link to 'Hey Jude - The Beatles'*/}
+      <a href="https://www.youtube.com/watch?v=A_MjCqQoLLA" target="_blank" rel='noreferrer'> {/*Place Holder link to 'Hey Jude - The Beatles'*/}
         <div className={OwnersInfoCSS.button}>
           <h2 className={OwnersInfoCSS.underline}> Video for preparing (link)</h2>
         </div>
@@ -162,7 +162,7 @@ const VetInfo = () => {
         <br/> Any health concerns regarding the breed or kittens in general?
         <br/> Bengal cat health problems and diseases that owners need to be aware of.
         <br/> Bengal cats can be prone to, such as : Heart disease, Eye disease, Joint problems, Kidney disease, </h3>
-      <h3> _______________</h3>
+        <h3> ________</h3>
       <div className={OwnersInfoCSS.imgCenter}>
        {/*<div className={OwnersInfoCSS.imgContainer}>*/}
           <img alt="headerImage" src={require("../images/bengal-cat.jpg")} width = "700" height = "500" />
@@ -182,7 +182,7 @@ const KittenTraining = () => {
     </div>
     <div className={OwnersInfoCSS.containerRow2}>
       <h1 className={OwnersInfoCSS.bold}> Training </h1>
-      <h3> _______________</h3>
+      <h3> ________</h3>
       <h3> How to train a kitten? <br/>
            Training courses? <br/>
            Training resources? <br/>
@@ -223,7 +223,12 @@ const SocialMedia = () => {
         <h3>________________________________</h3>
         <h1 className = {OwnersInfoCSS.textLeftBold}> Follow Us On </h1> <br/>
         <div className = {OwnersInfoCSS.imgInsta}>
-        <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "85" height = "75" />
+        <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'> {/* Should be a link to KB Instagram account */}
+            {/*<button className={LitterUpdatesCSS.instagramBtn}>*/}
+            <img alt="headerImage" src={require("../images/transparent-social-media.png")} width = "85" height = "75" /> 
+            {/*</button>*/}
+          </a>
+        
         </div>
       </div> 
     </div>
