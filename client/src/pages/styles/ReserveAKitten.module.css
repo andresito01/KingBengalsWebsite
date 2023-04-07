@@ -21,6 +21,7 @@
   );
   background-image: url("../../images/kbengalsbgGradient.png");
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
 }
 
@@ -34,11 +35,11 @@
   font-family: var(--header-text-font);
   font-size: var(--large-header-size);
   margin-top: 1rem;
-  margin-bottom: 30px;
-  padding: 10px 10px 10px 10px;
+  margin-bottom: 3vw;
+  padding: 10px 50px 10px 50px;
   border-style: solid;
   border-color: #4E3A24;
-  border-width: 4px;
+  border-width: 10px;
   border-radius: 20px;
 }
 
@@ -67,6 +68,8 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
@@ -86,6 +89,7 @@
   background-color: #4E3A24;
   flex: 1;
   border-radius: 10px;
+  margin-left: 4vw;
 }
 
 .paymentContainer {
@@ -100,6 +104,7 @@
   background-color: #4E3A24;
   flex: 1;
   border-radius: 10px;
+  margin-right: 4vw;
 }
 
 .additionalInfoContainer {
@@ -109,7 +114,12 @@
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   padding: 10px 10px 10px 10px;
-  border-radius: 10px;
+  margin-bottom: 5vw;
+  border-style:inset;
+  border-width: 10px;
+  border-radius: 20px;
+  border-color: #e2b78e;
+
 }
 
 .additionalInfoContainer h3 {
