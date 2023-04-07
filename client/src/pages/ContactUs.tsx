@@ -9,7 +9,7 @@ const ContactUs = () => {
 
   let emailJSVariables = {
     serviceId: process.env.REACT_APP_SERVICE_ID as string,
-    templateID: process.env.REACT_APP_TEMPLATE_ID as string,
+    templateID: process.env.REACT_APP_CONTACT_TEMPLATE_ID as string,
     publicKey: process.env.REACT_APP_PUBLIC_KEY as string,
   }
 

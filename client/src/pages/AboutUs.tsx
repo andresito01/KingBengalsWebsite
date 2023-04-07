@@ -46,11 +46,15 @@ const About = () => {
           {AboutJSON.updatesa}<br/><br/>
         </p>
         {/* >>>>>>>>> Bottom Images on About-Page <<<<<<<<<<<<<<< */}
-        <div className={AboutCSS.bottomLeftImg}>
-          <img alt="litter1" src={Data.images.bottomLeftImg} />
-        </div>
-        <div className={AboutCSS.bottomRightImg}>
-          <img alt="litter2" src={Data.images.bottomRightImg} />
+        <div className = {AboutCSS.containerRow}>
+          {/*<div className={AboutCSS.bottomLeftImg}>*/}
+          <div className = {AboutCSS.imgContainer}>
+            <img alt="litter1" src={Data.images.bottomLeftImg} />
+          </div>
+          {/*<div className={AboutCSS.bottomRightImg}>*/}
+          <div className = {AboutCSS.imgContainer}>
+            <img alt="litter2" src={Data.images.bottomRightImg} /> 
+          </div>
         </div>
         {/* >>>>>>>> What does the business provides <<<<<<<<<<<< */}
         <p className={AboutCSS.p3}>

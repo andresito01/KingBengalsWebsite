@@ -21,6 +21,7 @@
   );
   background-image: url("../../images/kbengalsbgGradient.png");
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
 }
 
@@ -34,11 +35,11 @@
   font-family: var(--header-text-font);
   font-size: var(--large-header-size);
   margin-top: 1rem;
-  margin-bottom: 30px;
-  padding: 10px 10px 10px 10px;
+  margin-bottom: 3vw;
+  padding: 10px 50px 10px 50px;
   border-style: solid;
   border-color: #4E3A24;
-  border-width: 4px;
+  border-width: 10px;
   border-radius: 20px;
 }
 
@@ -67,6 +68,8 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
@@ -86,6 +89,7 @@
   background-color: #4E3A24;
   flex: 1;
   border-radius: 10px;
+  margin-left: 4vw;
 }
 
 .paymentContainer {
@@ -100,6 +104,7 @@
   background-color: #4E3A24;
   flex: 1;
   border-radius: 10px;
+  margin-right: 4vw;
 }
 
 .additionalInfoContainer {
@@ -109,7 +114,12 @@
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   padding: 10px 10px 10px 10px;
-  border-radius: 10px;
+  margin-bottom: 5vw;
+  border-style:inset;
+  border-width: 10px;
+  border-radius: 20px;
+  border-color: #e2b78e;
+
 }
 
 .additionalInfoContainer h3 {
@@ -120,4 +130,84 @@
 
 .additionalInfoContainer p {
   font-size: 28px;
+}
+
+/* Email Form for Reserving A Kitten */
+
+.formContainer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  font-size: 1rem;
+  background: #4E3A24;
+  color: white;
+  border-radius: 15px;
+}
+
+.formTextInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 2;
+}
+
+.formKittenSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+#userName, #userEmail {
+  width: 100%;
+  height: 2.5rem;
+  padding: 1rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+#userMessage {
+  width: 100%;
+  height: 9rem;
+  padding: 1rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+#userName:focus, #userEmail:focus, #userMessage:focus {
+  border: 2px solid rgba(168, 125, 72, 0.96);
+}
+
+#formLabel {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#submitButton {
+  width: 20%;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  align-self: flex-end;
+  margin-right: 7rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  background: white;
+  color: rgb(168, 125, 72);
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+  border: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+#submitButton:hover {
+  background: rgb(168, 125, 72);
+  color: white;
+  transition: 0.7s;
 }
