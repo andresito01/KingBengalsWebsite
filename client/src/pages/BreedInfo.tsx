@@ -3,7 +3,7 @@ import BreedInfoCSS from "./styles/BreedInfo.module.css";
 import topImage from "../images/SpottedVsMarbled_edited.png";
 import spotted from "../images/SpottedBengals.png";
 import marbled from "../images/MarbledBengals.png";
-import redstar from "../images/1024px-Paintedcats_Red_Star_standing.jpg";
+import redstar from "../images/1024px-Paintedcats_Red_Star_standing_noBG.png";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import bengalKitten from "../images/Bengal-Cats.jpg";

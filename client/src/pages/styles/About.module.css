@@ -11,6 +11,8 @@
   );
   background-image: url("../../images/kbengalsbgGradient.png");
   background-size: cover;
+  white-space: pre-line;  
+  vertical-align: bottom;
 }
 
 .header {
@@ -34,9 +36,10 @@
   font-size: var(--generic-text-size);
   padding-top: 0.625rem;
   padding-left: 1.25rem;
-  height: 15.625rem;
+  padding-bottom: .625rem;
+  /*height: 15.625rem;*/
   width: 60%;
-  margin-top: 0.0625rem;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
   outline-style: solid;
   outline-width: 0.0625rem;
   outline-color: black;
@@ -73,7 +76,7 @@
   padding-left: 1.25rem;
   height: 28.125rem;
   width: 95%;
-  margin-top: 0.0625rem;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
   outline-style: solid;
   outline-width: 0.0625rem;
   outline-color: black;
@@ -132,7 +135,7 @@
   margin-top: 6.25rem;
   margin-left: 30%;
   margin-right: 30%;
-  margin-bottom: -1.875rem;
+  /*margin-bottom: -1.875rem;*/
   outline-style: solid;
   outline-width: 0.0625rem;
   outline-color: black;
