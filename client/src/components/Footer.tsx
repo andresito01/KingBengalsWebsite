@@ -13,7 +13,12 @@ const Footer = () => {
         <h4>Follow us:</h4>
         <hr></hr>
         <section>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+          <a
+            className={FooterCSS.footerLinks}
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className={FooterCSS.instagramBtn}>
               <img
                 alt="instaImg"
@@ -26,12 +31,23 @@ const Footer = () => {
           </a>
         </section>
       </section>
+      {/* >>>>>>>>>   Empty Container <<<<<<<<<<<< */}
+      <section></section>
+
       {/* >>>>>>>>>   Contact Us Container <<<<<<<<<<<< */}
       <section className={FooterCSS.contactUsContainer}>
-        <h4 className={FooterCSS.footerLinks} onClick={() => navigate("/contact")}> Contact us:</h4>
+        <h4
+          className={FooterCSS.footerLinks}
+          onClick={() => navigate("/contact")}
+        >
+          Contact us:
+        </h4>
         <hr></hr>
         <li>phone: (###) ### ###</li>
-        <li className={FooterCSS.footerLinks} onClick={() => navigate("/contact")}>
+        <li
+          className={FooterCSS.footerLinks}
+          onClick={() => navigate("/contact")}
+        >
           email: #######@####.com
         </li>
       </section>
