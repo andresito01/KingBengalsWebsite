@@ -11,7 +11,8 @@
   );
   background-image: url("../../images/bengal-cat-coat-glitter.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  white-space: pre-line;  
+  vertical-align: bottom;
 }
 
 .header {
@@ -42,10 +43,11 @@
   font-size: var(--generic-text-size);
   padding-top: 0.625rem;
   padding-left: 1.25rem;
+  padding-bottom: .625rem;
   /*height: 15.625rem;*/
   width: 60%;
-  margin-top: 0.0625rem;
-  /*outline-style: solid;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  outline-style: solid;
   outline-width: 0.0625rem;
   outline-color: black;
   /*border-radius: 0.625rem;*/
@@ -85,9 +87,8 @@
   padding-left: 1.25rem;
   /*height: 28.125rem;*/
   width: 95%;
-  margin-top: 0.0625rem;
-  margin-bottom: 3vw;
-  /*outline-style: solid;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  outline-style: solid;
   outline-width: 0.0625rem;
   outline-color: black;
   border-radius: 0.625rem;*/
@@ -151,8 +152,8 @@
   /*margin-top: 6.25rem;
   margin-left: 30%;
   margin-right: 30%;
-  margin-bottom: -1.875rem;*/
-  /*outline-style: solid;
+  /*margin-bottom: -1.875rem;*/
+  outline-style: solid;
   outline-width: 0.0625rem;
   outline-color: black;
   border-radius: 0.625rem;*/

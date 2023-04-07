@@ -3,6 +3,7 @@ import AboutCSS from "./styles/About.module.css";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import Data from "../json/aboutUs.json";
+import AboutJSON from "../json/aboutUs.json"
 
 const About = () => {
   const fontSizeHeader = { fontSize: "60px" };
@@ -10,22 +11,22 @@ const About = () => {
 
   return (
     <div className={AboutCSS.aboutPage}>
-      <WebNavHeader />
+      <WebNavHeader /><br/>
       <header className={AboutCSS.header} style={fontSizeHeader}>
         Learn More About Us!
-      </header>
+      </header><br/><br/>
       <div className={AboutCSS.aboutPageBody}>
         {/*>>>>>>>>>>>>>>   Business Location & History   <<<<<<<<<<<<<*/}
         <p className={AboutCSS.p1}>
-          Location of the business <br></br>
-          We are located in Sacramento, California just near the vibrant
-          downtown. Brief description of the physical location, such as venue,
-          view, landmarks nearby. <br></br>
+          <h4>{AboutJSON.locationq}</h4>
+          {AboutJSON.locationa}<br></br>
           <br></br>
-          History of the business <br></br>
-          How long have we been in this business? <br></br>
-          What are the bengal cats bred for? pets, companionship, house cats,
-          competitions, family pets, etc.
+          
+          <h4>{AboutJSON.businessq}</h4>
+          {AboutJSON.businessa} <br/><br/>
+          
+          <h4>{AboutJSON.bengalpurposeq}</h4>
+          {AboutJSON.bengalpurposea}<br/><br/>
         </p>
         {/* >>>>>>>>>>>>>> Top-right image on the About-Page <<<<<<<<<<*/}
         <div className={AboutCSS.topRightImg}>
@@ -33,27 +34,16 @@ const About = () => {
         </div>
         {/* >>>>>>>>>>>>>>    More about the business   <<<<<<<<<<<<<< */}
         <p className={AboutCSS.p2}>
-          What kind of approach does the business take with training and working
-          with all the cats? What does the business believe in when it comes to
-          the treatment of all their cats? <br></br>
-          <br></br>
-          What kind of cats does the business produce? <br></br>
-          Health/color/patterns/tempermant/energy levels etc. <br></br>
-          <br></br>
-          Behavior of the Bengal cats specifically<br></br>
-          What do they require in order to step up for success?<br></br>
-          <br></br>
-          Personallity of the kittens<br></br>
-          Is it predictable? What factors can be focused on?<br></br>
-          <br></br>
-          Advice for the customers.<br></br>
-          <br></br>
-          Updates the business provides on a weekly/biweekly basis.<br></br>
-          What can customers look forward to between the time they've picked a
-          kitten and til the kitten is 2 months old.<br></br>
-          Ex. Pictures, videos of their kitten will be uploaded every week or
-          two weeks until the kitten is months of age and ready to go to their
-          new home with the owner.<br></br>
+          <h4>{AboutJSON.approachq}</h4>
+          {AboutJSON.approacha}<br/><br/>
+         
+          <h4>{AboutJSON.inventoryq}</h4>
+          {AboutJSON.inventorya}<br/><br/>
+          
+          {AboutJSON.otherinfo}<br/><br/>
+
+          <h4>{AboutJSON.updatesq}</h4>
+          {AboutJSON.updatesa}<br/><br/>
         </p>
         {/* >>>>>>>>> Bottom Images on About-Page <<<<<<<<<<<<<<< */}
         <div className = {AboutCSS.containerRow}>
