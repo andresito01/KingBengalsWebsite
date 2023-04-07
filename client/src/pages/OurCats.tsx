@@ -30,7 +30,7 @@ const OurCats: React.FC = () => {
       <WebNavHeader/>
       <div className={OurCatsCSS.headerContainerOurCats}>
       
-        <h1>Meet The Parents!</h1>
+        <h1>Meet Our Cats!</h1>
         <h2>
           We believe in quality genetics and pay close attention to our breeding program to ensure 
           those quality results we strive for. We provide our cats with the best care and nutrition 
@@ -72,7 +72,7 @@ const OurCats: React.FC = () => {
           {/* First Female Parent */}
           <div className={OurCatsCSS.parentTile}>
             <h1>Cleopatra, The Queen</h1>
-            <p>Female</p>
+            <p>Dam</p>
             <button className={SliderStyle.containerBtn} onClick={handleSliderClick1}>
               <img alt='parentImg1' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
             </button>
@@ -80,7 +80,7 @@ const OurCats: React.FC = () => {
           {/* Second Female Parent */}
           <div className={OurCatsCSS.parentTile}>
             <h1>Tsarina, The Precious</h1>
-            <p>Female</p>
+            <p>Dam</p>
             <button className={SliderStyle.containerBtn} onClick={handleSliderClick2}>
               <img alt='parentImg2' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
             </button>
@@ -88,7 +88,7 @@ const OurCats: React.FC = () => {
           {/* Male Parent */}
           <div className={OurCatsCSS.parentTile}>
             <h1>Hercules, The King</h1>
-            <p>Male</p>
+            <p>Sire</p>
             <button className={SliderStyle.containerBtn} onClick={handleSliderClick3}>
               <img alt='parentImg3' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
             </button>
