@@ -218,8 +218,8 @@
   padding: 10px 10px 10px 10px;
   border-style:inset; /*solid;*/
   border-color: rgba(255, 230, 207, 0.94);
-  border-width: 20px;
-  border-radius: 40px;
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 /*.imgKittenDev {
