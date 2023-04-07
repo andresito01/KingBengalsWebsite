@@ -11,9 +11,10 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-image: url("../../images/pattern\ -\ b&w\ warm\ +\ wc\ edited.jpg");
+  background-image: url("../../images/kbengalsbgGradient.png"); /*pattern\ -\ b&w\ warm\ +\ wc\ edited.jpg");*/
   width: 100%;
   background-size: contain;
+  background-attachment: fixed;
 }
 
 .topPictureContainer {
@@ -86,8 +87,8 @@ p.text {
   padding: 10px 10px 10px 10px;
   border-style: groove; /*solid;*/
   border-color: rgba(255, 230, 207, 0.94);
-  border-width: 20px;
-  border-radius: 40px;
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 .containerRowBox {
@@ -134,7 +135,8 @@ p.text {
   border-radius: 20px;
   border-style: solid;
   border-color: #4e3a24;
-  border-width: 20px 20px 20px 20px;
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 .imgContainer {
