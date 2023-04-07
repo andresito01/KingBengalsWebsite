@@ -130,6 +130,7 @@ const PatternsSpotMarble = () => {
           <img
             className={BreedInfoCSS.topPicture}
             src={topImage}
+            style={{width: 800}}
             alt="Breed Information"
           />
         </div>
@@ -142,8 +143,7 @@ const PatternsSpotMarble = () => {
         Bengal Cat are born with one of two patterns: Spotted or Marbled.
         <br /> Along with their personality, it's one of their defining features
         that make them unique.
-        <br /> Althought, some may use the word 'exotic' to refer to their
-        uniqueness.
+        <br /> Althought, some may use the word 'exotic' to refer to their uniqueness.
         <br /> Below are pictures of each pattern with different combinations of
         colors they can be born with.{" "}
       </h2>
