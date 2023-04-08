@@ -20,10 +20,10 @@
   --header-text-font: lancelot;
   --header-font-size: 1.75em;
   --largest-header-size: 3em;
-  --large-header-size: 2em;
+  --large-header-size: 2vw;
   --header-text-property: bold;
   --generic-website-text: inika;
-  --generic-text-size: 0.875em;
+  --generic-text-size: 0.875vw;
   --generic-text-property: bold;
   --dark-bg-opacity: 0.9;
   --light-bg-opacity: 0.85;

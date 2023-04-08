@@ -18,7 +18,7 @@ interface Data {
     // Litter and Parents
     birthDate: string; pickupDate: string; litterPicture: string;
     momPicture: string; dadPicture: string;
-    kittens: [{id: number, kittenName: string, kittenPicture: string, kittenColor: string, 
+    kittens: [{id: number, kittenPicture: string, kittenColor: string, 
               kittenPattern: string, kittenSex: string, kittenStatus: string}];
 }
 
@@ -60,8 +60,6 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
                         <div className={LitterModalCSS.momAndDadText}>DAD</div>
                     </div>
                 </div>
-
-                
 
                 {/* Individual Kitten Pictures and Info */}
                 <div className={LitterModalCSS.kittenContainer}>

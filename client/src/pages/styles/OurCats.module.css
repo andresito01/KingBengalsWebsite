@@ -2,7 +2,7 @@
 
 
 .ourCatsPage {
-  background-image: var(--bg-image);
+  background-image: url("../../images/kbengalsbgGradient.png");
   background-size: cover;
   height: 100%;
 }

@@ -25,17 +25,17 @@ const WebNavHeader = () => {
     }
   }
 
-  // const windowWidthCheck = () => {
-  //   if (window.innerWidth > 1274) 
-  //     var x = document.getElementById("navLinks")
-  //     var y = document.getElementById("middle")
-  //     var z = document.getElementById("leftHeaderImg")
-  //     x.className = `${WebNavHeaderCSS.navLinks}`
-  //     y.className = `${WebNavHeaderCSS.middle}`;
-  //     z.className = `${WebNavHeaderCSS.leftHeaderImg}`;
-  //     setMobile(false)
-  // }
-  // window.addEventListener('resize', windowWidthCheck)
+  const windowWidthCheck = () => {
+    if (window.innerWidth > 1110) 
+      var x = document.getElementById("navLinks")
+      var y = document.getElementById("middle")
+      var z = document.getElementById("leftHeaderImg")
+      x.className = `${WebNavHeaderCSS.navLinks}`
+      y.className = `${WebNavHeaderCSS.middle}`;
+      z.className = `${WebNavHeaderCSS.leftHeaderImg}`;
+      setMobile(false)
+  }
+  window.addEventListener('resize', windowWidthCheck)
 
   return (
     <div className={WebNavHeaderCSS.headerContainer}>
