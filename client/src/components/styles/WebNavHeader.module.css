@@ -91,20 +91,22 @@
 }
 
 .link a{
+  text-decoration: none;
   font-family: inika;
   font-size: 1.3rem;
   color: white;
 }
 
 .link a.active{
-  background-color: brown;
+  color: rgba(226, 174, 110, 0.7);
+  text-decoration: underline;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.link:hover {
+.link a:hover {
   cursor: pointer;
-  text-decoration-line: underline;
+  color: rgba(226, 174, 110, 0.7);
 }
 
 .navBtn {
