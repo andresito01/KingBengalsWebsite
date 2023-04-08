@@ -11,8 +11,9 @@
     rgb(255, 174, 0),
     rgb(64, 29, 2)
   );
-  background-image: url("../../images/kbengalsbgGradient.png");
+  background-image: url("../../images/bengal-cat-coat-glitter.jpg"); /*kbengalsbgGradient.png");*/
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /* >>>>>>>>>>>>>>>>>>>> Homepage Header Image <<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -41,14 +42,18 @@
   height: auto;
   position: relative;
   margin: 1rem;
+  margin-top: 3vw;
   padding-top: 3rem;
   background-color: var(--dark-primary-color);
   opacity: var(--dark-bg-opacity);
   color: rgb(255, 255, 255);
   border-style: solid;
-  border-radius: var(--border-radius);
+  border-width: 10px;
+  border-radius: 20px;
+  border-color: #e2b78e;
+  /*border-radius: var(--border-radius);
   border-width: var(--border-width);
-  border-color: var(--light-primary-color);
+  border-color: var(--light-primary-color);*/
   /* bottom: 0.2vw;
   left: 0.2vw; */
 }
@@ -65,10 +70,15 @@
 }
 .ownerPicture img {
   width: 100%;
-  border-color: var(--light-primary-color);
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  /*border-color: var(--light-primary-color);
   border-width: var(--border-width);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius);*/
   border-style: solid;
+  border-width: 10px;
+  border-radius: 20px;
+  border-color: #4E3A24;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Past Litters' Title   <<<<<<<<<<<<<<<<<<*/
@@ -76,6 +86,8 @@
   width: 60vw;
   height: auto;
   margin: auto;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
   color: rgba(247, 231, 205, 0.946);
   font-size: 2.5vw;
   font-weight: var(--header-text-property);
@@ -83,7 +95,12 @@
   text-align: center;
   text-shadow: 0.15vw 0.15vw rgba(242, 147, 31, 0.734);
   background-color: rgba(48, 26, 2, 0.909);
-  border-radius: 4.5vw;
+  /*border-radius: 4.5vw;*/
+  border-style: inset;
+  border-width: 10px;
+  border-radius: 20px;
+  border-color: #e2b78e;
+  
 }
 
 /* >>>>>>>>>>>>>>>>>>>>  Past Litters    <<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -101,7 +118,11 @@
 .pastLitters img {
   width: 90%;
   margin: auto;
-  border-color: var(--light-primary-color);
-  border-width: var(--border-width);
+  margin-bottom: 3vw;
+  /*border-color: var(--light-primary-color);
+  border-width: var(--border-width);*/
   border-style: solid;
+  border-width: 10px;
+  border-radius: 20px;
+  border-color:#4E3A24;
 }
