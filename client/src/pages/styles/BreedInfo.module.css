@@ -2,6 +2,7 @@
   font-family: inika;
   src: url("../../fonts/Inika-Regular.ttf");
 }
+
 @font-face {
   font-family: lancelot;
   src: url("../../fonts/Lancelot-Regular.ttf");
@@ -27,16 +28,17 @@
   width: 100%;
   margin-top: 1rem;
 }
+
 .topPicture {
   width: 100%;
   height: auto;
 }
 
-.sectionHeader{
-  margin:20px;
+.sectionHeader {
+  margin: 20px;
 }
 
-.bengalsTextContainer{
+.bengalsTextContainer {
   background-color: #a87d48f5;
   font-size: 20px;
   color: white;
@@ -44,7 +46,7 @@
   text-align: justify;
 }
 
-.bengalsIntroPic{
+.bengalsIntroPic {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -65,8 +67,8 @@
   margin: 10px 10px 30px 30px;
 }*/
 
-p.text{
-  margin:20px;
+p.text {
+  margin: 20px;
 }
 
 /*********************************************************************************/
@@ -76,20 +78,23 @@ p.text{
   height: auto;
 }
 
-.containerBox {               /*WebNaveHeader color: #412804*/
+.containerBox {
+  /*WebNaveHeader color: #412804*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
   width: relative;
   position: relative;
-  background-color:#a87d48f5; /* rgba(78, 58, 36);/*, 0.99); /*#4E3A24;*/
+  background-color: #a87d48f5;
+  /* rgba(78, 58, 36);/*, 0.99); /*#4E3A24;*/
   color: white;
   font-family: inika;
   margin-top: 2vw;
   margin-bottom: 60px;
   padding: 10px 10px 10px 10px;
-  border-style:groove; /*solid;*/
+  border-style: groove;
+  /*solid;*/
   border-color: rgba(255, 230, 207, 0.94);
   border-width: 20px;
   border-radius: 40px;
@@ -103,7 +108,8 @@ p.text{
   width: 80vw;
   position: relative;
   /*right: 1rem;*/
-  background-color:#a87d48f5; /*#4E3A24;*/
+  background-color: #a87d48f5;
+  /*#4E3A24;*/
   color: white;
   font-family: inika;
   margin-top: 2vw;
@@ -114,7 +120,8 @@ p.text{
 
 .containerRow1 {
   margin: 10px 10px 10px 10px;
-  background-color: #a87d48f5; /* #4E3A24;*/
+  background-color: #a87d48f5;
+  /* #4E3A24;*/
   flex: 1;
   width: 45vw;
   /*height: auto;*/
@@ -126,10 +133,10 @@ p.text{
 
 .containerRow2 {
   margin: 10px 10px 10px 10px;
-  background-color:  #ffe3c8;
+  background-color: #f0bf92;
   flex: 1;
   width: 30vw;
-  height:auto;
+  height: auto;
   position: relative;
   justify-content: center;
   padding: 15px 15px 15px 15px;
@@ -141,6 +148,34 @@ p.text{
   border-width: 20px 20px 20px 20px;
 }
 
+/******************accordion*************************/
+.accordion .contentBx .label {
+  background: rgba(161, 89, 21, 0.269);
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*Not working....................*/
+.accordion .contentBx .label ::before {
+  content: '+';
+  position: absolute;
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+
+.accordion .contentBx.active .content {
+  height: 150px;
+  padding: 10px;
+}
+
+/***********Accordion*********************/
 .imgContainer {
   max-width: 100%;
   height: auto;
@@ -150,7 +185,7 @@ p.text{
   /*position: relative;*/
 }
 
-.bold{
+.bold {
   font: bold;
   font-size: 3rem;
   font-family: inika;
@@ -159,10 +194,10 @@ p.text{
   justify-content: center;
 }
 
-.underline{
+.underline {
   text-decoration: underline;
   font: italic
-  /*font: bold;*/
+    /*font: bold;*/
 }
 
 .textLeftBold {
@@ -188,6 +223,12 @@ p.text{
   margin-bottom: 60px;
 }
 
+/* .healthHeading>p {
+  justify-content: left;
+  text-align: left;
+  padding-left: 30px;
+} */
+
 .containerBottom {
   display: flex;
   flex-direction: row;
@@ -195,7 +236,7 @@ p.text{
   justify-content: left;
   text-align: left;
   /*right: 1rem;*/
-  background-color:rgba(78, 58, 36, 0.5);
+  background-color: rgba(78, 58, 36, 0.5);
   color: white;
   font-family: inika;
   margin-top: 5vw;
