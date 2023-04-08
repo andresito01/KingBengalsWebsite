@@ -13,6 +13,7 @@
         "kittens": [
             {
                 "id": 1,
+                "kittenName": "Mario",
                 "kittenPicture": "images/cute bengal kitten.jpg",
                 "kittenColor": "Carmel/Tan",
                 "kittenPattern": "Spotted",
@@ -21,27 +22,30 @@
             },
             {
                 "id": 2,
+                "kittenName": "Luigi",
                 "kittenPicture": "images/bengal-cat.jpg",
                 "kittenColor": "Brown/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
-                "kittenStatus": "Reserved"
+                "kittenStatus": "Available"
             },
             {
                 "id": 3,
+                "kittenName": "Cleo",
                 "kittenPicture": "images/bencat.jpg",
                 "kittenColor": "Cramel/Black",
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
-                "kittenStatus": "Reserved"
+                "kittenStatus": "Available"
             },
             {
                 "id": 4,
+                "kittenName": "Juju",
                 "kittenPicture": "images/bengal-cat-1.jpg",
                 "kittenColor": "Brown/Black",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Pending"
+                "kittenStatus": "Available"
             }
         ]
     },
@@ -59,6 +63,7 @@
         "kittens": [
             {
                 "id": 1,
+                "kittenName": "Shifu",
                 "kittenPicture": "images/cute bengal kitten.jpg",
                 "kittenColor": "Carmel/Tan",
                 "kittenPattern": "Spotted",
@@ -67,27 +72,30 @@
             },
             {
                 "id": 2,
+                "kittenName": "Po",
                 "kittenPicture": "images/bengal-cat.jpg",
                 "kittenColor": "Brown/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
-                "kittenStatus": "Reserved"
+                "kittenStatus": "Available"
             },
             {
                 "id": 3,
+                "kittenName": "Zozo",
                 "kittenPicture": "images/bengal-cat-1.jpg",
                 "kittenColor": "Cramel/Black",
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
-                "kittenStatus": "Reserved"
+                "kittenStatus": "Available"
             },
             {
                 "id": 4,
+                "kittenName": "Toby",
                 "kittenPicture": "images/bencat.jpg",
                 "kittenColor": "Brown/Black",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Pending"
+                "kittenStatus": "Available"
             }
         ]
     }

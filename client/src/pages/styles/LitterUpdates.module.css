@@ -1,7 +1,7 @@
 @import "../../theme.css";
 
 .litterUpdatesPage {
-  background-image: url("../../images/kbengalsbgGradient.png");
+  background-image: var(--bg-image);
   background-size: cover;
   width: 100%;
 }

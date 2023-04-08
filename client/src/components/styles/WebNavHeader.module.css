@@ -94,17 +94,20 @@
   font-family: inika;
   font-size: 1.3rem;
   color: white;
+  text-decoration: none;
 }
 
 .link a.active{
-  background-color: brown;
+  text-decoration: underline;
+  color: rgba(226, 174, 110, 0.7);
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.link:hover {
+.link a:hover {
+  color: rgba(226, 174, 110, 0.7);
   cursor: pointer;
-  text-decoration-line: underline;
+  text-decoration-line: none;
 }
 
 .navBtn {
@@ -120,7 +123,7 @@
   margin-right: 1rem;
 }
 
-@media only screen and (max-width: 1213px) {
+@media only screen and (max-width: 1274px) {
 
 	.navBtn{
     display: block;
@@ -157,7 +160,7 @@
 
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1274px) {
   
   .middleResponsive {
     position: relative;
