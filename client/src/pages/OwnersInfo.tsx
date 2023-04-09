@@ -14,8 +14,6 @@ const OwnersInfo = () => {
 
       <OwnersInfoPageHeader/>
 
-      {/*<div className = {OwnersInfoCSS.headerOwnersInfoImg}>*/}
-
       <ProductsRecommend/>
 
       <KittenDevelopment/>
