@@ -16,22 +16,27 @@ const About = () => {
         Learn More About Us!
       </header><br/><br/>
       <div className={AboutCSS.aboutPageBody}>
-        {/*>>>>>>>>>>>>>>   Business Location & History   <<<<<<<<<<<<<*/}
-        <p className={AboutCSS.p1}>
-          <h4>{AboutJSON.locationq}</h4>
-          {AboutJSON.locationa}<br></br>
-          <br></br>
-          
-          <h4>{AboutJSON.businessq}</h4>
-          {AboutJSON.businessa} <br/><br/>
-          
-          <h4>{AboutJSON.bengalpurposeq}</h4>
-          {AboutJSON.bengalpurposea}<br/><br/>
-        </p>
-        {/* >>>>>>>>>>>>>> Top-right image on the About-Page <<<<<<<<<<*/}
-        <div className={AboutCSS.topRightImg}>
-          <img alt="aboutUs" src={Data.images.topRightImg} />
+        <div className = {AboutCSS.containerRow} >
+          {/*>>>>>>>>>>>>>>   Business Location & History   <<<<<<<<<<<<<*/}
+          <p className={AboutCSS.p1}>
+            <h4>{AboutJSON.locationq}</h4>
+            {AboutJSON.locationa}<br></br>
+            <br></br>
+            
+            <h4>{AboutJSON.businessq}</h4>
+            {AboutJSON.businessa} <br/><br/>
+            
+            <h4>{AboutJSON.bengalpurposeq}</h4>
+            {AboutJSON.bengalpurposea}<br/><br/>
+          </p>
+          {/* >>>>>>>>>>>>>> Top-right image on the About-Page <<<<<<<<<<*/}
+          <div className={AboutCSS.border}>
+          <div className={AboutCSS.topRightImg}>
+            <img alt="aboutUs" src={Data.images.topRightImg} />
+          </div>
+          </div>
         </div>
+
         {/* >>>>>>>>>>>>>>    More about the business   <<<<<<<<<<<<<< */}
         <p className={AboutCSS.p2}>
           <h4>{AboutJSON.approachq}</h4>
@@ -46,7 +51,7 @@ const About = () => {
           {AboutJSON.updatesa}<br/><br/>
         </p>
         {/* >>>>>>>>> Bottom Images on About-Page <<<<<<<<<<<<<<< */}
-        <div className = {AboutCSS.containerRow}>
+        <div className = {AboutCSS.containerRow2}>
           {/*<div className={AboutCSS.bottomLeftImg}>*/}
           <div className = {AboutCSS.imgContainer}>
             <img alt="litter1" src={Data.images.bottomLeftImg} />
