@@ -264,3 +264,23 @@
   margin-right: 0;
   /*margin-bottom: 60px;*/
 }
+
+
+/******************************** Transparent Row container *************************************/
+.containerRowTransparent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+  position: relative;
+  /*right: 1rem;*/
+  background-color: transparent;
+  color: white;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  margin-top: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 60px;
+}
