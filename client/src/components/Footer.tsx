@@ -23,7 +23,7 @@ const Footer = () => {
               <img
                 alt="instaImg"
                 className={FooterCSS.instagramImg}
-                src={require("../images/instagramlogo.png")}
+                src={require("../images/transparent-social-media (1).png")}
               />
             </button>
             <br></br>
@@ -32,7 +32,10 @@ const Footer = () => {
         </section>
       </section>
       {/* >>>>>>>>>   Empty Container <<<<<<<<<<<< */}
-      <section></section>
+      <section> 
+      <img alt = "KB logo" className={FooterCSS.logoContainer}
+                src={require("../images/KB logo.png")} ></img>
+      </section>
 
       {/* >>>>>>>>>   Contact Us Container <<<<<<<<<<<< */}
       <section className={FooterCSS.contactUsContainer}>
