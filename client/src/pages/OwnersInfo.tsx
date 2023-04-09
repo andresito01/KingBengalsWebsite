@@ -120,7 +120,7 @@ const KittenDevelopment = () => {
             <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} />
           </div>
           <h3> <br/> At two months old, they can recieve their first dose of vaccines. They have been completely weened off of 
-          their mother's milk. They're ready to go to their new and forever home. </h3>
+          their mother's milk. Have learned some social skills by interacting with their mother and litter mates. They're ready to go to their new and forever home. </h3>
         </div>
       </div>
       <h2> Link / Lay out the process on weekly or biweekly, AND monthly basis</h2>
