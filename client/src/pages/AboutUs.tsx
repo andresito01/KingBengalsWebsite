@@ -31,9 +31,9 @@ const About = () => {
           </p>
           {/* >>>>>>>>>>>>>> Top-right image on the About-Page <<<<<<<<<<*/}
           <div className={AboutCSS.border}>
-          <div className={AboutCSS.topRightImg}>
-            <img alt="aboutUs" src={Data.images.topRightImg} />
-          </div>
+            <div className={AboutCSS.topRightImg}>
+              <img alt="aboutUs" src={Data.images.topRightImg} />
+            </div>
           </div>
         </div>
 
@@ -53,11 +53,11 @@ const About = () => {
         {/* >>>>>>>>> Bottom Images on About-Page <<<<<<<<<<<<<<< */}
         <div className = {AboutCSS.containerRow2}>
           {/*<div className={AboutCSS.bottomLeftImg}>*/}
-          <div className = {AboutCSS.imgContainer}>
+          <div className = {AboutCSS.border}>
             <img alt="litter1" src={Data.images.bottomLeftImg} />
           </div>
           {/*<div className={AboutCSS.bottomRightImg}>*/}
-          <div className = {AboutCSS.imgContainer}>
+          <div className = {AboutCSS.border}>
             <img alt="litter2" src={Data.images.bottomRightImg} /> 
           </div>
         </div>
