@@ -133,7 +133,7 @@ const KittenDevelopment = () => {
 /**************************************** Preparing For Your Kitten *********************************************************/
 const PrepareForKitten = () => {
   return (
-  <div className={OwnersInfoCSS.containerRowBox}>
+  <div className={OwnersInfoCSS.containerRowTransparent}>
     <div className={OwnersInfoCSS.containerRow2}>
       <h1 className={OwnersInfoCSS.bold}> Preparing For Your Kitten </h1>
       <h3> ________</h3>
@@ -183,7 +183,7 @@ const VetInfo = () => {
 /**************************************** Training Your Kitten *********************************************************/
 const KittenTraining = () => {
   return (
-  <div className={OwnersInfoCSS.containerRowBox}>
+  <div className={OwnersInfoCSS.containerRowTransparent}>
     <div className={OwnersInfoCSS.containerRow1}>
       {/*<h2 className={OwnersInfoCSS.bold}> Pic of a kitten in training </h2>*/}
       <img alt="headerImage" src={require("../images/How-Do-I-Exercise-a-Bengal-Cat.jpg")} width = "700" height = "450"/>
