@@ -51,6 +51,9 @@ const WebNavHeader = () => {
           <div className={WebNavHeaderCSS.rightImgContainer}>
             <img id={WebNavHeaderCSS.rightHeaderImg} alt='cat' src={require("../images/CatWebNavHeader2NoBackground.png")} />
           </div>
+          {/*<div className={WebNavHeaderCSS.logoContainer}>*/}
+            <img className = {WebNavHeaderCSS.logoContainer} alt='cat' src={require("../images/KB logo.png")} />
+          {/*</div>*/}  
         </div>
         
         <div className={WebNavHeaderCSS.navLinks} id="navLinks">

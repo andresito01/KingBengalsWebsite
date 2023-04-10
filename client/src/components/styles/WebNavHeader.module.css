@@ -57,14 +57,14 @@
 
 .headerKingBengals {
   font-family: lancelot;
-  font-size: 6rem;
+  font-size: 8rem;
   color: white;
   margin-bottom: 2rem;
 }
 
 .headerCattery {
   font-family: lancelot;
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
   margin-left: 9px;
   margin-bottom: 2rem;
@@ -93,7 +93,7 @@
 .link a{
   text-decoration: none;
   font-family: inika;
-  font-size: 1.3rem;
+  font-size: 1.7rem; /*1.3rem;*/
   color: white;
 }
 
@@ -130,7 +130,7 @@
     right: 0;
     top: 0;
     margin-top: 3%;
-    margin-right: 3%;
+    margin-right: 20%;
 	}
 
 	.link {
@@ -148,12 +148,12 @@
   }
 
   .headerKingBengals {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
   }
   
   .headerCattery { 
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
   }
 
@@ -224,4 +224,21 @@
     }
 
     
+  }
+
+  .logoContainer{
+    display: flex;
+    height: 100%;
+    bottom: 0px;
+    right: 0px;
+    /*align-self: flex-end;*/
+    width: 12vw;
+    height: auto;
+    position: absolute;
+    background-color: transparent;
+    align-content: center;
+    margin-right: -1vw;
+    margin-bottom: 2vw;
+    /*margin-left: 8.5vw;
+    padding-bottom: 1vw;*/
   }
