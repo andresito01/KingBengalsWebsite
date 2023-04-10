@@ -30,7 +30,7 @@
   background-color: rgba(55, 29, 2, 0.835);
   opacity: 0.9;
   /*border-radius: 8vw;*/
-  border-style:double;
+  border-style: double;
   border-color: var(--light-primary-color);
   border-width: 10px;
   border-radius: 20px;
@@ -54,6 +54,10 @@
   width: 65%;
   margin-left: 18%;
   margin-top: 1rem;
+  border-style: inset;
+  border-color: var(--light-primary-color);
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Image   <<<<<<<<<<<<<<<<<<*/
