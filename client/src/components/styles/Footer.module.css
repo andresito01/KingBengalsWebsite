@@ -41,7 +41,8 @@
 .followUSContainer {
   width: 90%;
   margin: auto;
-  margin-top: 3vw;
+  margin-top: 4vw;
+  margin-left: 3vw;
 }
 .followUSContainer a {
   color: #e2b78e;
@@ -52,7 +53,7 @@
   border-width: 0px;
   background-color: #41280400;
   cursor: progress;
-  width: 5vw; /*3rem;*/
+  width: 4vw; /*3rem;*/
 }
 
 .instagramImg {
@@ -71,14 +72,15 @@
   height: auto;
   background-color: transparent;
   align-content: center;
-  margin-left: 7vw;
+  margin-left: 8.5vw;
   padding-bottom: 1vw;
 }
 
 .contactUsContainer {
   width: 90%;
   margin: auto;
-  margin-top: 3vw;
+  margin-top: 4vw;
+  margin-right: 3vw;
 }
 .contactUsContainer li {
   white-space: nowrap;
