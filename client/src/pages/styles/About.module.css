@@ -11,12 +11,13 @@
   );
   background-image: url("../../images/bengal-cat-coat-glitter.jpg");
   background-size: cover;
+  background-attachment: fixed;
   white-space: pre-line;  
-  vertical-align: bottom;
+  /*vertical-align: bottom;*/
 }
 
 .header{
-  background-color: var(--light-primary-color);
+  background-color: var(--dark-primary-color);
   color: white;
   text-align: center;
   font-family: var(--header-text-font);
@@ -31,12 +32,12 @@
   border-style: solid;
   border-width: 10px;
   border-radius: 20px;
-  border-color: #e2b78e;
+  border-color: var(--dark-secondary-color); /*#e2b78e;*/
 
 }
 
 .p1{
-  background-color: var(--light-primary-color);
+  background-color: var(--dark-primary-color);
   color: white;
   text-align: left;
   font-family: var(--generic-website-text);
@@ -73,12 +74,24 @@
 }
 
 .topRightImg img {
-  width: 100%;
-  height: 100%;
+  width: 35vw;
+  height: auto;
 }
 
+.border {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-style:groove;
+  border-color: var(--dark-primary-color);
+  border-width: 10px;
+  border-radius: 20px;
+}
+
+
 .p2{
-  background-color: var(--light-primary-color);
+  background-color: var(--dark-secondary-color);
   color: white;
   text-align: left;
   font-family: var(--generic-website-text);
@@ -87,11 +100,13 @@
   padding-left: 1.25rem;
   /*height: 28.125rem;*/
   width: 95%;
-  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  margin: 20px; /* 0.625rem 0.625rem 0.625rem 0.625rem;*/
+  margin-bottom: 5vw;
+  margin-top: 5vw;
   outline-style: solid;
   outline-width: 0.0625rem;
   outline-color: black;
-  border-radius: 0.625rem;
+  /*border-radius: 0.625rem;*/
   border-style: solid;
   border-width: 10px;
   border-radius: 20px;
@@ -114,8 +129,8 @@
 }
 
 .bottomLeftImg img {
-  width: 100%;
-  height: 100%;
+  max-width: 35vw;
+  height: auto;
 }
 
 .box3{
@@ -135,19 +150,20 @@
 }
 
 .bottomRightImg img {
-  width: 100%;
-  height: 100%;
+  max-width: 35vw;
+  height: auto;
 }
 
 .p3 {
-  background-color: #6b462a;
-  color: white;
+  background-color: var(--light-primary-color);
+  color: black; /*white;*/
   text-align: left;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   padding-top: 1rem;
   padding-left: 1rem;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
+  margin-top: 5vw;
   /*height: 6.25rem;*/
   /*margin-top: 6.25rem;
   margin-left: 30%;
@@ -160,7 +176,7 @@
   border-style: solid;
   border-width: 10px;
   border-radius: 20px;
-  border-color: #e2b78e;
+  border-color: var(--dark-primary-color);
 
 }
 
@@ -169,7 +185,7 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  width: relative;
+  width: 90vw;
   position: relative;
   /*right: 1rem;*/
   background-color:#4E3A24;
@@ -177,8 +193,21 @@
   margin-bottom: 3vw;
 }
 
+.containerRow2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 90vw;
+  position: relative;
+  /*right: 1rem;*/
+  /*background-color:#4E3A24;*/
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+}
+
 .imgContainer {
-  max-width: 100%;
+  max-width: 40vw;
   height: auto;
   /*background-image: url("../images/bengal-cat.jpg");*/
   /*background-size: contain;*/

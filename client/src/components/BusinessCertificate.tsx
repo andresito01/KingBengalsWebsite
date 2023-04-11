@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BusinessCertificateCSS from "./styles/BusinessCertificate.module.css";
 import tica from "../images/Tica.png";
-import kb from "../images/KbTempLogo.png";
+import kb from "../images/KB logo.png";
 import logo1 from "../images/TempLogo1.png";
 import logo2 from "../images/TempLogo2.png";
 

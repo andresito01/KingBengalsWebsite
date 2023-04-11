@@ -28,7 +28,7 @@
 }
 
 .footerContainer h4 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   height: 0.5rem;
 }
@@ -41,18 +41,19 @@
 .followUSContainer {
   width: 90%;
   margin: auto;
-  margin-top: 0.25vw;
+  margin-top: 4vw;
+  margin-left: 3vw;
 }
 .followUSContainer a {
   color: #e2b78e;
-  font-size: small;
+  font-size: medium;
 }
 
 .instagramBtn {
   border-width: 0px;
   background-color: #41280400;
   cursor: progress;
-  width: 3rem;
+  width: 4vw; /*3rem;*/
 }
 
 .instagramImg {
@@ -65,10 +66,21 @@
   border-color: #e2b78e;
   /* padding: 0.05rem; */
 }
+
+.logoContainer{
+  width: 15vw;
+  height: auto;
+  background-color: transparent;
+  align-content: center;
+  margin-left: 8.5vw;
+  padding-bottom: 1vw;
+}
+
 .contactUsContainer {
   width: 90%;
   margin: auto;
-  margin-top: 0.25vw;
+  margin-top: 4vw;
+  margin-right: 3vw;
 }
 .contactUsContainer li {
   white-space: nowrap;
