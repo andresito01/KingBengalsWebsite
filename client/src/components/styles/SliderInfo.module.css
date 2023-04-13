@@ -1,4 +1,5 @@
 .containerBtn {
+    background-color: transparent;
     width: 100%;
     height: 11vw;
     padding: 0%;
@@ -33,8 +34,7 @@
     grid-template-columns: 0.6fr 1fr;
     grid-template-rows: 1 1 1 1 1;
     align-items: center;
-    margin-top: 1.9vw;
-    margin-bottom: 1.9vw;
+    margin-top: 8px;
     min-height: fit-content;
     padding: 1vw;
     font-size: 1vw;

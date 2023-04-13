@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import OurCatsCSS from "./styles/OurCats.module.css";
 import SliderStyle from "../components/styles/SliderInfo.module.css"
 import SliderInfo from "../components/SliderInfo"
+import { jsonData } from "../components/LitterModal";
 
 const OurCats: React.FC = () => {
   const [isSliderOpen1, setIsSliderOpen1] = useState(false);
@@ -78,7 +79,7 @@ const OurCats: React.FC = () => {
               <h1>Cleopatra, The Queen</h1>
               <p>Dam</p>
               <button className={SliderStyle.containerBtn} onClick={handleSliderClick1}>
-                <img alt='parentImg1' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+                <img alt='parentImg1' className={SliderStyle.containerImg} src={jsonData[0].momPicture}/>
               </button>
             </div>
             <div className={SliderStyle.slider}>
@@ -91,7 +92,7 @@ const OurCats: React.FC = () => {
               <h1>Tsarina, The Precious</h1>
               <p>Dam</p>
               <button className={SliderStyle.containerBtn} onClick={handleSliderClick2}>
-                <img alt='parentImg2' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+                <img alt='parentImg2' className={SliderStyle.containerImg} src={jsonData[1].momPicture}/>
               </button>
             </div>
             <div className={SliderStyle.slider}>
@@ -104,7 +105,7 @@ const OurCats: React.FC = () => {
               <h1>Hercules, The King</h1>
               <p>Sire</p>
               <button className={SliderStyle.containerBtn} onClick={handleSliderClick3}>
-                <img alt='parentImg3' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+                <img alt='parentImg3' className={SliderStyle.containerImg} src={jsonData[0].dadPicture}/>
               </button>
             </div>
             <div className={SliderStyle.slider}>
