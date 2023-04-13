@@ -28,19 +28,22 @@ const OurCats: React.FC = () => {
   return (
     <div className={OurCatsCSS.ourCatsPage}>
       <WebNavHeader/>
-      <div className={OurCatsCSS.headerContainerOurCats}>
-      
-        <h1>Meet Our Cats!</h1>
-        <h2>
-          We believe in quality genetics and pay close attention to our breeding program to ensure 
-          those quality results we strive for. We provide our cats with the best care and nutrition 
-          possible. We give them lots of love and affection so they feel right at home.
-          <br></br><br></br>
-          Treatment and care is given to our cats to boost energy, behavior, and quality of life.
-        </h2>
-      </div>
-      <div className={OurCatsCSS.secondaryHeaderContainer}>
-        <h1>Click the photos below to see additional information</h1>
+      <div className={OurCatsCSS.headerBackground}>
+        <div className={OurCatsCSS.headerContainerOurCats}>
+          <h1>Meet Our Cats!</h1>
+          <h2>
+            We believe in quality genetics and pay close attention to our breeding program 
+            to ensure those quality results we strive for. We provide our cats with the best 
+            care and nutrition possible. We give them lots of love and affection 
+            so they feel right at home.
+            <br></br><br></br>
+            Treatment and care is given to our cats to boost energy, behavior, and quality of life.
+          </h2>
+          <h3>
+            <br></br><br></br><br></br>
+            Click the photos below to see additional information
+          </h3>
+        </div>
       </div>
 
       {/* Parent Container and Records */}
@@ -67,44 +70,46 @@ const OurCats: React.FC = () => {
           </a>
         </div>
 
-        {/* Parents Column */}
-        <div className={OurCatsCSS.parents}>
+        {/* Parent and Slider Column */}
+        <div className={OurCatsCSS.parentColumn}>
           {/* First Female Parent */}
-          <div className={OurCatsCSS.parentTile}>
-            <h1>Cleopatra, The Queen</h1>
-            <p>Dam</p>
-            <button className={SliderStyle.containerBtn} onClick={handleSliderClick1}>
-              <img alt='parentImg1' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
-            </button>
+          <div className={OurCatsCSS.parentTileAndSlider}>
+            <div className={OurCatsCSS.parentTile}>
+              <h1>Cleopatra, The Queen</h1>
+              <p>Dam</p>
+              <button className={SliderStyle.containerBtn} onClick={handleSliderClick1}>
+                <img alt='parentImg1' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+              </button>
+            </div>
+            <div className={SliderStyle.slider}>
+              <SliderInfo isOpen={isSliderOpen1} onClose={handleSliderClick1} id={1}/>
+            </div>
           </div>
           {/* Second Female Parent */}
-          <div className={OurCatsCSS.parentTile}>
-            <h1>Tsarina, The Precious</h1>
-            <p>Dam</p>
-            <button className={SliderStyle.containerBtn} onClick={handleSliderClick2}>
-              <img alt='parentImg2' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
-            </button>
+          <div className={OurCatsCSS.parentTileAndSlider}>
+            <div className={OurCatsCSS.parentTile}>
+              <h1>Tsarina, The Precious</h1>
+              <p>Dam</p>
+              <button className={SliderStyle.containerBtn} onClick={handleSliderClick2}>
+                <img alt='parentImg2' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+              </button>
+            </div>
+            <div className={SliderStyle.slider}>
+                <SliderInfo isOpen={isSliderOpen2} onClose={handleSliderClick2} id={2}/>
+            </div>
           </div>
           {/* Male Parent */}
-          <div className={OurCatsCSS.parentTile}>
-            <h1>Hercules, The King</h1>
-            <p>Sire</p>
-            <button className={SliderStyle.containerBtn} onClick={handleSliderClick3}>
-              <img alt='parentImg3' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
-            </button>
-          </div>
-        </div>
-
-        {/* Slider Column */}
-        <div className={OurCatsCSS.sliderColumn}>
-          <div className={SliderStyle.slider}>
-            <SliderInfo isOpen={isSliderOpen1} onClose={handleSliderClick1} id={1}/>
-          </div>
-          <div className={SliderStyle.slider}>
-            <SliderInfo isOpen={isSliderOpen2} onClose={handleSliderClick2} id={2}/>
-          </div>
-          <div className={SliderStyle.slider}>
-            <SliderInfo isOpen={isSliderOpen3} onClose={handleSliderClick3} id={3}/>
+          <div className={OurCatsCSS.parentTileAndSlider}>
+            <div className={OurCatsCSS.parentTile}>
+              <h1>Hercules, The King</h1>
+              <p>Sire</p>
+              <button className={SliderStyle.containerBtn} onClick={handleSliderClick3}>
+                <img alt='parentImg3' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+              </button>
+            </div>
+            <div className={SliderStyle.slider}>
+              <SliderInfo isOpen={isSliderOpen3} onClose={handleSliderClick3} id={3}/>
+            </div>
           </div>
         </div>
       </div>
