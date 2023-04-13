@@ -35,9 +35,10 @@
     grid-template-rows: 1 1 1 1 1;
     align-items: center;
     margin-top: 8px;
+    margin-bottom: 8px;
     min-height: fit-content;
     padding: 1vw;
-    font-size: 1vw;
+    font-size: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
