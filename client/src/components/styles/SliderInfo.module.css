@@ -33,8 +33,9 @@
     grid-template-columns: 0.6fr 1fr;
     grid-template-rows: 1 1 1 1 1;
     align-items: center;
-    margin-top: 0.6vw;
-    height: 17vw;
+    margin-top: 1.9vw;
+    margin-bottom: 1.9vw;
+    min-height: fit-content;
     padding: 1vw;
     font-size: 1vw;
     background-color: #fff;

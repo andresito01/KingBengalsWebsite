@@ -8,21 +8,11 @@
   height: 100%;
 }
 
-.headerContainerOurCats {
+.headerBackground {
   background-image: url("../../images/OurCatsHeader.png");
   background-size: cover;
   background-position: center center;
-  text-align: center;
-  color: white;
-  font-family: var(--header-text-font);
-  font-size: var(--large-header-size);
-  font-weight: var(--header-text-property);
-  top: 150px;
-  height: 700px;
-  vertical-align: text-top;
-  padding-top: 50px;
-  padding-left: 23%;
-  padding-right: 23%;
+  height: 850px;
   border-style: solid;
   border-top: 0;
   border-left: 0;
@@ -30,25 +20,26 @@
   border-color: black;
 }
 
-.secondaryHeaderContainer {
+.headerContainerOurCats {
   text-align: center;
   color: white;
   font-family: var(--header-text-font);
-  font-size: var(--header-font-size);
-  line-height: 20px;
-  width: 60%;
-  height: 50px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: -110px;
-  margin-bottom: 60px;
+  font-size: var(--large-header-size);
+  font-weight: var(--header-text-property);
+  top: 150px;
+  width: 100%;
+  height: fit-content;
+  vertical-align: text-top;
+  padding-top: 50px;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .body {
   background-color: rgb(184, 144, 96, .9);
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   grid-template-rows: 1fr;
   row-gap: 2vh;
   align-self: start;
@@ -68,6 +59,7 @@
 .organizations{
   width: 100%;
   padding: 2vw;
+  height: fit-content;
 }
 
 .organizationText{
@@ -98,13 +90,21 @@
   height: 100%;
 }
 
-.parents{
+.parentColumn{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
+  height: fit-content;
   gap: 1vw;
   padding-left: 1vw;
+}
+
+.parentTileAndSlider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
 }
 
 .parentTile {
@@ -112,12 +112,15 @@
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
+  min-height: fit-content;
+  width: 100%;
   line-height: 0.5;
   padding-left: 7%;
   padding-right: 7%;
   padding-bottom: 7%;
   border-radius: 10px;
   overflow: hidden;
+  z-index: 100;
   /*border-color: #ffe3c8;
   border-width: 10px;
   border-radius: 20px;*/
@@ -130,13 +133,3 @@
 .parentTile p {
   font-size: 1.3vw;
 }
-
-.sliderColumn{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1vw;
-  width: 100%;
-  overflow: hidden;
-}
-
