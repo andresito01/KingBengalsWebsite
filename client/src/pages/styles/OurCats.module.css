@@ -121,9 +121,6 @@
   border-radius: 10px;
   overflow: hidden;
   z-index: 100;
-  /*border-color: #ffe3c8;
-  border-width: 10px;
-  border-radius: 20px;*/
 }
 .parentTile h1 {
   margin-top: 0.5vw;
@@ -132,4 +129,13 @@
 }
 .parentTile p {
   font-size: 1.3vw;
+}
+
+@media only screen and (max-width: 750px) {
+  
+  .body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 }
