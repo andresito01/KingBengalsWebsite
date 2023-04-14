@@ -32,9 +32,12 @@ const Footer = () => {
         </section>
       </section>
       {/* >>>>>>>>>   Empty Container <<<<<<<<<<<< */}
-      <section> 
-      <img alt = "KB logo" className={FooterCSS.logoContainer}
-                src={require("../images/KB logo.png")} ></img>
+      <section>
+        <img
+          alt="KB logo"
+          className={FooterCSS.logoContainer}
+          src={require("../images/KB logo.png")}
+        ></img>
       </section>
 
       {/* >>>>>>>>>   Contact Us Container <<<<<<<<<<<< */}
@@ -52,6 +55,12 @@ const Footer = () => {
           onClick={() => navigate("/contact")}
         >
           email: #######@####.com
+        </li>
+        <li
+          className={FooterCSS.footerLinks}
+          onClick={() => navigate("/login")}
+        >
+          Admin LogIn
         </li>
       </section>
     </div>
