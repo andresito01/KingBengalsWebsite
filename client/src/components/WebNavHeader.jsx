@@ -39,7 +39,8 @@ const WebNavHeader = () => {
 
   return (
     <div className={WebNavHeaderCSS.headerContainer}>
-      <img className={WebNavHeaderCSS.leftHeaderImg} id="leftHeaderImg" alt='cat' src={require("../images/CatWebNavHeaderNoBackground.png")} />
+      {/*<img className={WebNavHeaderCSS.leftHeaderImg} id="leftHeaderImg" alt='cat' src={require("../images/KBCatWebNavHeaderNoBackground.png")} />*/}
+      <img className = {WebNavHeaderCSS.logoContainer} alt='cat' src={require("../images/KB logo.png")} />
       {/* <div className={WebNavHeaderCSS.leftImgContainer}>
         <img id={WebNavHeaderCSS.leftHeaderImg} alt='cat' src={require("../images/CatWebNavHeaderNoBackground.png")} />
       </div> */}
@@ -52,10 +53,12 @@ const WebNavHeader = () => {
             <img id={WebNavHeaderCSS.rightHeaderImg} alt='cat' src={require("../images/CatWebNavHeader2NoBackground.png")} />
           </div>
           {/*<div className={WebNavHeaderCSS.logoContainer}>*/}
-            <img className = {WebNavHeaderCSS.logoContainer} alt='cat' src={require("../images/KB logo.png")} />
+            {/*<img className = {WebNavHeaderCSS.logoContainer} alt='cat' src={require("../images/KB logo.png")} />*/}
           {/*</div>*/}  
         </div>
-        
+
+        {/*<div className={WebNavHeaderCSS.middle} id="middle">*/}
+
         <div className={WebNavHeaderCSS.navLinks} id="navLinks">
           <div className={WebNavHeaderCSS.link}>
             <NavLink to="/home" 
@@ -98,13 +101,15 @@ const WebNavHeader = () => {
                 Breed Info</NavLink>
           </div>
         </div>
+
+        </div>
         
         <button className={WebNavHeaderCSS.navBtn} onClick={checkResponsiveView}>
             {Mobile ? <FaTimes /> : <FaBars />}
         </button>
         
       </div>
-    </div>
+    
   )
 }
 
