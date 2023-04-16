@@ -10,18 +10,14 @@
   background-size: cover;
   background-attachment: fixed;
 }
-
-.currentUserContainer {
+.welcomeContainer {
   width: 90%;
   margin: auto;
   padding: 2rem;
-  text-align: right;
-  font-size: 2rem;
   color: aliceblue;
-  background-color: rgba(0, 0, 255, 0.177);
+  background-color: rgba(0, 0, 255, 0.224);
 }
-
-.currentUserContainer button {
+.welcomeContainer input {
   background-color: brown;
   font-size: 2rem;
 }

@@ -11,6 +11,7 @@ import BreedInfo from "./pages/BreedInfo";
 import OwnersInfo from "./pages/OwnersInfo";
 import Login from "./admin/Login";
 import AdminHomePage from "./admin/AdminHome";
+import AdminOurCats from "./admin/AdminOurCats";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/ownersinfo" element={<OwnersInfo />} />
         <Route path="/login" element={<Login />} />
         <Route path="/adminHomePage" element={<AdminHomePage />} />
+        <Route path="/adminOurCats" element={<AdminOurCats />} />
       </Routes>
     </div>
   );
