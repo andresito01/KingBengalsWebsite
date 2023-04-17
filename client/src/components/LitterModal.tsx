@@ -39,7 +39,7 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
                 <div className={LitterModalCSS.title}>
                     <h1>Kittens for Sale!</h1>
                     <p><b>Date of Birth:</b> {data.birthDate}</p>
-                    <p><b>Approximate Go Home Date:</b> {data.pickupDate}</p>
+                    <p><b>Approx. Go Home Date:</b> {data.pickupDate}</p>
                 </div>
                 
                 {/* Litter picture and both of the Parents */}
