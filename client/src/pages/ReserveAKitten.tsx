@@ -5,6 +5,7 @@ import KittenOfInterestDropdown from '../components/KittenOfInterestDropdown';
 import WebNavHeader from '../components/WebNavHeader';
 import Footer from "../components/Footer";
 import KittenReservationForm from '../components/KittenReservationForm';
+import ReserveKittenStore from "../ReserveKittenStore/ReserveKittenStore";
 
 const ReserveAKitten = () => {
 
@@ -21,7 +22,8 @@ const ReserveAKitten = () => {
                     <h3>Each kitten is priced individually</h3>
                     <h2>We are now taking applications for Fall 2022 litters!</h2>
                 </div>
-                <KittenReservationForm />
+                {/* <KittenReservationForm /> */}
+                <ReserveKittenStore />
                 <div className={ReserveAKittenCSS.instructionContainer}>
                     <div className={ReserveAKittenCSS.processContainer}>
                         <h3 className={ReserveAKittenCSS.underline}>Process</h3>
