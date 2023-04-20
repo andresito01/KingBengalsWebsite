@@ -1,0 +1,3 @@
+# this file contains all the requirements for python
+
+selenium==4.8.2
