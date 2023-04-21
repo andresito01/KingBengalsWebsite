@@ -107,7 +107,7 @@
   overflow: hidden;
   height: 18.75rem;
   width: 21.875rem;
-  margin-top: -330px;
+  margin-top: -20.5rem;
   margin-left: 60%;
   margin-right: 1.25rem;
   margin-bottom: 1.875rem;
@@ -138,4 +138,20 @@
   outline-width: 0.0625rem;
   outline-color: black;
   border-radius: 0.625rem;
+}
+
+.box4{
+    display: grid, block;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1vw;
+    
+    padding-top: 0.3rem;
+    padding-left: 1rem;
+    height: 20rem;
+    width: 100%;
+    margin-top: .0625rem;
+    border-radius: 0.625rem;
+  
+
 }

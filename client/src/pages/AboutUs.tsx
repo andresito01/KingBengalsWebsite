@@ -44,9 +44,10 @@ const About = () => {
           months of age and ready to go to their new home with the owner.<br></br>
         </p>
         
-
+        <div className={AboutCSS.box4}>
         <div className={AboutCSS.box2}><img alt='box2Image' src={require('../images/Litter1.png')}/></div>
         <div className={AboutCSS.box3}><img alt='box3Image' src={require('../images/Litter2.png')}/></div>
+        </div>
         <p className={AboutCSS.p3} >
           What will the business provide with every kitten?<br></br>
           Certificates, limited garantees? Supplies (limited), vaccinations, info packets? Limited amount of food, 
