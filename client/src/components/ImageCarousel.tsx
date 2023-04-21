@@ -2,9 +2,9 @@
 import React from 'react';
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "./styles/ImageCarousel.css"
-import cat1 from "../images/Litter1.png"
-import cat2 from "../images/Placeholder.png"
-import cat3 from "../images/Litter2.png"
+import cat1 from "../images/catImage26.jpg"
+import cat2 from "../images/catImage24.jpg"
+import cat3 from "../images/catImage30.jpg"
 import cx from 'classnames';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -19,12 +19,12 @@ const ImageCarousel = () => {
    const options = {
     loop: true,
     center: true,
-    items: 3,
+    items: 9,
     margin: 0,
     autoplay: true,
     dots: true,
     autoplayTimeout: 5000,
-    smartSpeed: 450,
+    smartSpeed: 350,
     nav: false,
     responsive: {
         0: {
