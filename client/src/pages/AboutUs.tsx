@@ -16,7 +16,7 @@ const About = () => {
         Learn More About Us!
       </header><br/><br/>
       <div className={AboutCSS.aboutPageBody}>
-        <div className = {AboutCSS.containerRow} >
+        <div className = {AboutCSS.containerRow}>
           {/*>>>>>>>>>>>>>>   Business Location & History   <<<<<<<<<<<<<*/}
           <p className={AboutCSS.p1}>
             <h4>{AboutJSON.locationq}</h4>
@@ -30,35 +30,46 @@ const About = () => {
             {AboutJSON.bengalpurposea}<br/><br/>
           </p>
           {/* >>>>>>>>>>>>>> Top-right image on the About-Page <<<<<<<<<<*/}
-          <div className={AboutCSS.border}>
-            <div className={AboutCSS.topRightImg}>
+          <div className={AboutCSS.borderTop}>
+            {/*<div className={AboutCSS.topRightImg}>*/}
               <img alt="aboutUs" src={Data.images.topRightImg} />
-            </div>
+            {/*</div>*/}
           </div>
         </div>
 
         {/* >>>>>>>>>>>>>>    More about the business   <<<<<<<<<<<<<< */}
-        <p className={AboutCSS.p2}>
-          <h4>{AboutJSON.approachq}</h4>
-          {AboutJSON.approacha}<br/><br/>
-         
-          <h4>{AboutJSON.inventoryq}</h4>
-          {AboutJSON.inventorya}<br/><br/>
+        <div className = {AboutCSS.containerRow}>
+          <div className={AboutCSS.borderTop}>
+            <img alt="aboutUs" src={Data.images.middleImg} />
+          </div>
+          <p className={AboutCSS.p2}>
+            <h4>{AboutJSON.approachq}</h4>
+            {AboutJSON.approacha}<br/><br/>
           
-          {AboutJSON.otherinfo}<br/><br/>
+            <h4>{AboutJSON.inventoryq}</h4>
+            {AboutJSON.inventorya}<br/><br/>
+            
+            {AboutJSON.otherinfo}<br/><br/>
 
-          <h4>{AboutJSON.updatesq}</h4>
-          {AboutJSON.updatesa}<br/><br/>
-        </p>
+            <h4>{AboutJSON.updatesq}</h4>
+            {AboutJSON.updatesa}<br/><br/>
+          </p>
+        </div>
         {/* >>>>>>>>> Bottom Images on About-Page <<<<<<<<<<<<<<< */}
         <div className = {AboutCSS.containerRow2}>
           {/*<div className={AboutCSS.bottomLeftImg}>*/}
+          
           <div className = {AboutCSS.border}>
-            <img alt="litter1" src={Data.images.bottomLeftImg} />
+            <img alt="leftCat" src={Data.images.bottomLeftImg} />
           </div>
           {/*<div className={AboutCSS.bottomRightImg}>*/}
+          {/*<h1> Our </h1>*/}
           <div className = {AboutCSS.border}>
-            <img alt="litter2" src={Data.images.bottomRightImg} /> 
+            <img alt="middleCat" src={Data.images.bottomMiddleImg} /> 
+          </div>
+          {/*<h1> Cats </h1>*/}
+          <div className = {AboutCSS.border}>
+            <img alt="rightCat" src={Data.images.bottomRightImg} /> 
           </div>
         </div>
         {/* >>>>>>>> What does the business provides <<<<<<<<<<<< */}
