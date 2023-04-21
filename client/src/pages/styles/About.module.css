@@ -24,7 +24,7 @@
   font-size: var(--large-header-size);
   padding-top: 1.25rem;
   margin-top: 3vw;
-  margin-bottom: 4vw;
+  /*margin-bottom: 1vw;*/
   /*height: 6.25rem;
   /*outline-style: solid;
   outline-width: 0.0625rem;
@@ -81,14 +81,32 @@
 .border {
   display:flex;
   flex-direction: column;
-  align-items: center;
+  width: 37%;
+  height: auto;
+  margin: auto;
+  align-content: center;
   position: relative;
-  border-style:groove;
+  border-style: groove;
+  /*border-top: groove;
+  border-bottom: groove;*/
   border-color: var(--dark-primary-color);
   border-width: 10px;
   border-radius: 20px;
 }
 
+.borderTop {
+  display:flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  border-style: groove;
+  border-color: var(--dark-primary-color);
+  border-width: 10px;
+  border-radius: 20px;
+}
 
 .p2{
   background-color: var(--dark-secondary-color);
@@ -190,8 +208,8 @@
   position: relative;
   /*right: 1rem;*/
   background-color:#4E3A24;
-  margin-top: 1vw;
-  margin-bottom: 3vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 .containerRow2 {
