@@ -1,18 +1,38 @@
 [
   {
     "id": 1,
-    "image": "images/Litter1.png"
+    "image": "images/catImage24.jpg"
   },
   {
     "id": 2,
-    "image": "images/Litter2.png"
+    "image": "images/catImage30.jpg"
   },
   {
     "id": 3,
-    "image": "images/bengal-cat-1.jpg"
+    "image": "images/catImage35.jpg"
   },
   {
     "id": 4,
-    "image": "images/bengal-cat.jpg"
+    "image": "images/catImage25.jpg"
+  },
+  {
+    "id": 5,
+    "image": "images/catImage20.jpg"
+  },
+  {
+    "id": 6,
+    "image": "images/catImage5.jpg"
+  },
+  {
+    "id": 7,
+    "image": "images/catImage23.jpg"
+  },
+  {
+    "id": 8,
+    "image": "images/catImage12.jpg"
+  },
+  {
+    "id": 9,
+    "image": "images/catImage14.jpg"
   }
 ]
