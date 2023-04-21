@@ -27,7 +27,7 @@
 }
 
 .sectionHeader {
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .bengalsTextContainer {
@@ -39,8 +39,8 @@
 }
 
 .bengalsIntroPic {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .breedInfoTxt {
@@ -60,7 +60,7 @@
 }*/
 
 p.text {
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 /*********************************************************************************/
@@ -83,12 +83,12 @@ p.text {
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   margin-top: 2vw;
-  margin-bottom: 60px;
-  padding: 10px 10px 10px 10px;
+  margin-bottom: 3.75rem;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
   border-style: groove; /*solid;*/
   border-color: rgba(255, 230, 207, 0.94);
-  border-width: 10px;
-  border-radius: 20px;
+  border-width: 0.625rem;
+  border-radius: 1.25rem;
 }
 
 .containerRowBox {
@@ -106,37 +106,37 @@ p.text {
   margin-top: 2vw;
   margin-left: 5vw;
   margin-right: 5vw;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .containerRow1 {
-  margin: 10px 10px 10px 10px;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
   background-color: #a87d48f5; /* #4E3A24;*/
   flex: 1;
   width: 45vw;
   /*height: auto;*/
   position: relative;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   /*justify-content: center;
   border-width: 20px 20px 20px 20px;*/
 }
 
 .containerRow2 {
-  margin: 10px 10px 10px 10px;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
   background-color: #ffe3c8;
   flex: 1;
   width: 30vw;
   height: auto;
   position: relative;
   justify-content: center;
-  padding: 15px 15px 15px 15px;
+  padding: 0.938rem 0.938rem 0.938rem 0.938rem;
   text-align: center;
   color: black;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   border-style: solid;
   border-color: #4e3a24;
-  border-width: 10px;
-  border-radius: 20px;
+  border-width: 0.625rem;
+  border-radius: 1.25rem;
 }
 
 .imgContainer {
@@ -155,7 +155,7 @@ p.text {
   width: auto;
   position: relative;
   justify-content: center;
-  padding: 10px 10px 10px 10px;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
 }
 
 .underline {
@@ -185,7 +185,7 @@ p.text {
   margin-top: 1rem;
   margin-left: 5rem;
   margin-right: 5rem;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .containerBottom {
