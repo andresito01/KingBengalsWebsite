@@ -1,12 +1,12 @@
 {
   "locationq": "Where are we located?",
-  "locationa": "We are located in Sacramento, California just near the vibrant downtown. Brief description of the physical location, such as venue, view, landmarks nearby.",
+  "locationa": "We are located in Sacramento, California just near the vibrant downtown. **Brief description of the physical location, such as venue, view, landmarks nearby.**",
   
   "businessq": "How long have we been breeding?",
   "businessa": "KingBengals acquired its tom and queen cats in [year1], and started breeding since [year2]. We are a TICA-certified cattery since [year3].",
 
-  "bengalpurposeq": "What are Bengal cats bred for?",
-  "bengalpurposea": "Pets, companionship, competitions, etc.",
+  "bengalpurposeq": "What traits are our cats bred for?",
+  "bengalpurposea": "Pets, companionship, competitions, etc. What kind of temperament?",
 
   "approachq": "What kind of approach/beliefs do we take with training and treating our cats?",
   "approacha": "All cats are treated with respect and dignity, and taken care of with the best of our ability. <Include examples of how this is achieved>",
@@ -14,14 +14,16 @@
   "inventoryq": "What kind of cats do we produce?",
   "inventorya": "Our Bengal cats sport the wide variety of patterns, from vibrant rosettes to swirls of marbling. <note about Health/color/patterns/tempermant/energy levels etc.> \nOur cattery has sold over [number] kittens and cats, and have won over [number] cat show awards across the United States. \nWe can even deliver your new feline family member to you long-distance!",
 
-  "otherinfo": "<Other advice for customers?>",
+  "otherinfo": "<Other advice for customers?> How to be a 'Pet Parent'? - OwnersInfo perhaps? ",
   
   "updatesq": "What updates can the business provide to new Bengal owners?",
   "updatesa": "Pictures, videos, etc. can be uploaded/sent to the customer weekly/biweekly until the kitten is X months of age and ready to go home with their new owner.",
 
   "images": {
-    "topRightImg": "/images/catface.jpg",
-    "bottomLeftImg": "/images/litter1.png",
-    "bottomRightImg": "/images/litter2.png"
+    "topRightImg": "/images/Sacramento-Downtown-Renaissance-Web-Banner (10).png",
+    "middleImg": "/images/catimage15.jpg",
+    "bottomLeftImg": "/images/OurCats2.png",
+    "bottomRightImg": "/images/OurCats1.png",
+    "bottomMiddleImg": "/images/OurCats3.png"
   }
 }
