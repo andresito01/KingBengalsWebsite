@@ -1,6 +1,5 @@
 @import "../../theme.css";
 
-
 .breedInfoPage {
   position: absolute;
   height: 100%;
@@ -12,9 +11,10 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-image: url("../../images/pattern\ -\ b&w\ warm\ +\ wc\ edited.jpg");
+  background-image: url("../../images/kbengalsbgGradient.png"); /*pattern\ -\ b&w\ warm\ +\ wc\ edited.jpg");*/
   width: 100%;
   background-size: contain;
+  background-attachment: fixed;
 }
 
 .topPictureContainer {
@@ -26,11 +26,11 @@
   height: auto;
 }
 
-.sectionHeader{
-  margin:20px;
+.sectionHeader {
+  margin: 20px;
 }
 
-.bengalsTextContainer{
+.bengalsTextContainer {
   background-color: #a87d48f5;
   font-size: var(--generic-text-size);
   color: white;
@@ -38,7 +38,7 @@
   text-align: justify;
 }
 
-.bengalsIntroPic{
+.bengalsIntroPic {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -59,8 +59,8 @@
   margin: 10px 10px 30px 30px;
 }*/
 
-p.text{
-  margin:20px;
+p.text {
+  margin: 20px;
 }
 
 /*********************************************************************************/
@@ -70,24 +70,25 @@ p.text{
   height: auto;
 }
 
-.containerBox {               /*WebNaveHeader color: #412804*/
+.containerBox {
+  /*WebNaveHeader color: #412804*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
   width: relative;
   position: relative;
-  background-color:#a87d48f5; /* rgba(78, 58, 36);/*, 0.99); /*#4E3A24;*/
+  background-color: #a87d48f5; /* rgba(78, 58, 36);/*, 0.99); /*#4E3A24;*/
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   margin-top: 2vw;
   margin-bottom: 60px;
   padding: 10px 10px 10px 10px;
-  border-style:groove; /*solid;*/
+  border-style: groove; /*solid;*/
   border-color: rgba(255, 230, 207, 0.94);
-  border-width: 20px;
-  border-radius: 40px;
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 .containerRowBox {
@@ -95,10 +96,10 @@ p.text{
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  width: 80vw;
+  width: relative;
   position: relative;
   /*right: 1rem;*/
-  background-color:#a87d48f5; /*#4E3A24;*/
+  background-color: #a87d48f5; /*#4E3A24;*/
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
@@ -122,10 +123,10 @@ p.text{
 
 .containerRow2 {
   margin: 10px 10px 10px 10px;
-  background-color:  #ffe3c8;
+  background-color: #ffe3c8;
   flex: 1;
   width: 30vw;
-  height:auto;
+  height: auto;
   position: relative;
   justify-content: center;
   padding: 15px 15px 15px 15px;
@@ -133,8 +134,9 @@ p.text{
   color: black;
   border-radius: 20px;
   border-style: solid;
-  border-color: #4E3A24;
-  border-width: 20px 20px 20px 20px;
+  border-color: #4e3a24;
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 .imgContainer {
@@ -147,17 +149,18 @@ p.text{
 }
 
 .bold {
-  font: var(--generic-text-property);
-  font-size: var(--largest-header-size);
-  font-family: var(--generic-website-text);
+  font: bold;
+  font-size: 3vw;
+  font-family: inika;
   width: auto;
   position: relative;
   justify-content: center;
+  padding: 10px 10px 10px 10px;
 }
 
 .underline {
   text-decoration: underline;
-  font: italic
+  font: italic;
   /*font: bold;*/
 }
 
@@ -192,7 +195,7 @@ p.text{
   justify-content: left;
   text-align: left;
   /*right: 1rem;*/
-  background-color:rgba(78, 58, 36, 0.5);
+  background-color: rgba(78, 58, 36, 0.5);
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
@@ -201,9 +204,6 @@ p.text{
   margin-right: 0;
   /*margin-bottom: 60px;*/
 }
-
-.imgInsta {
-  justify-content: left;
-  margin-left: 3%;
-  margin-bottom: 5%;
+.funFactList {
+  text-align: left;
 }

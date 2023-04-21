@@ -1,47 +1,47 @@
 .containerBtn {
-    width: 100%;
-    height: 11vw;
-    padding: 0%;
-    overflow: hidden;
-    border-radius: 10px;
-    border-width: 0;
-    position: relative;
-    cursor: pointer;
-  }
+  background-color: transparent;
+  width: 100%;
+  aspect-ratio: 1/0.75;
+  padding: 0%;
+  overflow: hidden;
+  border-radius: 10px;
+  border-width: 0;
+  position: relative;
+  cursor: pointer;
+}
 
-  .containerImg {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+.containerImg {
+  width: 100%;
+  border-radius: 10px;
+}
 
-  @keyframes slideOpen {
-    from {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0%);
-    }
+@keyframes slideOpen {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 
-  .sliderInfo {
-    animation-name: slideOpen;
-    animation-duration: 1s;
-    display: grid;
-    grid-template-columns: 0.6fr 1fr;
-    grid-template-rows: 1 1 1 1 1;
-    align-items: center;
-    margin-top: 0.6vw;
-    height: 17vw;
-    padding: 1vw;
-    font-size: 1vw;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
+.sliderInfo {
+  animation-name: slideOpen;
+  animation-duration: 1s;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: 1 1 1 1 1;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  min-height: fit-content;
+  padding: 1vw;
+  font-size: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

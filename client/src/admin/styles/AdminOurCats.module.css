@@ -1,0 +1,127 @@
+/* **********************  OurCats(admin) Page Container  *********************/
+.adminOurCatsContainer {
+  display: flex;
+  flex-direction: column;
+  background-image: conic-gradient(
+    rgb(64, 29, 2),
+    rgb(255, 174, 0),
+    rgb(64, 29, 2)
+  );
+  background-image: url("../../images/bengal-cat-coat-glitter.jpg"); /*kbengalsbgGradient.png");*/
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* **********************  OurCats(admin) Navigation Options  *********************/
+.navigationContainer {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.379);
+}
+.navigationContainer input {
+  background-color: brown;
+  font-size: 2rem;
+  color: white;
+}
+
+/* *********************   Add new Parent   *********************/
+.newParentContainer {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 255, 0.242);
+  border-radius: 1rem;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 0.5rem;
+  display: block;
+  color: aliceblue;
+}
+.newParentContainer label {
+  width: 6rem;
+}
+.newParentContainer input {
+  color: black;
+}
+.newParentContainer button {
+  background-color: brown;
+  font-size: 1.85rem;
+}
+
+/* ******************   Display each Parents   *********************/
+.parentContainer {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 255, 0.242);
+  border-radius: 1rem;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 0.5rem;
+  display: grid;
+  color: aliceblue;
+}
+@media screen {
+  .parentContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ****************** Delete Option - Parent ******************/
+.deleteContainer {
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  margin-top: 0rem;
+}
+.deleteContainer button {
+  background-color: brown;
+  font-size: 2rem;
+  border-style: outset;
+  border-color: rgb(0, 229, 255);
+}
+/* ********************   Parent Picture   *********************/
+.pictureContainer {
+  width: 90%;
+  margin: auto;
+  border-radius: 15%;
+}
+.pictureContainer img {
+  width: 100%;
+}
+
+/* ********************** Parent Info *********************/
+.parentInfo {
+  width: 90%;
+  margin: auto;
+  margin-top: 0rem;
+}
+.parentInfo label {
+  width: 6rem;
+  color: rgb(253, 248, 248);
+}
+.parentInfo input {
+  color: rgb(6, 6, 6);
+  background-color: rgba(235, 209, 176, 0.822);
+  border-radius: 0.5rem;
+  padding: auto, 1rem;
+}
+
+/* ****************** Edit Options - Parents ******************/
+.edittingOptions {
+  width: 90%;
+  margin: auto;
+  margin-top: 0rem;
+}
+
+.edittingOptions label {
+  width: 6rem;
+  color: rgb(253, 248, 248);
+}
+.edittingOptions input {
+  color: black;
+}
+.edittingOptions button {
+  background-color: brown;
+  font-size: 1.65rem;
+}

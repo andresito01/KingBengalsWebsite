@@ -1,41 +1,38 @@
 import SliderStyle from "./styles/SliderInfo.module.css";
-import ourcatssliderjson from "../json/ourcatsslider.json"
 
 type SliderProps = {
-    isOpen: boolean;
-    onClose: () => void;
-    id: number;
-    children?: React.ReactNode;
+  isOpen: boolean;
+  onClose: () => void;
+  parent: parentFormat;
+  children?: React.ReactNode;
+};
+
+/******* Parent structure ***********/
+interface parentFormat {
+  id: string;
+  name: string;
+  sex: string;
+  picture: string;
+  attitude: string;
+  status: string;
+  pattern: string;
+  lineage: string;
+  history: string;
 }
 
-interface Data {
-    id: number;
-    lineage: string;
-    status: string;
-    attitude: string;
-    pattern: string;
-    history: string;
-}
+const SliderInfo: React.FC<SliderProps> = ({ isOpen, onClose, parent }) => {
 
-const SliderInfo: React.FC<SliderProps> = ({isOpen, onClose, id}) => {
-    const data: Data | undefined = ourcatssliderjson.find(cat => cat.id === id);
-
-    if(!isOpen || !data) return null
-    return(
-        <div>
-            <div className={SliderStyle.sliderInfo}>
-                <p><u>Lineage:</u></p>
-                <p>{data.lineage}</p>
-                <p><u>Status:</u></p>
-                <p>{data.status}</p>
-                <p><u>Attitude:</u></p>
-                <p>{data.attitude}</p>
-                <p><u>Pattern:</u></p>
-                <p>{data.pattern}</p>
-                <p><u>History:</u></p>
-                <p>{data.history}</p>
-            </div>
-        </div>
-    )
-}
+  if (!isOpen || !parent) return null;
+  return (
+    <div key={parent.id}>
+      <div className={SliderStyle.sliderInfo}>
+        <p><u>Lineage:</u></p><p>{parent.lineage}</p>
+        <p><u>Status:</u></p><p>{parent.status}</p>
+        <p><u>Attitude:</u></p><p>{parent.attitude}</p>
+        <p><u>Pattern:</u></p><p>{parent.pattern}</p>
+        <p><u>History:</u></p><p>{parent.history}</p>
+      </div>
+    </div>
+  );
+};
 export default SliderInfo;

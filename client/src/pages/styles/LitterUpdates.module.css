@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
   border-style: solid;
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
   border-color: #e2b78e;
 }
@@ -29,12 +29,13 @@
 .parentCardWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50vh;
-  gap: 4vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  grid-template-rows: 1fr;
+  gap: 3vw;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .parentCard {
@@ -42,24 +43,24 @@
   opacity: 0.85;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr;
-  gap: 2vh;
+  grid-template-rows: 0.1fr 1fr;
+  gap: 1vw;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   overflow: hidden;
   align-items: center;
-  padding: 2vh;
+  padding: 10px;
   border-style: solid;
   border-radius: 20px;
-  border-width: 10px;
+  border-width: 5px;
   border-color: #a87d48f5;
 }
 
 .parentName{
   text-align: center;
   font-family: var(--header-text-font);
+  font-size: 30px;
   color: black;
-  font-size: 4vh;
 }
 
 .parentImage {
@@ -69,7 +70,7 @@
   align-items: center;
   overflow: hidden;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 90%;
   border-style: solid;
   border-radius: 20px;
   border-width: 3px;
@@ -85,12 +86,13 @@
 .litterWrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30vh;
-  gap: 20vh;
-  overflow: hidden;
-  margin-left: 10%;
-  margin-bottom: 10vh;
-  width: 80%;
+  grid-template-rows: 1fr;
+  gap: 3vw;
+  width: 60%;
+  height: fit-content;
+  margin-left: 20%;
+  margin-top: 1vw;
+  margin-bottom: 5vw;
 }
 
 .litterInfo {
@@ -98,29 +100,28 @@
   font-size: var(--generic-website-size);
   color: black;
   background-color: #a87d48f5;
-  margin-top: -15vh;
   text-align: left;
-  padding: 1vh;
+  padding: 5px;
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30vh;
+  grid-template-rows: 1fr;
   border-style: solid;
-  border-width: 8px;
+  border-width: 5px;
   border-color: #e2b78e;
   border-radius: 10px;
-  position: absolute;
 }
 
 .litterInfo h1{
   font-size: var(--header-font-size);
-  line-height: 4vh;
+  line-height: 2vw;
+  margin-top: -2px;
 }
 
 .litterInfo p{
   font-size: var(--generic-website-size);
-  line-height: 2.5vh;
+  line-height: 1vw;
 }
 
 .litterInfo img{
@@ -128,35 +129,22 @@
   min-height: 80%;
   max-width: 100%;
   min-width: 70%;
-  margin: .1vh;
+  margin: .1vw;
   border-radius: 20px;
 }
 
-.socialsBox {
-  padding-top: 10px;
-  text-align: center;
-  background-color: rgb(107, 70, 42, .9);
-  color: white;
-  font-family: var(--generic-website-text);
-  font-size: var(--generic-website-size);
-  width: 30%;
-  height: 200px;
-  margin-top: 60px;
-  margin-left: 35%;
-  border-style: solid;
-  border-color: rgb(184, 144, 96, .9);
-  border-radius: 50%;
-}
+@media only screen and (max-width: 940px) {
 
-.instagramBtn {
-  width: 80px;
-  margin-top: -10px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
+  .parentCardWrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 
-.instagramImg {
-  width: 100%;
-  border-radius: 16px;
+  .litterWrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 45%;
+    margin-left: 27.5%;
+  }
+
 }

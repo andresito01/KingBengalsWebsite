@@ -1,16 +1,28 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import WebNavHeader from '../components/WebNavHeader';
+import Footer from "../components/Footer";
 import ContactUsCSS from "./styles/ContactUs.module.css";
-
+import axios from 'axios';
 
 const ContactUs = () => {
 
+  // form states
+  const [name, setName]= useState('');
+  const [email, setEmail]= useState('');
+  const [message, setMessage]= useState('');
+
   let emailJSVariables = {
     serviceId: process.env.REACT_APP_SERVICE_ID as string,
-    templateID: process.env.REACT_APP_TEMPLATE_ID as string,
+    templateID: process.env.REACT_APP_CONTACT_TEMPLATE_ID as string,
     publicKey: process.env.REACT_APP_PUBLIC_KEY as string,
   }
+
+  let googleSheetUrlVariable = {
+    googleSheetURL: process.env.REACT_APP_GOOGLE_SHEETS_URL as string,
+  }
+
+
 
   const form = useRef<HTMLFormElement>(null);
   
@@ -32,9 +44,24 @@ const ContactUs = () => {
         console.log(error.text)
         console.log("messsage failed to send")
       }
-    ) 
-  };
+    )
+    let currentDate = new Date().toLocaleString();
+      console.log(name,email,message);
+      const data={
+        Name:name,
+        Email:email,
+        Message:message,
+        Date:currentDate,
+      }
+      axios.post(googleSheetUrlVariable.googleSheetURL,data).then((response)=>{
+        console.log(response);
 
+        //clearing form fields
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+  };
   
   return (
     
@@ -49,15 +76,16 @@ const ContactUs = () => {
           </p>
           <form className={ContactUsCSS.formContainer} ref={form} onSubmit={sendEmail}>
             <label id={ContactUsCSS.formLabel}>Name</label>
-            <input id={ContactUsCSS.userName} type="text" name="user_name" />
+            <input id={ContactUsCSS.userName} type="text" placeholder="Enter your name" required className='form-control' name="user_name"  onChange={(e)=>setName(e.target.value)} />
             <label id={ContactUsCSS.formLabel}>Email</label>
-            <input id={ContactUsCSS.userEmail} type="email" name="user_email" />
+            <input id={ContactUsCSS.userEmail} type="email" placeholder="Enter your email address" required className='form-control' name="user_email"  onChange={(e)=>setEmail(e.target.value)} />
             <label id={ContactUsCSS.formLabel}>Message</label>
-            <textarea id={ContactUsCSS.userMessage} name="message" />
+            <textarea id={ContactUsCSS.userMessage} placeholder="Enter your message" required className='form-control' name="message" onChange={(e)=>setMessage(e.target.value)} />
             <input id={ContactUsCSS.submitButton} type="submit" value="Send" />
           </form>
         </div>
       </div>
+      <Footer/>
     
     </div>
   );
