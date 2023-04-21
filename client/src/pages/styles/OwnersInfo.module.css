@@ -1,0 +1,337 @@
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
+/***************************** Owner's Info header ********************************/
+
+/*.ownersInfoPage {
+  background-color: #a87d48f5;
+}
+
+.img1{
+  background-color: #a87d48f5;
+  margin-bottom: 20px;
+  width: 100%;
+}*/
+
+.backgroundLayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #a87d48f5;
+  /*background-image: conic-gradient(
+    rgb(64, 29, 2),
+    rgb(226, 173, 10),
+    rgb(64, 29, 2)
+  );*/
+  background-image: url("../../images/pattern - b&w warm + wc edited.jpg");
+  background-size:contain;
+  /*overflow: hidden;
+  /*width: 100%;*/
+}
+
+/*.headerContainerOwnersInfo {
+  background-image: url("../../images/bencat.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-align: left;
+  color: white;
+  font-family: inika;
+  top: 150px;
+  height: 700px;
+  vertical-align: text-top;
+  padding-top: 50px;
+  padding-left: 23%;
+  padding-right: 23%;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: black;
+}*/
+
+.backgroundLayer Img {
+  max-width: 100%;
+  height: auto;
+}
+
+.headerOwnersInfo {
+  width: 100%;
+  position: absolute;
+  /*bottom: 1vw;*/
+  text-align: left;
+  top: 30vw;
+  margin-left: 5vw;
+  font-family: inika;
+  font-size: 50pt;
+  font-weight: bold;
+  color:#4E3A24;
+}
+
+/***************************** Products we Recommend ********************************/
+
+.bold{
+  font: bold;
+  font-size: 3rem;
+  font-family: inika;
+  width: auto;
+  position: relative;
+  justify-content: center;
+}
+
+.underline{
+  text-decoration: underline;
+  font: italic
+  /*font: bold;*/
+}
+
+.containerFullWidth {
+  display: flex;
+  flex-direction: column;
+  /*position:relative;*/
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  /*right: 1rem;*/
+  background-color:rgba(78, 58, 36);
+  color: white;
+  font-family: inika;
+  /*margin-top: 5vw;
+  /*margin-left: 5rem;
+  margin-right: 5rem;*/
+  margin-bottom: 60px;
+  /*border-style:inset;
+  border-color: rgba(255, 230, 207, 0.94);
+  border-width: 20px;
+  border-radius: 40px;*/
+}
+
+.containerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  /*right: 1rem;*/
+  background-color:#4E3A24;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+}
+
+.imgArrow {
+  width: 100%;
+  height: auto;
+  /*margin: 20vw;*/
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #412804;
+  justify-content: center;
+  border-style: double;
+}
+/*.fixedOwnInfoHeaderImg {
+  background-image: url("../images/bencat - OwnersInfo header image.jpg");
+  position: fixed;
+}*/
+
+/*.productsRecommend {
+  font-family: 'Times New Roman', Times, serif;
+  width: 80%;
+  position: relative;
+  margin-top: 10px;
+  background-color: rgba(32, 19, 1, 0.856);
+  color: rgb(255, 255, 255);
+  /* bottom: 0.2vw;
+  left: 0.2vw; /
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.productsRecommendText {
+  font-family: 'Times New Roman', Times, serif;
+  width: 90%;
+  margin: auto;
+}*/
+
+/****************************** Kitten Development *************************************/
+
+/*.containerKittenDev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #4E3A24;
+  color: white;
+  font-family: inika;
+  margin-top: 1rem;
+  margin-bottom: 60px;
+  padding: 20px 40px 20px 40px;
+  border-style: solid;
+  border-color: #ffe3c8;
+  border-width: 20px 50px 20px 50px;
+  border-radius: 40px;
+}*/
+
+.containerBox {               /*WebNaveHeader color: #412804*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: relative; /*90vw;*/
+  position: relative;
+  background-color: rgba(78, 58, 36);/*, 0.99); /*#4E3A24;*/
+  color: white;
+  font-family: inika;
+  margin-top: 2vw;
+  margin-bottom: 60px;
+  padding: 10px 10px 10px 10px;
+  border-style:inset; /*solid;*/
+  border-color: rgba(255, 230, 207, 0.94);
+  border-width: 20px;
+  border-radius: 40px;
+}
+
+.imgKittenDev {
+  /*background-image: url("../images/cute bengal kitten.jpg");*/
+  /*border-radius: 50%;*/
+  position: relative;
+  justify-content: center;
+  width: 25vw; /*250px;*/
+  height: auto; /*300px;*/
+  /*background-size: contain;
+  /*top: 1rem;
+  right: 1rem*/
+  /*object-fit: cover;*/
+  /*background-color: rgba(160, 119, 81, 0.94);*/
+}
+
+.txtKittenDev {
+  text-align: right;
+  right: 1rem;
+}
+
+/************************** Prepare For Kitten *****************************************/
+
+.containerRowBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+  position: relative;
+  /*right: 1rem;*/
+  background-color:#4E3A24;
+  color: white;
+  font-family: inika;
+  margin-top: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 60px;
+}
+
+.containerRow1 {
+  margin: 10px 10px 10px 10px;
+  background-color:  #4E3A24;
+  flex: 1;
+  width: 45vw;
+  /*height: auto;*/
+  position: relative;
+  border-radius: 10px;
+  /*justify-content: center;
+  border-width: 20px 20px 20px 20px;*/
+}
+
+.containerRow2 {
+  margin: 10px 10px 10px 10px;
+  background-color:  #ffe3c8;
+  flex: 1;
+  width: 30vw;
+  height:auto;
+  position: relative;
+  justify-content: center;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #4E3A24;
+  border-width: 20px 20px 20px 20px;
+}
+
+.imgContainer {
+  max-width: 100%;
+  height: auto;
+  /*background-image: url("../images/bengal-cat.jpg");*/
+  /*background-size: contain;*/
+  border-style: double;
+  /*position: relative;*/
+}
+/****************************** Medical Info / Vet Stuff ***************************************************/
+
+.imgCenter {
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+/****************************** Training ***************************************************/
+
+
+/****************************** Pet Insurance ***************************************************/
+.containerRowBox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 70vw;
+  /*right: 1rem;*/
+  background-color: #ffe3c8;
+  color: white;
+  font-family: inika;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 60px;
+}
+
+/****************************** Social Media ***************************************************/
+
+.textLeftBold {
+  font: bold;
+  text-align: left;
+  margin-left: 1rem;
+  width: 30vw;
+}
+
+.containerBottom {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: left;
+  text-align: left;
+  /*right: 1rem;*/
+  background-color:rgba(78, 58, 36, 0.5);
+  color: white;
+  font-family: inika;
+  margin-top: 5vw;
+  /*margin-left: 0;
+  margin-right: 0;
+  /*margin-bottom: 60px;*/
+}
+
+.imgInsta {
+  justify-content: left;
+  margin-left: 3%;
+  margin-bottom: 5%;
+}

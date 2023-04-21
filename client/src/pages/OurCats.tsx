@@ -1,107 +1,113 @@
 import React, {useState} from 'react';
 import WebNavHeader from '../components/WebNavHeader';
-import ModalFemale1 from '../components/ModalFemale1';
-import ModalFemale2 from '../components/ModalFemale2';
-import ModalMale from '../components/ModalMale';
 import OurCatsCSS from "./styles/OurCats.module.css";
-import Modal from "../components/styles/Modal.module.css";
+import SliderStyle from "../components/styles/SliderInfo.module.css"
+import SliderInfo from "../components/SliderInfo"
 
 const OurCats: React.FC = () => {
-  const fontSizeHeader = {fontSize: "20px"}
-  const fontSizeSecondaryHeader = {fontSize: "20px"}
-  const fontSizeInfo = {fontSize: "26px"}
-  const fontSizeBtn = {fontSize: "30px"}
-  const [isModalOpen1, setIsModalOpen1] = useState(false);
-  const [isModalOpen2, setIsModalOpen2] = useState(false);
-  const [isModalOpen3, setIsModalOpen3] = useState(false);
-  
-  //For handling the first female modal open/close
-  const handleOpenModal1 = () => {
-    setIsModalOpen1(true);
+  const [isSliderOpen1, setIsSliderOpen1] = useState(false);
+  const [isSliderOpen2, setIsSliderOpen2] = useState(false);
+  const [isSliderOpen3, setIsSliderOpen3] = useState(false);
+
+  //Handle Slider open/close for firstFemale
+  const handleSliderClick1 = () => {
+    setIsSliderOpen1(!isSliderOpen1);
   }
 
-  const handleCloseModal1 = () => {
-    setIsModalOpen1(false);
+  //Handle slider open/close for secondFemale
+  const handleSliderClick2 = () => {
+    setIsSliderOpen2(!isSliderOpen2);
   }
 
-  //For handling the second female modal open/close
-  const handleOpenModal2 = () => {
-    setIsModalOpen2(true);
-  }
-
-  const handleCloseModal2 = () => {
-    setIsModalOpen2(false);
-  }
-
-  //For handling the male modal open/close
-  const handleOpenModal3 = () => {
-    setIsModalOpen3(true);
-  }
-
-  const handleCloseModal3 = () => {
-    setIsModalOpen3(false);
+  //Handle slider open/close for male
+  const handleSliderClick3 = () => {
+    setIsSliderOpen3(!isSliderOpen3);
   }
 
   return (
     <div className={OurCatsCSS.ourCatsPage}>
-      <ModalFemale1 isOpen={isModalOpen1} onClose={handleCloseModal1}/>
-      <ModalFemale2 isOpen={isModalOpen2} onClose={handleCloseModal2}/>
-      <ModalMale isOpen={isModalOpen3} onClose={handleCloseModal3}/>
       <WebNavHeader/>
-      <div className={OurCatsCSS.headerContainerOurCats} style={fontSizeHeader}>
+      <div className={OurCatsCSS.headerContainerOurCats}>
         <h1>Meet The Parents!</h1>
-        <h2 style={fontSizeInfo}>
+        <h2>
           We believe in quality genetics and pay close attention to our breeding program to ensure 
           those quality results we strive for. We provide our cats with the best care and nutrition 
           possible. We give them lots of love and affection so they feel right at home.
-        </h2>
-        <h3 style={fontSizeInfo}>
+          <br></br><br></br>
           Treatment and care is given to our cats to boost energy, behavior, and quality of life.
-        </h3>
+        </h2>
       </div>
-      <div className={OurCatsCSS.secondaryHeaderContainer} style={fontSizeSecondaryHeader}>
+      <div className={OurCatsCSS.secondaryHeaderContainer}>
         <h1>Click the photos below to see additional information</h1>
-        <h2>V</h2>
       </div>
+
+      {/* Parent Container and Records */}
       <div className={OurCatsCSS.body}>
-        <div className={OurCatsCSS.firstFemaleTitle} style={fontSizeSecondaryHeader}>
-          <h1>Name 1</h1>
-          <p className={OurCatsCSS.gender} style={fontSizeInfo}>Female</p>
+        {/* Organizations Column */}
+        <div className={OurCatsCSS.organizations}>
+          <p className={OurCatsCSS.organizationText}>
+            The International Cat Association (TICA) is the world's largest genetic registry of pedigreed 
+            and household cats. As an official cat registrar, TICA maintains accurate records of cat breeding 
+            and pedigrees, provides cat shows and competitions, and offers a variety of educational resources 
+            for cat enthusiasts.
+            <br></br><br></br>
+            It is important for cat breeders and owners to register their cats 
+            with TICA to ensure the cat's pedigree and genetic history are accurately recorded, and to 
+            participate in TICA events and competitions, which can help promote and improve the breed.
+            <br></br><br></br>
+            To learn more about TICA and what they do or what they stand for, click the logo here.
+          </p>
+          {/* Links to official organizations */}
+          <a href="https://tica.org/index.php/resources/our-association/about-tica" target="_blank" rel='noreferrer'>
+            <button className={OurCatsCSS.ticaBtn}>
+              <img alt='ticaLogo' className={OurCatsCSS.ticaLogo} src={require("../images/ticalogo.jpg")}/>
+            </button>
+          </a>
         </div>
-        <div className={OurCatsCSS.secondFemaleTitle} style={fontSizeSecondaryHeader}>
-          <h1>Name 2</h1>
-          <p className={OurCatsCSS.gender} style={fontSizeInfo}>Female</p>
+
+        {/* Parents Column */}
+        <div className={OurCatsCSS.parents}>
+          {/* First Female Parent */}
+          <div className={OurCatsCSS.parentTile}>
+            <h1>Cleopatra, The Queen</h1>
+            <p>Female</p>
+            <button className={SliderStyle.containerBtn} onClick={handleSliderClick1}>
+              <img alt='parentImg1' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+            </button>
+          </div>
+          {/* Second Female Parent */}
+          <div className={OurCatsCSS.parentTile}>
+            <h1>Tsarina, The Precious</h1>
+            <p>Female</p>
+            <button className={SliderStyle.containerBtn} onClick={handleSliderClick2}>
+              <img alt='parentImg2' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+            </button>
+          </div>
+          {/* Male Parent */}
+          <div className={OurCatsCSS.parentTile}>
+            <h1>Hercules, The King</h1>
+            <p>Male</p>
+            <button className={SliderStyle.containerBtn} onClick={handleSliderClick3}>
+              <img alt='parentImg3' className={SliderStyle.containerImg} src={require("../images/Placeholder.png")}/>
+            </button>
+          </div>
         </div>
-        <div className={OurCatsCSS.maleTitle} style={fontSizeSecondaryHeader}>
-          <h1>Hercules</h1>
-          <p className={OurCatsCSS.gender} style={fontSizeInfo}>Male</p>
+
+        {/* Slider Column */}
+        <div className={OurCatsCSS.sliderColumn}>
+          <div className={SliderStyle.slider}>
+            <SliderInfo isOpen={isSliderOpen1} onClose={handleSliderClick1} id={1}/>
+          </div>
+          <div className={SliderStyle.slider}>
+            <SliderInfo isOpen={isSliderOpen2} onClose={handleSliderClick2} id={2}/>
+          </div>
+          <div className={SliderStyle.slider}>
+            <SliderInfo isOpen={isSliderOpen3} onClose={handleSliderClick3} id={3}/>
+          </div>
         </div>
-        
-        <button 
-          className={Modal.imageBtn} 
-          onClick={handleOpenModal1}><img alt='parentModalImg' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
-        </button>
-
-        <button 
-          className={Modal.imageBtn} 
-          onClick={handleOpenModal2}><img alt='secondFemaleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
-        </button>
-
-        <button 
-          className={Modal.imageBtn} 
-          onClick={handleOpenModal3}><img alt='maleImage' className={Modal.parentImg} src={require("../images/Placeholder.png")}/>
-        </button>
-
-        <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className={OurCatsCSS.healthBtn} style={fontSizeBtn}>Health Records</button>
-        </a>
-        <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className={OurCatsCSS.vaccinationBtn} style={fontSizeBtn}>Vaccination Records</button>
-        </a>
-        <a href="https://www.smartpractice.com/Images/Products/PC/PhotoLg/IN06947_Green.jpg" target="_blank" rel='noreferrer'>
-        <button className={OurCatsCSS.registrationBtn} style={fontSizeBtn}>Registration Records</button>
-        </a>
       </div>
+
+      {/* Universal Socials Box Footer */}
       <div className={OurCatsCSS.socialsBox}>
           <h1>Checkout our<br></br>Instagram!</h1>
           <a href='https://www.instagram.com/' target="_blank" rel='noreferrer'>

@@ -1,3 +1,5 @@
+@import "../../theme.css";
+
 @font-face {
   font-family: inika;
   src: url("../../fonts/Inika-Regular.ttf");
@@ -30,31 +32,36 @@
 }
 .homeHeader Img {
   width: 100%;
+  height: 100%;
 }
-.homeHeaderQuestion {
+/* .homeHeaderQuestion {
   width: 100%;
   position: absolute;
   top: 0.1vw;
   text-align: center;
   font-size: 2.25vw;
   color: rgb(235, 191, 137);
-}
+} */
 
 /* >>>>>>>>>>>>>>>>>>>> Mission Statement  <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .missionStatement {
-  font-family: 'Times New Roman', Times, serif;
-  width: 80%;
+  width: 95%;
+  height: auto;
   position: relative;
-  margin-top: 10px;
-  background-color: rgba(32, 19, 1, 0.856);
+  margin: 1rem;
+  padding-top: 3rem;
+  background-color: var(--dark-primary-color);
+  opacity: var(--dark-bg-opacity);
   color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+  border-color: var(--light-primary-color);
   /* bottom: 0.2vw;
   left: 0.2vw; */
-  font-size: 1.1rem;
-  border-radius: 10px;
 }
 .missionStatementText {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: inika, lancelot;
   width: 90%;
   margin: auto;
 }
@@ -65,10 +72,10 @@
 }
 .ownerPicture img {
   width: 100%;
-  border-color: rgb(243, 214, 172);
-  border-width: 2vw;
+  border-color: var(--light-primary-color);
+  border-width: var(--border-width);
+  border-radius: var(--border-radius);
   border-style: solid;
-  border-radius: 20px;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Past Litters' Title   <<<<<<<<<<<<<<<<<<*/
@@ -77,9 +84,9 @@
   height: auto;
   margin: auto;
   color: rgba(247, 231, 205, 0.946);
-  font-size: 7vw;
+  font-size: 2.5vw;
   font-weight: bolder;
-  font-family: "Babylonica", cursive;
+  font-family: inika, lancelot;
   text-align: center;
   text-shadow: 0.15vw 0.15vw rgba(242, 147, 31, 0.734);
   background-color: rgba(48, 26, 2, 0.909);
@@ -101,7 +108,7 @@
 .pastLitters img {
   width: 90%;
   margin: auto;
-  border-color: rgba(248, 209, 152, 0.989);
-  border-width: 2vw;
+  border-color: var(--light-primary-color);
+  border-width: var(--border-width);
   border-style: solid;
 }
