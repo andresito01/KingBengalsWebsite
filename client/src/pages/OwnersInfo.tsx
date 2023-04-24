@@ -31,7 +31,7 @@ const OwnersInfo = () => {
 
       {/*</div>*/}
 
-      </div>
+    </div>
 
   )
 }
@@ -55,9 +55,9 @@ const ProductsRecommend = () => {
   return (
     <div className={OwnersInfoCSS.containerFullWidth} > {/*ProductsRecom}>*/}
       <h3> _______________</h3>
-      <h3> Below is a link to some products that we recommend for your kitten. <br/> From toys, treats, catteries, crates, bedding, grooming products, and accessories. </h3>
+      <h4> Below is a link to some products that we recommend for your kitten. 
+          <br/> From toys, treats, catteries, crates, bedding, grooming products, and accessories. </h4>
       {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> */}
-      <h3> ________</h3>
       {/*<div className={OwnersInfoCSS.containerBox}>*/}
         <div className={OwnersInfoCSS.containerRow}>
           <div className={OwnersInfoCSS.imgArrow}>
@@ -65,7 +65,7 @@ const ProductsRecommend = () => {
           </div>
           <a href="https://www.amazon.com/s?k=cat+products+for+bengal+cats&crid=2FTEFBBV6WRGU&sprefix=%2Caps%2C190&ref=nb_sb_ss_recent_1_0_recent" target="_blank" rel='noreferrer'> {/*Link to 'Amazon'*/}
             <div className={OwnersInfoCSS.button}>
-            <h1 className={OwnersInfoCSS.underline}> < h1 className={OwnersInfoCSS.boldSub}> Products&nbsp;We&nbsp;Recommend </h1> </h1>
+            <h2 className={OwnersInfoCSS.underline}> < h2 className={OwnersInfoCSS.boldSub}> Products&nbsp;We&nbsp;Recommend </h2> </h2>
             </div>
           </a>
         <div className={OwnersInfoCSS.imgArrow}>
@@ -85,10 +85,10 @@ const KittenDevelopment = () => {
     <div className={OwnersInfoCSS.containerBox}>
       <h1 className={OwnersInfoCSS.bold}> Kitten Development Stages</h1>
       <h3> _______________</h3>
-      <h3> Here you can see the entire process your kitten will take from birth to the day it goes home. </h3>
+      <h4> Here you can see the entire process your kitten will take from birth to the day it goes home. </h4>
       
-      <div className={OwnersInfoCSS.containerRowBox}>
-        <div className={OwnersInfoCSS.containerRow2}>
+      <div className={OwnersInfoCSS.containerRowBoxShrink}>
+        <div className={OwnersInfoCSS.containerRow2Shrink}>
           <h1 className={OwnersInfoCSS.boldSub}> Age: 1 - 2 weeks <br/>________</h1>
           {/*<h3> ________</h3>*/}
           <div className={OwnersInfoCSS.imgContainer}>
@@ -102,7 +102,7 @@ const KittenDevelopment = () => {
          a day. However, they're not completely helpless as they are often able to crawl to their mother 
          when she feeds them. </h4>
         </div>
-        <div className={OwnersInfoCSS.containerRow2}>
+        <div className={OwnersInfoCSS.containerRow2Shrink}>
           <h1 className={OwnersInfoCSS.boldSub}> Age: 2 - 4 weeks <br/>________</h1>
           {/*<h3> ________</h3>*/}
           <div className={OwnersInfoCSS.imgContainer}>
@@ -114,7 +114,7 @@ const KittenDevelopment = () => {
           solid food. Need lots attention and care as they are
           very vulnerable to diseases and viruses at this young age.</h4>
         </div>
-        <div className={OwnersInfoCSS.containerRow2}>
+        <div className={OwnersInfoCSS.containerRow2Shrink}>
           <h1 className={OwnersInfoCSS.boldSub}> Age: 2 Months <br/>________</h1>
           {/*<h3> ________</h3>*/}
           <div className={OwnersInfoCSS.imgContainer}>
@@ -140,11 +140,11 @@ const PrepareForKitten = () => {
     <div className={OwnersInfoCSS.containerRow2}>
       <h1 className={OwnersInfoCSS.bold}> Preparing For Your Kitten </h1>
       <h3> ________</h3>
-      <h3> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
-            Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h3>
+      <h4> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
+            Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h4>
       <a href="https://www.youtube.com/watch?v=A_MjCqQoLLA" target="_blank" rel='noreferrer'> {/*Place Holder link to 'Hey Jude - The Beatles'*/}
         <div className={OwnersInfoCSS.button}>
-          <h2 className={OwnersInfoCSS.underline}> <h2 className={OwnersInfoCSS.boldSub}> Video for preparing (link to YouTube)</h2> </h2>
+          <h3 className={OwnersInfoCSS.underline}> <h3 className={OwnersInfoCSS.boldSub}> Video for preparing (YouTube link)</h3> </h3>
         </div>
       </a>
     </div>
@@ -165,14 +165,14 @@ const VetInfo = () => {
     <div className={OwnersInfoCSS.containerBox}>
       <h1 className={OwnersInfoCSS.bold}> Medical Information and Vet Things </h1>
       <h3> ________</h3>
-      <h3> Vaccinations and Deworming (probably it’s own section) 
+      <h4> Vaccinations and Deworming (probably it’s own section) 
         <br/> Vaccination Schedule <br/> Shots: Parvo, Distemper, Flu, etc.<br/> 
         <br/> Spaying and Neutering, OR 
         <br/> Hysterectomy (for girls) or a Vasectomy (for boys) 
         <br/> At what age should it be performed? Benefits? Drawbacks? <br/> 
         <br/> Any health concerns regarding the breed or kittens in general?
         <br/> Bengal cat health problems and diseases that owners need to be aware of.
-        <br/> Bengal cats can be prone to, such as : Heart disease, Eye disease, Joint problems, Kidney disease, </h3>
+        <br/> Bengal cats can be prone to, such as : Heart disease, Eye disease, Joint problems, Kidney disease, </h4>
       {/*<div className={OwnersInfoCSS.imgCenter}>
           <img alt="headerImage" src={require("../images/bengal-cat.jpg")} width = "700" height = "500" />
       </div>*/}
@@ -194,12 +194,12 @@ const KittenTraining = () => {
     <div className={OwnersInfoCSS.containerRow2}>
       <h1 className={OwnersInfoCSS.bold}> Training </h1>
       <h3> ________</h3>
-      <h3> How to train a kitten? <br/>
+      <h4> How to train a kitten? <br/>
            Training courses? <br/>
            Training resources? <br/>
            Any offers with training? <br/>
            Litter Training <br/>
-           Benefits of training you kitten. </h3>
+           Benefits of training you kitten. </h4>
 
     </div>
   </div>
@@ -214,9 +214,9 @@ const PetInsurance = () => {
       <div className={OwnersInfoCSS.containerRow3}>
         <h1 className={OwnersInfoCSS.bold}> Pet Insurance </h1>
         <h3> ________</h3>
-        <h3> Benefits of pet insurance and, <br/> 
+        <h4> Benefits of pet insurance and, <br/> 
              Recommendations for different insurance companies.<br/> 
-             Trupanion? ASPCA? etc.</h3>
+             Trupanion? ASPCA? etc.</h4>
       </div>
     </div>
   );
