@@ -8,99 +8,76 @@ const WebNavHeader = () => {
   const [Mobile, setMobile] = useState(false)
 
   const checkResponsiveView = () => {
-    var x = document.getElementById("navLinks")
-    var y = document.getElementById("middle")
-    var z = document.getElementById("leftHeaderImg")
-
-    if (x.className === `${WebNavHeaderCSS.navLinks}`) {
-      x.className = `${WebNavHeaderCSS.navLinksResponsive}`;
-      y.className = `${WebNavHeaderCSS.middleResponsive}`;
-      z.className = `${WebNavHeaderCSS.leftHeaderImgResponsive}`;
-      setMobile(true)
-    } else {
-      x.className = `${WebNavHeaderCSS.navLinks}`
-      y.className = `${WebNavHeaderCSS.middle}`;
-      z.className = `${WebNavHeaderCSS.leftHeaderImg}`;
-      setMobile(false)
-    }
+    setMobile(!Mobile);
   }
 
   const windowWidthCheck = () => {
-    if (window.innerWidth > 1110) 
-      var x = document.getElementById("navLinks")
-      var y = document.getElementById("middle")
-      var z = document.getElementById("leftHeaderImg")
-      x.className = `${WebNavHeaderCSS.navLinks}`
-      y.className = `${WebNavHeaderCSS.middle}`;
-      z.className = `${WebNavHeaderCSS.leftHeaderImg}`;
-      setMobile(false)
+    if (window.innerWidth > 1213 && Mobile === true) {
+      setMobile(false);
+    }
   }
   window.addEventListener('resize', windowWidthCheck)
 
   return (
     <div className={WebNavHeaderCSS.headerContainer}>
-      <img className={WebNavHeaderCSS.leftHeaderImg} id="leftHeaderImg" alt='cat' src={require("../images/CatWebNavHeaderNoBackground.png")} />
-      {/* <div className={WebNavHeaderCSS.leftImgContainer}>
-        <img id={WebNavHeaderCSS.leftHeaderImg} alt='cat' src={require("../images/CatWebNavHeaderNoBackground.png")} />
-      </div> */}
-      <div className={WebNavHeaderCSS.middle} id="middle">
+      <img className={Mobile ? WebNavHeaderCSS.leftHeaderImgResponsive : WebNavHeaderCSS.logoContainer} id="leftHeaderImg" alt='logo' src={require("../images/KB logo.png")} />
+      <div className={Mobile ? WebNavHeaderCSS.middleResponsive : WebNavHeaderCSS.middle} id="middle">
         <div className={WebNavHeaderCSS.headerTitleContainer}>
           <div className={WebNavHeaderCSS.headerKingBengals}>
           KingBengals</div>
           <div className={WebNavHeaderCSS.headerCattery}>Cattery</div>
           <div className={WebNavHeaderCSS.rightImgContainer}>
             <img id={WebNavHeaderCSS.rightHeaderImg} alt='cat' src={require("../images/CatWebNavHeader2NoBackground.png")} />
+          </div>  
+        </div>
+        <div className={WebNavHeaderCSS.middleNavLinks} id="middleNavLinks">
+          <div className={Mobile ? WebNavHeaderCSS.navLinksResponsive : WebNavHeaderCSS.navLinks} id="navLinks">
+            <div className={WebNavHeaderCSS.link}>
+              <NavLink to="/home" 
+                className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                  Home</NavLink>
+            </div>
+            <div className={WebNavHeaderCSS.link}>
+              <NavLink to="/reserveakitten" 
+                className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                  Reserve a Kitten</NavLink>
+            </div>
+            <div className={WebNavHeaderCSS.link}>
+              <NavLink to="/about" 
+                className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                  About Us</NavLink>
+            </div>
+            <div className={WebNavHeaderCSS.link}>
+              <NavLink to="/ourcats" 
+                className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                  Our Cats</NavLink>
+            </div>
+            <div className={WebNavHeaderCSS.link}>
+              <NavLink to="/litterupdates" 
+                className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                  Litter Updates</NavLink>
+            </div>
+            <div className={WebNavHeaderCSS.link}>
+              <NavLink to="/ownersinfo" 
+                className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                  Info for Owners</NavLink>
+            </div>
+            <div className={WebNavHeaderCSS.link}>
+              <NavLink to="/contact" 
+                className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                  Contact Us</NavLink>
+            </div>
+            <div className={WebNavHeaderCSS.link}>
+              <NavLink to="/breedinfo" 
+                className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
+                  Breed Info</NavLink>
+            </div>
           </div>
         </div>
-        
-        <div className={WebNavHeaderCSS.navLinks} id="navLinks">
-          <div className={WebNavHeaderCSS.link}>
-            <NavLink to="/home" 
-              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                Home</NavLink>
-          </div>
-          <div className={WebNavHeaderCSS.link}>
-            <NavLink to="/reserveakitten" 
-              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                Reserve a Kitten</NavLink>
-          </div>
-          <div className={WebNavHeaderCSS.link}>
-            <NavLink to="/about" 
-              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                About Us</NavLink>
-          </div>
-          <div className={WebNavHeaderCSS.link}>
-            <NavLink to="/ourcats" 
-              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                Our Cats</NavLink>
-          </div>
-          <div className={WebNavHeaderCSS.link}>
-            <NavLink to="/litterupdates" 
-              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                Litter Updates</NavLink>
-          </div>
-          <div className={WebNavHeaderCSS.link}>
-            <NavLink to="/ownersinfo" 
-              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                Info for Owners</NavLink>
-          </div>
-          <div className={WebNavHeaderCSS.link}>
-            <NavLink to="/contact" 
-              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                Contact Us</NavLink>
-          </div>
-          <div className={WebNavHeaderCSS.link}>
-            <NavLink to="/breedinfo" 
-              className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                Breed Info</NavLink>
-          </div>
-        </div>
-        
+      </div>  
         <button className={WebNavHeaderCSS.navBtn} onClick={checkResponsiveView}>
             {Mobile ? <FaTimes /> : <FaBars />}
-        </button>
-        
-      </div>
+        </button>  
     </div>
   )
 }

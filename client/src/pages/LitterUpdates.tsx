@@ -8,7 +8,7 @@ import { jsonData } from "../components/LitterModal";
 
 const LitterUpdates: React.FC = () => {
   const fontSizeHeader = { fontSize: "50px" };
-  const fontSizeParagraph = { fontSize: "25px" };
+  const fontSizeParagraph = { fontSize: "20px" };
   const [isModalOpen1, setIsModalOpen1] = useState(false);
   const [isModalOpen2, setIsModalOpen2] = useState(false);
 
@@ -36,23 +36,25 @@ const LitterUpdates: React.FC = () => {
       <div className={LitterUpdatesCSS.litterInstructionContainer}>
         <h1 style={fontSizeHeader}>Check Out Our Litters!</h1>
         <p style={fontSizeParagraph}>
-          Below you will find the information for the litter that are currently
-          available for picking.
+          Below you will find information about each kitten within a litter.
           <br />
-          Litter planning & info regarding cat pregnancy
+          Each parent of a litter can be seen, for more information about the 
+          parents please checkout 'Our Cats' page.
           <br />
-          Explaining the litter characteristics: range of kittens in each litter
+          Clicking either of the Info Boxes below will bring up information 
+          regarding the litter birth date and expected availability.
           <br />
-          Expected delivery dates will be provided
+          Also specific characteristics of each kitten will be provided along 
+          with a image so see their coat pattern/colors.
           <br />
-          Please read how to 'Reserve a Kitten' page thoroughly! Kitten photos
-          and videos will be updated bi-weekly.
+          If you find a kitten you like, please see our 'Reserve a Kitten' page 
+          to place a request.
         </p>
       </div>
-
-      <div className={LitterUpdatesCSS.parentCardWrapper}>
-        {/* Container for the first litter parents */}
-        {/* jsonData[0] is used because litter 1 is at index 0 in the json file */}
+      
+      {/* <div className={LitterUpdatesCSS.parentCardWrapper}>
+        //Container for the first litter parents
+        //jsonData[0] is used because litter 1 is at index 0 in the json file
         <div className={LitterUpdatesCSS.parentCard}>
           <div className={LitterUpdatesCSS.parentName}>Mom</div>
           <div className={LitterUpdatesCSS.parentName}>Dad</div>
@@ -67,8 +69,8 @@ const LitterUpdates: React.FC = () => {
             src={jsonData[0].dadPicture}
           />
         </div>
-        {/* Container for the second litter parents */}
-        {/* jsonData[1] is used because litter 2 is at index 1 in the json file */}
+        //Container for the second litter parents
+        //jsonData[1] is used because litter 2 is at index 1 in the json file
         <div className={LitterUpdatesCSS.parentCard}>
           <div className={LitterUpdatesCSS.parentName}>Mom</div>
           <div className={LitterUpdatesCSS.parentName}>Dad</div>
@@ -83,7 +85,7 @@ const LitterUpdates: React.FC = () => {
             src={jsonData[1].dadPicture}
           />
         </div>
-      </div>
+      </div> */}
 
       {/* Containers for the two litters */}
       <div className={LitterUpdatesCSS.litterWrapper}>

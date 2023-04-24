@@ -3,6 +3,7 @@ import AboutCSS from "./styles/About.module.css";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import Data from "../json/aboutUs.json";
+import AboutJSON from "../json/aboutUs.json"
 
 const About = () => {
   const fontSizeHeader = { fontSize: "60px" };
@@ -10,57 +11,66 @@ const About = () => {
 
   return (
     <div className={AboutCSS.aboutPage}>
-      <WebNavHeader />
+      <WebNavHeader /><br/>
       <header className={AboutCSS.header} style={fontSizeHeader}>
         Learn More About Us!
-      </header>
+      </header><br/><br/>
       <div className={AboutCSS.aboutPageBody}>
-        {/*>>>>>>>>>>>>>>   Business Location & History   <<<<<<<<<<<<<*/}
-        <p className={AboutCSS.p1}>
-          Location of the business <br></br>
-          We are located in Sacramento, California just near the vibrant
-          downtown. Brief description of the physical location, such as venue,
-          view, landmarks nearby. <br></br>
-          <br></br>
-          History of the business <br></br>
-          How long have we been in this business? <br></br>
-          What are the bengal cats bred for? pets, companionship, house cats,
-          competitions, family pets, etc.
-        </p>
-        {/* >>>>>>>>>>>>>> Top-right image on the About-Page <<<<<<<<<<*/}
-        <div className={AboutCSS.topRightImg}>
-          <img alt="aboutUs" src={Data.images.topRightImg} />
+        <div className = {AboutCSS.containerRow}>
+          {/*>>>>>>>>>>>>>>   Business Location & History   <<<<<<<<<<<<<*/}
+          <p className={AboutCSS.p1}>
+            <h4>{AboutJSON.locationq}</h4>
+            {AboutJSON.locationa}<br></br>
+            <br></br>
+            
+            <h4>{AboutJSON.businessq}</h4>
+            {AboutJSON.businessa} <br/><br/>
+            
+            <h4>{AboutJSON.bengalpurposeq}</h4>
+            {AboutJSON.bengalpurposea}<br/><br/>
+          </p>
+          {/* >>>>>>>>>>>>>> Top-right image on the About-Page <<<<<<<<<<*/}
+          <div className={AboutCSS.borderTop}>
+            {/*<div className={AboutCSS.topRightImg}>*/}
+              <img alt="aboutUs" src={Data.images.topRightImg} />
+            {/*</div>*/}
+          </div>
         </div>
+
         {/* >>>>>>>>>>>>>>    More about the business   <<<<<<<<<<<<<< */}
-        <p className={AboutCSS.p2}>
-          What kind of approach does the business take with training and working
-          with all the cats? What does the business believe in when it comes to
-          the treatment of all their cats? <br></br>
-          <br></br>
-          What kind of cats does the business produce? <br></br>
-          Health/color/patterns/tempermant/energy levels etc. <br></br>
-          <br></br>
-          Behavior of the Bengal cats specifically<br></br>
-          What do they require in order to step up for success?<br></br>
-          <br></br>
-          Personallity of the kittens<br></br>
-          Is it predictable? What factors can be focused on?<br></br>
-          <br></br>
-          Advice for the customers.<br></br>
-          <br></br>
-          Updates the business provides on a weekly/biweekly basis.<br></br>
-          What can customers look forward to between the time they've picked a
-          kitten and til the kitten is 2 months old.<br></br>
-          Ex. Pictures, videos of their kitten will be uploaded every week or
-          two weeks until the kitten is months of age and ready to go to their
-          new home with the owner.<br></br>
-        </p>
-        {/* >>>>>>>>> Bottom Images on About-Page <<<<<<<<<<<<<<< */}
-        <div className={AboutCSS.bottomLeftImg}>
-          <img alt="litter1" src={Data.images.bottomLeftImg} />
+        <div className = {AboutCSS.containerRow}>
+          <div className={AboutCSS.borderTop}>
+            <img alt="aboutUs" src={Data.images.middleImg} />
+          </div>
+          <p className={AboutCSS.p2}>
+            <h4>{AboutJSON.approachq}</h4>
+            {AboutJSON.approacha}<br/><br/>
+          
+            <h4>{AboutJSON.inventoryq}</h4>
+            {AboutJSON.inventorya}<br/><br/>
+            
+            {AboutJSON.otherinfo}<br/><br/>
+
+            <h4>{AboutJSON.updatesq}</h4>
+            {AboutJSON.updatesa}<br/><br/>
+          </p>
         </div>
-        <div className={AboutCSS.bottomRightImg}>
-          <img alt="litter2" src={Data.images.bottomRightImg} />
+        {/* >>>>>>>>> Bottom Images on About-Page <<<<<<<<<<<<<<< */}
+        <div className = {AboutCSS.containerRow2}>
+          {/*<div className={AboutCSS.bottomLeftImg}>*/}
+          
+          <div className = {AboutCSS.border}>
+            <img alt="leftCat" src={Data.images.bottomLeftImg} />
+          </div>
+          {/*<div className={AboutCSS.bottomRightImg}>*/}
+          {/*<h1> Our </h1>*/}
+          <div className = {AboutCSS.border}>
+            <img alt="middleCat" src={Data.images.bottomMiddleImg} /> 
+          </div>
+          {/*<h1> Cats </h1>*/}
+          <div className = {AboutCSS.border}>
+            <img alt="rightCat" src={Data.images.bottomRightImg} /> 
+          </div>
         </div>
         {/* >>>>>>>> What does the business provides <<<<<<<<<<<< */}
         <p className={AboutCSS.p3}>

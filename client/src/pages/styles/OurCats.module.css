@@ -1,27 +1,17 @@
 @import "../../theme.css";
 
-
 .ourCatsPage {
   background-image: url("../../images/kbengalsbgGradient.png");
   background-size: cover;
+  background-attachment: fixed;
   height: 100%;
 }
 
-.headerContainerOurCats {
+.headerBackground {
   background-image: url("../../images/OurCatsHeader.png");
   background-size: cover;
   background-position: center center;
-  text-align: center;
-  color: white;
-  font-family: var(--header-text-font);
-  font-size: var(--large-header-size);
-  font-weight: var(--header-text-property);
-  top: 150px;
-  height: 700px;
-  vertical-align: text-top;
-  padding-top: 50px;
-  padding-left: 23%;
-  padding-right: 23%;
+  height: 850px;
   border-style: solid;
   border-top: 0;
   border-left: 0;
@@ -29,43 +19,49 @@
   border-color: black;
 }
 
-.secondaryHeaderContainer {
+.headerContainerOurCats {
   text-align: center;
   color: white;
   font-family: var(--header-text-font);
-  font-size: var(--header-font-size);
-  line-height: 20px;
-  width: 60%;
-  height: 50px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: -110px;
-  margin-bottom: 60px;
+  font-size: var(--large-header-size);
+  font-weight: var(--header-text-property);
+  top: 150px;
+  width: 100%;
+  height: fit-content;
+  vertical-align: text-top;
+  padding-top: 50px;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .body {
-  background-color: rgb(184, 144, 96, .9);
+  background-color: rgb(184, 144, 96, 0.9);
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   grid-template-rows: 1fr;
   row-gap: 2vh;
   align-self: start;
   padding: 2vw;
+  opacity: 0.95;
   border-style: solid;
   border-color: #6b462a;
-  border-radius: 10px;
+  border-width: 5px;
+  border-radius: 20px;
   margin: auto;
-  width: 60%;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+  width: 90%;
   height: fit-content;
 }
 
-.organizations{
+.organizations {
   width: 100%;
   padding: 2vw;
+  height: fit-content;
 }
 
-.organizationText{
+.organizationText {
   border-left: #6b462a;
   border-left-style: solid;
   border-width: 2px;
@@ -88,47 +84,60 @@
   cursor: pointer;
 }
 
-.ticaLogo{
+.ticaLogo {
   width: 100%;
   height: 100%;
 }
 
-.parents{
+.parentColumn {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
-  gap: 1vw;
   padding-left: 1vw;
+}
+@media screen {
+  .parentColumn {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.parentTileAndSlider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
 }
 
 .parentTile {
+  margin: auto 0rem 4rem;
   background-color: #6b462a;
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
+  width: 100%;
   line-height: 0.5;
   padding-left: 7%;
   padding-right: 7%;
   padding-bottom: 7%;
   border-radius: 10px;
   overflow: hidden;
+  z-index: 100;
 }
 .parentTile h1 {
-  margin-top: 0.5vw;
-  font-size: 1.8vw;
+  margin-top: 1rem;
+  font-size: var(--large-header-size);
   line-height: 1;
 }
-.parentTile p {
-  font-size: 1.3vw;
-}
-
-.sliderColumn{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1vw;
+.parentTile img {
   width: 100%;
-  overflow: hidden;
+  height: fit-content;
+}
+.parentTile p {
+  font-size: 1.3rem;
 }
 
+@media only screen and (max-width: 870px) {
+  .body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

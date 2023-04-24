@@ -3,7 +3,7 @@ import BreedInfoCSS from "./styles/BreedInfo.module.css";
 import topImage from "../images/SpottedVsMarbled_edited.png";
 import spotted from "../images/SpottedBengals.png";
 import marbled from "../images/MarbledBengals.png";
-import redstar from "../images/1024px-Paintedcats_Red_Star_standing.jpg";
+import redstar from "../images/1024px-Paintedcats_Red_Star_standing_noBG.png";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import bengalKitten from "../images/Bengal-Cats.jpg";
@@ -14,6 +14,7 @@ const BreedInfo = () => {
     <div className={BreedInfoCSS.breedInfoPage}>
       <WebNavHeader />
       <div className={BreedInfoCSS.backgroundLayer}>
+        
         <BreedHistory />
 
         <PatternsSpotMarble />
@@ -118,6 +119,7 @@ const Personality = () => {
   );
 };
 
+
 /**************************************** Patterns - Spotted & Marble *********************************************************/
 const PatternsSpotMarble = () => {
   return (
@@ -189,6 +191,7 @@ const PatternsSpotMarble = () => {
     </div>
   );
 };
+
 
 /**************************************** Fun Facts about Bengal Cats *********************************************************/
 const FunFacts = () => {
@@ -265,9 +268,20 @@ const BengalCatHealth = () => {
           height="auto"
         />
       </div>
-    </div>
+    </div >
   );
 };
+
+const responsive = () => {
+  const accordion = document.getElementsByClassName('contentBx');
+  for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function (this: any) {
+      this.toggle('active')
+    })
+  }
+}
+
+
 
 /**************************************** Owner compatibility *********************************************************/
 const OwnerCompatibility = () => {

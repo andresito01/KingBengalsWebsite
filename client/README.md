@@ -6,17 +6,6 @@ Kingbengals Cattery is a family operated local cattery in Sacramento, specialize
 
 # Contents
 
-<<<<<<< HEAD
-- [Synopsis](#Synopsis)
-- [Testing](#Testing)
-- [Deployment](#Deployment)
-- [Instructions](#Instructions)
-
-## Synopsis
-
-An in-depth paragraph about your project and overview of use.
-
-=======
 - [Synopsis](#Synopsis) 
 - [Testing](#Testing)
 - [Deployment](#Deployment)
@@ -28,7 +17,6 @@ An in-depth paragraph about your project and overview of use.
 
 ## Synopsis
 
->>>>>>> 7c20d9e7623da0ee12558ba691374f6f82536abf
 ### Testing
 
 - Describe any prerequisites, libraries, OS version, etc., needed before installing program.
@@ -48,15 +36,6 @@ code blocks for commands
 - How to run the program
 - Step-by-step bullets
 
-<<<<<<< HEAD
-### Figma Prototype Images of Website
-
--
-
-## Timeline
-
-### Milestones
-=======
 ### Prototype
 
 <table>
@@ -117,7 +96,6 @@ code blocks for commands
     <td>Web hosting and domain created.</td>
   </tr>
 </table>
->>>>>>> 7c20d9e7623da0ee12558ba691374f6f82536abf
 
 ## Authors
 

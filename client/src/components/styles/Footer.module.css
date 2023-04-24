@@ -2,9 +2,9 @@
   width: 100%;
   margin: auto;
   background-color: #412804;
-  padding: 0.25rem;
-  border-top: #e2b78e outset 0.45rem;
-  border-bottom: #41280474 outset 0.55rem;
+  padding: 1.25rem 0.5rem;
+  border-top: #e2b78e outset 0.75rem;
+  border-bottom: #41280439 outset 0.85rem;
   display: grid;
   gap: 0.5rem;
   color: #e2b78e;
@@ -15,35 +15,45 @@
 
 @media screen {
   .footerContainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.footerContainer h4 {
-  font-size: 1rem;
-  font-weight: bold;
+.footerContainer section {
+  text-align: center;
+  max-width: max-content;
+}
+.footerContainer hr {
+  height: 0.25rem;
 }
 
-.footerLinks {
+.footerContainer h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  height: 0.5rem;
+}
+
+.footerLinks:hover {
+  color: aqua;
   cursor: pointer;
 }
 
 .followUSContainer {
   width: 90%;
   margin: auto;
-  margin-top: 0.25vw;
+  margin-top: 4vw;
+  margin-left: 3vw;
 }
 .followUSContainer a {
   color: #e2b78e;
-  font-size: small;
-  font-family: inika, lancelot;
+  font-size: medium;
 }
 
 .instagramBtn {
   border-width: 0px;
   background-color: #41280400;
   cursor: progress;
-  width: 3rem;
+  width: 4vw; /*3rem;*/
 }
 
 .instagramImg {
@@ -52,17 +62,29 @@
   background-color: #41280400;
   border-radius: 25%;
   border-style: outset;
-  border-width: 0.35vw;
+  border-width: 0.25rem;
   border-color: #e2b78e;
   /* padding: 0.05rem; */
 }
+
+.logoContainer{
+  width: 15vw;
+  height: auto;
+  background-color: transparent;
+  align-content: center;
+  margin-left: 8.5vw;
+  padding-bottom: 1vw;
+}
+
 .contactUsContainer {
   width: 90%;
   margin: auto;
-  margin-top: 0.25vw;
+  margin-top: 4vw;
+  margin-right: 3vw;
 }
 .contactUsContainer li {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: left;
 }

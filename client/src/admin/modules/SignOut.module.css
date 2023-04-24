@@ -1,0 +1,15 @@
+.currentUserContainer {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  text-align: right;
+  font-size: 2rem;
+  color: aliceblue;
+  background-color: rgba(0, 0, 255, 0.177);
+}
+
+.currentUserContainer button {
+  background-color: brown;
+  border-color: bisque;
+  font-size: 2rem;
+}
