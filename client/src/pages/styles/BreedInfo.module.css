@@ -1,5 +1,6 @@
 @import "../../theme.css";
 
+
 .breedInfoPage {
   position: absolute;
   height: 100%;
@@ -21,6 +22,7 @@
   width: 100%;
   margin-top: 1rem;
 }
+
 .topPicture {
   width: 100%;
   height: auto;
@@ -139,6 +141,34 @@ p.text {
   border-radius: 1.25rem;
 }
 
+/******************accordion*************************/
+.accordion .contentBx .label {
+  background: rgba(161, 89, 21, 0.269);
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*Not working....................*/
+.accordion .contentBx .label ::before {
+  content: '+';
+  position: absolute;
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+
+.accordion .contentBx.active .content {
+  height: 150px;
+  padding: 10px;
+}
+
+/***********Accordion*********************/
 .imgContainer {
   max-width: 100%;
   height: auto;
@@ -188,6 +218,12 @@ p.text {
   margin-bottom: 3.75rem;
 }
 
+/* .healthHeading>p {
+  justify-content: left;
+  text-align: left;
+  padding-left: 30px;
+} */
+
 .containerBottom {
   display: flex;
   flex-direction: row;
@@ -204,6 +240,7 @@ p.text {
   margin-right: 0;
   /*margin-bottom: 60px;*/
 }
+
 .funFactList {
   text-align: left;
 }
