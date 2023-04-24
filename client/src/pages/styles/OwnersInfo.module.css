@@ -17,7 +17,6 @@
   /*background-repeat:round;*/
   background-attachment: fixed;
   background-color: #a87d48f5; /*border color: #e2b78e;*/
-  /* background-image: url("../../images/pattern - b&w warm + wc edited.jpg"); */
   background-image: var(--bg-image);
   background-size: cover;
 }
@@ -26,12 +25,6 @@
   /*background-image: url("../../images/bencat - OwnersInfo header image.jpg");*/
   background-size: cover;
   background-position: center center;
-  /*height: 850px;
-  border-style: solid;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-color: black;*/
 }
 
 .backgroundLayer Img {
@@ -51,21 +44,6 @@
   font-weight: var(--header-text-property);*/
   color:#4E3A24;
 }
-
-/*.headerOwnersInfo {
-  text-align: center;
-  color: white;
-  font-family: var(--header-text-font);
-  font-size: var(--large-header-size);
-  font-weight: var(--header-text-property);
-  top: 150px;
-  width: 100%;
-  height: fit-content;
-  vertical-align: text-top;
-  padding-top: 50px;
-  padding-left: 25%;
-  padding-right: 25%;
-}*/
 
 .boldHeader{
   font: bold;
@@ -96,11 +74,11 @@
 
 .bold{
   font: bold;
-  font-size: 3vw;
-  font-family: inika;
-  /*font: var(--header-text-property);*/
-  /*font-size: var(---large-header-size);
-  font-family: var(--generic-website-text);*/
+  /*font-size: 3vw;
+  font-family: inika;*/
+  /*font: var(--header-text-property);
+  /*font-size: var(---large-header-size);*/
+  font-family: var(--generic-website-text);
   width: auto;
   position: relative;
   justify-content: center;
@@ -108,10 +86,10 @@
 
 .boldSub{
   font: bold;
-  font-size: 2vw;
-  font-family: inika;
-  /*font-size: var(---large-header-size);
-  font-family: var(--generic-website-text);*/
+  /*font-size: 2vw;
+  font-family: inika;*/
+  /*font-size: var(---large-header-size);*/
+  font-family: var(--generic-website-text);
   width: auto;
   position: relative;
   justify-content: center;
@@ -204,19 +182,7 @@
 
 
 /************************** Kitten Development Stages *****************************************/
-
-.imgContainer {
-  max-width: 100%;
-  height: auto;
-  /*background-image: url("../images/bengal-cat.jpg");*/
-  /*background-size: contain;*/
-  border-style: double;
-  position: relative;
-}
-
-/************************** Prepare For Kitten *****************************************/
-
-.containerRowBox {
+.containerRowBoxShrink {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -234,35 +200,80 @@
   margin-bottom: 60px;
 }
 
-@media screen and (max-width: 500px) {
+.containerRow2Shrink {
+  margin: 10px 10px 10px 10px;
+  background-color: var(--light-secondary-color);
+  flex: 1;
+  /*display: flex;
+  flex-direction: row;*/
+  width: 30vw;
+  height:auto;
+  position: relative;
+  justify-content: center;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: var(--dark-secondary-color);
+  border-width: 10px 10px 10px 10px;
+}
 
-  .containerRowBox {
+.imgContainer {
+  max-width: 100%;
+  height: auto;
+  /*background-image: url("../images/bengal-cat.jpg");*/
+  /*background-size: contain;*/
+  border-style: double;
+  position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .containerRowBoxShrink {
     flex-direction: column;
+    align-content: center;
+    background-color: var(--light-secondary-color);
   }
 
-  .containerRow2 {
-    display: flex;
+  .containerRow2Shrink {
+    display:contents;
     flex-direction: row;
-    width: 75vw;
+    /*width: 80vw;*/
+  }
+
+  .imgContainer {
+    width: 30vw;
+    margin-left: 30%;
   }
 
   .containerRowTransparent {
     flex-direction: column;
   }
 
+  /*.bold {
+    font-size: 2.5vw;
+  }
+
+  .boldSub {
+    font-size: 1vw;
+  }
+
   .text {
     font-size: 1.3vw;
     width: max-content;
-  }
+  }*/
   /*tr {
     display: inline-flex;
     flex-direction: column;
   }*/
 }
 
-.containerColumnBox {
+/************************** Prepare For Kitten *****************************************/
+
+.containerRowBox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   text-align: center;
   width: 80vw;
