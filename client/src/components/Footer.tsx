@@ -56,12 +56,12 @@ const Footer = () => {
         >
           email: #######@####.com
         </li>
-        <li
+        {/**<li
           className={FooterCSS.footerLinks}
           onClick={() => navigate("/login")}
         >
           Admin LogIn
-        </li>
+        </li>*/}
       </section>
     </div>
   );

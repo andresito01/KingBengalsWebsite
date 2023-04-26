@@ -8,57 +8,30 @@ const WebNavHeader = () => {
   const [Mobile, setMobile] = useState(false)
 
   const checkResponsiveView = () => {
-    var x = document.getElementById("navLinks")
-    var y = document.getElementById("middle")
-    var z = document.getElementById("leftHeaderImg")
-
-    if (x.className === `${WebNavHeaderCSS.navLinks}`) {
-      x.className = `${WebNavHeaderCSS.navLinksResponsive}`;
-      y.className = `${WebNavHeaderCSS.middleResponsive}`;
-      z.className = `${WebNavHeaderCSS.leftHeaderImgResponsive}`;
-      setMobile(true)
-    } else {
-      x.className = `${WebNavHeaderCSS.navLinks}`
-      y.className = `${WebNavHeaderCSS.middle}`;
-      z.className = `${WebNavHeaderCSS.leftHeaderImg}`;
-      setMobile(false)
-    }
+    setMobile(!Mobile);
   }
 
-  // const windowWidthCheck = () => {
-  //   if (window.innerWidth > 1110) 
-  //     var x = document.getElementById("navLinks")
-  //     var y = document.getElementById("middle")
-  //     var z = document.getElementById("leftHeaderImg")
-  //     x.className = `${WebNavHeaderCSS.navLinks}`
-  //     y.className = `${WebNavHeaderCSS.middle}`;
-  //     z.className = `${WebNavHeaderCSS.leftHeaderImg}`;
-  //     setMobile(false)
-  // }
-  // window.addEventListener('resize', windowWidthCheck)
+  const windowWidthCheck = () => {
+    if (window.innerWidth > 1213 && Mobile === true) {
+      setMobile(false);
+    }
+  }
+  window.addEventListener('resize', windowWidthCheck)
 
   return (
     <div className={WebNavHeaderCSS.headerContainer}>
-      {/*<img className={WebNavHeaderCSS.leftHeaderImg} id="leftHeaderImg" alt='cat' src={require("../images/KBCatWebNavHeaderNoBackground.png")} />*/}
-      <img className = {WebNavHeaderCSS.logoContainer} alt='cat' src={require("../images/KB logo.png")} />
-      {/* <div className={WebNavHeaderCSS.leftImgContainer}>
-        <img id={WebNavHeaderCSS.leftHeaderImg} alt='cat' src={require("../images/CatWebNavHeaderNoBackground.png")} />
-      </div> */}
-      <div className={WebNavHeaderCSS.middle} id="middle">
+      <img className={Mobile ? WebNavHeaderCSS.leftHeaderImgResponsive : WebNavHeaderCSS.leftHeaderImg} id="leftHeaderImg" alt='cat' src={require("../images/KB logo.png")} />
+      <div className={Mobile ? WebNavHeaderCSS.middleResponsive : WebNavHeaderCSS.middle} id="middle">
         <div className={WebNavHeaderCSS.headerTitleContainer}>
           <div className={WebNavHeaderCSS.headerKingBengals}>
           KingBengals</div>
           <div className={WebNavHeaderCSS.headerCattery}>Cattery</div>
           <div className={WebNavHeaderCSS.rightImgContainer}>
             <img id={WebNavHeaderCSS.rightHeaderImg} alt='cat' src={require("../images/CatWebNavHeader2NoBackground.png")} />
-          </div>
-          {/*<div className={WebNavHeaderCSS.logoContainer}>*/}
-            {/*<img className = {WebNavHeaderCSS.logoContainer} alt='cat' src={require("../images/KB logo.png")} />*/}
-          {/*</div>*/}  
+          </div>  
         </div>
-
         <div className={WebNavHeaderCSS.middleNavLinks} id="middleNavLinks">
-          <div className={WebNavHeaderCSS.navLinks} id="navLinks">
+          <div className={Mobile ? WebNavHeaderCSS.navLinksResponsive : WebNavHeaderCSS.navLinks} id="navLinks">
             <div className={WebNavHeaderCSS.link}>
               <NavLink to="/home" 
                 className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
@@ -101,14 +74,11 @@ const WebNavHeader = () => {
             </div>
           </div>
         </div>
-      </div>
-        
+      </div>  
         <button className={WebNavHeaderCSS.navBtn} onClick={checkResponsiveView}>
             {Mobile ? <FaTimes /> : <FaBars />}
-        </button>
-        
+        </button>  
     </div>
-    
   )
 }
 
