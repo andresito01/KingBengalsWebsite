@@ -1,10 +1,10 @@
 import React, { useState} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
-import { useNavigate, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import WebNavHeaderCSS from "./styles/WebNavHeader.module.css"
 const WebNavHeader = () => {
 
-  let navigate = useNavigate();
+  //let navigate = useNavigate();
   const [Mobile, setMobile] = useState(false)
 
   const checkResponsiveView = () => {
@@ -20,7 +20,7 @@ const WebNavHeader = () => {
 
   return (
     <div className={WebNavHeaderCSS.headerContainer}>
-      <img className={Mobile ? WebNavHeaderCSS.leftHeaderImgResponsive : WebNavHeaderCSS.leftHeaderImg} id="leftHeaderImg" alt='cat' src={require("../images/KB logo.png")} />
+      <img className={Mobile ? WebNavHeaderCSS.leftHeaderImgResponsive : WebNavHeaderCSS.logoContainer} id="leftHeaderImg" alt='logo' src={require("../images/KB logo.png")} />
       <div className={Mobile ? WebNavHeaderCSS.middleResponsive : WebNavHeaderCSS.middle} id="middle">
         <div className={WebNavHeaderCSS.headerTitleContainer}>
           <div className={WebNavHeaderCSS.headerKingBengals}>

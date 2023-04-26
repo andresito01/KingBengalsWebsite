@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "testifierImg": "images/TempTestimony.jpg",
-    "testifierName": "Amanda Smith",
-    "testifierQuote": "I Love this place, I got a starting kit courtesy from Lidia to care for my little kitten."
+    "testifierImg": "images/bengalBrothers.jpg",
+    "testifierName": "Jeff Branson",
+    "testifierQuote": "Yesterday was exactly one year since we got a kitten we named Elliott from you. He had brought so much happiness to us, this spring we got him a brother our second kitten, and they're getting along great!"
   },
   {
     "id": 2,
-    "testifierImg": "images/TempTestimony.jpg",
+    "testifierImg": "images/GothamBengal.jpg",
     "testifierName": "Ely White",
-    "testifierQuote": "I bought my first Bengal cat at Kingbengals and I really appreciate Lidia’s guidance on how to care for him."
+    "testifierQuote": "He's So Happy here! Our siamese and him are socially adjusted now and he's playing ENDLESSLY!"
   },
   {
     "id": 3,
-    "testifierImg": "images/TempTestimony.jpg",
-    "testifierName": "Amanda Smith",
-    "testifierQuote": "I Love this place, I got a starting kit courtesy from Lidia to care for my little kitten."
+    "testifierImg": "images/poppy.jpg",
+    "testifierName": "Julia Smith",
+    "testifierQuote": "It's been two weeks since we've taken Poppy and she feels completely at home, she even falls asleep now next to my daughter on the bed, just wanted to let you know she's loved!"
   }
 ]

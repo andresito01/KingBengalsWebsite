@@ -134,25 +134,6 @@
   margin-right: 1rem;
 }
 
-
-.leftHeaderImg {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 100%;
-}
-
-.middle {
-  position: relative;
-  left: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 85%;
-}
-
 .navLinks{
   display: flex;
   flex-direction: row;
@@ -260,24 +241,15 @@
     .leftHeaderImgResponsive {
       height: 70px;
     }
-
     
   }
 
   .logoContainer{
     display: flex;
-    height: 100%;
     bottom: 0px;
-    /*right: 0px;*/
-    /*left: 0px;*/
-    /*align-self: flex-end;*/
     width: 16vw;
     height: auto;
     position: absolute;
     background-color: transparent;
     align-content: center;
-    /*margin-right: -1vw;
-    margin-bottom: 2vw;*/
-    /*margin-left: 8.5vw;
-    padding-bottom: 1vw;*/
   }
