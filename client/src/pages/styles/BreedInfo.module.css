@@ -1,6 +1,5 @@
 @import "../../theme.css";
 
-
 .breedInfoPage {
   position: absolute;
   height: 100%;
@@ -22,14 +21,14 @@
   width: 100%;
   margin-top: 1rem;
 }
-
 .topPicture {
-  width: 100%;
+  width: 50%;
   height: auto;
+  border-style: double;
 }
 
 .sectionHeader {
-  margin: 1.25rem;
+  margin: 20px;
 }
 
 .bengalsTextContainer {
@@ -41,8 +40,8 @@
 }
 
 .bengalsIntroPic {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .breedInfoTxt {
@@ -62,7 +61,7 @@
 }*/
 
 p.text {
-  margin: 1.25rem;
+  margin: 20px;
 }
 
 /*********************************************************************************/
@@ -85,12 +84,12 @@ p.text {
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   margin-top: 2vw;
-  margin-bottom: 3.75rem;
-  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  margin-bottom: 60px;
+  padding: 10px 10px 10px 10px;
   border-style: groove; /*solid;*/
   border-color: rgba(255, 230, 207, 0.94);
-  border-width: 0.625rem;
-  border-radius: 1.25rem;
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 .containerRowBox {
@@ -108,37 +107,140 @@ p.text {
   margin-top: 2vw;
   margin-left: 5vw;
   margin-right: 5vw;
-  margin-bottom: 3.75rem;
+  margin-bottom: 60px;
 }
 
 .containerRow1 {
-  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  margin: 10px 10px 10px 10px;
   background-color: #a87d48f5; /* #4E3A24;*/
   flex: 1;
   width: 45vw;
   /*height: auto;*/
   position: relative;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   /*justify-content: center;
   border-width: 20px 20px 20px 20px;*/
 }
 
 .containerRow2 {
-  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
+  margin: 10px 10px 10px 10px;
   background-color: #ffe3c8;
   flex: 1;
   width: 30vw;
   height: auto;
   position: relative;
   justify-content: center;
-  padding: 0.938rem 0.938rem 0.938rem 0.938rem;
+  padding: 15px 15px 15px 15px;
   text-align: center;
   color: black;
-  border-radius: 1.25rem;
+  border-radius: 20px;
   border-style: solid;
   border-color: #4e3a24;
-  border-width: 0.625rem;
-  border-radius: 1.25rem;
+  border-width: 10px;
+  border-radius: 20px;
+}
+
+.imgContainer {
+  max-width: 100%;
+  height: auto;
+  border-style: double;
+  /*border-radius: 20px;
+  border-style:inset;
+  border-color: var(--light-primary-color);/* #4e3a24;
+  border-width: 10px;
+  border-radius: 20px;*/
+  /*position: relative;*/
+}
+
+.imgContainer2 {
+  max-width: 100%;
+  height: auto;
+}
+
+.bold {
+  font: bold;
+  font-size: 3vw;
+  font-family: inika;
+  width: auto;
+  position: relative;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.underline {
+  text-decoration: underline;
+  font: italic;
+  /*font: bold;*/
+}
+
+.textLeftBold {
+  font: var(--generic-text-property);
+  text-align: left;
+  margin-left: 1rem;
+  width: 30vw;
+}
+
+.containerRowBox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 70vw;
+  /*right: 1rem;*/
+  background-color: #ffe3c8;
+  color: white;
+  font-family: var(--header-text-font);
+  font-size: var(--header-font-size);
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 60px;
+}
+
+.containerBottom {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: left;
+  text-align: left;
+  /*right: 1rem;*/
+  background-color: rgba(78, 58, 36, 0.5);
+  color: white;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  margin-top: 5vw;
+  /*margin-left: 0;
+  margin-right: 0;
+  /*margin-bottom: 60px;*/
+}
+
+.funFactList {
+  text-align: left;
+}
+
+.textContainer {
+  text-align: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-family: var(--generic-website-text);
+}
+
+.containerRowTransparent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: relative;
+  position: relative;
+  /*right: 1rem;*/
+  background-color: transparent;
+  color: white;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 60px;
 }
 
 /******************accordion*************************/
@@ -169,78 +271,3 @@ p.text {
 }
 
 /***********Accordion*********************/
-.imgContainer {
-  max-width: 100%;
-  height: auto;
-  /*background-image: url("../images/bengal-cat.jpg");*/
-  /*background-size: contain;*/
-  border-style: double;
-  /*position: relative;*/
-}
-
-.bold {
-  font: bold;
-  font-size: 3vw;
-  font-family: inika;
-  width: auto;
-  position: relative;
-  justify-content: center;
-  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
-}
-
-.underline {
-  text-decoration: underline;
-  font: italic;
-  /*font: bold;*/
-}
-
-.textLeftBold {
-  font: var(--generic-text-property);
-  text-align: left;
-  margin-left: 1rem;
-  width: 30vw;
-}
-
-.containerRowBox2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  width: 70vw;
-  /*right: 1rem;*/
-  background-color: #ffe3c8;
-  color: white;
-  font-family: var(--header-text-font);
-  font-size: var(--header-font-size);
-  margin-top: 1rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-bottom: 3.75rem;
-}
-
-/* .healthHeading>p {
-  justify-content: left;
-  text-align: left;
-  padding-left: 30px;
-} */
-
-.containerBottom {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  justify-content: left;
-  text-align: left;
-  /*right: 1rem;*/
-  background-color: rgba(78, 58, 36, 0.5);
-  color: white;
-  font-family: var(--generic-website-text);
-  font-size: var(--generic-text-size);
-  margin-top: 5vw;
-  /*margin-left: 0;
-  margin-right: 0;
-  /*margin-bottom: 60px;*/
-}
-
-.funFactList {
-  text-align: left;
-}
