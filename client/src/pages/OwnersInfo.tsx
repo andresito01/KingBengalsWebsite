@@ -87,8 +87,8 @@ const KittenDevelopment = () => {
       <h3> _______________</h3>
       <h4> Here you can see the entire process your kitten will take from birth to the day it goes home. </h4>
       
-      <div className={OwnersInfoCSS.containerRowBoxShrink}>
-        <div className={OwnersInfoCSS.containerRow2Shrink}>
+      <div className={OwnersInfoCSS.containerRowBox}>
+        <div className={OwnersInfoCSS.containerRow2}>
           <h1 className={OwnersInfoCSS.boldSub}> Age: 1 - 2 weeks <br/>________</h1>
           {/*<h3> ________</h3>*/}
           <div className={OwnersInfoCSS.imgContainer}>
@@ -102,7 +102,7 @@ const KittenDevelopment = () => {
          a day. However, they're not completely helpless as they are often able to crawl to their mother 
          when she feeds them. </h4>
         </div>
-        <div className={OwnersInfoCSS.containerRow2Shrink}>
+        <div className={OwnersInfoCSS.containerRow2}>
           <h1 className={OwnersInfoCSS.boldSub}> Age: 2 - 4 weeks <br/>________</h1>
           {/*<h3> ________</h3>*/}
           <div className={OwnersInfoCSS.imgContainer}>
@@ -114,13 +114,14 @@ const KittenDevelopment = () => {
           solid food. Need lots attention and care as they are
           very vulnerable to diseases and viruses at this young age.</h4>
         </div>
-        <div className={OwnersInfoCSS.containerRow2Shrink}>
+        <div className={OwnersInfoCSS.containerRow2}>
           <h1 className={OwnersInfoCSS.boldSub}> Age: 2 Months <br/>________</h1>
           {/*<h3> ________</h3>*/}
           <div className={OwnersInfoCSS.imgContainer}>
-            <img alt="headerImage" src={require("../images/cute bengal kitten.jpg")} />
+            <img alt="headerImage" src={require("../images/catImage35.jpg")} />
           </div>
-          <h4> <br/> At two months old, they can recieve their first dose of vaccines (see 'Medical Info & Vet Things' below). 
+          <h4> <br/> <br/> <br/> <br/>
+          <br/> At two months old, they can recieve their first dose of vaccines (see 'Medical Info & Vet Things' below). 
           They have been completely weened off of their mother's milk. They have learned some social skills by interacting with 
           their mother and other litter mates. They're ready to go to their new and forever home. </h4>
         </div>
