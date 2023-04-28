@@ -182,42 +182,6 @@
 
 
 /************************** Kitten Development Stages *****************************************/
-.containerRowBoxShrink {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  width: 80vw;
-  position: relative;
-  /*right: 1rem;*/
-  background-color: var(--light-primary-color);
-  color: white;
-  font-family: var(--generic-website-text);
-  font-size: var(--generic-text-size);
-  margin-top: 2vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-bottom: 60px;
-}
-
-.containerRow2Shrink {
-  margin: 10px 10px 10px 10px;
-  background-color: var(--light-secondary-color);
-  flex: 1;
-  /*display: flex;
-  flex-direction: row;*/
-  width: 30vw;
-  height:auto;
-  position: relative;
-  justify-content: center;
-  padding: 15px 15px 15px 15px;
-  text-align: center;
-  color: black;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: var(--dark-secondary-color);
-  border-width: 10px 10px 10px 10px;
-}
 
 .imgContainer {
   max-width: 100%;
@@ -228,46 +192,26 @@
   position: relative;
 }
 
-@media only screen and (max-width: 1000px) {
+/******************************** Transparent Row container *************************************/
 
-  .containerRowBoxShrink {
-    flex-direction: column;
-    align-content: center;
-    background-color: var(--light-secondary-color);
-  }
-
-  .containerRow2Shrink {
-    display:contents;
-    flex-direction: row;
-    /*width: 80vw;*/
-  }
-
-  .imgContainer {
-    width: 30vw;
-    margin-left: 30%;
-  }
-
-  .containerRowTransparent {
-    flex-direction: column;
-  }
-
-  /*.bold {
-    font-size: 2.5vw;
-  }
-
-  .boldSub {
-    font-size: 1vw;
-  }
-
-  .text {
-    font-size: 1.3vw;
-    width: max-content;
-  }*/
-  /*tr {
-    display: inline-flex;
-    flex-direction: column;
-  }*/
+.containerRowTransparent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+  position: relative;
+  /*right: 1rem;*/
+  background-color: transparent;
+  color: white;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  margin-top: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 60px;
 }
+ 
 
 /************************** Prepare For Kitten *****************************************/
 
@@ -332,6 +276,64 @@
   border-color: var(--dark-primary-color);
   border-radius: 20px;
   border-width: 10px 10px 10px 10px;
+}
+
+/******************************* Media screen when window size shrinks *******************************************/
+
+@media only screen and (max-width: 1200px) {
+
+  .containerRowBox {
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--light-primary-color);
+  }
+
+  .containerRow1 {
+    width: 78vw;
+  }
+
+  .containerRow2 {
+    /*display:contents;*/
+    width: 78vw;
+    border-style: solid;
+    border-color: var(--dark-secondary-color);
+    border-radius: 20px;
+    border-width: 10px 10px 10px 10px;
+    /*flex-direction: row;*/
+    /*width: 80vw;*/
+  }
+
+  .imgContainer {
+    width: 30vw;
+    margin-left: 30%;
+  }
+
+  .containerRowTransparent {
+    flex-direction: column;
+    width:fit-content;
+    background-color: var(--light-primary-color);
+    border-style: solid;
+    border-color: var(--dark-primary-color);
+    border-radius: 20px;
+    border-width: 10px 10px 10px 10px;
+  }
+
+  /*.bold {
+    font-size: 2.5vw;
+  }
+
+  .boldSub {
+    font-size: 1vw;
+  }
+
+  .text {
+    font-size: 1.3vw;
+    width: max-content;
+  }*/
+  /*tr {
+    display: inline-flex;
+    flex-direction: column;
+  }*/
 }
 
 /****************************** Medical Info / Vet Stuff ***************************************************/
@@ -409,24 +411,4 @@
   /*margin-left: 0;
   margin-right: 0;
   /*margin-bottom: 60px;*/
-}
-
-
-/******************************** Transparent Row container *************************************/
-.containerRowTransparent {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  width: 80vw;
-  position: relative;
-  /*right: 1rem;*/
-  background-color: transparent;
-  color: white;
-  font-family: var(--generic-website-text);
-  font-size: var(--generic-text-size);
-  margin-top: 2vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-bottom: 60px;
 }
