@@ -7,8 +7,8 @@ import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import homePageJSON from "../json/homePage.json";
 
-const fontSizeMissionStatement = { fontSize: "2rem" };
-const fontSizeQuote = { fontSize: "1rem" };
+const fontSizeMissionStatement = { fontSize: "26px" };
+const fontSizeQuote = { fontSize: "20px" };
 
 //>>>>>>>>>>>>>>>>>>>> Home Page <<<<<<<<<<<<<<<<<<<<<<<<<<<
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
       <WebNavHeader />
 
       {/*>>>>>>>>>>>> Homepage Header Image <<<<<<<<<<<<*/}
-      <HomepageHeader />
+      {/* <HomepageHeader /> */}
 
       <MissionStatement />
 
@@ -44,14 +44,14 @@ const Home = () => {
 };
 
 /* >>>>>>>>>>>>>>>>>>>>>>       Homepage Header     <<<<<<<<<<<<<<<<<<<<<<<<<<< */
-const HomepageHeader = () => {
-  return (
-    <div className={HomeCSS.homeHeader}>
-      {/* Header Image */}
-      <img alt="headerImage" src={homePageJSON.headerImg} />
-    </div>
-  );
-};
+// const HomepageHeader = () => {
+//   return (
+//     <div className={HomeCSS.homeHeader}>
+//       {/* Header Image */}
+//       <img alt="headerImage" src={homePageJSON.headerImg} />
+//     </div>
+//   );
+// };
 
 /* >>>>>>>>>>>>>>>>>>>>>>       Homepage Header     <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 const MissionStatement = () => {
@@ -79,7 +79,7 @@ const OwnerPicture = () => {
 const PastLittersTitle = () => {
   return (
     <div className={HomeCSS.pastLittersTitle}>
-      <h2>Past Litters</h2>
+      <p>Past Litters</p>
     </div>
   );
 };

@@ -22,7 +22,7 @@
 
   .modalContainer {
     max-width: 50%;
-    min-width: 480px;
+    min-width: 380px;
     max-height: 90%;
     min-height: fit-content;
     overflow-y: auto;
@@ -54,7 +54,7 @@
 
   .title {
     width: 87%;
-    height: 130px;
+    height: fit-content;
     font-family: var(--font-inika);
     font-size: var(--header-font-size);
     display: inline-block;

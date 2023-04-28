@@ -28,6 +28,8 @@
   font-family: var(--header-text-font);
   font-size: var(--large-header-size);
   padding-top: 1.25rem;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 3vw;
   /*margin-bottom: 1vw;*/
   /*height: 6.25rem;
@@ -35,7 +37,7 @@
   outline-width: 0.0625rem;
   outline-color: black;*/
   border-style: solid;
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
   border-color: var(--dark-secondary-color); /*#e2b78e;*/
 }

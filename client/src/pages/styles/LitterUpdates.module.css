@@ -88,9 +88,9 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 3vw;
-  width: 60%;
+  width: 50%;
   height: fit-content;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-top: 1vw;
   margin-bottom: 5vw;
 }
@@ -115,13 +115,13 @@
 
 .litterInfo h1{
   font-size: var(--header-font-size);
-  line-height: 2vw;
+  line-height: 1;
   margin-top: -2px;
 }
 
 .litterInfo p{
   font-size: var(--generic-website-size);
-  line-height: 1vw;
+  line-height: 1;
 }
 
 .litterInfo img{
@@ -143,8 +143,8 @@
   .litterWrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 45%;
-    margin-left: 27.5%;
+    width: 60%;
+    margin-left: 20%;
   }
 
 }
