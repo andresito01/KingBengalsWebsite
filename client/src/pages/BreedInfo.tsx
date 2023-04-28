@@ -3,7 +3,7 @@ import BreedInfoCSS from "./styles/BreedInfo.module.css";
 import topImage from "../images/SpottedVsMarbled_edited.png";
 import spotted from "../images/SpottedBengals.png";
 import marbled from "../images/MarbledBengals.png";
-import redstar from "../images/1024px-Paintedcats_Red_Star_standing_noBG.png";
+import redstar from "../images/1024px-Paintedcats_Red_Star_standing.jpg";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import bengalKitten from "../images/Bengal-Cats.jpg";
@@ -14,7 +14,6 @@ const BreedInfo = () => {
     <div className={BreedInfoCSS.breedInfoPage}>
       <WebNavHeader />
       <div className={BreedInfoCSS.backgroundLayer}>
-        
         <BreedHistory />
 
         <PatternsSpotMarble />
@@ -119,7 +118,6 @@ const Personality = () => {
   );
 };
 
-
 /**************************************** Patterns - Spotted & Marble *********************************************************/
 const PatternsSpotMarble = () => {
   return (
@@ -128,7 +126,7 @@ const PatternsSpotMarble = () => {
         <h1 className={BreedInfoCSS.bold}> Bengal </h1>
 
         {/*<div className={BreedInfoCSS.imgCenter}> */}
-        <div className={BreedInfoCSS.imgContainer}>
+        <div className={BreedInfoCSS.topPicture}>
           <img
             className={BreedInfoCSS.topPicture}
             src={topImage}
@@ -140,28 +138,16 @@ const PatternsSpotMarble = () => {
         <h1 className={BreedInfoCSS.bold}> Patterns </h1>
       </div>
 
-      <h2 className={BreedInfoCSS.bengalsTextContainer}>
+      <h4 className={BreedInfoCSS.textContainer}>
         {" "}
         Bengal Cat are born with one of two patterns: Spotted or Marbled.
-        <br /> Along with their personality, it's one of their defining features
-        that make them unique.
-        <br /> Althought, some may use the word 'exotic' to refer to their uniqueness.
+        <br /> Along with their personality, it's one of their defining characteristics
+        that makes them unique.
+        Althought, some may use the word 'exotic' to refer to their uniqueness.
         <br /> Below are pictures of each pattern with different combinations of
         colors they can be born with.{" "}
-      </h2>
-      <h3> _______________</h3>
-      {/*<div className={BreedInfoCSS.imgCenter}>
-          <div className={BreedInfoCSS.bottomContainer}>
-          <img src = {spotted} style={{float:"left", width:500}} 
-            alt="Spotted coats example"/>
-          <img src = {marbled} style={{float:"right", width:500}} 
-            alt="Marbled coats example"/>
-        </div>
-        <div className={BreedInfoCSS.topImageContainer}>
-          <img className={BreedInfoCSS.topPicture} src={topImage} alt="Breed Information" width={100}/>
-        </div>
-      </div>*/}
-      {/*********************************************************************************************************************/}
+      </h4>
+      
       <div className={BreedInfoCSS.containerRowBox}>
         <div className={BreedInfoCSS.containerRow2}>
           <h1 className={BreedInfoCSS.bold}> Spotted </h1>
@@ -191,7 +177,6 @@ const PatternsSpotMarble = () => {
     </div>
   );
 };
-
 
 /**************************************** Fun Facts about Bengal Cats *********************************************************/
 const FunFacts = () => {
@@ -253,22 +238,61 @@ const BengalCatHealth = () => {
       <div className={BreedInfoCSS.containerRow1}>
         <h1 className={BreedInfoCSS.bold}> Bengal Cat Health </h1>
         <h3> _______________</h3>
-        <h3>
+        {/*<h3>
           {" "}
           Heart disease <br />
           Eye disease
           <br />
           Joint problems <br />
           kidney disease{" "}
-        </h3>
-        <img
-          alt="headerImage"
-          src={require("../images/Bengal-cat-health-problems-and-diseases.jpg")}
-          width="500"
-          height="auto"
-        />
+        </h3>*/}
+        <div className={BreedInfoCSS.textContainer}>
+          <h4>Bengal Cats are generally healthy. However, like most other cats, they are prone to a number of health problems, 
+            especially during the latter part of their lives, hence it is always advised to visit the vet periodically. 
+            Some of those issues are listed below:</h4>
+        </div>
+        <h4> _______________</h4>
+        
+        <div className={BreedInfoCSS.containerRowTransparent}>
+          
+            <h4> Heart disease <br />
+            <p> Heart diseases such as Hypertrophic Cardiomyopathy, aka HCM. However, that is common amongst cats and not special to Bengal Cats.</p>
+            <br/> Eye disease
+            <p> Bengal cats can suffer from a variety of eye diseases, most common diseases are Glaucoma, Entropion, and retinal problems.</p>
+            <br/> Joint problems <br />
+            <p> Patella Luxation is a joint problem in which the knee joint falls in and out of place and it may require surgery.</p>
+            <br/> Kidney disease 
+            <br/> Most Bengals are affected by kidney disease caused by infections, blockages, tumours or toxins.</h4>
+          
+          <div className={BreedInfoCSS.imgContainer2}>
+            <img alt="headerImage" src={require("../images/Bengal-cat-health-problems-and-diseases.jpg")} width="500" height="auto" />
+          </div>
+        </div>
       </div>
-    </div >
+    </div>
+  );
+};
+
+/**************************************** Owner compatibility *********************************************************/
+const OwnerCompatibility = () => {
+  return (
+    <div className={BreedInfoCSS.containerRowBox}>
+      <div className={BreedInfoCSS.containerRow2}>
+        <h1 className={BreedInfoCSS.bold}> Owner Compatibility </h1>
+        <h3> _______________</h3>
+        <p>If you're looking for a playful, smart, and a cat to have a genuine relationship with, Bengals are the ones for you!<br /><br />
+        Bengal Cats are decedants of Asian Leapard Cats and are therefore very active and intelligent. They are also very alert and attentive.<br />
+        Bengal cats also have a distinct personlaity and may sometimes have some attitude. But they could also be softies and crave affection.
+      </p>
+      </div>
+      <div className={BreedInfoCSS.containerRow1}>
+        {/*<h1 className={BreedInfoCSS.bold}> Pic of an active Cat </h1>*/}
+        <div className={BreedInfoCSS.imgContainer}>
+          <img alt="headerImage" src={require("../images/bengalcatleash.jpg")}/>
+          {/*} width = "600" height = "300" />*/}
+        </div>
+      </div>
+    </div>
   );
 };
 
@@ -281,28 +305,6 @@ const responsive = () => {
   }
 }
 
-
-
-/**************************************** Owner compatibility *********************************************************/
-const OwnerCompatibility = () => {
-  return (
-    <div className={BreedInfoCSS.containerRowBox}>
-      <div className={BreedInfoCSS.containerRow2}>
-        <h1 className={BreedInfoCSS.bold}> Owner Compatibility </h1>
-        <h3> _______________</h3>
-      </div>
-      <div className={BreedInfoCSS.containerRow1}>
-        <h1 className={BreedInfoCSS.bold}> Pic of an active Cat </h1>
-        <div className={BreedInfoCSS.imgContainer}>
-          <img
-            alt="headerImage"
-            src={require("../images/bengalcatleash.jpg")}
-          />
-          {/*} width = "600" height = "300" />*/}
-        </div>
-      </div>
-    </div>
-  );
-};
-
 export default BreedInfo;
+
+
