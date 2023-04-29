@@ -97,27 +97,24 @@ const Parent = () => {
 
   /*******************  useState constants  ************************/
   const [parentList, setParentList] = useState([] as parentFormat[]);
-  const [wasChanged, setWaschanged] = useState(true);
+
   const [isSliderOpen, setIsSliderOpen] = useState(false);
 
   /*******************  Get Parents from db  ************************/
   useEffect(() => {
     try {
-      if (wasChanged) {
-        onSnapshot(query(collection(db, "parents")), (snapshot) => {
-          const data: Array<any> = snapshot.docs.map((doc) => ({
-            ...doc.data(),
-            id: doc.id,
-          }));
-          setParentList(data);
-          setWaschanged(false);
-          console.log("Parent were loaded from db");
-        });
-      }
+      onSnapshot(query(collection(db, "parents")), (snapshot) => {
+        const data: Array<any> = snapshot.docs.map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+        }));
+        setParentList(data);
+        console.log("Parent were loaded from db");
+      });
     } catch (err) {
       console.log(err);
     }
-  });
+  }, []);
 
   /*******************  handle slider click  ************************/
   const handleSliderClick = () => {
