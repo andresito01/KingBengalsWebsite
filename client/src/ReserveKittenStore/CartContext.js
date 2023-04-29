@@ -1,5 +1,7 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import { productsArray, getProductData } from "./productsStore";
+
+// Store IDs for products not entire objects.
 
 export const CartContext = createContext({
   items: [],
@@ -12,6 +14,7 @@ export const CartContext = createContext({
 
 export function CartProvider({ children }) {
   const [cartProducts, setCartProducts] = useState([]);
+  const [cartTotalCost, setCartTotalCost] = useState();
 
   // Replaced identifiying products with id to kitteName because id would detect kittens in seperate litters with the same id
   // [ { id: 1 , quantity: 3 }, { id: 2, quantity: 1 } ]
@@ -81,12 +84,14 @@ export function CartProvider({ children }) {
     );
   }
 
-  function getTotalCost() {
+  async function getTotalCost() {
     let totalCost = 0;
-    cartProducts.map((cartItem) => {
-      const productData = getProductData(cartItem.id);
+    cartProducts.map(async (cartItem) => {
+      const productData = await getProductData(cartItem.id);
       totalCost += productData.reservationPrice * cartItem.quantity;
+      console.log(totalCost);
     });
+    console.log(totalCost);
     return totalCost;
   }
 

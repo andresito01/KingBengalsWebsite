@@ -1,14 +1,24 @@
 import { Button, Container, Navbar, Modal } from "react-bootstrap";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { CartContext } from "../CartContext";
 import CartProduct from "./CartProduct";
 
 function NavbarComponent() {
   const cart = useContext(CartContext);
-
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [cartTotalCost, setCartTotalCost] = useState();
+
+  // const getPromisedCartTotalCost = () => {
+  //   let totalCost = cart.getTotalCost();
+  //   console.log(totalCost);
+  //   setCartTotalCost(totalCost);
+  // };
+
+  // useEffect(() => {
+  //   getPromisedCartTotalCost();
+  // });
 
   // const checkout = async () => {
   //     await fetch('http://localhost:4000/checkout', {
@@ -30,6 +40,13 @@ function NavbarComponent() {
     (sum, product) => sum + product.quantity,
     0
   );
+
+  useEffect(() => {
+    (async () => {
+      let totalCost = await cart.getTotalCost();
+      setCartTotalCost(totalCost);
+    })();
+  });
 
   return (
     <>
@@ -56,7 +73,8 @@ function NavbarComponent() {
                 ></CartProduct>
               ))}
 
-              <h1>Total: ${cart.getTotalCost().toFixed(2)}</h1>
+              <h1>Total: ${cartTotalCost}</h1>
+              {/* <h1>Total: ${cartTotalCost}</h1> */}
 
               {/* <Button variant="success" onClick={checkout}>
                 Purchase items!

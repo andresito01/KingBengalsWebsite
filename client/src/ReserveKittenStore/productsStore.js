@@ -1,35 +1,40 @@
-// Coffee: price_1LnUTFDM1jwCEz8OGoOSXiSM
-// Sunglasses: price_1LnUTxDM1jwCEz8OAqHYTwKQ
-// Camera: price_1LnUUoDM1jwCEz8OvxIcJ7to
+import { db } from "../admin/config/firebase";
+import { onSnapshot, query, collection, getDocs } from "firebase/firestore";
+import { useState } from "react";
 
-import litterupdatesmodaljson from "../json/litterupdatesmodal.json";
+// let kittenAvailableOptions = litterupdatesmodaljson.map((litterID) => (
+//   litterID.kittens.filter((kitten) => kitten.kittenStatus === "Available")
+// )).flat(1)
 
-// const productsArray = [
-//   {
-//     id: "price_1LnUTFDM1jwCEz8OGoOSXiSM",
-//     title: "Coffee",
-//     price: 4.99,
-//   },
-//   {
-//     id: "price_1LnUTxDM1jwCEz8OAqHYTwKQ",
-//     title: "Sunglasses",
-//     price: 9.99,
-//   },
-//   {
-//     id: "price_1LnUUoDM1jwCEz8OvxIcJ7to",
-//     title: "Camera",
-//     price: 39.99,
-//   },
-// ];
+// {kittenAvailableOptions.map((option, index) => {
+//   return (
+//     <div className={KittenReservationFormCSS.availableKittenRadioOption} key={index}>
+//       <input type='radio' name='kitten' value={option.kittenName} checked={selectedKitten === option.kittenName} onChange={onOptionChange}  />
+//       <div className={KittenReservationFormCSS.availableKittenRadioOptionInner}><label>{option.kittenName}</label>
+//       <img alt='Kitten' src={option.kittenPicture} style={{height:100,width:100}} /> </div>
+//     </div>
+//   )
+// })}
 
-const productsArray = litterupdatesmodaljson
-  .map((litterID) =>
-    litterID.kittens.filter((kitten) => kitten.kittenStatus === "Available")
-  )
-  .flat(1);
+const getAvailableKittensFromFirebase = async () => {
+  let availableKittens = [];
+  const litterData = await getDocs(collection(db, "litters"));
+  litterData.forEach((doc) => {
+    availableKittens.push(
+      doc.data().kittens.filter((kitten) => kitten.isAvailable === true)
+    );
+  });
 
-function getProductData(id) {
-  let productData = productsArray.find((product) => product.id === id);
+  availableKittens = availableKittens.flat(1);
+
+  return availableKittens;
+};
+
+const productsArray = getAvailableKittensFromFirebase();
+
+async function getProductData(id) {
+  let data = await productsArray;
+  let productData = data.find((product) => product.id === id);
 
   if (productData == undefined) {
     console.log("Product data does not exist for id: " + id);

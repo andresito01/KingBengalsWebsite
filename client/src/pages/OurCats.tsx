@@ -97,7 +97,7 @@ const Parent = () => {
 
   /*******************  useState constants  ************************/
   const [parentList, setParentList] = useState([] as parentFormat[]);
-  const [wasChanged, setWaschanged] = useState(true);
+  const [wasChanged, setWasChanged] = useState(true);
   const [isSliderOpen, setIsSliderOpen] = useState(false);
 
   /*******************  Get Parents from db  ************************/
@@ -110,7 +110,7 @@ const Parent = () => {
             id: doc.id,
           }));
           setParentList(data);
-          setWaschanged(false);
+          setWasChanged(false);
           console.log("Parent were loaded from db");
         });
       }
