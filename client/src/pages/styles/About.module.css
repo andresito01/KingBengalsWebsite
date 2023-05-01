@@ -1,5 +1,10 @@
 @import "../../theme.css";
 
+/* .topSection {
+  background-color: blue;
+
+} */
+
 .aboutPage {
   display: flex;
   flex-direction: column;
@@ -23,17 +28,18 @@
   font-family: var(--header-text-font);
   font-size: var(--large-header-size);
   padding-top: 1.25rem;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 3vw;
-  margin-bottom: 4vw;
+  /*margin-bottom: 1vw;*/
   /*height: 6.25rem;
   /*outline-style: solid;
   outline-width: 0.0625rem;
   outline-color: black;*/
   border-style: solid;
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
   border-color: var(--dark-secondary-color); /*#e2b78e;*/
-
 }
 
 .p1{
@@ -81,14 +87,32 @@
 .border {
   display:flex;
   flex-direction: column;
-  align-items: center;
+  width: 37%;
+  height: auto;
+  margin: auto;
+  align-content: center;
   position: relative;
-  border-style:groove;
+  border-style: groove;
+  /*border-top: groove;
+  border-bottom: groove;*/
   border-color: var(--dark-primary-color);
   border-width: 10px;
   border-radius: 20px;
 }
 
+.borderTop {
+  display:flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  align-content: center;
+  position: relative;
+  border-style: groove;
+  border-color: var(--dark-primary-color);
+  border-width: 10px;
+  border-radius: 20px;
+}
 
 .p2{
   background-color: var(--dark-secondary-color);
@@ -140,6 +164,7 @@
   /*height: 18.75rem;*/
   width: 21.875rem;
   /*margin-top: -330px;
+  margin-top: -20.5rem;
   margin-left: 60%;
   margin-right: 1.25rem;
   margin-bottom: 1.875rem;*/
@@ -177,7 +202,6 @@
   border-width: 10px;
   border-radius: 20px;
   border-color: var(--dark-primary-color);
-
 }
 
 .containerRow {
@@ -189,8 +213,8 @@
   position: relative;
   /*right: 1rem;*/
   background-color:#4E3A24;
-  margin-top: 1vw;
-  margin-bottom: 3vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 .containerRow2 {

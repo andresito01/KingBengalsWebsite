@@ -4,12 +4,6 @@
   background-color: #a87d48f5;
 }
 
-.img1{
-  background-color: #a87d48f5;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
 .backgroundLayer {
   display: flex;
   flex-direction: column;
@@ -25,27 +19,48 @@
   width: 100%;
 }
 
+.headerContainer {
+  background-image: url("../../images/ReserveAKittenHeader.png");
+  background-size: cover;
+  width: 100%;
+  height: fit-content;
+}
+
+.headerContainer img {
+  width: 100%;
+  height: 100%;
+}
+
 .headerContainerReserve {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   background-color: #87633d;
   color: white;
   font-family: var(--header-text-font);
   font-size: var(--large-header-size);
-  margin-top: 1rem;
-  margin-bottom: 3vw;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  margin-left: 20%;
+  margin-right: 20%;
   padding: 10px 50px 10px 50px;
   border-style: solid;
   border-color: #4E3A24;
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
 }
 
-.underline{
-  text-decoration: underline;
-  font-size: var(--header-font-size);
+@media only screen and (max-width: 690px) {
+  .headerContainerReserve {
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .headerContainerReserve {
+    font-size: 20px;
+  }
 }
 
 .applyButton {
@@ -64,47 +79,40 @@
 
 .instructionContainer {
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
   justify-content: center;
   text-align: center;
   margin-top: 3vw;
   margin-bottom: 3vw;
+  padding-left: 10%;
+  padding-right: 10%;
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
 }
 
-.instructionContainer h3 {
+@media only screen and (max-width: 930px) {
+  .instructionContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 80%;
+  }
+}
+
+.individualContainer {
   font-size: var(--header-font-size);
-  font-weight: var(--header-text-property);
-}
-
-.instructionContainer p {
-  font-size: var(--header-font-size);
-}
-
-.processContainer {
-  margin: 10px 10px 10px 10px;
   background-color: #4E3A24;
-  flex: 1;
   border-radius: 10px;
-  margin-left: 4vw;
+  padding: 10px;
 }
 
-.paymentContainer {
-  margin: 10px 10px 10px 10px;
-  background-color: #4E3A24;
-  flex: 1;
-  border-radius: 10px;
-}
-
-.deliveryContainer {
-  margin: 10px 10px 10px 10px;
-  background-color: #4E3A24;
-  flex: 1;
-  border-radius: 10px;
-  margin-right: 4vw;
+@media only screen and (max-width: 690px) {
+  .individualContainer {
+    font-size: 16px;
+  }
 }
 
 .additionalInfoContainer {
@@ -116,7 +124,7 @@
   padding: 10px 10px 10px 10px;
   margin-bottom: 5vw;
   border-style:inset;
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
   border-color: #e2b78e;
 

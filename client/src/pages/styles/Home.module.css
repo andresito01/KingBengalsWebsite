@@ -48,7 +48,7 @@
   opacity: var(--dark-bg-opacity);
   color: rgb(255, 255, 255);
   border-style: solid;
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
   border-color: #e2b78e;
   /*border-radius: var(--border-radius);
@@ -65,7 +65,7 @@
 }
 /* >>>>>>>>>>>>>>>>>>>> Owner's Imageand her Cat <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .ownerPicture {
-  width: 80%;
+  width: 70%;
   margin: 2rem auto;
 }
 .ownerPicture img {
@@ -76,7 +76,7 @@
   border-width: var(--border-width);
   border-radius: var(--border-radius);*/
   border-style: solid;
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
   border-color: #4E3A24;
 }
@@ -88,8 +88,9 @@
   margin: auto;
   margin-top: 3vw;
   margin-bottom: 3vw;
+  padding-top: 10px;
   color: rgba(247, 231, 205, 0.946);
-  font-size: 2.5vw;
+  font-size: 46px;
   font-weight: var(--header-text-property);
   font-family: var(--header-text-font);
   text-align: center;
@@ -97,7 +98,7 @@
   background-color: rgba(48, 26, 2, 0.909);
   /*border-radius: 4.5vw;*/
   border-style: inset;
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
   border-color: #e2b78e;
   
@@ -122,7 +123,7 @@
   /*border-color: var(--light-primary-color);
   border-width: var(--border-width);*/
   border-style: solid;
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
   border-color:#4E3A24;
 }

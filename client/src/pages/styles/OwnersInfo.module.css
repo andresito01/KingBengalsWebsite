@@ -2,6 +2,12 @@
 
 /***************************** Owner's Info header ********************************/
 
+/*.ownersInfoPage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}*/
+
 .backgroundLayer {
   display: flex;
   flex-direction: column;
@@ -11,9 +17,14 @@
   /*background-repeat:round;*/
   background-attachment: fixed;
   background-color: #a87d48f5; /*border color: #e2b78e;*/
-  /* background-image: url("../../images/pattern - b&w warm + wc edited.jpg"); */
   background-image: var(--bg-image);
-  background-size:cover;
+  background-size: cover;
+}
+
+.headerBackground {
+  /*background-image: url("../../images/bencat - OwnersInfo header image.jpg");*/
+  background-size: cover;
+  background-position: center center;
 }
 
 .backgroundLayer Img {
@@ -22,27 +33,52 @@
 }
 
 .headerOwnersInfo {
-  width: 100%;
+  width: auto;
   position: absolute;
   /*bottom: 1vw;*/
   text-align: left;
   top: 30vw;
   margin-left: 5vw;
-  font-family: var(--header-text-font);
-  font-size: var(--header-font-size);
-  font-weight: var(--header-text-property);
+  /*font-family: var(--generic-website-text);
+  font-size: var(--large-header-size);
+  font-weight: var(--header-text-property);*/
   color:#4E3A24;
+}
+
+.boldHeader{
+  font: bold;
+  font-size: 5vw;
+  font-family: inika;
+  /*font: var(--header-text-property);*/
+  /*font-size: var(---large-header-size);
+  font-family: var(--generic-website-text);*/
+  width: auto;
+  position: relative;
+  justify-content: center;
 }
 
 /***************************** Products we Recommend ********************************/
 
+.text {
+  width: auto;
+  position: relative;
+  justify-content: center;
+  font-size: 1.5vw;
+  font-family: inika;
+  /*font-size: 1vw;
+  font-family: inika;*/
+  /*font: var(--header-text-property);
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);*/
+}
+
 .bold{
   font: bold;
-  font-size: 3vw;
-  font-family: inika;
-  font: var(--header-text-property);
-  font-size: var(--header-font-size);
-  font-family: var(--header-text-font);
+  /*font-size: 3vw;
+  font-family: inika;*/
+  /*font: var(--header-text-property);
+  /*font-size: var(---large-header-size);*/
+  font-family: var(--generic-website-text);
   width: auto;
   position: relative;
   justify-content: center;
@@ -50,8 +86,10 @@
 
 .boldSub{
   font: bold;
-  font-size: 2vw;
-  font-family: inika;
+  /*font-size: 2vw;
+  font-family: inika;*/
+  /*font-size: var(---large-header-size);*/
+  font-family: var(--generic-website-text);
   width: auto;
   position: relative;
   justify-content: center;
@@ -59,7 +97,7 @@
 
 .underline{
   text-decoration: underline;
-  font: italic
+  /*font: italic;*/
   /*font: bold;*/
 }
 
@@ -99,6 +137,7 @@
 .imgArrow {
   width: 100%;
   height: auto;
+  position: relative;
   /*margin: 20vw;*/
 }
 
@@ -153,6 +192,27 @@
   position: relative;
 }
 
+/******************************** Transparent Row container *************************************/
+
+.containerRowTransparent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+  position: relative;
+  /*right: 1rem;*/
+  background-color: transparent;
+  color: white;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  margin-top: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 60px;
+}
+ 
+
 /************************** Prepare For Kitten *****************************************/
 
 .containerRowBox {
@@ -175,8 +235,8 @@
 
 .containerRow1 {
   margin: 10px 10px 10px 10px;
-  background-color:  #4E3A24;
-  flex: 1;
+  background-color: var(--dark-secondary-color);/*#4E3A24;*/
+  flex: 0.9;
   width: 45vw;
   /*height: auto;*/
   position: relative;
@@ -189,6 +249,8 @@
   margin: 10px 10px 10px 10px;
   background-color: var(--light-secondary-color);
   flex: 1;
+  /*display: flex;
+  flex-direction: row;*/
   width: 30vw;
   height:auto;
   position: relative;
@@ -205,12 +267,75 @@
 .imgContainer2 {
   max-width: 100%;
   height: auto;
-  margin-top: 4vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  position: relative;
   /*background-image: url("../images/bengal-cat.jpg");*/
   /*background-size: contain;*/
-  border-style: double;
-  position: relative;
+  border-style: inset;
+  border-color: var(--dark-primary-color);
+  border-radius: 20px;
+  border-width: 10px 10px 10px 10px;
 }
+
+/******************************* Media screen when window size shrinks *******************************************/
+
+@media only screen and (max-width: 1200px) {
+
+  .containerRowBox {
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--light-primary-color);
+  }
+
+  .containerRow1 {
+    width: 78vw;
+  }
+
+  .containerRow2 {
+    /*display:contents;*/
+    width: 78vw;
+    border-style: solid;
+    border-color: var(--dark-secondary-color);
+    border-radius: 20px;
+    border-width: 10px 10px 10px 10px;
+    /*flex-direction: row;*/
+    /*width: 80vw;*/
+  }
+
+  .imgContainer {
+    width: 30vw;
+    margin-left: 30%;
+  }
+
+  .containerRowTransparent {
+    flex-direction: column;
+    width:fit-content;
+    background-color: var(--light-primary-color);
+    border-style: solid;
+    border-color: var(--dark-primary-color);
+    border-radius: 20px;
+    border-width: 10px 10px 10px 10px;
+  }
+
+  /*.bold {
+    font-size: 2.5vw;
+  }
+
+  .boldSub {
+    font-size: 1vw;
+  }
+
+  .text {
+    font-size: 1.3vw;
+    width: max-content;
+  }*/
+  /*tr {
+    display: inline-flex;
+    flex-direction: column;
+  }*/
+}
+
 /****************************** Medical Info / Vet Stuff ***************************************************/
 
 .imgCenter {
@@ -220,7 +345,18 @@
 }
 
 /****************************** Training ***************************************************/
-
+.imgContainer3 {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.3vw;
+  position: relative;
+  /*background-image: url("../images/bengal-cat.jpg");*/
+  /*background-size: contain;*/
+  border-style: inset;
+  border-color: var(--dark-primary-color);
+  border-radius: 20px;
+  border-width: 10px 10px 10px 10px;
+}
 
 /****************************** Pet Insurance ***************************************************/
 .containerRowBox2 {
@@ -238,6 +374,18 @@
   margin-left: 5rem;
   margin-right: 5rem;
   margin-bottom: 60px;
+}
+
+.containerRow3 {
+  margin: 10px 10px 10px 10px;
+  background-color: #4E3A24;
+  flex: 1;
+  width: 45vw;
+  /*height: auto;*/
+  position: relative;
+  border-radius: 10px;
+  /*justify-content: center;
+  border-width: 20px 20px 20px 20px;*/
 }
 
 /****************************** Social Media ***************************************************/
@@ -263,24 +411,4 @@
   /*margin-left: 0;
   margin-right: 0;
   /*margin-bottom: 60px;*/
-}
-
-
-/******************************** Transparent Row container *************************************/
-.containerRowTransparent {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  width: 80vw;
-  position: relative;
-  /*right: 1rem;*/
-  background-color: transparent;
-  color: white;
-  font-family: var(--generic-website-text);
-  font-size: var(--generic-text-size);
-  margin-top: 2vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-bottom: 60px;
 }

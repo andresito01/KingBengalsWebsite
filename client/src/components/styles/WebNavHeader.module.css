@@ -134,6 +134,13 @@
   margin-right: 1rem;
 }
 
+.navLinks{
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 1213px) {
 
 	.navBtn{
@@ -171,7 +178,7 @@
 
 }
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1213px) {
   
   .middleResponsive {
     position: relative;
@@ -234,24 +241,15 @@
     .leftHeaderImgResponsive {
       height: 70px;
     }
-
     
   }
 
   .logoContainer{
     display: flex;
-    height: 100%;
     bottom: 0px;
-    /*right: 0px;*/
-    /*left: 0px;*/
-    /*align-self: flex-end;*/
     width: 16vw;
     height: auto;
     position: absolute;
     background-color: transparent;
     align-content: center;
-    /*margin-right: -1vw;
-    margin-bottom: 2vw;*/
-    /*margin-left: 8.5vw;
-    padding-bottom: 1vw;*/
   }

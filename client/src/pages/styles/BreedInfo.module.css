@@ -22,8 +22,9 @@
   margin-top: 1rem;
 }
 .topPicture {
-  width: 100%;
+  width: 50%;
   height: auto;
+  border-style: double;
 }
 
 .sectionHeader {
@@ -142,10 +143,18 @@ p.text {
 .imgContainer {
   max-width: 100%;
   height: auto;
-  /*background-image: url("../images/bengal-cat.jpg");*/
-  /*background-size: contain;*/
   border-style: double;
+  /*border-radius: 20px;
+  border-style:inset;
+  border-color: var(--light-primary-color);/* #4e3a24;
+  border-width: 10px;
+  border-radius: 20px;*/
   /*position: relative;*/
+}
+
+.imgContainer2 {
+  max-width: 100%;
+  height: auto;
 }
 
 .bold {
@@ -204,6 +213,61 @@ p.text {
   margin-right: 0;
   /*margin-bottom: 60px;*/
 }
+
 .funFactList {
   text-align: left;
 }
+
+.textContainer {
+  text-align: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-family: var(--generic-website-text);
+}
+
+.containerRowTransparent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: relative;
+  position: relative;
+  /*right: 1rem;*/
+  background-color: transparent;
+  color: white;
+  font-family: var(--generic-website-text);
+  font-size: var(--generic-text-size);
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 60px;
+}
+
+/******************accordion*************************/
+.accordion .contentBx .label {
+  background: rgba(161, 89, 21, 0.269);
+  cursor: pointer;
+  padding: 10px;
+}
+
+/*Not working....................*/
+.accordion .contentBx .label ::before {
+  content: '+';
+  position: absolute;
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+
+.accordion .contentBx.active .content {
+  height: 150px;
+  padding: 10px;
+}
+
+/***********Accordion*********************/
