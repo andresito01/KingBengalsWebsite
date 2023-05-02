@@ -19,7 +19,7 @@
     "html": "^1.0.0",
     "mocha": "^10.2.0",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.2",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-google-button": "^0.7.2",
     "react-icons": "^4.7.1",
