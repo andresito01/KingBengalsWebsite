@@ -63,46 +63,55 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
 
                 
 
-                {/* Individual Kitten Pictures and Info */}
-                <div className={LitterModalCSS.kittenContainer}>
-                    {/* Kitten Pictures */}
-                    <div className={LitterModalCSS.kittenPicture}>
-                        <img src={data.kittens.find(obj => obj.id === 1)?.kittenPicture} alt='kitten1'/>
+                {/* All Kitten Pictures and Info */}
+                <div className={LitterModalCSS.allKittensContainer}>
+                    {/* Individual Kitten */}
+                    <div className={LitterModalCSS.kittenContainer}>
+                        <div className={LitterModalCSS.kittenPicture}>
+                            <img src={data.kittens.find(obj => obj.id === 1)?.kittenPicture} alt='kitten1'/>
+                        </div>
+                        <div className={LitterModalCSS.kittenInfo}>
+                            <p><b>Color:</b> {data.kittens.find(obj => obj.id === 1)?.kittenColor}</p>
+                            <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 1)?.kittenPattern}</p>
+                            <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 1)?.kittenSex}</p>
+                            <p><b>Status:</b> {data.kittens.find(obj => obj.id === 1)?.kittenStatus}</p>
+                        </div>
                     </div>
-                    <div className={LitterModalCSS.kittenPicture}>
-                        <img src={data.kittens.find(obj => obj.id === 2)?.kittenPicture} alt='kitten2'/>
+                    {/* Individual Kitten */}
+                    <div className={LitterModalCSS.kittenContainer}>
+                        <div className={LitterModalCSS.kittenPicture}>
+                            <img src={data.kittens.find(obj => obj.id === 2)?.kittenPicture} alt='kitten2'/>
+                        </div>
+                        <div className={LitterModalCSS.kittenInfo}>
+                            <p><b>Color:</b> {data.kittens.find(obj => obj.id === 2)?.kittenColor}</p>
+                            <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 2)?.kittenPattern}</p>
+                            <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 2)?.kittenSex}</p>
+                            <p><b>Status:</b> {data.kittens.find(obj => obj.id === 2)?.kittenStatus}</p>
+                        </div>
                     </div>
-                    <div className={LitterModalCSS.kittenPicture}>
-                        <img src={data.kittens.find(obj => obj.id === 3)?.kittenPicture} alt='kitten3'/>
+                    {/* Individual Kitten */}
+                    <div className={LitterModalCSS.kittenContainer}>
+                        <div className={LitterModalCSS.kittenPicture}>
+                            <img src={data.kittens.find(obj => obj.id === 3)?.kittenPicture} alt='kitten3'/>
+                        </div>
+                        <div className={LitterModalCSS.kittenInfo}>
+                            <p><b>Color:</b> {data.kittens.find(obj => obj.id === 3)?.kittenColor}</p>
+                            <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 3)?.kittenPattern}</p>
+                            <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 3)?.kittenSex}</p>
+                            <p><b>Status:</b> {data.kittens.find(obj => obj.id === 3)?.kittenStatus}</p>
+                        </div>
                     </div>
-                    <div className={LitterModalCSS.kittenPicture}>
-                        <img src={data.kittens.find(obj => obj.id === 4)?.kittenPicture} alt='kitten4'/>
-                    </div>
-                    
-                    {/* Kitten Info */}
-                    <div className={LitterModalCSS.kittenInfo}>
-                        <p><b>Color:</b> {data.kittens.find(obj => obj.id === 1)?.kittenColor}</p>
-                        <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 1)?.kittenPattern}</p>
-                        <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 1)?.kittenSex}</p>
-                        <p><b>Status:</b> {data.kittens.find(obj => obj.id === 1)?.kittenStatus}</p>
-                    </div>
-                    <div className={LitterModalCSS.kittenInfo}>
-                        <p><b>Color:</b> {data.kittens.find(obj => obj.id === 2)?.kittenColor}</p>
-                        <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 2)?.kittenPattern}</p>
-                        <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 2)?.kittenSex}</p>
-                        <p><b>Status:</b> {data.kittens.find(obj => obj.id === 2)?.kittenStatus}</p>
-                    </div>
-                    <div className={LitterModalCSS.kittenInfo}>
-                        <p><b>Color:</b> {data.kittens.find(obj => obj.id === 3)?.kittenColor}</p>
-                        <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 3)?.kittenPattern}</p>
-                        <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 3)?.kittenSex}</p>
-                        <p><b>Status:</b> {data.kittens.find(obj => obj.id === 3)?.kittenStatus}</p>
-                    </div>
-                    <div className={LitterModalCSS.kittenInfo}>
-                        <p><b>Color:</b> {data.kittens.find(obj => obj.id === 4)?.kittenColor}</p>
-                        <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 4)?.kittenPattern}</p>
-                        <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 4)?.kittenSex}</p>
-                        <p><b>Status:</b> {data.kittens.find(obj => obj.id === 4)?.kittenStatus}</p>
+                    {/* Individual Kitten */}
+                    <div className={LitterModalCSS.kittenContainer}>
+                        <div className={LitterModalCSS.kittenPicture}>
+                            <img src={data.kittens.find(obj => obj.id === 4)?.kittenPicture} alt='kitten4'/>
+                        </div>
+                        <div className={LitterModalCSS.kittenInfo}>
+                            <p><b>Color:</b> {data.kittens.find(obj => obj.id === 4)?.kittenColor}</p>
+                            <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 4)?.kittenPattern}</p>
+                            <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 4)?.kittenSex}</p>
+                            <p><b>Status:</b> {data.kittens.find(obj => obj.id === 4)?.kittenStatus}</p>
+                        </div>
                     </div>
                 </div>
             </div>
