@@ -18,14 +18,22 @@
   overflow: visible;
 }
 
-.logoImg {
-    display: flex;
-    bottom: 0px;
-    width: 20rem;
-    height: auto;
-    position: absolute;
-    background-color: transparent;
-    align-content: center;
+.leftImgContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 15%;
+  background-image: url(".././../images/CatWebNavHeaderNoBackground.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.leftHeaderImg {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
 }
 
 .middle {
@@ -121,7 +129,9 @@
 	border: none;
 	outline: none;
 	color: white;
-	font-size: 2.5rem;
+	font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .navLinks{
@@ -135,11 +145,11 @@
 
 	.navBtn{
     display: block;
-		position: absolute;
+		position: absolute; /*absolute;*/
     right: 0;
     top: 0;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    margin-top: 3%;
+    margin-right: 20%;
 	}
 
 	.link {
@@ -148,10 +158,6 @@
 
   .rightImgContainer #rightHeaderImg {
     display: none;
-  }
-
-  .logoImg {
-    width: 10rem;
   }
 
   .headerTitleContainer {
@@ -176,7 +182,7 @@
   
   .middleResponsive {
     position: relative;
-    left: 20%;
+    left: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,34 +220,29 @@
   }
 
 
-  .logoImgResponsive {
+  .leftHeaderImgResponsive {
     position: sticky; /*absolute;*/
     top: 0px;
     left: 0px;
-    height: 10rem;
+    height: 90px;
   }
 }
 
 @media only screen and (max-width: 440px) {
-
-  .navBtn {
-    margin-top: 1rem;
-    margin-right: 1rem;
-  }
   
-  .headerKingBengals {
-    font-size: 3rem; 
-  }
+    .headerKingBengals {
+      font-size: 2rem; 
+    }
     
-  .headerCattery { 
-    font-size: 1.5rem;
-  }
+    .headerCattery { 
+      font-size: 1rem;
+    }
 
-  .logoImg{
-    width: 7rem;
-  }
+    .leftHeaderImgResponsive {
+      height: 70px;
+    }
     
-}
+  }
 
   .logoContainer{
     display: flex;

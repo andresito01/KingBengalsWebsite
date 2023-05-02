@@ -20,7 +20,7 @@ const WebNavHeader = () => {
 
   return (
     <div className={WebNavHeaderCSS.headerContainer}>
-      <img className={Mobile ? WebNavHeaderCSS.logoImgResponsive : WebNavHeaderCSS.logoImg} id="leftHeaderImg" alt='logo' src={require("../images/KB logo.png")} />
+      <img className={Mobile ? WebNavHeaderCSS.leftHeaderImgResponsive : WebNavHeaderCSS.logoContainer} id="leftHeaderImg" alt='logo' src={require("../images/KB logo.png")} />
       <div className={Mobile ? WebNavHeaderCSS.middleResponsive : WebNavHeaderCSS.middle} id="middle">
         <div className={WebNavHeaderCSS.headerTitleContainer}>
           <div className={WebNavHeaderCSS.headerKingBengals}>
