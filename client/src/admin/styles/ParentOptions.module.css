@@ -1,60 +1,9 @@
-/* **********************  OurCats(admin) Page Container  *********************/
-.adminOurCatsContainer {
-  display: flex;
-  flex-direction: column;
-  background-image: conic-gradient(
-    rgb(64, 29, 2),
-    rgb(255, 174, 0),
-    rgb(64, 29, 2)
-  );
-  background-image: url("../../images/bengal-cat-coat-glitter.jpg"); /*kbengalsbgGradient.png");*/
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-/* **********************  OurCats(admin) Navigation Options  *********************/
-.navigationContainer {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.379);
-}
-.navigationContainer input {
-  background-color: brown;
-  font-size: 2rem;
-  color: white;
-}
-
-/* *********************   Add new Parent   *********************/
-.newParentContainer {
-  width: 90%;
-  margin: auto;
-  padding: 2rem;
-  background-color: rgba(0, 0, 255, 0.242);
-  border-radius: 1rem;
-  border-color: antiquewhite;
-  border-style: solid;
-  border-width: 0.5rem;
-  display: block;
-  color: aliceblue;
-}
-.newParentContainer label {
-  width: 6rem;
-}
-.newParentContainer input {
-  color: black;
-}
-.newParentContainer button {
-  background-color: brown;
-  font-size: 1.85rem;
-}
-
 /* ******************   Display each Parents   *********************/
 .parentContainer {
   width: 90%;
   margin: auto;
   padding: 2rem;
-  background-color: rgba(0, 0, 255, 0.242);
+  background-color: rgba(22, 22, 187, 0.335);
   border-radius: 1rem;
   border-color: antiquewhite;
   border-style: solid;
@@ -102,7 +51,7 @@
 }
 .parentInfo input {
   color: rgb(6, 6, 6);
-  background-color: rgba(235, 209, 176, 0.822);
+  background-color: rgba(243, 216, 180, 0.92);
   border-radius: 0.5rem;
   padding: auto, 1rem;
 }

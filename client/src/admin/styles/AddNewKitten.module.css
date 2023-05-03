@@ -1,0 +1,30 @@
+/* *********************   Add new Kitten  *********************/
+.newKittenContainer {
+  width: 90%;
+  margin: auto;
+  margin-top: 2vw;
+  padding: 2rem;
+  background-color: rgba(50, 94, 13, 0.354);
+  border-radius: 1rem;
+  border-color: rgb(244, 224, 198);
+  border-style: solid;
+  border-width: 0.5rem;
+  display: block;
+  color: azure;
+}
+.newKittenContainer label {
+  min-width: 8rem;
+}
+.approxGoHome {
+  width: 20rem;
+}
+.newKittenContainer input {
+  color: black;
+}
+.newKittenContainer button {
+  background-color: brown;
+  font-size: 1.85rem;
+}
+.newKittenContainer select {
+  color: black;
+}
