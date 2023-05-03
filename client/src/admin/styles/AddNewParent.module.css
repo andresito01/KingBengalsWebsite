@@ -1,0 +1,24 @@
+/* *********************   Add new Parent   *********************/
+.newParentContainer {
+  width: 90%;
+  margin: auto;
+  margin-top: 2vw;
+  padding: 2rem;
+  background-color: rgba(22, 22, 187, 0.343);
+  border-radius: 1rem;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 0.5rem;
+  display: block;
+  color: aliceblue;
+}
+.newParentContainer label {
+  width: 6rem;
+}
+.newParentContainer input {
+  color: black;
+}
+.newParentContainer button {
+  background-color: brown;
+  font-size: 1.85rem;
+}

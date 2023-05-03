@@ -1,6 +1,6 @@
-.adminHomeContainer {
+/* **********************  Parents Page Container  *********************/
+.adminParentsContainer {
   display: flex;
-  height: 100%;
   flex-direction: column;
   background-image: conic-gradient(
     rgb(64, 29, 2),
