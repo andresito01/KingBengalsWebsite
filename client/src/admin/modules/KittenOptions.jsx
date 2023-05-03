@@ -126,7 +126,7 @@ const KittenOptions = () => {
               <label htmlFor="price">Price:</label>
               <input name="price" type="text" value={price} readOnly />
               <br />
-              <label htmlFor="reservePrice">Reserve Price:</label>
+              <label htmlFor="reservePrice">Reserved Price:</label>
               <input
                 name="reservePrice"
                 type="text"
@@ -224,7 +224,7 @@ const KittenOptions = () => {
               <br />
 
               {/*--- Reservation Price ---*/}
-              <label htmlFor="reservePrice">Reserve Price: </label>
+              <label htmlFor="reservePrice">Reserved Price: </label>
               <input
                 name="reservePrice"
                 type="number"

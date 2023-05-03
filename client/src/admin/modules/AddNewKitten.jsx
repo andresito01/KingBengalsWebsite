@@ -132,7 +132,7 @@ const AddNewKitten = () => {
         <br />
 
         {/*--- Reservation Price ---*/}
-        <label htmlFor="reservePrice">Price: </label>
+        <label htmlFor="reservePrice">Resevation Price: </label>
         <input
           name="reservePrice"
           type="number"
