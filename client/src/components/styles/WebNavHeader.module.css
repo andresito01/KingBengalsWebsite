@@ -8,14 +8,25 @@
 }
 
 .headerContainer {
-  position: relative; /*absolute;/*fixed; /*relative;*/
-  position: -webkit-sticky; /* For Safari */
+  position: fixed; /*absolute;/*fixed; /*relative;*/
+  /*position: -webkit-sticky; /* For Safari */
   top: 0;
   width: 100%;
   height: auto;
   background-color: #412804;
   z-index: 1;
   overflow: visible;
+}
+
+.headerUnderneathLayer {
+
+  position: fixed; /*absolute;/*fixed; /*relative;*/
+  top: 0;
+  width: 100%;
+  height: 5vw;
+  
+  z-index: 1;
+  overflow: hidden;
 }
 
 .leftImgContainer {
@@ -27,6 +38,16 @@
   background-image: url(".././../images/CatWebNavHeaderNoBackground.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.logoContainer{
+  display: flex;
+  bottom: 0px;
+  width: 16vw;
+  height: auto;
+  position: absolute;
+  background-color: transparent;
+  align-content: center;
 }
 
 .leftHeaderImg {
@@ -226,6 +247,14 @@
     left: 0px;
     height: 90px;
   }
+
+  .logoResponsive {
+    position: sticky; /*absolute;*/
+    top: 0px;
+    left: 0px;
+    height: 90px;
+  }
+
 }
 
 @media only screen and (max-width: 440px) {
@@ -241,15 +270,11 @@
     .leftHeaderImgResponsive {
       height: 70px;
     }
+
+    .logoResponsive {
+      height: 70px;
+    }
     
   }
 
-  .logoContainer{
-    display: flex;
-    bottom: 0px;
-    width: 16vw;
-    height: auto;
-    position: absolute;
-    background-color: transparent;
-    align-content: center;
-  }
+  

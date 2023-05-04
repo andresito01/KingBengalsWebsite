@@ -5,6 +5,7 @@
         "totalKittens": "5",
         "availableKittens": "4",
         "soldKittens": "1",
+        "priceRange": "$650 - $800",
         "birthDate": "January 5, 2023",
         "pickupDate": "April 20, 2023",
         "litterPicture": "images/Litter1.png",
@@ -18,7 +19,8 @@
                 "kittenColor": "Carmel/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$750"
             },
             {
                 "id": 2,
@@ -27,7 +29,8 @@
                 "kittenColor": "Brown/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$600"
             },
             {
                 "id": 3,
@@ -36,7 +39,8 @@
                 "kittenColor": "Cramel/Black",
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$800"
             },
             {
                 "id": 4,
@@ -45,7 +49,8 @@
                 "kittenColor": "Brown/Black",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$750"
             }
         ]
     },
@@ -55,6 +60,7 @@
         "totalKittens": "4",
         "availableKittens": "2",
         "soldKittens": "2",
+        "priceRange": "$600 - $850",
         "birthDate": "November 12, 2022",
         "pickupDate": "March 20, 2023",
         "litterPicture": "images/Litter2.png",
@@ -68,7 +74,8 @@
                 "kittenColor": "Carmel/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$700"
             },
             {
                 "id": 2,
@@ -77,7 +84,8 @@
                 "kittenColor": "Brown/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$650"
             },
             {
                 "id": 3,
@@ -86,7 +94,8 @@
                 "kittenColor": "Cramel/Black",
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$850"
             },
             {
                 "id": 4,
@@ -95,7 +104,8 @@
                 "kittenColor": "Brown/Black",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$800"
             }
         ]
     }

@@ -36,7 +36,7 @@
   background-color: #87633d;
   color: white;
   font-family: var(--header-text-font);
-  font-size: var(--large-header-size);
+  font-size: var(--header-font-size);
   margin-bottom: 70px;
   margin-top: 70px;
   margin-left: 20%;
@@ -46,6 +46,11 @@
   border-color: #4E3A24;
   border-width: 5px;
   border-radius: 20px;
+}
+
+.headerReserveTitle {
+  font-family: var(--header-text-font);
+  font-size: var(--largest-header-size);
 }
 
 @media only screen and (max-width: 690px) {
@@ -116,28 +121,37 @@
 }
 
 .additionalInfoContainer {
+  width: 90vw;
   margin: 10px 10px 10px 10px;
   background-color: #4E3A24;
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
-  padding: 10px 10px 10px 10px;
+  padding: 5px 10px 10px 10px;
+  text-align: center;
   margin-bottom: 5vw;
   border-style:inset;
   border-width: 5px;
   border-radius: 20px;
   border-color: #e2b78e;
-
 }
 
-.additionalInfoContainer h3 {
-  font-size: 40px;
-  font-weight: bold;
+/*.additionalInfoContainer h3 {
+  /*font-size: 40px;
+  /*font-weight: bold;
   padding-left: 10px;
 }
 
 .additionalInfoContainer p {
-  font-size: 28px;
+  /*font-size: 28px;
+  font-size: var(--header-font-size);
+}*/
+
+.title {
+  font-family: var(--header-text-font);
+  font-size: var(--large-header-size);
+  text-align: center;
+  margin-bottom: 1vw;
 }
 
 /* Email Form for Reserving A Kitten */

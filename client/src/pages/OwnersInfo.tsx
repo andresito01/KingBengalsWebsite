@@ -3,6 +3,7 @@ import React from 'react';
 import OwnersInfoCSS from "./styles/OwnersInfo.module.css";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
+import NavBarUnderLayer from "../components/NavBarUnderLayer";
 
 /******************************* Owner's Info ***************************** Note: A link for pro-recomm*/
 
@@ -10,6 +11,8 @@ const OwnersInfo = () => {
   return (
       
     <div className = {OwnersInfoCSS.backgroundLayer}>
+      
+      <NavBarUnderLayer/>
 
       <WebNavHeader/>
 
@@ -166,14 +169,20 @@ const VetInfo = () => {
     <div className={OwnersInfoCSS.containerBox}>
       <h1 className={OwnersInfoCSS.bold}> Medical Information and Vet Things </h1>
       <h3> ________</h3>
-      <h4> Vaccinations and Deworming (probably it’s own section) 
-        <br/> Vaccination Schedule <br/> Shots: Parvo, Distemper, Flu, etc.<br/> 
-        <br/> Spaying and Neutering, OR 
-        <br/> Hysterectomy (for girls) or a Vasectomy (for boys) 
-        <br/> At what age should it be performed? Benefits? Drawbacks? <br/> 
-        <br/> Any health concerns regarding the breed or kittens in general?
-        <br/> Bengal cat health problems and diseases that owners need to be aware of.
-        <br/> Bengal cats can be prone to, such as : Heart disease, Eye disease, Joint problems, Kidney disease, </h4>
+      <h4 className={OwnersInfoCSS.text}> Vaccinations and Deworming: Your kitten will have recieved their
+        <br/> first dose of vaccinations from our vet by the time you pick them up. 
+        <br/> And it will your responsibility to get them further vaccinated shold you choose to do so.
+        <br/> We recommend that you talk to your vet about it and follow their advice.
+        <br/> Vaccination Shots: Parvo, Distemper, Flu, etc.<br/> 
+        <br/> Spaying and Neutering, OR Hysterectomy (for girls) or a Vasectomy (for boys) 
+        <br/> Biologically kitten are able to become sexually active by the time they are three months old.
+        <br/> So, it would be very beneficial to you and your kitten for you to talk to your vet regarding this. <br/> 
+        <br/> Health concerns: Cats, especially young and not fully vaccinated kittens can be at risk of catching
+        <br/> various diseases if you are not careful of their surroundings and environment they live in. 
+        <br/> Again, consult with you vet regarding any concerns you may have regarding your kitten's 
+        <br/> health and/or behaviour.
+        <br/> Bengals and cats in general, depending on their age, can be prone to, such as : 
+        <br/> Heart disease, Eye disease, Joint problems, Kidney disease </h4>
       {/*<div className={OwnersInfoCSS.imgCenter}>
           <img alt="headerImage" src={require("../images/bengal-cat.jpg")} width = "700" height = "500" />
       </div>*/}
@@ -195,12 +204,12 @@ const KittenTraining = () => {
     <div className={OwnersInfoCSS.containerRow2}>
       <h1 className={OwnersInfoCSS.bold}> Training </h1>
       <h3> ________</h3>
-      <h4> How to train a kitten? <br/>
-           Training courses? <br/>
-           Training resources? <br/>
-           Any offers with training? <br/>
-           Litter Training <br/>
-           Benefits of training you kitten. </h4>
+      <h4> Training a kitten can be a challenging task. But the good news is that it's totally doable AND both of you can lots of fun along the way. <br/>
+           There are many training courses and resourses you can find online and/or in nearby pet training facilites.<br/>
+           Some of them may even include some offers that go along with their training programs. <br/>
+           There are many different types of training you can teach you young kitten, such as litter training, house-breaking, tricks, etc. <br/>
+           There are lots of benefits of training you kitten as they will be better behaved, less anxious, and overall more happy. 
+           <br/> You can always look up training videos on YouTube. But remember, be patient, as kittens and cats in general have a very sensitive nature.</h4>
 
     </div>
   </div>
@@ -215,9 +224,11 @@ const PetInsurance = () => {
       <div className={OwnersInfoCSS.containerRow3}>
         <h1 className={OwnersInfoCSS.bold}> Pet Insurance </h1>
         <h3> ________</h3>
-        <h4> Benefits of pet insurance and, <br/> 
-             Recommendations for different insurance companies.<br/> 
-             Trupanion? ASPCA? etc.</h4>
+        <h4 className={OwnersInfoCSS.text}> Pet insurance can be very beneficial for you and your kitten if you choose to get one. 
+          <br/>  However, it's not required and is something that might help you feel an ease of mind shold something unexpected were to happen. 
+          Their are various different insurance companies that you can choos from and many also offer 'only accidental coverage' as well 
+          which often has a minimal cost to it.
+          <br/> Insurance companies: Trupanion, ASPCA are among some of the best ones. </h4>
       </div>
     </div>
   );
