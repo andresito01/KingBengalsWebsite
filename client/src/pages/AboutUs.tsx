@@ -4,6 +4,7 @@ import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import Data from "../json/aboutUs.json";
 import AboutJSON from "../json/aboutUs.json"
+import NavBarUnderLayer from "../components/NavBarUnderLayer";
 
 const About = () => {
   const fontSizeHeader = { fontSize: "60px" };
@@ -11,6 +12,7 @@ const About = () => {
 
   return (
     <div className={AboutCSS.aboutPage}>
+      <NavBarUnderLayer/>
       <WebNavHeader /><br/>
       <header className={AboutCSS.header} style={fontSizeHeader}>
         Learn More About Us!
@@ -73,12 +75,16 @@ const About = () => {
           </div>
         </div>
         {/* >>>>>>>> What does the business provides <<<<<<<<<<<< */}
-        <p className={AboutCSS.p3}>
-          What will the business provide with every kitten?<br></br>
-          Certificates, limited garantees? Supplies (limited), vaccinations,
-          info packets? Limited amount of food, toys, training guide? etc.
-          <br></br>
-        </p>
+        <div className={AboutCSS.p3}>
+          <div className = {AboutCSS.bold} >
+            <p> We will provide some documents with every kitten.
+            Such as registration, health, and vaccination records. We take pride in giving every 
+            customer a healthy and joyful kitten. There might be some other supplies
+            included as well, such as informational packets, limited amount of food, toys, training guide etc.
+            </p>
+          </div>
+         </div>
+      
       </div>
       <Footer />
     </div>

@@ -28,8 +28,8 @@
 }
 
 .backgroundLayer Img {
-  /* max-width: 100%;
-  height: auto; */
+  max-width: 100%;
+  height: auto;
 }
 
 .headerOwnersInfo {
@@ -63,8 +63,8 @@
   width: auto;
   position: relative;
   justify-content: center;
-  font-size: 1.5vw;
-  font-family: inika;
+  font-size: var(--header-font-size);
+  font-family: var(--generic-website-text);
   /*font-size: 1vw;
   font-family: inika;*/
   /*font: var(--header-text-property);

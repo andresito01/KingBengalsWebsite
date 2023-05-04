@@ -8,10 +8,12 @@ import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import bengalKitten from "../images/Bengal-Cats.jpg";
 import { positional } from "yargs";
+import NavBarUnderLayer from "../components/NavBarUnderLayer";
 
 const BreedInfo = () => {
   return (
     <div className={BreedInfoCSS.breedInfoPage}>
+      <NavBarUnderLayer/>
       <WebNavHeader />
       <div className={BreedInfoCSS.backgroundLayer}>
         <BreedHistory />
@@ -128,25 +130,21 @@ const PatternsSpotMarble = () => {
         {/*<div className={BreedInfoCSS.imgCenter}> */}
         <div className={BreedInfoCSS.topPicture}>
           <img
-            className={BreedInfoCSS.topPicture}
-            src={topImage}
-            style={{width: 800}}
-            alt="Breed Information"
-          />
+            className={BreedInfoCSS.topPicture} src={topImage} style={{width: 800}} alt="Breed Information" />
         </div>
 
         <h1 className={BreedInfoCSS.bold}> Patterns </h1>
       </div>
 
       <h4 className={BreedInfoCSS.textContainer}>
-        {" "}
+       
         Bengal Cat are born with one of two patterns: Spotted or Marbled.
         <br /> Along with their personality, it's one of their defining characteristics
         that makes them unique.
-        Althought, some may use the word 'exotic' to refer to their uniqueness.
-        <br /> Below are pictures of each pattern with different combinations of
-        colors they can be born with.{" "}
+        <br/> Althought, some may use the word 'exotic' to refer to their uniqueness.
       </h4>
+      <h4 className = {BreedInfoCSS.italicText} > <br /> Below are pictures of each pattern with different combinations of
+        colors they can be born with. </h4>
       
       <div className={BreedInfoCSS.containerRowBox}>
         <div className={BreedInfoCSS.containerRow2}>
@@ -154,7 +152,7 @@ const PatternsSpotMarble = () => {
           {/*<div className={BreedInfoCSS.imgContainer}>*/}
           <img
             src={spotted}
-            style={{ width: 500 }}
+            style={{ width: 300 }}
             alt="Spotted coats example"
           />
         </div>
@@ -169,7 +167,7 @@ const PatternsSpotMarble = () => {
           {/*<div className={BreedInfoCSS.imgContainer}>*/}
           <img
             src={marbled}
-            style={{ width: 500 }}
+            style={{ width: 300 }}
             alt="Marbled coats example"
           />
         </div>
@@ -183,7 +181,7 @@ const FunFacts = () => {
   return (
     <div className={BreedInfoCSS.containerRowBox}>
       <div className={BreedInfoCSS.containerRow1}>
-        <h2 className={BreedInfoCSS.bold}> Goofy Bengal kitten pic </h2>
+        <h1 className={BreedInfoCSS.textContainer}> Bengal kittens can be Goofy </h1>
         <img
           alt="headerImage"
           src={require("../images/cute cat on back.jpg")}
@@ -223,7 +221,7 @@ const FunFacts = () => {
           </li>
           <li>
             Bengals love attention. They will do anything possible to keep their
-            owners' full attention.
+            human's full attention.
           </li>
         </ol>
       </div>
@@ -255,14 +253,23 @@ const BengalCatHealth = () => {
         
         <div className={BreedInfoCSS.containerRowTransparent}>
           
-            <h4> Heart disease <br />
-            <p> Heart diseases such as Hypertrophic Cardiomyopathy, aka HCM. However, that is common amongst cats and not special to Bengal Cats.</p>
-            <br/> Eye disease
-            <p> Bengal cats can suffer from a variety of eye diseases, most common diseases are Glaucoma, Entropion, and retinal problems.</p>
-            <br/> Joint problems <br />
-            <p> Patella Luxation is a joint problem in which the knee joint falls in and out of place and it may require surgery.</p>
-            <br/> Kidney disease 
-            <br/> Most Bengals are affected by kidney disease caused by infections, blockages, tumours or toxins.</h4>
+            {/*<h4> Heart disease <br />*/}
+          
+            <h4 className={BreedInfoCSS.text}> Bengal cats, just like other cats can be prone to some diseases/ilnesses over their lifetime.
+            <ol type="1" className={BreedInfoCSS.funFactList}>
+              <li> 
+                Heart diseases such as Hypertrophic Cardiomyopathy, aka HCM. However, that is common amongst cats and not special to Bengal Cats.
+            {/*<br/> Eye disease*/}</li> 
+              <li> 
+                Bengal cats can suffer from a variety of eye diseases, most common diseases are Glaucoma, Entropion, and retinal problems.
+           {/*} <br/> Joint problems <br />*/}</li> 
+              <li> 
+                Patella Luxation is a joint problem where the knee joint falls in and out of place and it may require surgery.
+            {/*<br/> Kidney disease */}</li> 
+              <li> 
+                Most cats can be affected by kidney diseases caused by infections, blockages, tumours or toxins.</li> 
+            </ol>
+            <br/> As always, be sure to consult with your vet regarding you kittens overall health and wellbeing.</h4>
           
           <div className={BreedInfoCSS.imgContainer2}>
             <img alt="headerImage" src={require("../images/Bengal-cat-health-problems-and-diseases.jpg")} width="500" height="auto" />

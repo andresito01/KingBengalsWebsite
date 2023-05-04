@@ -8,14 +8,35 @@
 }
 
 .headerContainer {
-  position: relative; /*absolute;/*fixed; /*relative;*/
-  position: -webkit-sticky; /* For Safari */
+  position: fixed; /*absolute;/*fixed; /*relative;*/
+  /*position: -webkit-sticky; /* For Safari */
   top: 0;
   width: 100%;
   height: auto;
   background-color: #412804;
   z-index: 1;
   overflow: visible;
+}
+
+.leftImgContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 15%;
+  background-image: url(".././../images/CatWebNavHeaderNoBackground.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logoContainer{
+  display: flex;
+  bottom: 0px;
+  width: 16vw;
+  height: auto;
+  position: absolute;
+  background-color: transparent;
+  align-content: center;
 }
 
 .logoImg {
@@ -39,7 +60,6 @@
   width: 85%;
 }
 
-
 .middleNavLinks {
   position: relative;
   right: 7%;
@@ -61,17 +81,17 @@
 
 .headerKingBengals {
   font-family: lancelot;
-  font-size: 8rem;
+  font-size: 5.5rem;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .headerCattery {
   font-family: lancelot;
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: white;
   margin-left: 9px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .rightImgContainer {
@@ -82,7 +102,7 @@
 
 .rightImgContainer #rightHeaderImg {
   scale: 0.8;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 
 /* Navigation Links */
@@ -97,7 +117,7 @@
 .link a{
   text-decoration: none;
   font-family: inika;
-  font-size: 1.7rem; /*1.3rem;*/
+  font-size: 1.2rem; /*1.7rem;*/
   color: white;
 }
 
@@ -217,6 +237,14 @@
   .logoImgResponsive {
     width: 10rem;
   }
+
+  .logoResponsive {
+    position: sticky; /*absolute;*/
+    top: 0px;
+    left: 0px;
+    height: 90px;
+  }
+
 }
 
 @media only screen and (max-width: 440px) {
@@ -236,4 +264,11 @@
     .headerCattery { 
       font-size: 1.5rem;
     }
+
+    .logoResponsive {
+      height: 70px;
+    }
+    
   }
+
+  

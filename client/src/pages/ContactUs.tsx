@@ -4,6 +4,7 @@ import WebNavHeader from '../components/WebNavHeader';
 import Footer from "../components/Footer";
 import ContactUsCSS from "./styles/ContactUs.module.css";
 import axios from 'axios';
+import NavBarUnderLayer from "../components/NavBarUnderLayer";
 
 const ContactUs = () => {
 
@@ -66,6 +67,7 @@ const ContactUs = () => {
   return (
     
     <div className={ContactUsCSS.contactUsPage}>
+      <NavBarUnderLayer/>
       <WebNavHeader />
       <div className={ContactUsCSS.bg}>
         <div className={ContactUsCSS.mainContentContainer}>

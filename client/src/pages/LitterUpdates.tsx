@@ -5,6 +5,7 @@ import LitterUpdatesCSS from "./styles/LitterUpdates.module.css";
 import ModalStyle from "../components/styles/LitterModal.module.css";
 import Modal from "../components/LitterModal";
 import { jsonData } from "../components/LitterModal";
+import NavBarUnderLayer from "../components/NavBarUnderLayer";
 
 const LitterUpdates: React.FC = () => {
   const fontSizeHeader = { fontSize: "50px" };
@@ -32,6 +33,7 @@ const LitterUpdates: React.FC = () => {
     <div className={LitterUpdatesCSS.litterUpdatesPage}>
       <Modal isOpen={isModalOpen1} onClose={handleModalClose1} id={1} />
       <Modal isOpen={isModalOpen2} onClose={handleModalClose2} id={2} />
+      <NavBarUnderLayer/>
       <WebNavHeader />
       <div className={LitterUpdatesCSS.litterInstructionContainer}>
         <h1 style={fontSizeHeader}>Check Out Our Litters!</h1>
@@ -41,13 +43,13 @@ const LitterUpdates: React.FC = () => {
           Each parent of a litter can be seen, for more information about the 
           parents please checkout 'Our Cats' page.
           <br />
-          Clicking either of the Info Boxes below will bring up information 
-          regarding the litter birth date and expected availability.
+          Clicking either of the Litter containers below will bring up information 
+          regarding the posted litter, such as their birth date, availability, and price.
           <br />
-          Also specific characteristics of each kitten will be provided along 
-          with a image so see their coat pattern/colors.
+          Each kitten's specific characteristics will be provided once they are atlest a week old
+          along with an image regerding their coat pattern/colors, etc.
           <br />
-          If you find a kitten you like, please see our 'Reserve a Kitten' page 
+          If you see a kitten you like, please see our 'Reserve a Kitten' page 
           to place a request.
         </p>
       </div>
@@ -110,6 +112,10 @@ const LitterUpdates: React.FC = () => {
                 <b>Already Sold: </b>
                 {jsonData[0].soldKittens}
               </p>
+              <p>
+                <b>Price: $650 - $800</b>
+                {/*jsonData[0].price2*/}
+              </p>
             </div>
             <img alt="litter1image" src={jsonData[0].litterPicture} />
           </div>
@@ -134,6 +140,10 @@ const LitterUpdates: React.FC = () => {
               <p>
                 <b>Already Sold: </b>
                 {jsonData[1].soldKittens}
+              </p>
+              <p>
+                <b>Price: $600 - $850</b>
+                {/*jsonData[1].price1*/}
               </p>
             </div>
             <img alt="litter2image" src={jsonData[1].litterPicture} />
