@@ -65,7 +65,7 @@ const MissionStatement = () => {
         <hr></hr>
         <p style={fontSizeQuote}>{homePageJSON.missionStatementDiscription}
           <div className={HomeCSS.missionOwnersName}>
-            <h5> - Lydia Zapuskalov, owner of KingBengals Cattery </h5>
+            <h6> - Lydia Zapuskalov, owner of KingBengals Cattery </h6>
           </div>
         </p>
       </div>
