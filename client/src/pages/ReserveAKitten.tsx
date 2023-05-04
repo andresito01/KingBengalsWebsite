@@ -6,6 +6,7 @@ import WebNavHeader from '../components/WebNavHeader';
 import Footer from "../components/Footer";
 import KittenReservationForm from '../components/KittenReservationForm';
 import NavBarUnderLayer from "../components/NavBarUnderLayer";
+import ReserveKittenStore from "../ReserveKittenStore/ReserveKittenStore";
 
 const ReserveAKitten = () => {
 
@@ -24,7 +25,8 @@ const ReserveAKitten = () => {
                         <p>We are now taking applications for Fall 2023 litters!</p>
                     </div>
                 </div>
-                <KittenReservationForm />
+                {/* <KittenReservationForm /> */}
+                <ReserveKittenStore />
                 <div className={ReserveAKittenCSS.instructionContainer}>
                     <div className={ReserveAKittenCSS.individualContainer}>
                         <h3><u>Process</u></h3>

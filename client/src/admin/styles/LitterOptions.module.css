@@ -1,0 +1,76 @@
+/* ******************   Display each Litter   *********************/
+.litterContainer {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(68, 42, 7, 0.235);
+  border-radius: 1rem;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 0.5rem;
+  display: grid;
+  color: aliceblue;
+}
+@media screen {
+  .litterContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ****************** Delete Option - Litter ******************/
+.deleteContainer {
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  margin-top: 0rem;
+}
+.deleteContainer button {
+  background-color: brown;
+  font-size: 2rem;
+  border-style: outset;
+  border-color: rgb(0, 229, 255);
+}
+/* ********************   Litter Picture   *********************/
+.pictureContainer {
+  width: 90%;
+  margin: auto;
+  border-radius: 15%;
+}
+.pictureContainer img {
+  width: 100%;
+}
+
+/* ********************** Litter Info *********************/
+.litterInfo {
+  width: 90%;
+  margin: auto;
+  margin-top: 0rem;
+}
+.litterInfo label {
+  min-width: 6rem;
+  color: rgb(253, 248, 248);
+}
+.litterInfo input {
+  color: rgb(6, 6, 6);
+  background-color: rgba(250, 226, 195, 0.876);
+  border-radius: 0.5rem;
+  padding: auto, 1rem;
+}
+
+/* ****************** Edit Options - litters ******************/
+.edittingOptions {
+  width: 90%;
+  margin: auto;
+  margin-top: 0rem;
+}
+
+.edittingOptions label {
+  min-width: 6rem;
+  color: rgb(253, 248, 248);
+}
+.edittingOptions input {
+  color: black;
+}
+.edittingOptions button {
+  background-color: brown;
+  font-size: 1.65rem;
+}

@@ -42,7 +42,7 @@
   grid-template-rows: 1fr;
   row-gap: 2vh;
   align-self: start;
-  padding: 2vw;
+  padding: 1vw;
   opacity: 0.95;
   border-style: solid;
   border-color: #6b462a;
@@ -91,48 +91,13 @@
 
 .parentColumn {
   display: grid;
+  margin: auto;
   width: 100%;
-  padding-left: 1vw;
 }
 @media screen {
   .parentColumn {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.parentTileAndSlider {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  width: 100%;
-}
-
-.parentTile {
-  margin: auto 0rem 4rem;
-  background-color: #6b462a;
-  color: white;
-  font-family: var(--generic-website-text);
-  font-size: var(--generic-text-size);
-  width: 100%;
-  line-height: 0.5;
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-bottom: 7%;
-  border-radius: 10px;
-  overflow: hidden;
-  z-index: 100;
-}
-.parentTile h1 {
-  margin-top: 1rem;
-  font-size: var(--large-header-size);
-  line-height: 1;
-}
-.parentTile img {
-  width: 100%;
-  height: fit-content;
-}
-.parentTile p {
-  font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 870px) {

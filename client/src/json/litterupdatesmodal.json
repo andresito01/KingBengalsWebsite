@@ -20,7 +20,8 @@
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
                 "kittenStatus": "Available",
-                "kittenPrice": "$750"
+                "kittenPrice": "$750",
+                "reservationPrice": 150.00
             },
             {
                 "id": 2,
@@ -30,7 +31,8 @@
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
                 "kittenStatus": "Available",
-                "kittenPrice": "$600"
+                "kittenPrice": "$600",
+                "reservationPrice": 150.00
             },
             {
                 "id": 3,
@@ -40,7 +42,8 @@
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
                 "kittenStatus": "Available",
-                "kittenPrice": "$800"
+                "kittenPrice": "$800",
+                "reservationPrice": 150.00
             },
             {
                 "id": 4,
@@ -50,7 +53,8 @@
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
                 "kittenStatus": "Available",
-                "kittenPrice": "$750"
+                "kittenPrice": "$750",
+                "reservationPrice": 150.00
             }
         ]
     },
@@ -68,44 +72,48 @@
         "dadPicture": "images/bengal cat climbing tree.jpg",
         "kittens": [
             {
-                "id": 1,
+                "id": 5,
                 "kittenName": "Shifu",
                 "kittenPicture": "images/cute bengal kitten.jpg",
                 "kittenColor": "Carmel/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available",
-                "kittenPrice": "$700"
+                "kittenPrice": "$700",
+                "kittenStatus": "Reserved",
+                "reservationPrice": 150.00
             },
             {
-                "id": 2,
+                "id": 6,
                 "kittenName": "Po",
                 "kittenPicture": "images/bengal-cat.jpg",
                 "kittenColor": "Brown/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
                 "kittenStatus": "Available",
-                "kittenPrice": "$650"
+                "kittenPrice": "$650",
+                "reservationPrice": 150.00
             },
             {
-                "id": 3,
+                "id": 7,
                 "kittenName": "Zozo",
                 "kittenPicture": "images/bengal-cat-1.jpg",
                 "kittenColor": "Cramel/Black",
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
-                "kittenStatus": "Available",
-                "kittenPrice": "$850"
+                "kittenPrice": "$850",
+                "kittenStatus": "Reserved",
+                "reservationPrice": 150.00
             },
             {
-                "id": 4,
+                "id": 8,
                 "kittenName": "Toby",
                 "kittenPicture": "images/bencat.jpg",
                 "kittenColor": "Brown/Black",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available",
-                "kittenPrice": "$800"
+                "kittenPrice": "$800",
+                "kittenStatus": "Reserved",
+                "reservationPrice": 150.00
             }
         ]
     }
