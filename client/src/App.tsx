@@ -34,7 +34,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Navigate replace to="/home" />} />
                   <Route path="/home" element={<Home />} />
-                  <Route path="/reserveakitten" element={<ReserveAKitten />} />
+                  <Route path="/reserveakitten/*" element={<ReserveAKitten />} />
                   <Route path="/ourcats" element={<OurCats />} />
                   <Route path="/litterupdates" element={<LitterUpdates />} />
                   <Route path="/about" element={<About />} />
