@@ -11,32 +11,12 @@ function ProductCard(props) {
   return (
     <Card>
       <Card.Body>
-        <Card.Img src={product.picture} style={{ scale: "0.6" }} />
-        <Card.Title>{product.name}</Card.Title>
-        <Card.Text>${product.reservationPrice}</Card.Text>
+        <Card.Img src={product.info.picture} style={{ scale: "0.6" }} />
+        <Card.Title>{product.info.name}</Card.Title>
+        <Card.Text>${product.info.reservePrice}</Card.Text>
         {productQuantity > 0 ? (
           <>
-            <Form as={Row}>
-              {/* <Form.Label column="true" sm="6">
-                In Cart: {productQuantity}
-              </Form.Label> */}
-              {/* <Col sm="6">
-                <Button
-                  sm="6"
-                  onClick={() => cart.addOneToCart(product.id)}
-                  className="mx-2"
-                >
-                  +
-                </Button>
-                <Button
-                  sm="6"
-                  onClick={() => cart.removeOneFromCart(product.id)}
-                  className="mx-2"
-                >
-                  -
-                </Button>
-              </Col> */}
-            </Form>
+            <Form as={Row}></Form>
             <Button
               variant="danger"
               onClick={() => cart.deleteFromCart(product.id)}

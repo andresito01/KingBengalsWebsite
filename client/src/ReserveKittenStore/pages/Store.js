@@ -1,19 +1,20 @@
 import { Row, Col } from "react-bootstrap";
-import { productsArray } from "../productsStore";
 import ProductCard from "../components/ProductCard";
+import { KittensData } from "../../admin/context/KittensContext.jsx";
 import { useEffect, useState } from "react";
 // [{... }, {... }, {... }]
 
 function Store() {
   const [kittenProductsArray, setKittenProductsArray] = useState([]);
 
-  const getProductsArrayData = async () => {
-    let data = await productsArray;
-    setKittenProductsArray(data);
-  };
+  const { kittenList } = KittensData();
+
+  const availableKittenList = kittenList.filter(
+    (kitten) => kitten.info.status === "available"
+  );
 
   useEffect(() => {
-    getProductsArrayData();
+    setKittenProductsArray(availableKittenList);
   }, []);
 
   return (
@@ -29,7 +30,7 @@ function Store() {
             </Col>
           ))
         ) : (
-          <h1>No Kittens Available For Sale</h1>
+          <h1 align="center">No Kittens Available For Sale</h1>
         )}
       </Row>
     </>

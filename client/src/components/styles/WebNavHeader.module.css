@@ -18,22 +18,14 @@
   overflow: visible;
 }
 
-.leftImgContainer {
+.logoImg {
+  display: flex;
+  bottom: 0;
+  width: 15rem;
+  height: auto;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 100%;
-  width: 15%;
-  background-image: url(".././../images/CatWebNavHeaderNoBackground.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.leftHeaderImg {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 100%;
+  background-color: transparent;
+  align-content: center;
 }
 
 .middle {
@@ -129,9 +121,9 @@
 	border: none;
 	outline: none;
 	color: white;
-	font-size: 1.5rem;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
+	font-size: 2rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
 }
 
 .navLinks{
@@ -148,8 +140,6 @@
 		position: absolute; /*absolute;*/
     right: 0;
     top: 0;
-    margin-top: 3%;
-    margin-right: 20%;
 	}
 
 	.link {
@@ -176,13 +166,17 @@
     margin-bottom: 1rem;
   }
 
+  .logoImg {
+    width: 10rem;
+  }
+
 }
 
 @media only screen and (max-width: 1213px) {
   
   .middleResponsive {
     position: relative;
-    left: 15%;
+    left: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,36 +214,26 @@
   }
 
 
-  .leftHeaderImgResponsive {
-    position: sticky; /*absolute;*/
-    top: 0px;
-    left: 0px;
-    height: 90px;
+  .logoImgResponsive {
+    width: 10rem;
   }
 }
 
 @media only screen and (max-width: 440px) {
-  
+
+    .logoImg {
+      width: 6rem;
+    }
+
+    .logoImgResponsive {
+      width: 6rem;
+    }
+    
     .headerKingBengals {
-      font-size: 2rem; 
+      font-size: 2.5rem; 
     }
     
     .headerCattery { 
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
-
-    .leftHeaderImgResponsive {
-      height: 70px;
-    }
-    
-  }
-
-  .logoContainer{
-    display: flex;
-    bottom: 0px;
-    width: 16vw;
-    height: auto;
-    position: absolute;
-    background-color: transparent;
-    align-content: center;
   }

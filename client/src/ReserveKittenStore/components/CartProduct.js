@@ -1,30 +1,22 @@
 import Button from "react-bootstrap/Button";
 import { CartContext } from "../CartContext";
 import { useContext, useEffect, useState } from "react";
-import { getProductData } from "../productsStore";
+import { KittensData } from "../../admin/context/KittensContext.jsx";
 
 function CartProduct(props) {
   const cart = useContext(CartContext);
   const id = props.id;
   const quantity = props.quantity;
-  const [productData, setProductData] = useState({});
-
-  const getPromisedProductData = async () => {
-    let productData = await getProductData(id);
-    setProductData(productData);
-  };
-
-  useEffect(() => {
-    getPromisedProductData();
-  });
+  const { findKitten } = KittensData();
+  const productData = findKitten(id);
 
   return (
     <>
       <div style={{ display: "flex" }}>
         <div>
-          <h3>{productData.name}</h3>
+          <h3>{productData.info.name}</h3>
           <p>{quantity} total</p>
-          <p>${(quantity * productData.reservationPrice).toFixed(2)}</p>
+          <p>${(quantity * productData.info.reservePrice).toFixed(2)}</p>
           <Button size="sm" onClick={() => cart.deleteFromCart(id)}>
             Remove
           </Button>
@@ -33,7 +25,7 @@ function CartProduct(props) {
           <img
             alt="availableKitten"
             style={{ height: "auto", width: "100%", scale: "0.6" }}
-            src={productData.picture}
+            src={productData.info.picture}
           />
         </div>
       </div>

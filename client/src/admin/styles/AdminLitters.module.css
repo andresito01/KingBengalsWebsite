@@ -1,4 +1,5 @@
-.loginContainer {
+/* **********************  Litters(admin) Page Container  *********************/
+.adminLittersContainer {
   display: flex;
   flex-direction: column;
   background-image: conic-gradient(
@@ -9,18 +10,4 @@
   background-image: url("../../images/bengal-cat-coat-glitter.jpg"); /*kbengalsbgGradient.png");*/
   background-size: cover;
   background-attachment: fixed;
-  color: aliceblue;
-}
-
-.signInContainer {
-  width: 90%;
-  margin: auto;
-  padding: 2rem;
-  font-size: 1.5rem;
-  background-color: rgba(0, 0, 255, 0.177);
-}
-
-.signInContainer button {
-  background-color: brown;
-  font-size: 2rem;
 }

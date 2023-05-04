@@ -1,0 +1,30 @@
+/* *********************   Add new Litter   *********************/
+.newLitterContainer {
+  width: 90%;
+  margin: auto;
+  margin-top: 2vw;
+  padding: 2rem;
+  background-color: rgba(68, 42, 7, 0.235);
+  border-radius: 1rem;
+  border-color: antiquewhite;
+  border-style: solid;
+  border-width: 0.5rem;
+  display: block;
+  color: azure;
+}
+.newLitterContainer label {
+  min-width: 8rem;
+}
+.approxGoHome {
+  width: 20rem;
+}
+.newLitterContainer input {
+  color: black;
+}
+.newLitterContainer button {
+  background-color: brown;
+  font-size: 1.85rem;
+}
+.newLitterContainer select {
+  color: black;
+}
