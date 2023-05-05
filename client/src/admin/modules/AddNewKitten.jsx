@@ -133,6 +133,7 @@ const AddNewKitten = () => {
 
         {/*--- Reservation Price ---*/}
         <label htmlFor="reservePrice">Resevation Price: </label>
+        <br />
         <input
           name="reservePrice"
           type="number"
@@ -181,7 +182,7 @@ const AddNewKitten = () => {
           <input id="reserved" type="radio" value="reserved" name="status" />
           <label htmlFor="reserved">Reserved</label>
           <input id="sold" type="radio" value="sold" name="status" />
-          <label htmlFor="sold">Sold:</label>
+          <label htmlFor="sold">Sold</label>
         </fieldset>
 
         <br />
