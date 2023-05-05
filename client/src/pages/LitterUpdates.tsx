@@ -21,13 +21,15 @@ const LitterUpdates: React.FC = () => {
           Each parent of a litter can be seen, for more information about the
           parents please checkout 'Our Cats' page.
           <br />
-          Clicking either of the Info Boxes below will bring up information
-          regarding the litter birth date and expected availability.
+          Clicking either of the Litter containers below will bring up
+          information regarding the posted litter, such as their birth date,
+          availability, and price.
           <br />
-          Also specific characteristics of each kitten will be provided along
-          with a image so see their coat pattern/colors.
+          Each kitten's specific characteristics will be provided once they are
+          atlest a week old along with an image regerding their coat
+          pattern/colors, etc.
           <br />
-          If you find a kitten you like, please see our 'Reserve a Kitten' page
+          If you see a kitten you like, please see our 'Reserve a Kitten' page
           to place a request.
         </p>
       </div>

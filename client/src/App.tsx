@@ -38,7 +38,7 @@ function App() {
                     <Route path="/" element={<Navigate replace to="/home" />} />
                     <Route path="/home" element={<Home />} />
                     <Route
-                      path="/reserveakitten"
+                      path="/reserveakitten/*"
                       element={<ReserveAKitten />}
                     />
                     <Route path="/ourcats" element={<OurCats />} />

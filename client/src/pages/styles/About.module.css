@@ -182,13 +182,15 @@
 .p3 {
   background-color: var(--light-primary-color);
   color: black; /*white;*/
+  width: 80vw;
   text-align: left;
   font-family: var(--generic-website-text);
-  font-size: var(--generic-text-size);
+  font-size: var(--header-font-size);
   padding-top: 1rem;
   padding-left: 1rem;
   margin-bottom: 5vw;
   margin-top: 5vw;
+  margin-left: 5vw;
   /*height: 6.25rem;*/
   /*margin-top: 6.25rem;
   margin-left: 30%;
@@ -202,6 +204,11 @@
   border-width: 10px;
   border-radius: 20px;
   border-color: var(--dark-primary-color);
+}
+
+.bold {
+  font: bold;
+  text-align: center;
 }
 
 .containerRow {

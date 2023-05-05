@@ -2,7 +2,8 @@
 
 .litterUpdatesPage {
   background-image: url("../../images/kbengalsbgGradient.png");
-  background-size: cover;
+  background-size:unset;
+  background-attachment: fixed;
   width: 100%;
 }
 
@@ -14,12 +15,13 @@
   display: flex;
   width: 70%;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 5vw;
   flex-direction: column;
   color: black;
   background-color: #a87d48f5;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-style: solid;
   border-width: 5px;
   border-radius: 20px;
@@ -91,8 +93,8 @@
   width: 50%;
   height: fit-content;
   margin-left: 25%;
-  margin-top: 1vw;
-  margin-bottom: 5vw;
+  margin-top: 5vw;
+  margin-bottom: 10vw;
 }
 
 .litterInfo {

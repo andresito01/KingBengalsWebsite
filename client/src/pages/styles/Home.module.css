@@ -29,30 +29,40 @@
 
 /* >>>>>>>>>>>>>>>>>>>> Mission Statement  <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .missionStatement {
-  width: 95%;
+  width: 100%;
   height: auto;
   position: relative;
-  margin: 1rem;
-  margin-top: 3vw;
-  padding-top: 3rem;
+  /*margin: 1rem;
+  /*margin-top: 3vw;*/
+  padding-top: 5rem;
+  padding-bottom: 2rem;
   background-color: var(--dark-primary-color);
-  opacity: var(--dark-bg-opacity);
+  /*opacity: var(--dark-bg-opacity);*/
   color: rgb(255, 255, 255);
+  border-width: 0px 0px 5px 0px;
+  border-bottom: #e2b78e;
   border-style: solid;
+  /*border-style: solid;
   border-width: 5px;
   border-radius: 20px;
-  border-color: #e2b78e;
+  border-color: #e2b78e;*/
   /*border-radius: var(--border-radius);
   border-width: var(--border-width);
   border-color: var(--light-primary-color);*/
   /* bottom: 0.2vw;
   left: 0.2vw; */
 }
+
+.missionOwnersName {
+  text-align: right;
+}
+
 .missionStatementText {
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   width: 90%;
   margin: auto;
+  text-align: center;
 }
 /* >>>>>>>>>>>>>>>>>>>> Owner's Imageand her Cat <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .ownerPicture {
