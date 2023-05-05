@@ -19,12 +19,13 @@ Kingbengals Cattery is a family operated local cattery in Sacramento, specialize
 
 ### Testing
 
-- Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-- ex. Windows 10
+To run the website, a internet browser of your choice should be installed.
+Program can be accessed by navgating to http://www.kingbengalscattery.com from your preferred browser. The website should appear. From there you may navigate the website using the links on the header, or if you are on mobile, by using the drop down menu from the top right side of the page.
 
 ### Deployment
 
 - How/where to download your program
+
 - Any modifications needed to be made to files/folders
 
 ```
@@ -33,8 +34,8 @@ code blocks for commands
 
 ### Instructions
 
-- How to run the program
-- Step-by-step bullets
+- To Run the Program:
+  Open a brower window and navigate to http://www.kingbengalscattery.com
 
 ### Prototype
 
