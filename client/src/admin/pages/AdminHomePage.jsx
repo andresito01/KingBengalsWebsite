@@ -61,7 +61,7 @@ const AdminHomePage = () => {
                   <strong>
                     <Link
                       className="font-bold text-sky-400 hover:text-green-500 "
-                      to="/contact"
+                      to="/adminTestimonial"
                     >
                       <li className="py-1">Testimonials</li>
                     </Link>

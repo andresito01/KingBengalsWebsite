@@ -12,55 +12,66 @@
 /* >>>>>>>>>>>>>>>>>>    Testimonials' Container    <<<<<<<<<<<<<<<<<<*/
 .testimonialsContainer {
   position: relative;
-  width: 95%;
-  margin: 2rem;
+  width: 100%;
+  margin: auto;
+  margin-top: 4rem;
 }
 /* >>>>>>>>>>>>>>>>>>    Testimonials' Title   <<<<<<<<<<<<<<<<<<*/
 .testimonialTitle {
-  width: 65vw;
-  margin-left: 15%;
+  width: 70%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 2vw;
   color: var(--light-primary-color);
   margin-top: 5vw;
-  margin-bottom: 5vw;
-  font-size: 5vw;
+  font-size: xx-large;
   font-weight: bolder;
   font-family: inika, lancelot;
   text-align: center;
   text-shadow: 0.15vw 0.15vw rgba(197, 117, 6, 0.89);
   background-color: rgba(55, 29, 2, 0.835);
   opacity: 0.9;
-  /*border-radius: 8vw;*/
-  border-style: double;
+  border-style: outset;
   border-color: var(--light-primary-color);
-  border-width: 10px;
+  border-width: 5px;
   border-radius: 20px;
 }
 /* >>>>>>>>>>>>>>>>>>    Testimonies' Container    <<<<<<<<<<<<<<<<<<*/
 .testimoniesContainer {
   width: 100%;
-  margin: auto;
-  margin-bottom: 5vw;
-  display: grid;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: scroll;
 }
 
-@media screen {
-  .testimoniesContainer {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* >>>>>>>>>>>>>>>>>>    Testimony's Container   <<<<<<<<<<<<<<<<<<*/
+.testimoniesRow {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  align-items: center;
+  justify-items: center;
+  position: relative;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Container   <<<<<<<<<<<<<<<<<<*/
 .testimonyContainer {
-  width: 65%;
-  margin-left: 18%;
-  margin-top: 1rem;
-  
+  width: 320px;
+  margin: 3rem;
+  margin-top: rem;
+  position: relative;
+  display: inline-block;
+  white-space: normal;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Image   <<<<<<<<<<<<<<<<<<*/
 .testimonyContainer img {
   width: 100%;
-  height: 100%;
+  height: 400px;
+  object-fit: cover;
   margin: auto;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -72,11 +83,11 @@
 }
 /* >>>>>>>>>>>>>>>>>>    Testimony's Text   <<<<<<<<<<<<<<<<<<*/
 .testimonyText {
+  width: 100%;
   background-color: rgba(0, 2, 2, 0.744);
   color: rgb(255, 250, 250);
-  padding: 0.25vw 4vw;
-  padding-bottom: 1.5vw;
-  margin: auto;
+  padding: 0.25rem 2rem;
+  padding-bottom: 1rem;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-style: inset;
@@ -86,16 +97,42 @@
   border-top: none;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  position: relative;
+  margin: auto;
+  justify-content: center;
 }
 .testimonyContainer h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: large;
   font-family: "Times New Roman", Times, serif;
 }
-.testimonyContainer h4 {
-  text-align: left;
-  font-size: 1vw;
+.testimonyContainer p {
+  width: 100%;
+  font-size: normal;
   font-weight: lighter;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.mdChevronLeft {
+  background-color: white;
+  left: 0px;
+  border-radius: 1rem;
+  position: absolute;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 10;
+  display: block;
+}
+
+.mdChevronRight {
+  background-color: white;
+  right: 0px;
+  border-radius: 1rem;
+  position: absolute;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 10;
+  display: block;
 }

@@ -1,36 +1,42 @@
 /* *********************   Add new Litter   *********************/
-.newLitterContainer {
+.newTestimonyContainer {
   width: 90%;
   margin: auto;
   margin-top: 2vw;
   padding: 2rem;
   background-color: rgba(38, 43, 1, 0.497);
   border-radius: 1rem;
-  border-color: rgb(243, 211, 49);
+  border-color: rgb(248, 228, 50);
   border-style: solid;
   border-width: 0.5rem;
   display: block;
   color: rgb(254, 254, 254);
 }
-.newLitterContainer label {
-  min-width: 8rem;
+.newTestimonyContainer label {
+  min-width: 9rem;
   padding: 0.25rem 1rem;
-  margin: 0.5rem 0rem;
+  margin: 0.5rem;
   border-radius: 0.5rem;
   color: black;
   text-align: center;
-  background-color: rgba(244, 173, 30, 0.989);
+  background-color: rgba(239, 187, 55, 0.926);
 }
-.approxGoHome {
-  width: 20rem;
-}
-.newLitterContainer input {
+
+.newTestimonyContainer input {
   color: black;
   border-radius: 0.2rem;
   padding: 0.5rem, 1rem;
 }
-.newLitterContainer button {
-  background-color: rgba(28, 94, 2, 0.844);
+.newTestimonyContainer textarea {
+  color: black;
+  width: 45%;
+  min-width: 25rem;
+  height: 10rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+}
+.newTestimonyContainer button {
+  background-color: rgba(39, 78, 2, 0.973);
   border-color: rgb(253, 253, 63);
   border-width: 0.25rem;
   font-size: large;
@@ -38,11 +44,4 @@
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-}
-.newLitterContainer select {
-  color: black;
-  border-radius: 0.2rem;
-  padding: 0.5rem, 1rem;
-  margin: 0.5rem 0rem;
-  background-color: rgb(184, 251, 68);
 }

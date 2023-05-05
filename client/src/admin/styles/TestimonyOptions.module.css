@@ -1,18 +1,18 @@
 /* ******************   Display each Kitten   *********************/
-.kittenContainer {
+.testimonyContainer {
   width: 90%;
   margin: auto;
   padding: 2rem;
   background-color: rgba(38, 43, 1, 0.497);
   border-radius: 1rem;
-  border-color: rgb(243, 211, 49);
+  border-color: rgb(248, 228, 50);
   border-style: solid;
   border-width: 0.5rem;
   display: grid;
   color: rgb(254, 254, 254);
 }
 @media screen {
-  .kittenContainer {
+  .testimonyContainer {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -41,28 +41,41 @@
 }
 .pictureContainer img {
   width: 100%;
+  border-radius: 2rem;
 }
 
 /* ********************** kitten Info *********************/
-.kittenInfo {
+.testimonyInfo {
   width: 90%;
   margin: auto;
   margin-top: 0rem;
 }
-.kittenInfo label {
-  min-width: 8rem;
+.testimonyInfo label {
+  min-width: 9rem;
   padding: 0.25rem 1rem;
   margin: 0.5rem 0rem;
   border-radius: 0.5rem;
   color: black;
   text-align: center;
-  background-color: rgba(255, 227, 14, 0.943);
+  background-color: rgba(239, 187, 55, 0.926);
 }
-.kittenInfo input {
+.testimonyInfo input {
+  width: fit-content;
+  height: 2rem;
   color: rgb(6, 6, 6);
-  background-color: rgb(161, 245, 237);
+  background-color: rgba(235, 209, 176, 0.822);
   border-radius: 0.5rem;
   padding: auto, 1rem;
+}
+
+.testimonyInfo textarea {
+  color: black;
+  background-color: rgba(235, 209, 176, 0.822);
+  width: 80%;
+  min-width: 14rem;
+  height: 15rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem 0rem;
 }
 
 /* ****************** Edit Options - Kittens ******************/
@@ -73,13 +86,13 @@
 }
 
 .edittingOptions label {
-  min-width: 8rem;
+  min-width: 9rem;
   padding: 0.25rem 1rem;
   margin: 0.5rem 0rem;
   border-radius: 0.5rem;
-  color: rgb(37, 4, 1);
+  color: black;
   text-align: center;
-  background-color: rgba(244, 173, 30, 0.989);
+  background-color: rgba(239, 187, 55, 0.926);
 }
 .edittingOptions input {
   color: black;
@@ -96,41 +109,11 @@
   border-radius: 1rem;
 }
 
-.edittingOptions select {
+.edittingOptions textarea {
   color: black;
-  border-radius: 0.2rem;
-  padding: 0.5rem, 1rem;
+  width: 80%;
+  min-width: 14rem;
+  height: 15rem;
+  border-radius: 0.3rem;
   margin: 0.5rem 0rem;
-  background-color: rgb(184, 251, 68);
-}
-
-.edittingOptions legend {
-  max-width: fit-content;
-  border-style: none;
-  font-weight: bold;
-  display: flex;
-  color: white;
-  border-radius: 0.5rem;
-  font-size: 1.5rem;
-}
-
-.edittingOptions fieldset {
-  width: 100%;
-  min-width: 12rem;
-  margin: 0.5rem 0rem;
-  border-width: 0.5rem;
-  border-radius: 1rem;
-  font-weight: bold;
-  padding: 1rem;
-  display: grid;
-  background-color: rgba(242, 164, 20, 0.291);
-  font-size: 1.5rem;
-}
-.edittingOptions fieldset label {
-  border-color: rgb(225, 255, 0);
-  background-color: rgb(174, 250, 41);
-  color: rgb(77, 38, 2);
-  border-width: 0.25rem;
-  padding: 0;
-  font-size: normal;
 }

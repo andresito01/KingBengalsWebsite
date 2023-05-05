@@ -1,6 +1,5 @@
 @import "../../theme.css";
 
-
 /* >>>>>>>>>>>>>>>>>>>> Homepage Container <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .homePageContainer {
   display: flex;
@@ -27,14 +26,6 @@
   width: 100%;
   height: 100%;
 }
-/* .homeHeaderQuestion {
-  width: 100%;
-  position: absolute;
-  top: 0.1vw;
-  text-align: center;
-  font-size: 2.25vw;
-  color: rgb(235, 191, 137);
-} */
 
 /* >>>>>>>>>>>>>>>>>>>> Mission Statement  <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .missionStatement {
@@ -88,30 +79,27 @@
   border-style: solid;
   border-width: 5px;
   border-radius: 20px;
-  border-color: #4E3A24;
+  border-color: #4e3a24;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Past Litters' Title   <<<<<<<<<<<<<<<<<<*/
 .pastLittersTitle {
-  width: 60vw;
-  height: auto;
+  width: 70%;
+  max-width: 500px;
   margin: auto;
-  margin-top: 3vw;
-  margin-bottom: 3vw;
-  padding-top: 10px;
-  color: rgba(247, 231, 205, 0.946);
-  font-size: 46px;
-  font-weight: var(--header-text-property);
-  font-family: var(--header-text-font);
+  color: var(--light-primary-color);
+  margin-top: 5vw;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: inika, lancelot;
   text-align: center;
-  text-shadow: 0.15vw 0.15vw rgba(242, 147, 31, 0.734);
-  background-color: rgba(48, 26, 2, 0.909);
-  /*border-radius: 4.5vw;*/
-  border-style: inset;
+  text-shadow: 0.15vw 0.15vw rgba(197, 117, 6, 0.89);
+  background-color: rgba(55, 29, 2, 0.835);
+  opacity: 0.9;
+  border-style: outset;
+  border-color: var(--light-primary-color);
   border-width: 5px;
   border-radius: 20px;
-  border-color: #e2b78e;
-  
 }
 
 /* >>>>>>>>>>>>>>>>>>>>  Past Litters    <<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -135,5 +123,5 @@
   border-style: solid;
   border-width: 5px;
   border-radius: 20px;
-  border-color:#4E3A24;
+  border-color: #4e3a24;
 }
