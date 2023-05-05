@@ -13,7 +13,7 @@ const BusinessCertificate = () => {
       <BusinessCertificateText />
       <div className={BusinessCertificateCSS.totalLogoContainer}>
         <KbLogo />
-        <p className={BusinessCertificateCSS.andSymbol}>&</p>
+        <p className={BusinessCertificateCSS.andSymbol}></p>
         {/* >>>>>>>>>>>>  Certificates' Container  <<<<<<<<<<<<<<<< */}
         <div className={BusinessCertificateCSS.certificateContainer}>
           <TicaCertificate />

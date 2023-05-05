@@ -5,6 +5,7 @@
         "totalKittens": "5",
         "availableKittens": "4",
         "soldKittens": "1",
+        "priceRange": "$650 - $800",
         "birthDate": "January 5, 2023",
         "pickupDate": "April 20, 2023",
         "litterPicture": "images/Litter1.png",
@@ -18,7 +19,9 @@
                 "kittenColor": "Carmel/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$750",
+                "reservationPrice": 150.00
             },
             {
                 "id": 2,
@@ -27,7 +30,9 @@
                 "kittenColor": "Brown/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$600",
+                "reservationPrice": 150.00
             },
             {
                 "id": 3,
@@ -36,7 +41,9 @@
                 "kittenColor": "Cramel/Black",
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$800",
+                "reservationPrice": 150.00
             },
             {
                 "id": 4,
@@ -45,7 +52,9 @@
                 "kittenColor": "Brown/Black",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$750",
+                "reservationPrice": 150.00
             }
         ]
     },
@@ -55,6 +64,7 @@
         "totalKittens": "4",
         "availableKittens": "2",
         "soldKittens": "2",
+        "priceRange": "$600 - $850",
         "birthDate": "November 12, 2022",
         "pickupDate": "March 20, 2023",
         "litterPicture": "images/Litter2.png",
@@ -62,40 +72,48 @@
         "dadPicture": "images/bengal cat climbing tree.jpg",
         "kittens": [
             {
-                "id": 1,
+                "id": 5,
                 "kittenName": "Shifu",
                 "kittenPicture": "images/cute bengal kitten.jpg",
                 "kittenColor": "Carmel/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenPrice": "$700",
+                "kittenStatus": "Reserved",
+                "reservationPrice": 150.00
             },
             {
-                "id": 2,
+                "id": 6,
                 "kittenName": "Po",
                 "kittenPicture": "images/bengal-cat.jpg",
                 "kittenColor": "Brown/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
-                "kittenStatus": "Available"
+                "kittenStatus": "Available",
+                "kittenPrice": "$650",
+                "reservationPrice": 150.00
             },
             {
-                "id": 3,
+                "id": 7,
                 "kittenName": "Zozo",
                 "kittenPicture": "images/bengal-cat-1.jpg",
                 "kittenColor": "Cramel/Black",
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenPrice": "$850",
+                "kittenStatus": "Reserved",
+                "reservationPrice": 150.00
             },
             {
-                "id": 4,
+                "id": 8,
                 "kittenName": "Toby",
                 "kittenPicture": "images/bencat.jpg",
                 "kittenColor": "Brown/Black",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
-                "kittenStatus": "Available"
+                "kittenPrice": "$800",
+                "kittenStatus": "Reserved",
+                "reservationPrice": 150.00
             }
         ]
     }

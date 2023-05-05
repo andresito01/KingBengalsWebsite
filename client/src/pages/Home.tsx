@@ -6,6 +6,7 @@ import ImageCarousel from "../components/ImageCarousel";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import homePageJSON from "../json/homePage.json";
+import NavBarUnderLayer from "../components/NavBarUnderLayer";
 
 const fontSizeMissionStatement = { fontSize: "26px" };
 const fontSizeQuote = { fontSize: "20px" };
@@ -14,10 +15,12 @@ const fontSizeQuote = { fontSize: "20px" };
 const Home = () => {
   return (
     <div className={HomeCSS.homePageContainer}>
+      <NavBarUnderLayer/>
+
       <WebNavHeader />
 
       {/*>>>>>>>>>>>> Homepage Header Image <<<<<<<<<<<<*/}
-      {/* <HomepageHeader /> */}
+      <HomepageHeader />
 
       <MissionStatement />
 
@@ -44,23 +47,27 @@ const Home = () => {
 };
 
 /* >>>>>>>>>>>>>>>>>>>>>>       Homepage Header     <<<<<<<<<<<<<<<<<<<<<<<<<<< */
-// const HomepageHeader = () => {
-//   return (
-//     <div className={HomeCSS.homeHeader}>
-//       {/* Header Image */}
-//       <img alt="headerImage" src={homePageJSON.headerImg} />
-//     </div>
-//   );
-// };
+ const HomepageHeader = () => {
+   return (
+     <div className={HomeCSS.homeHeader}>
+       {/* Header Image */}
+       <img alt="headerImage" src={homePageJSON.headerImg} />
+     </div>
+   );
+ };
 
 /* >>>>>>>>>>>>>>>>>>>>>>       Homepage Header     <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 const MissionStatement = () => {
   return (
     <div className={HomeCSS.missionStatement}>
       <div className={HomeCSS.missionStatementText}>
-        <h3 style={fontSizeMissionStatement}>KingBengals' Mission Statement</h3>
+        <h3 style={fontSizeMissionStatement}>{homePageJSON.missionStatement}</h3>
         <hr></hr>
-        <p style={fontSizeQuote}>{homePageJSON.missionStatement}</p>
+        <p style={fontSizeQuote}>{homePageJSON.missionStatementDiscription}
+          <div className={HomeCSS.missionOwnersName}>
+            <h6> - Lydia Zapuskalov, owner of KingBengals Cattery </h6>
+          </div>
+        </p>
       </div>
     </div>
   );

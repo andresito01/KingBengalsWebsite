@@ -1,5 +1,6 @@
 .adminHomeContainer {
   display: flex;
+  height: 100%;
   flex-direction: column;
   background-image: conic-gradient(
     rgb(64, 29, 2),
@@ -9,15 +10,4 @@
   background-image: url("../../images/bengal-cat-coat-glitter.jpg"); /*kbengalsbgGradient.png");*/
   background-size: cover;
   background-attachment: fixed;
-}
-.welcomeContainer {
-  width: 90%;
-  margin: auto;
-  padding: 2rem;
-  color: aliceblue;
-  background-color: rgba(0, 0, 255, 0.224);
-}
-.welcomeContainer input {
-  background-color: brown;
-  font-size: 2rem;
 }

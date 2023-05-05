@@ -22,9 +22,10 @@
   margin-top: 1rem;
 }
 .topPicture {
-  width: 50%;
+  width: 30%;
   height: auto;
   border-style: double;
+  align-self: center;
 }
 
 .sectionHeader {
@@ -64,6 +65,10 @@ p.text {
   margin: 20px;
 }
 
+.italicText {
+  font-style: italic;
+  text-align: center;
+}
 /*********************************************************************************/
 
 .backgroundLayer Img {
@@ -123,7 +128,7 @@ p.text {
 }
 
 .containerRow2 {
-  margin: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
   background-color: #ffe3c8;
   flex: 1;
   width: 30vw;
@@ -243,6 +248,48 @@ p.text {
   margin-bottom: 60px;
 }
 
+.text {
+  width: auto;
+  position: relative;
+  text-align: left;
+
+  font-family: var(--generic-website-text);
+}
+
+/************************media screen when shrinking *************************************/
+
+@media only screen and (max-width: 1000px) {
+
+  .containerRowBox {
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--dark-secondary-color);
+  }
+
+  .containerRow1 {
+    width: 78vw;
+  }
+
+  .containerRow2 {
+    /*display:contents;*/
+    align-self: center;
+    width: 78vw;
+    align-content: center;
+    border-style: solid;
+    border-color: var(--dark-primary-color);
+    border-radius: 20px;
+    border-width: 10px 10px 10px 10px;
+    /*flex-direction: row;*/
+    /*width: 80vw;*/
+  }
+  
+  .imgContainer {
+    width: 30vw;
+    margin-left: 30%;
+  }
+
+}
+
 /******************accordion*************************/
 .accordion .contentBx .label {
   background: rgba(161, 89, 21, 0.269);
@@ -269,5 +316,6 @@ p.text {
   height: 150px;
   padding: 10px;
 }
+
 
 /***********Accordion*********************/

@@ -1,84 +1,22 @@
-import React, { ReactElement, useEffect, useState } from "react";
+import React, { useState } from "react";
+import { db } from "../config/firebase";
+import ParentOptionsCSS from "../styles/ParentOptions.module.css";
+import { ParentsData } from "../context/ParentsContext";
+import { deleteDoc, doc, updateDoc } from "firebase/firestore";
 
-import { db } from "../admin/config/firebase";
-import {
-  onSnapshot,
-  query,
-  collection,
-  doc,
-  updateDoc,
-} from "firebase/firestore";
-
-import AdminHomeCSS from "./styles/AdminHome.module.css";
-import SignOut from "./modules/SignOut";
-import OurCats from "../pages/OurCats";
-import { ListFormat } from "typescript";
-import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
-
-/** >>>>>>>>>>>>>>>>       Home Page (for Admins)       <<<<<<<<<<<<<<<<<<<<<<*/
-const AdminHomePage = () => {
-  const navigate = useNavigate();
-  return (
-    <div className={AdminHomeCSS.adminHomeContainer}>
-      {/**********************      Current User     *******************************/}
-      <SignOut />
-      <div className={AdminHomeCSS.welcomeContainer}>
-        <h2>Welcome to our admin Page</h2>
-        <p>Available Options</p>
-        <input
-          type="button"
-          onClick={() => navigate("/adminOurCats", { replace: true })}
-          value="Edit Parents"
-        />
-      </div>
-    </div>
-  );
-};
-
-const OurCatsOptions = () => {
-  /******* Parent structure ***********/
-  interface parentFormat {
-    id: string;
-    name: string;
-    sex: string;
-    attitude: string;
-    picture: string;
-    status: string;
-    pattern: string;
-    lineage: string;
-    history: string;
-  }
-
+/** >>>>>>>>>>>>>>>>      Parent's Options        <<<<<<<<<<<<<<<<<<<<<<*/
+const ParentOptions = () => {
   /*******************  useState constants  ************************/
-  const [parentList, setParentList] = useState([] as parentFormat[]);
-  const [wasChanged, setWaschanged] = useState(true);
-  const [tempParent, setTempParent] = useState({} as parentFormat);
+  const [tempParent, setTempParent] = useState({});
 
   /*******************  Get Parents from db  ************************/
-  useEffect(() => {
-    try {
-      if (wasChanged) {
-        onSnapshot(query(collection(db, "parents")), (snapshot) => {
-          const data: Array<any> = snapshot.docs.map((doc) => ({
-            ...doc.data(),
-            id: doc.id,
-          }));
-          setParentList(data);
-          setWaschanged(false);
-          console.log("Parent were loaded from db");
-        });
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  });
+  const { parentList } = ParentsData();
 
   /******************* Edit Parents (Function) ************************/
-  const editParent = async (id: string) => {
+  const editParent = async (id) => {
+    // e.preventDefault();
     console.log("edit was called");
-    console.log(tempParent);
-    console.log(Object.keys(tempParent).length);
+
     // In case there are no editions submited, skip
     if (Object.keys(tempParent).length > 0) {
       try {
@@ -86,38 +24,58 @@ const OurCatsOptions = () => {
         await updateDoc(doc(db, "parents", id), {
           ...tempParent,
         });
-        setWaschanged(true);
       } catch (err) {
         console.log(err);
       }
-      setTempParent({} as parentFormat);
+      setTempParent({});
     }
   };
 
-  /*******************   Display all Parents    ************************/
+  /******************* Delete Parent (Function) ************************/
+  const deleteParent = async (id) => {
+    console.log("delete was called");
+    try {
+      console.log("sending edit changes");
+      await deleteDoc(doc(db, "parents", id));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div>
-      {/*>>>>>>>>>>>>    For each parent display:   <<<<<<<<<<<<<<<<<*/}
+      {/**************************     Display all Parents    ****************************/}
+      {/*>>>>>>>>>    For each parent display:   <<<<<<<<<<<<<*/}
       {parentList.map((parent) => {
+        /****  parent's attributes ******/
+        const { id, info } = parent;
         const {
-          id,
           name,
           sex,
           picture,
-          attitude,
           status,
+          attitude,
           pattern,
           lineage,
           history,
-        } = parent;
+        } = info;
         return (
-          <article key={id} className={AdminHomeCSS.parentContainer}>
+          <article key={id} className={ParentOptionsCSS.parentContainer}>
+            {/*======   Delete optio: Rigth-top corner  =====*/}
+            <div></div>
+            <div></div>
+            <div className={ParentOptionsCSS.deleteContainer}>
+              <button type="button" onClick={() => deleteParent(id)}>
+                Delete Parent
+              </button>
+            </div>
+
             {/*======   Display: Parent's Picture  =====*/}
-            <section className={AdminHomeCSS.pictureContainer}>
-              <img src={picture} />
+            <section className={ParentOptionsCSS.pictureContainer}>
+              <img src={picture} alt={name} />
             </section>
             {/*======   Display: Parent's Info  =====*/}
-            <section className={AdminHomeCSS.parentInfo}>
+            <section className={ParentOptionsCSS.parentInfo}>
               <h4>Parent Information</h4>
               <hr />
               <label htmlFor="name">Name:</label>
@@ -146,7 +104,7 @@ const OurCatsOptions = () => {
               <br />
             </section>
             {/*======   Display: Parent's Editting Options  =====*/}
-            <section className={AdminHomeCSS.edittingOptions}>
+            <div className={ParentOptionsCSS.edittingOptions}>
               <h4>Edit Information</h4>
               <hr />
               {/*--- Display: Parent's Name ---*/}
@@ -156,7 +114,6 @@ const OurCatsOptions = () => {
                 type="text"
                 placeholder={name}
                 onChange={(e) => {
-                  e.isDefaultPrevented();
                   setTempParent({
                     ...tempParent,
                     name: e.target.value,
@@ -164,14 +121,13 @@ const OurCatsOptions = () => {
                 }}
               />
               <br />
-              {/*--- Display: Parent's sex ---*/}
+              {/* --- Display: Parent's sex ---*/}
               <label htmlFor="sex">Sex:</label>
               <input
                 name="sex"
                 type="text"
                 placeholder={sex}
                 onChange={(e) => {
-                  e.isDefaultPrevented();
                   setTempParent({
                     ...tempParent,
                     sex: e.target.value,
@@ -184,9 +140,9 @@ const OurCatsOptions = () => {
               <input
                 name="attitude"
                 type="text"
+                autoComplete="attitude"
                 placeholder={attitude}
                 onChange={(e) => {
-                  e.isDefaultPrevented();
                   setTempParent({
                     ...tempParent,
                     attitude: e.target.value,
@@ -199,9 +155,9 @@ const OurCatsOptions = () => {
               <input
                 name="status"
                 type="text"
+                autoComplete="status"
                 placeholder={status}
                 onChange={(e) => {
-                  e.isDefaultPrevented();
                   setTempParent({
                     ...tempParent,
                     status: e.target.value,
@@ -215,8 +171,8 @@ const OurCatsOptions = () => {
                 name="pattern"
                 type="text"
                 placeholder={pattern}
+                autoComplete="pattern"
                 onChange={(e) => {
-                  e.isDefaultPrevented();
                   setTempParent({
                     ...tempParent,
                     pattern: e.target.value,
@@ -224,14 +180,14 @@ const OurCatsOptions = () => {
                 }}
               />
               <br />
-              {/*--- Display: Parent's linea ---*/}
+              {/*--- Display: Parent's lineage ---*/}
               <label htmlFor="lineage">Lineage:</label>
               <input
                 name="lineage"
                 type="text"
                 placeholder={lineage}
+                autoComplete="lineage"
                 onChange={(e) => {
-                  e.isDefaultPrevented();
                   setTempParent({
                     ...tempParent,
                     lineage: e.target.value,
@@ -244,9 +200,9 @@ const OurCatsOptions = () => {
               <input
                 name="history"
                 type="text"
+                autoComplete="history"
                 placeholder={history}
                 onChange={(e) => {
-                  e.isDefaultPrevented();
                   setTempParent({
                     ...tempParent,
                     history: e.target.value,
@@ -259,9 +215,9 @@ const OurCatsOptions = () => {
               <input
                 name="picture"
                 type="text"
+                autoComplete="picture"
                 placeholder={picture}
                 onChange={(e) => {
-                  e.isDefaultPrevented();
                   setTempParent({
                     ...tempParent,
                     picture: e.target.value,
@@ -269,12 +225,14 @@ const OurCatsOptions = () => {
                 }}
               />
               <br />
-              {/*===  Edit buttom ===*/}
-              <button type="button" onClick={() => editParent(id)}>
+
+              {/* ===  Edit buttom === */}
+              <button onClick={() => editParent(id)} type="submit">
                 Submit Changes
               </button>
+
               <br />
-            </section>
+            </div>
           </article>
         );
       })}
@@ -282,4 +240,4 @@ const OurCatsOptions = () => {
   );
 };
 
-export default AdminHomePage;
+export default ParentOptions;

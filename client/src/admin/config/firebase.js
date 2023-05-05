@@ -11,13 +11,13 @@ import { getFirestore, persistentLocalCache } from "firebase/firestore";
 
 // Do not modify this:
 const firebaseConfig = {
-  apiKey: "AIzaSyCuZ7r9jmYipbG4qxeyO-ve8pzvL5vAwVY",
-  authDomain: "kingbengals-website.firebaseapp.com",
-  projectId: "kingbengals-website",
-  storageBucket: "kingbengals-website.appspot.com",
-  messagingSenderId: "455631563599",
-  appId: "1:455631563599:web:d0040ef2eb26b0327bb33a",
-  measurementId: "G-E531K05PS1",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase, 500MB cachesize

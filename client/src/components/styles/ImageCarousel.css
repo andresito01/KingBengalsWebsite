@@ -4,6 +4,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 0px;
+  text-align: center;
   background-color: transparent;
 }
 
@@ -56,4 +57,17 @@
   transform: translate3d(0px, -50%, 0px) scale(0.3);
   transform-origin: 50% 50% 0;
   transition: all 250ms ease-out 0s;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .container {
+    justify-content: center;
+  }
+
+  .item {
+    width: 30%;
+    margin-left: 16.5rem;
+  }
+  
 }

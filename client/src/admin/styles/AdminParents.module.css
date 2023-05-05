@@ -1,0 +1,13 @@
+/* **********************  Parents Page Container  *********************/
+.adminParentsContainer {
+  display: flex;
+  flex-direction: column;
+  background-image: conic-gradient(
+    rgb(64, 29, 2),
+    rgb(255, 174, 0),
+    rgb(64, 29, 2)
+  );
+  background-image: url("../../images/bengal-cat-coat-glitter.jpg"); /*kbengalsbgGradient.png");*/
+  background-size: cover;
+  background-attachment: fixed;
+}
