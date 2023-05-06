@@ -51,7 +51,7 @@
   margin: auto;
   margin-top: 3vw;
   margin-bottom: 4vw;
-  width: 90%;
+  width: 85%;
   height: fit-content;
 }
 
@@ -62,13 +62,13 @@
 }
 
 .organizationText {
-  border-left: #6b462a;
+  /*border-left: #6b462a;
   border-left-style: solid;
-  border-width: 2px;
+  border-width: 2px;*/
   padding-left: 1vw;
   color: black;
   font-family: var(--generic-website-text);
-  font-size: var(--generic-text-size);
+  font-size: var(--header-font-size);
   line-height: 1.1;
 }
 
@@ -93,6 +93,7 @@
   display: grid;
   margin: auto;
   width: 100%;
+  margin-left: 15vw;
 }
 @media screen {
   .parentColumn {

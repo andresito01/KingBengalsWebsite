@@ -70,8 +70,9 @@ const ContactUs = () => {
       <NavBarUnderLayer/>
       <WebNavHeader />
       <div className={ContactUsCSS.bg}>
+        <img alt="headerImage" src = {require ("../images/Sacramento-Downtown-Renaissance-Web-Banner (11).png")} width = "1000"/>
         <div className={ContactUsCSS.mainContentContainer}>
-          <h1>Contact Us</h1>
+          <h3> Contact Us </h3>
           <p>
             Located in Downtown Sacramento<br></br>
             <br></br>
