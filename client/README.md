@@ -43,7 +43,7 @@ Program can be accessed by navgating to http://www.kingbengalscattery.com from y
      <td>Our Cats Page</td>
   </tr>
   <tr>
-    <td><img src=(./src/images/HomePage.png) width=226></td>
+    <td><img src="./src/images/HomePage.jpg" width=226></td>
     <td><img src="https://user-images.githubusercontent.com/37862616/205884182-c57f98ba-792f-4d67-b209-1c4e27754339.png" width=287></td>
     <td><img src="https://user-images.githubusercontent.com/37862616/205884345-a5564ef2-9361-4d4f-9991-468e8e2b0ce8.png" width=294></td>
   </tr>
