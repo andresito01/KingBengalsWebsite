@@ -1,3 +1,5 @@
+@import "../../theme.css";
+
 .parentContainer {
   background-color: #6b462a;
   color: white;
@@ -36,14 +38,14 @@
 
 .sliderInfo {
   animation-name: slideOpen;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   width: 50%;
   min-width: max-content;
   height: min-content;
   margin-top: 2rem;
   padding: 2vw 1vw;
   font-size: 1.1rem;
-  background-color: #fff;
+  background-color: var(--light-secondary-color); /* #fff;*/
   border: 0.2vw solid #ccc;
   border-radius: 1rem;
   border-top-left-radius: 0rem;

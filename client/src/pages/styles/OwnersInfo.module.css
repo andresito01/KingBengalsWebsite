@@ -37,7 +37,7 @@
   position: absolute;
   /*bottom: 1vw;*/
   text-align: left;
-  top: 30vw;
+  top: 35vw;
   margin-left: 5vw;
   /*font-family: var(--generic-website-text);
   font-size: var(--large-header-size);
@@ -125,6 +125,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-self: center;
   text-align: center;
   width: relative;
   position: relative;
@@ -138,6 +139,8 @@
   width: 100%;
   height: auto;
   position: relative;
+  margin-left: 5vw;
+  margin-right: 5vw;
   /*margin: 20vw;*/
 }
 
@@ -146,13 +149,18 @@
   flex-direction: column;
   width: 100%;
   background-color: var(--dark-secondary-color);
-  justify-content: center;
-  margin-top: 1.5vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  border-style: solid; /*double;*/
   color: white;
   cursor: pointer;
+  justify-content: center;
+  margin-top: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 0.5vw;
+  border-style: double;
+  border-color: var(--dark-primary-color);
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 .containerBox {               /*WebNaveHeader color: #412804*/
@@ -160,7 +168,9 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: relative; /*90vw;*/
+  align-items: center;
+  width: relative; 
+  max-width: 90vw;
   position: relative;
   background-color: var(--dark-secondary-color);/*, 0.99); /*#4E3A24;*/
   color: white;
@@ -170,7 +180,7 @@
   margin-bottom: 60px;
   padding: 10px 10px 10px 10px;
   border-style: solid;
-  border-color: var(--light-secondary-color);
+  border-color: var(--dark-primary-color);
   border-width: 10px;
   border-radius: 20px;
 }
@@ -186,9 +196,10 @@
 .imgContainer {
   max-width: 100%;
   height: auto;
-  /*background-image: url("../images/bengal-cat.jpg");*/
-  /*background-size: contain;*/
   border-style: double;
+  border-color: var(--dark-primary-color);
+  border-width: 7px;
+  border-radius: 20px;
   position: relative;
 }
 
@@ -270,9 +281,12 @@
   margin-top: 5vw;
   margin-bottom: 5vw;
   position: relative;
+  align-items: center;
+  align-content: center;
+  align-self: center;
   /*background-image: url("../images/bengal-cat.jpg");*/
   /*background-size: contain;*/
-  border-style: inset;
+  border-style: double;
   border-color: var(--dark-primary-color);
   border-radius: 20px;
   border-width: 10px 10px 10px 10px;
@@ -285,6 +299,7 @@
   .containerRowBox {
     flex-direction: column;
     align-content: center;
+    align-items: center;
     background-color: var(--light-primary-color);
   }
 
@@ -304,7 +319,7 @@
   }
 
   .imgContainer {
-    width: 30vw;
+    width: 28vw;
     margin-left: 30%;
   }
 
@@ -345,18 +360,7 @@
 }
 
 /****************************** Training ***************************************************/
-.imgContainer3 {
-  max-width: 100%;
-  height: auto;
-  margin-top: 0.3vw;
-  position: relative;
-  /*background-image: url("../images/bengal-cat.jpg");*/
-  /*background-size: contain;*/
-  border-style: inset;
-  border-color: var(--dark-primary-color);
-  border-radius: 20px;
-  border-width: 10px 10px 10px 10px;
-}
+
 
 /****************************** Pet Insurance ***************************************************/
 .containerRowBox2 {

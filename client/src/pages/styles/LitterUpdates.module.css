@@ -90,9 +90,9 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 3vw;
-  width: 50%;
+  width: 60%;
   height: fit-content;
-  margin-left: 25%;
+  margin-left: 20%;
   margin-top: 5vw;
   margin-bottom: 10vw;
 }

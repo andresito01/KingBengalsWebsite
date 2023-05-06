@@ -181,7 +181,8 @@
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 5px;
+    padding: 5px;
     cursor: pointer;
   }

@@ -67,11 +67,18 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
                 
 
                 {/* Individual Kitten Pictures and Info */}
-                <div className={LitterModalCSS.kittenContainer}>
-                    {/* Kitten Pictures */}
+                {/*<div className={LitterModalCSS.kittenContainer}>
+                    {/* Kitten Pictures *}
                     <div className={LitterModalCSS.kittenPicture}>
                         <img src={data.kittens.find(obj => obj.id === 1)?.kittenPicture} alt='kitten1'/>
                     </div>
+                    {/*<div className={LitterModalCSS.kittenInfo}>
+                        <p><b>Color:</b> {data.kittens.find(obj => obj.id === 1)?.kittenColor}</p>
+                        <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 1)?.kittenPattern}</p>
+                        <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 1)?.kittenSex}</p>
+                        <p><b>Status:</b> {data.kittens.find(obj => obj.id === 1)?.kittenStatus}</p>
+                        <p><b>Price:</b> {data.kittens.find(obj => obj.id === 1)?.kittenPrice}</p>
+                    </div>*}
                     <div className={LitterModalCSS.kittenPicture}>
                         <img src={data.kittens.find(obj => obj.id === 2)?.kittenPicture} alt='kitten2'/>
                     </div>
@@ -82,7 +89,7 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
                         <img src={data.kittens.find(obj => obj.id === 4)?.kittenPicture} alt='kitten4'/>
                     </div>
                     
-                    {/* Kitten Info */}
+                    {/* Kitten Info *}
                     <div className={LitterModalCSS.kittenInfo}>
                         <p><b>Color:</b> {data.kittens.find(obj => obj.id === 1)?.kittenColor}</p>
                         <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 1)?.kittenPattern}</p>
@@ -109,7 +116,7 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
                         <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 4)?.kittenPattern}</p>
                         <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 4)?.kittenSex}</p>
                         <p><b>Status:</b> {data.kittens.find(obj => obj.id === 4)?.kittenStatus}</p>
-                        <p><b>Price:</b> {data.kittens.find(obj => obj.id === 4)?.kittenPrice}</p>
+                        <p><b>Price:</b> {data.kittens.find(obj => obj.id === 4)?.kittenPrice}</p> */}
                 {/* All Kitten Pictures and Info */}
                 <div className={LitterModalCSS.allKittensContainer}>
                     {/* Individual Kitten */}
@@ -122,6 +129,7 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
                             <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 1)?.kittenPattern}</p>
                             <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 1)?.kittenSex}</p>
                             <p><b>Status:</b> {data.kittens.find(obj => obj.id === 1)?.kittenStatus}</p>
+                            <p><b>Price:</b> {data.kittens.find(obj => obj.id === 1)?.kittenPrice}</p>
                         </div>
                     </div>
                     {/* Individual Kitten */}
@@ -134,6 +142,7 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
                             <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 2)?.kittenPattern}</p>
                             <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 2)?.kittenSex}</p>
                             <p><b>Status:</b> {data.kittens.find(obj => obj.id === 2)?.kittenStatus}</p>
+                            <p><b>Price:</b> {data.kittens.find(obj => obj.id === 2)?.kittenPrice}</p>
                         </div>
                     </div>
                     {/* Individual Kitten */}
@@ -146,6 +155,7 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
                             <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 3)?.kittenPattern}</p>
                             <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 3)?.kittenSex}</p>
                             <p><b>Status:</b> {data.kittens.find(obj => obj.id === 3)?.kittenStatus}</p>
+                            <p><b>Price:</b> {data.kittens.find(obj => obj.id === 3)?.kittenPrice}</p>
                         </div>
                     </div>
                     {/* Individual Kitten */}
@@ -158,13 +168,14 @@ const ModalLitter1: React.FC<ModalProps> = ({isOpen, onClose, id}) => {
                             <p><b>Pattern:</b> {data.kittens.find(obj => obj.id === 4)?.kittenPattern}</p>
                             <p><b>Sex:</b> {data.kittens.find(obj => obj.id === 4)?.kittenSex}</p>
                             <p><b>Status:</b> {data.kittens.find(obj => obj.id === 4)?.kittenStatus}</p>
+                            <p><b>Price:</b> {data.kittens.find(obj => obj.id === 4)?.kittenPrice}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
+        
+
     );
 }
 

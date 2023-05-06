@@ -76,13 +76,12 @@ const About = () => {
         </div>
         {/* >>>>>>>> What does the business provides <<<<<<<<<<<< */}
         <div className={AboutCSS.p3}>
-          <div className = {AboutCSS.bold} >
-            <p> We will provide some documents with every kitten.
+          <h3 className = {AboutCSS.bold}> Additional Information </h3>
+            <h5> We will provide some documents with every kitten.
             Such as registration, health, and vaccination records. We take pride in giving every 
             customer a healthy and joyful kitten. There might be some other supplies
-            included as well, such as informational packets, limited amount of food, toys, training guide etc.
-            </p>
-          </div>
+            included as well, such as informational packets, limited amount of food, toys, training guide, etc.
+            </h5>
          </div>
       
       </div>

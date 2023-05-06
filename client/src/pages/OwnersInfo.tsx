@@ -58,8 +58,8 @@ const ProductsRecommend = () => {
   return (
     <div className={OwnersInfoCSS.containerFullWidth} > {/*ProductsRecom}>*/}
       <h3> _______________</h3>
-      <h4> Below is a link to some products that we recommend for your kitten. 
-          <br/> From toys, treats, catteries, crates, bedding, grooming products, and accessories. </h4>
+      <h5> <br/> Below is a link to some products that we recommend for your kitten. 
+          <br/> From toys, treats, catteries, crates, bedding, grooming products, and accessories. </h5>
       {/*<h3> From toys, treats, catteries?, bedding, and training accessories? </h3> */}
       {/*<div className={OwnersInfoCSS.containerBox}>*/}
         <div className={OwnersInfoCSS.containerRow}>
@@ -86,51 +86,51 @@ const ProductsRecommend = () => {
 const KittenDevelopment = () => {
   return (
     <div className={OwnersInfoCSS.containerBox}>
-      <h1 className={OwnersInfoCSS.bold}> Kitten Development Stages</h1>
+      <h1 className={OwnersInfoCSS.bold}> Kitten Development Stages </h1>
       <h3> _______________</h3>
-      <h4> Here you can see the entire process your kitten will take from birth to the day it goes home. </h4>
+      <h5> Here you can see the entire process your kitten will take from birth to the day it goes home. </h5>
       
       <div className={OwnersInfoCSS.containerRowBox}>
         <div className={OwnersInfoCSS.containerRow2}>
-          <h1 className={OwnersInfoCSS.boldSub}> Age: 1 - 2 weeks <br/>________</h1>
+          <h2 className={OwnersInfoCSS.boldSub}> Age: 1 - 2 weeks </h2>
           {/*<h3> ________</h3>*/}
           <div className={OwnersInfoCSS.imgContainer}>
             <img alt="headerImage" src={require("../images/1 week ben kit.jpg")} /> 
           </div>
           {/*<div className={OwnersInfoCSS.text}>*/}
-            <h4> <br/> When kittens are born, during the first week they require constant care 
+            <h5> <br/> When kittens are born, during the first week they require constant care 
          and their mother's presence and involvement is crucial to their welbeing. As at this age they 
          can't open their eyes, eat solid food, or walk just yet. Their ears are tucked in as well. So, 
          they completely depend on their mother to protect, feed, and clean them. They sleep over 20 hours 
          a day. However, they're not completely helpless as they are often able to crawl to their mother 
-         when she feeds them. </h4>
+         when she feeds them. </h5>
         </div>
         <div className={OwnersInfoCSS.containerRow2}>
-          <h1 className={OwnersInfoCSS.boldSub}> Age: 2 - 4 weeks <br/>________</h1>
+          <h2 className={OwnersInfoCSS.boldSub}> Age: 2 - 4 weeks </h2>
           {/*<h3> ________</h3>*/}
           <div className={OwnersInfoCSS.imgContainer}>
             <img alt="headerImage" src={require("../images/2 week old ben kit.jpg")} />
           </div>
-          <h4> <br/> Eyes open, can walk, get tired very easily, still need LOTS of sleep as their muscles 
+          <h5> <br/> Eyes open, can walk, get tired very easily, still need LOTS of sleep as their muscles 
           have barely started to develop and get fatigued quickly. Right about now, they start to grow some 
           of their kitten teeth and Mama Bengal does not take to it very kindly. Now they are able to eat some 
           solid food. Need lots attention and care as they are
-          very vulnerable to diseases and viruses at this young age.</h4>
+          very vulnerable to diseases and viruses at this young age.</h5>
         </div>
         <div className={OwnersInfoCSS.containerRow2}>
-          <h1 className={OwnersInfoCSS.boldSub}> Age: 2 Months <br/>________</h1>
+          <h2 className={OwnersInfoCSS.boldSub}> Age: 2 Months </h2>
           {/*<h3> ________</h3>*/}
           <div className={OwnersInfoCSS.imgContainer}>
             <img alt="headerImage" src={require("../images/catImage35.jpg")} />
           </div>
-          <h4> <br/> <br/> <br/> <br/>
+          <h5> <br/> <br/> <br/> <br/>
           <br/> At two months old, they can recieve their first dose of vaccines (see 'Medical Info & Vet Things' below). 
           They have been completely weened off of their mother's milk. They have learned some social skills by interacting with 
-          their mother and other litter mates. They're ready to go to their new and forever home. </h4>
+          their mother and other litter mates. They're ready to go to their new and forever home. </h5>
         </div>
       </div>
 
-      <h2 className={OwnersInfoCSS.text}> Link / Lay out the process on weekly or biweekly, AND monthly basis</h2>
+      <h2 className={OwnersInfoCSS.text}> Kitten biweekly & monthly development process </h2>
       {/*</div>*/}
   </div>
   );
@@ -144,11 +144,11 @@ const PrepareForKitten = () => {
     <div className={OwnersInfoCSS.containerRow2}>
       <h1 className={OwnersInfoCSS.bold}> Preparing For Your Kitten </h1>
       <h3> ________</h3>
-      <h4> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
-            Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h4>
+      <h5> When you pick up your adorable kitten, it will go smoothly if you anticipate and prepare for the coming of that small bundle of joy and energy into your house.
+            Here are a few helpful tips and guidelines that can make the transition easier on you and your kitten.</h5>
       <a href="https://www.youtube.com/watch?v=A_MjCqQoLLA" target="_blank" rel='noreferrer'> {/*Place Holder link to 'Hey Jude - The Beatles'*/}
         <div className={OwnersInfoCSS.button}>
-          <h3 className={OwnersInfoCSS.underline}> <h3 className={OwnersInfoCSS.boldSub}> Video for preparing (YouTube link)</h3> </h3>
+          <h4 className={OwnersInfoCSS.underline}> <h4 className={OwnersInfoCSS.boldSub}> Video for preparing (YouTube link)</h4> </h4>
         </div>
       </a>
     </div>
@@ -169,20 +169,20 @@ const VetInfo = () => {
     <div className={OwnersInfoCSS.containerBox}>
       <h1 className={OwnersInfoCSS.bold}> Medical Information and Vet Things </h1>
       <h3> ________</h3>
-      <h4 className={OwnersInfoCSS.text}> Vaccinations and Deworming: Your kitten will have recieved their
+      <h5> # Vaccinations and Deworming: Your kitten will have recieved their
         <br/> first dose of vaccinations from our vet by the time you pick them up. 
         <br/> And it will your responsibility to get them further vaccinated shold you choose to do so.
         <br/> We recommend that you talk to your vet about it and follow their advice.
         <br/> Vaccination Shots: Parvo, Distemper, Flu, etc.<br/> 
-        <br/> Spaying and Neutering, OR Hysterectomy (for girls) or a Vasectomy (for boys) 
+        <br/> # Spaying and Neutering, OR Hysterectomy (for girls) or a Vasectomy (for boys): 
         <br/> Biologically kitten are able to become sexually active by the time they are three months old.
         <br/> So, it would be very beneficial to you and your kitten for you to talk to your vet regarding this. <br/> 
-        <br/> Health concerns: Cats, especially young and not fully vaccinated kittens can be at risk of catching
-        <br/> various diseases if you are not careful of their surroundings and environment they live in. 
-        <br/> Again, consult with you vet regarding any concerns you may have regarding your kitten's 
-        <br/> health and/or behaviour.
+        <br/> # Health concerns: Cats, especially young and not fully vaccinated kittens can be at risk of catching
+        <br/> various diseases if you are not careful of their surroundings and environment they live in.
         <br/> Bengals and cats in general, depending on their age, can be prone to, such as : 
-        <br/> Heart disease, Eye disease, Joint problems, Kidney disease </h4>
+        <br/> Heart disease, Eye disease, Joint problems, Kidney disease. <br/>
+        <br/> <i> Again, consult with you vet regarding any concerns you may have regarding your kitten's 
+        <br/> health and/or behaviour.</i> </h5>
       {/*<div className={OwnersInfoCSS.imgCenter}>
           <img alt="headerImage" src={require("../images/bengal-cat.jpg")} width = "700" height = "500" />
       </div>*/}
@@ -196,7 +196,7 @@ const KittenTraining = () => {
   return (
   <div className={OwnersInfoCSS.containerRowTransparent}>
     <div className={OwnersInfoCSS.containerRow1}>
-      <div className={OwnersInfoCSS.imgContainer3}>
+      <div className={OwnersInfoCSS.imgContainer2}>
       {/*<h2 className={OwnersInfoCSS.bold}> Pic of a kitten in training </h2>*/}
         <img alt="headerImage" src={require("../images/How-Do-I-Exercise-a-Bengal-Cat.jpg")} width = "700" height = "450"/>
       </div>
@@ -204,13 +204,14 @@ const KittenTraining = () => {
     <div className={OwnersInfoCSS.containerRow2}>
       <h1 className={OwnersInfoCSS.bold}> Training </h1>
       <h3> ________</h3>
-      <h4> Training a kitten can be a challenging task. But the good news is that it's totally doable AND both of you can lots of fun along the way. <br/>
-           There are many training courses and resourses you can find online and/or in nearby pet training facilites.<br/>
-           Some of them may even include some offers that go along with their training programs. <br/>
-           There are many different types of training you can teach you young kitten, such as litter training, house-breaking, tricks, etc. <br/>
-           There are lots of benefits of training you kitten as they will be better behaved, less anxious, and overall more happy. 
-           <br/> You can always look up training videos on YouTube. But remember, be patient, as kittens and cats in general have a very sensitive nature.</h4>
-
+      <h5> # Training a kitten can seem like a challenging task. But it's totally doable and can be a LOT of fun. 
+           <br/> # There are many training courses and resourses you can find online and/or in nearby pet training facilites.
+                You can always look up training videos on YouTube as well. 
+           <br/> # There are many different types of training you can give to your young kitten, such as litter training, house-breaking, obedience-training, tricks, etc. 
+           <br/> # Cats have short attention spans, so your training sessions shouldn't last any longer than five minutes.
+           <br/> # It will offer them some mental stimulation and help them be better behaved, less anxious, and overall more happy. Training will also serve as a great bonding activity.
+           <br/> # But remember, be patient, as kittens and cats in general have a very sensitive nature.
+      </h5>
     </div>
   </div>
   );
@@ -224,11 +225,11 @@ const PetInsurance = () => {
       <div className={OwnersInfoCSS.containerRow3}>
         <h1 className={OwnersInfoCSS.bold}> Pet Insurance </h1>
         <h3> ________</h3>
-        <h4 className={OwnersInfoCSS.text}> Pet insurance can be very beneficial for you and your kitten if you choose to get one. 
-          <br/>  However, it's not required and is something that might help you feel an ease of mind shold something unexpected were to happen. 
-          Their are various different insurance companies that you can choos from and many also offer 'only accidental coverage' as well 
-          which often has a minimal cost to it.
-          <br/> Insurance companies: Trupanion, ASPCA are among some of the best ones. </h4>
+        <h5> Pet insurance can be very beneficial for you and your kitten if you choose to get one. 
+            However, it's not required and is something that might help you feel an ease of mind should something unexpected were to happen. 
+            Their are various different insurance companies that you can choose from and many offer 'accidental coverage only' which often has a minimal cost to it.
+            Most insurance companies offer a free quote for every pet you wish to cover under any of their policies.
+            <br/> <i> Trupanion </i> and <i> ASPCA </i> are among some of the best to offer pet-insurance. </h5>
       </div>
     </div>
   );
