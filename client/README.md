@@ -19,11 +19,8 @@ Kingbengals Cattery is a family operated local cattery in Sacramento, specialize
 
 ### Testing
 
-To run the website, a internet browser of your choice should be installed.
-Program can be accessed by navgating to http://www.kingbengalscattery.com from your preferred browser. The website should appear. From there you may navigate the website using the links on the header, or if you are on mobile, by using the drop down menu from the top right side of the page.
-
 ### Deployment
-
+  Deployed via www.godaddy.com
 - How/where to download your program
 
 - Any modifications needed to be made to files/folders
@@ -34,8 +31,8 @@ code blocks for commands
 
 ### Instructions
 
-- To Run the Program:
-  Open a brower window and navigate to http://www.kingbengalscattery.com
+To run the website, a internet browser of your choice must be installed.
+Program can be accessed by navgating to http://www.kingbengalscattery.com from your preferred browser. The website should appear. From there you may navigate the website using the links on the header, or if you are on mobile, by using the drop down menu from the top right side of the page.
 
 ### Prototype
 
@@ -46,7 +43,7 @@ code blocks for commands
      <td>Our Cats Page</td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/37862616/205883968-3517f345-1a11-49cc-af68-334f8a8ef62b.png" width=226></td>
+    <td><img src=(./src/images/HomePage.png) width=226></td>
     <td><img src="https://user-images.githubusercontent.com/37862616/205884182-c57f98ba-792f-4d67-b209-1c4e27754339.png" width=287></td>
     <td><img src="https://user-images.githubusercontent.com/37862616/205884345-a5564ef2-9361-4d4f-9991-468e8e2b0ce8.png" width=294></td>
   </tr>
