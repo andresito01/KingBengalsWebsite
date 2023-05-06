@@ -35,12 +35,67 @@ export function KittensContextProvider({ children }) {
     return result.info.name;
   };
 
+  /*******************  Get kittens by litterID  ************************/
+  const getKittensByLitterID = (litterID) => {
+    const result = kittenList.filter(
+      (kitten) => kitten?.info?.litterID === litterID
+    );
+    return result;
+  };
+
+  // /*******************  Litter size   ************************/
+  const litterSize = (litterID) => {
+    const result = kittenList.filter(
+      (kitten) => kitten?.info?.litterID === litterID
+    );
+    const size = Object.keys(result).length;
+    return size;
+  };
+  // /*******************  Available kittens by litterD  ************************/
+  const availableInLitter = (litterID) => {
+    const result = kittenList.filter(
+      (kitten) => kitten?.info?.litterID === litterID
+    );
+    const available = result.filter(
+      (kitten) => kitten?.info?.status === "available"
+    );
+    const r = Object.keys(available).length;
+    return r;
+  };
+
+  /*******************  Sold kittens by litterD  ************************/
+  const soldInLitter = (litterID) => {
+    const result = kittenList.filter(
+      (kitten) => kitten?.info?.litterID === litterID
+    );
+    const sold = result.filter((kitten) => kitten?.info?.status === "sold");
+    const r = Object.keys(sold).length;
+    return r;
+  };
+
+  /*******************  Reserved kittens by litterD  ************************/
+  const reservedInLitter = (litterID) => {
+    const result = kittenList.filter(
+      (kitten) => kitten?.info?.litterID === litterID
+    );
+    const reserve = result.filter(
+      (kitten) => kitten?.info?.status === "reserved"
+    );
+    const r = Object.keys(reserve).length;
+    return r;
+  };
+
   return (
     <KittensContext.Provider
       value={{
         kittenList,
         findKitten,
         getKittenName,
+        getKittensByLitterID,
+        litterSize,
+        availableInLitter,
+        soldInLitter,
+        reservedInLitter,
       }}
     >
       {children}

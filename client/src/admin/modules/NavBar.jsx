@@ -65,7 +65,7 @@ const Navbar = () => {
               Kittens
             </h4>
           </Link>
-          <Link className=" text-amber-300" to="/adminParents">
+          <Link className=" text-amber-300" to="/adminTestimonial">
             <h4 className="p-4 text-bold text-2xl md:text-3xl mx-4  hover:text-green-500 cursor-pointer">
               Testimonials
             </h4>

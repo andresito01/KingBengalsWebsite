@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { UserAuth } from "../context/AuthContext";
 import { UserAdmin } from "../context/AdminContext";
-import backgrounImg from "../../images/bengal-cat-coat-glitter.jpg";
+import Footer from "../../components/Footer";
+import CheckingCredentialsCSS from "../styles/CheckingCredentials.module.css";
 import WebNavHeader from "../../components/WebNavHeader";
 
 const CheckCredentials = () => {
   const [isThisAdmin, setIsThisAdmin] = useState(false);
   const [counter, setCounter] = useState(0);
-  const { user } = UserAuth();
   const { isAdmin } = UserAdmin();
 
   const navigate = useNavigate();
@@ -21,7 +20,7 @@ const CheckCredentials = () => {
       setCounter((prevNum) => {
         return prevNum + 1;
       });
-    }, 200);
+    }, 100);
   };
 
   // check credentials
@@ -45,63 +44,50 @@ const CheckCredentials = () => {
   }, [counter]);
 
   return (
-    <div className="w-full h-screen">
+    <div className={CheckingCredentialsCSS.checkingCredentialsContainer}>
       <WebNavHeader />
-      <img
-        className="sm:block absolute w-full h-full object-cover "
-        src={backgrounImg}
-        alt="/"
-      />
-
-      <div className="bg-black/30 fixed top-0 left-0 w-full h-screen"></div>
-      <div className="absolute w-full px-4 py-24 z-50">
-        <div className="max-w-[450px] h-[330px] mx-auto bg-black/75 text-white rounded-xl">
-          <div className="max-w-[310px] mx-auto py-16">
-            <h1 className="text-red-500 text-3xl md:text-4xl font-bolt justify-center text-center ">
-              Checking Credentials
-            </h1>
-            <p className="text-2xl text-amber-400 py-2">
-              One moment pls, If this takes more than 3 secons please confirm
-              that there is internet connection, or contact support if the
-              problem continue
-            </p>
-            <p>User: {user?.email}</p>
-            <p>Admin: {isThisAdmin}</p>
-            <div className="py-2 my-2"></div>
-
-            <div className="text-center text-amber-300 my-8">
-              <p>
-                <span>Try again?</span>{" "}
-                <Link
-                  className="font-bold text-blue-400 hover:text-green-500"
-                  to="/login"
-                >
-                  Sign In
-                </Link>
-              </p>
-              <p>
-                <span>Go to </span>
-                <Link
-                  className="font-bold text-blue-400 hover:text-green-500"
-                  to="/"
-                >
-                  HomePage
-                </Link>{" "}
-              </p>
-              <p>
-                <span>Or </span>{" "}
-                <Link
-                  className="font-bold text-blue-400 hover:text-green-500"
-                  to="/contact"
-                >
-                  {" "}
-                  Contact Support
-                </Link>
-              </p>
-            </div>
-          </div>
+      <div className={CheckingCredentialsCSS.canvasContainer}>
+        <div className={CheckingCredentialsCSS.titleContainer}>
+          <h1>
+            <strong>Checking Credentials </strong>
+            <span>Wait please!</span>
+          </h1>
+        </div>
+        <div className={CheckingCredentialsCSS.statementContainer}>
+          <p>
+            If this takes more than 3 secons please confirm that there is
+            internet connection. Contact support if the problem persist.
+          </p>
+        </div>
+        <div className={CheckingCredentialsCSS.linksContainer}>
+          <p>
+            <span>Do you need help? </span>
+            <strong>
+              <Link className={CheckingCredentialsCSS.links} to="/contact">
+                Contact Support
+              </Link>
+            </strong>
+          </p>
+          <p>
+            <span>Return </span>
+            <strong>
+              <Link className={CheckingCredentialsCSS.links} to="/">
+                HomePage
+              </Link>
+            </strong>
+          </p>
+          <p>
+            <span>Try again?</span>
+            <strong>
+              <Link className={CheckingCredentialsCSS.links} to="/login">
+                Sign In
+              </Link>
+            </strong>
+          </p>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
