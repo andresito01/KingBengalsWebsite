@@ -64,7 +64,7 @@ Program can be accessed by navgating to http://www.kingbengalscattery.com from y
   </tr>
   <tr>
     <td><img src="./src/images/LitterInfo.jpg" width=310></td>
-    <td><img src="./src/images/ContactUs.jpg" width=287></td>
+    <td><img src="./src/images/ContactUsPage.jpg" width=287></td>
     <td><img src="./src/images/BreedInfo.jpg" width=287></td>
   </tr>
 
