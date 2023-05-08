@@ -8,7 +8,7 @@
 }
 
 .headerContainer {
-  position: fixed; /*absolute;/*fixed; /*relative;*/
+  position: relative;
   /*position: -webkit-sticky; /* For Safari */
   top: 0;
   width: 100%;
@@ -29,7 +29,7 @@
   background-repeat: no-repeat;
 }
 
-.logoContainer{
+.logoContainer {
   display: flex;
   bottom: 0px;
   width: 16vw;
@@ -107,21 +107,21 @@
 
 /* Navigation Links */
 
-.navLinks{
+.navLinks {
   display: flex;
   flex-direction: row;
   gap: 1.6rem;
   margin-bottom: 1rem;
 }
 
-.link a{
+.link a {
   text-decoration: none;
   font-family: inika;
   font-size: 1.2rem; /*1.7rem;*/
   color: white;
 }
 
-.link a.active{
+.link a.active {
   color: rgba(226, 174, 110, 0.7);
   text-decoration: underline;
   padding-right: 15px;
@@ -136,17 +136,17 @@
 .navBtn {
   display: none;
   padding: 5px;
-	cursor: pointer;
-	background: transparent;
-	border: none;
-	outline: none;
-	color: white;
-	font-size: 2rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2rem;
   margin-top: 3rem;
   margin-right: 3rem;
 }
 
-.navLinks{
+.navLinks {
   display: flex;
   flex-direction: row;
   gap: 1.6rem;
@@ -154,17 +154,16 @@
 }
 
 @media only screen and (max-width: 1213px) {
-
-	.navBtn{
+  .navBtn {
     display: block;
-		position: absolute; /*absolute;*/
+    position: absolute; /*absolute;*/
     right: 0;
     top: 0;
-	}
+  }
 
-	.link {
+  .link {
     display: none;
-	}
+  }
 
   .rightImgContainer #rightHeaderImg {
     display: none;
@@ -180,8 +179,8 @@
     font-size: 4rem;
     margin-bottom: 1rem;
   }
-  
-  .headerCattery { 
+
+  .headerCattery {
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
@@ -189,11 +188,9 @@
   .logoImg {
     width: 10rem;
   }
-
 }
 
 @media only screen and (max-width: 1213px) {
-  
   .middleResponsive {
     position: relative;
     left: 20%;
@@ -233,7 +230,6 @@
     background-color: rgba(226, 174, 110, 0.7);
   }
 
-
   .logoImgResponsive {
     width: 10rem;
   }
@@ -244,31 +240,26 @@
     left: 0px;
     height: 90px;
   }
-
 }
 
 @media only screen and (max-width: 440px) {
-
-    .logoImg {
-      width: 6rem;
-    }
-
-    .logoImgResponsive {
-      width: 6rem;
-    }
-    
-    .headerKingBengals {
-      font-size: 2.5rem; 
-    }
-    
-    .headerCattery { 
-      font-size: 1.5rem;
-    }
-
-    .logoResponsive {
-      height: 70px;
-    }
-    
+  .logoImg {
+    width: 6rem;
   }
 
-  
+  .logoImgResponsive {
+    width: 6rem;
+  }
+
+  .headerKingBengals {
+    font-size: 2.5rem;
+  }
+
+  .headerCattery {
+    font-size: 1.5rem;
+  }
+
+  .logoResponsive {
+    height: 70px;
+  }
+}

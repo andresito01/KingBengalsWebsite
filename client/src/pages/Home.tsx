@@ -15,8 +15,6 @@ const fontSizeQuote = { fontSize: "20px" };
 const Home = () => {
   return (
     <div className={HomeCSS.homePageContainer}>
-      <NavBarUnderLayer/>
-
       <WebNavHeader />
 
       {/*>>>>>>>>>>>> Homepage Header Image <<<<<<<<<<<<*/}
@@ -47,23 +45,26 @@ const Home = () => {
 };
 
 /* >>>>>>>>>>>>>>>>>>>>>>       Homepage Header     <<<<<<<<<<<<<<<<<<<<<<<<<<< */
- const HomepageHeader = () => {
-   return (
-     <div className={HomeCSS.homeHeader}>
-       {/* Header Image */}
-       <img alt="headerImage" src={homePageJSON.headerImg} />
-     </div>
-   );
- };
+const HomepageHeader = () => {
+  return (
+    <div className={HomeCSS.homeHeader}>
+      {/* Header Image */}
+      <img alt="headerImage" src={homePageJSON.headerImg} />
+    </div>
+  );
+};
 
 /* >>>>>>>>>>>>>>>>>>>>>>       Homepage Header     <<<<<<<<<<<<<<<<<<<<<<<<<<< */
 const MissionStatement = () => {
   return (
     <div className={HomeCSS.missionStatement}>
       <div className={HomeCSS.missionStatementText}>
-        <h3 style={fontSizeMissionStatement}>{homePageJSON.missionStatement}</h3>
+        <h3 style={fontSizeMissionStatement}>
+          {homePageJSON.missionStatement}
+        </h3>
         <hr></hr>
-        <p style={fontSizeQuote}>{homePageJSON.missionStatementDiscription}
+        <p style={fontSizeQuote}>
+          {homePageJSON.missionStatementDiscription}
           <div className={HomeCSS.missionOwnersName}>
             <h6> - Lydia Zapuskalov, owner of KingBengals Cattery </h6>
           </div>

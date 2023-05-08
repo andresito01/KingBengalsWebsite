@@ -8,7 +8,6 @@ import NavBarUnderLayer from "../components/NavBarUnderLayer";
 const OurCats: React.FC = () => {
   return (
     <div className={OurCatsCSS.ourCatsPage}>
-      <NavBarUnderLayer/>
       <WebNavHeader />
       <div className={OurCatsCSS.headerBackground}>
         <div className={OurCatsCSS.headerContainerOurCats}>
