@@ -8,6 +8,82 @@
 }
 
 .navbarContainer {
-  width: full;
-  background-color: #321a02cc;
+  width: 100%;
+  background-color: #231202c4;
+}
+
+.upperRowContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kbContainer {
+  max-width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.kbContainer h1 {
+  display: flex;
+  align-items: baseline;
+  flex-flow: row wrap;
+}
+.kbContainer h1 strong {
+  font-size: x-large;
+  color: rgb(249, 155, 4);
+}
+.kbContainer h1 span {
+  font-size: medium;
+  color: white;
+}
+.logoContainer {
+  width: 90px;
+}
+.logoContainer img {
+  width: 100%;
+}
+
+.accountContainer {
+  padding: 0rem 1rem;
+  max-width: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.accountContainer h4 {
+  color: white;
+  text-align: right;
+}
+.accountContainer button {
+  color: white;
+  font-size: normal;
+  font-weight: bold;
+  min-width: fit-content;
+  background-color: red;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  max-width: 50%;
+}
+
+.linksContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.links {
+  /* background-color: rgb(255, 0, 174); */
+  color: rgb(250, 179, 0);
+  padding: 0.25rem 1rem;
+  font-size: large;
+  font-weight: bold;
+}
+.links:hover {
+  color: rgb(68, 255, 0);
+  font-style: normal;
 }

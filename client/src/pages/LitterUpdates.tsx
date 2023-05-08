@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import LitterUpdatesCSS from "./styles/LitterUpdates.module.css";
-// import ModalStyle from "../components/styles/LitterModal.module.css";
-
 import DisplayLitter from "../components/DisplayLitter";
 
 const LitterUpdates: React.FC = () => {
