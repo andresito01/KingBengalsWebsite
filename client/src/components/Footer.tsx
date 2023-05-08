@@ -54,7 +54,7 @@ const Footer = () => {
           className={FooterCSS.footerLinks}
           onClick={() => navigate("/contact")}
         >
-          email: #######@####.com
+          kingbengalscattery@gmail.com
         </li>
         <li
           className={FooterCSS.footerLinks}

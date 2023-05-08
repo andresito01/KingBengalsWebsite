@@ -12,7 +12,6 @@ const ReserveAKitten = () => {
   return (
     <div className={ReserveAKittenCSS.reserveAKittenPage}>
       <div className={ReserveAKittenCSS.backgroundLayer}>
-        <NavBarUnderLayer />
         <WebNavHeader />
         <div className={ReserveAKittenCSS.headerContainer}>
           <div className={ReserveAKittenCSS.headerContainerReserve}>
