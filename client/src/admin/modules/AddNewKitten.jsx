@@ -158,7 +158,7 @@ const AddNewKitten = () => {
           }}
           required
         >
-          <legend className="text-white">Sex:</legend>
+          <legend>Sex:</legend>
           <input id="male" type="radio" value="male" name="sex" />
           <label htmlFor="male">male</label>
           <input id="female" type="radio" value="female" name="sex" />

@@ -95,3 +95,36 @@
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
+
+.edittingOptions legend {
+  max-width: fit-content;
+  border-style: none;
+  font-weight: bold;
+  display: flex;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.edittingOptions fieldset {
+  width: 90%;
+  min-width: 8rem;
+  margin: 0.5rem 0rem;
+  border-width: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgba(242, 164, 20, 0.291);
+  font-size: 1.5rem;
+}
+.edittingOptions fieldset label {
+  max-width: fit-content;
+  border-color: rgb(225, 255, 0);
+  background-color: rgb(174, 250, 41);
+  color: rgb(77, 38, 2);
+  border-width: 0.25rem;
+  padding: 0rem;
+  font-size: normal;
+}
