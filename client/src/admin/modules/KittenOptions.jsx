@@ -92,7 +92,7 @@ const KittenOptions = () => {
             <div></div>
             <div className={KittenOptionsCSS.deleteContainer}>
               <button type="button" onClick={() => deleteKitten(id)}>
-                Delete Litter
+                Delete Kitten
               </button>
             </div>
             {/*======   Display: litter's Picture  =====*/}
