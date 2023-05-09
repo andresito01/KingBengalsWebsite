@@ -40,20 +40,7 @@ const AddNewParent = () => {
           required
         />
         <br />
-        {/*--- Parent's sex ---*/}
-        <label htmlFor="sex">Sex:</label>
-        <input
-          name="sex"
-          type="text"
-          onChange={(e) => {
-            setTempParent({
-              ...tempParent,
-              sex: e.target.value,
-            });
-          }}
-          required
-        />
-        <br />
+
         {/*--- Parent's attribute ---*/}
         <label htmlFor="attitude">Attitude:</label>
         <input
@@ -68,6 +55,7 @@ const AddNewParent = () => {
           required
         />
         <br />
+
         {/*--- Display: Parent's status ---*/}
         <label htmlFor="status">Status: </label>
         <input
@@ -138,6 +126,23 @@ const AddNewParent = () => {
           required
         />
         <br />
+        {/*--- Sex ---*/}
+        <fieldset
+          name="sex"
+          onChange={(e) => {
+            setTempParent({
+              ...tempParent,
+              sex: e.target.value,
+            });
+          }}
+          required
+        >
+          <legend>Sex:</legend>
+          <input id="sire" type="radio" value="Sire" name="sex" />
+          <label htmlFor="sire">Sire</label>
+          <input id="dam" type="radio" value="Dam" name="sex" />
+          <label htmlFor="dam">Dam</label>
+        </fieldset>
         {/*===  Add new parent buttom ===*/}
         <button onClick={() => addNewParent()}>Add new Parent</button>
         <br />

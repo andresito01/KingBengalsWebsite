@@ -81,9 +81,6 @@ const ParentOptions = () => {
               <label htmlFor="name">Name:</label>
               <input name="name" type="text" value={name} readOnly />
               <br />
-              <label htmlFor="sex">Sex:</label>
-              <input name="sex" type="text" value={sex} readOnly />
-              <br />
               <label htmlFor="attitude">Attitude:</label>
               <input name="attitude" type="text" value={attitude} readOnly />
               <br />
@@ -102,6 +99,8 @@ const ParentOptions = () => {
               <label htmlFor="picture">Picture:</label>
               <input name="picture" type="text" value={picture} readOnly />
               <br />
+              <label htmlFor="sex">Sex:</label>
+              <input name="sex" type="text" value={sex} readOnly />
             </section>
             {/*======   Display: Parent's Editting Options  =====*/}
             <div className={ParentOptionsCSS.edittingOptions}>
@@ -121,20 +120,7 @@ const ParentOptions = () => {
                 }}
               />
               <br />
-              {/* --- Display: Parent's sex ---*/}
-              <label htmlFor="sex">Sex:</label>
-              <input
-                name="sex"
-                type="text"
-                placeholder={sex}
-                onChange={(e) => {
-                  setTempParent({
-                    ...tempParent,
-                    sex: e.target.value,
-                  });
-                }}
-              />
-              <br />
+
               {/*--- Display: Parent's attribute ---*/}
               <label htmlFor="attitude">Attitude:</label>
               <input
@@ -225,6 +211,27 @@ const ParentOptions = () => {
                 }}
               />
               <br />
+              {/*--- Sex ---*/}
+              <fieldset
+                name="sex"
+                onChange={(e) => {
+                  setTempParent({
+                    ...tempParent,
+                    sex: e.target.value,
+                  });
+                }}
+                required
+              >
+                <legend>Sex:</legend>
+                <div>
+                  <input id="sire" type="radio" value="Sire" name="sex" />
+                  <label htmlFor="sire">Sire</label>
+                </div>
+                <div>
+                  <input id="dam" type="radio" value="Dam" name="sex" />
+                  <label htmlFor="dam">Dam</label>
+                </div>
+              </fieldset>
 
               {/* ===  Edit buttom === */}
               <button onClick={() => editParent(id)} type="submit">

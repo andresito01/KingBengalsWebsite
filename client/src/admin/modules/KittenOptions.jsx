@@ -92,7 +92,7 @@ const KittenOptions = () => {
             <div></div>
             <div className={KittenOptionsCSS.deleteContainer}>
               <button type="button" onClick={() => deleteKitten(id)}>
-                Delete Litter
+                Delete Kitten
               </button>
             </div>
             {/*======   Display: litter's Picture  =====*/}
@@ -252,7 +252,7 @@ const KittenOptions = () => {
                   <input id="female" type="radio" value="female" name="sex" />
                   <label htmlFor="female">female</label>
                 </div>
-                <legend className="text-white">Sex:</legend>
+                <legend>Sex:</legend>
               </fieldset>
 
               {/*--- Status ---*/}
@@ -265,7 +265,7 @@ const KittenOptions = () => {
                   });
                 }}
               >
-                <legend className="text-white">Status:</legend>
+                <legend>Status:</legend>
 
                 <div>
                   <input
