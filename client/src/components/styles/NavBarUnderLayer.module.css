@@ -1,0 +1,12 @@
+@import "../../theme.css";
+
+.headerUnderneathLayer {
+    display: flex;
+    position: relative; /*absolute;/*fixed; /*relative;*/
+    top: 0;
+    width: 100%;
+    height: 15.4vw;
+    background-color: var(--dark-primary-color);
+    z-index: 1;
+    overflow: visible;
+  }

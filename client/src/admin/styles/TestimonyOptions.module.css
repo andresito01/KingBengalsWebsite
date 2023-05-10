@@ -1,0 +1,119 @@
+/* ******************   Display each Kitten   *********************/
+.testimonyContainer {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(38, 43, 1, 0.497);
+  border-radius: 1rem;
+  border-color: rgb(248, 228, 50);
+  border-style: solid;
+  border-width: 0.5rem;
+  display: grid;
+  color: rgb(254, 254, 254);
+}
+@media screen {
+  .testimonyContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ****************** Delete Option - Kitten ******************/
+.deleteContainer {
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  margin-top: 0rem;
+}
+.deleteContainer button {
+  background-color: rgba(240, 45, 6, 0.976);
+  border-color: rgb(235, 242, 37);
+  border-width: 0.25rem;
+  font-size: 1.85rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.965);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+/* ********************   Kitten Picture   *********************/
+.pictureContainer {
+  width: 90%;
+  margin: auto;
+  border-radius: 15%;
+}
+.pictureContainer img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+/* ********************** kitten Info *********************/
+.testimonyInfo {
+  width: 90%;
+  margin: auto;
+  margin-top: 0rem;
+}
+.testimonyInfo label {
+  min-width: 9rem;
+  padding: 0.25rem 1rem;
+  margin: 0.5rem 0rem;
+  border-radius: 0.5rem;
+  color: black;
+  text-align: center;
+  background-color: rgba(239, 187, 55, 0.926);
+}
+.testimonyInfo input {
+  width: fit-content;
+  height: 2rem;
+  color: rgb(6, 6, 6);
+  background-color: rgba(235, 209, 176, 0.822);
+  border-radius: 0.5rem;
+  padding: auto, 1rem;
+}
+
+.testimonyInfo textarea {
+  color: black;
+  background-color: rgba(235, 209, 176, 0.822);
+  width: 80%;
+  min-width: 14rem;
+  height: 15rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem 0rem;
+}
+
+/* ****************** Edit Options - Kittens ******************/
+.edittingOptions {
+  width: 90%;
+  margin: auto;
+  margin-top: 0rem;
+}
+
+.edittingOptions label {
+  min-width: 9rem;
+  padding: 0.25rem 1rem;
+  margin: 0.5rem 0rem;
+  border-radius: 0.5rem;
+  color: black;
+  text-align: center;
+  background-color: rgba(239, 187, 55, 0.926);
+}
+.edittingOptions input {
+  color: black;
+  border-radius: 0.2rem;
+  padding: 0.5rem, 1rem;
+}
+.edittingOptions button {
+  background-color: rgb(190, 76, 5);
+  border-color: rgb(126, 251, 2);
+  border-width: 0.25rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.edittingOptions textarea {
+  color: black;
+  width: 80%;
+  min-width: 14rem;
+  height: 15rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem 0rem;
+}

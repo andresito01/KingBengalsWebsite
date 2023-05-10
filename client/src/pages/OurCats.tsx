@@ -3,6 +3,7 @@ import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import OurCatsCSS from "./styles/OurCats.module.css";
 import DisplayParents from "../components/DisplayParents";
+import NavBarUnderLayer from "../components/NavBarUnderLayer";
 
 const OurCats: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const OurCats: React.FC = () => {
       <div className={OurCatsCSS.headerBackground}>
         <div className={OurCatsCSS.headerContainerOurCats}>
           <h1>Meet Our Cats!</h1>
-          <h2>
+          <h3>
             We believe in quality genetics and pay close attention to our
             breeding program to ensure those quality results we strive for. We
             provide our cats with the best care and nutrition possible. We give
@@ -20,7 +21,7 @@ const OurCats: React.FC = () => {
             <br></br>
             Treatment and care is given to our cats to boost energy, behavior,
             and quality of life.
-          </h2>
+          </h3>
           <h3>
             <br></br>
             <br></br>

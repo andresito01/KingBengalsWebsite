@@ -35,8 +35,14 @@ export function ParentsContextProvider({ children }) {
     return result.info.name;
   };
 
+  /*******************  Get Parent's picture by ID  ************************/
+  const getParentPicture = (id) => {
+    const result = findParent(id);
+    return result?.info?.picture;
+  };
+
   return (
-    <ParentsContext.Provider value={{ parentList, findParent, getParentName }}>
+    <ParentsContext.Provider value={{ parentList, findParent, getParentName, getParentPicture}}>
       {children}
     </ParentsContext.Provider>
   );

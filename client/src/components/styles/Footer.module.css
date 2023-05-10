@@ -1,8 +1,10 @@
+@import "../../theme.css";
+
 .footerContainer {
   width: 100%;
   margin: auto;
   background-color: #412804;
-  padding: 1.25rem 0.5rem;
+  padding: 1rem 0.3rem;
   border-top: #e2b78e outset 0.75rem;
   border-bottom: #41280439 outset 0.85rem;
   display: grid;
@@ -28,7 +30,7 @@
 }
 
 .footerContainer h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   height: 0.5rem;
 }

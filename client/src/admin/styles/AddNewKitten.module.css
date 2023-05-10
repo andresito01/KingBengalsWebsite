@@ -4,27 +4,75 @@
   margin: auto;
   margin-top: 2vw;
   padding: 2rem;
-  background-color: rgba(50, 94, 13, 0.354);
+  background-color: rgba(38, 43, 1, 0.497);
   border-radius: 1rem;
-  border-color: rgb(244, 224, 198);
+  border-color: rgb(243, 211, 49);
   border-style: solid;
   border-width: 0.5rem;
   display: block;
-  color: azure;
+  color: rgb(254, 254, 254);
 }
 .newKittenContainer label {
   min-width: 8rem;
+  padding: 0.25rem 1rem;
+  margin: 0.5rem 0rem;
+  border-radius: 0.5rem;
+  color: black;
+  text-align: center;
+  background-color: rgba(244, 173, 30, 0.989);
 }
 .approxGoHome {
   width: 20rem;
 }
 .newKittenContainer input {
   color: black;
+  border-radius: 0.2rem;
+  padding: 0.5rem, 1rem;
 }
 .newKittenContainer button {
-  background-color: brown;
-  font-size: 1.85rem;
+  background-color: rgba(28, 94, 2, 0.844);
+  border-color: rgb(253, 253, 63);
+  border-width: 0.25rem;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 .newKittenContainer select {
   color: black;
+  border-radius: 0.2rem;
+  padding: 0.5rem, 1rem;
+  margin: 0.5rem 0rem;
+  background-color: rgb(184, 251, 68);
+}
+
+.newKittenContainer legend {
+  max-width: fit-content;
+  border-style: none;
+  font-weight: bold;
+  display: flex;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.newKittenContainer fieldset {
+  max-width: fit-content;
+  margin: 0.5rem 0rem;
+  border-width: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  display: block;
+  background-color: rgba(242, 164, 20, 0.291);
+  font-size: 1.5rem;
+}
+
+.newKittenContainer fieldset label {
+  border-color: rgb(225, 255, 0);
+  background-color: rgb(174, 250, 41);
+  border-width: 0.25rem;
+  padding: 0;
+  font-size: normal;
 }

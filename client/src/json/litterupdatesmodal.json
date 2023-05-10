@@ -5,6 +5,7 @@
         "totalKittens": "5",
         "availableKittens": "4",
         "soldKittens": "1",
+        "priceRange": "$650 - $800",
         "birthDate": "January 5, 2023",
         "pickupDate": "April 20, 2023",
         "litterPicture": "images/Litter1.png",
@@ -19,6 +20,7 @@
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
                 "kittenStatus": "Available",
+                "kittenPrice": "$750",
                 "reservationPrice": 150.00
             },
             {
@@ -29,6 +31,7 @@
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
                 "kittenStatus": "Available",
+                "kittenPrice": "$600",
                 "reservationPrice": 150.00
             },
             {
@@ -39,6 +42,7 @@
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
                 "kittenStatus": "Available",
+                "kittenPrice": "$800",
                 "reservationPrice": 150.00
             },
             {
@@ -49,6 +53,7 @@
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
                 "kittenStatus": "Available",
+                "kittenPrice": "$750",
                 "reservationPrice": 150.00
             }
         ]
@@ -59,6 +64,7 @@
         "totalKittens": "4",
         "availableKittens": "2",
         "soldKittens": "2",
+        "priceRange": "$600 - $850",
         "birthDate": "November 12, 2022",
         "pickupDate": "March 20, 2023",
         "litterPicture": "images/Litter2.png",
@@ -72,6 +78,7 @@
                 "kittenColor": "Carmel/Tan",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
+                "kittenPrice": "$700",
                 "kittenStatus": "Reserved",
                 "reservationPrice": 150.00
             },
@@ -83,6 +90,7 @@
                 "kittenPattern": "Spotted",
                 "kittenSex": "Female",
                 "kittenStatus": "Available",
+                "kittenPrice": "$650",
                 "reservationPrice": 150.00
             },
             {
@@ -92,6 +100,7 @@
                 "kittenColor": "Cramel/Black",
                 "kittenPattern": "Marble",
                 "kittenSex": "Male",
+                "kittenPrice": "$850",
                 "kittenStatus": "Reserved",
                 "reservationPrice": 150.00
             },
@@ -102,6 +111,7 @@
                 "kittenColor": "Brown/Black",
                 "kittenPattern": "Spotted",
                 "kittenSex": "Male",
+                "kittenPrice": "$800",
                 "kittenStatus": "Reserved",
                 "reservationPrice": 150.00
             }

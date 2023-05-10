@@ -1,0 +1,59 @@
+.insufficientPermissionContainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-image: conic-gradient(
+    rgb(64, 29, 2),
+    rgb(255, 174, 0),
+    rgb(64, 29, 2)
+  );
+  background-image: url("../../images/bengal-cat-coat-glitter.jpg"); /*kbengalsbgGradient.png");*/
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+}
+
+.canvasContainer {
+  width: 90%;
+  padding: 2rem 4rem;
+  margin: 2rem 0rem;
+  max-width: 500px;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.726);
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.canvasContainer h1 strong {
+  color: rgb(255, 0, 0);
+  font-size: x-large;
+}
+.canvasContainer h1 span {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.canvasContainer p {
+  color: rgba(255, 204, 0, 0.94);
+  font-size: normal;
+  margin: 1rem 0rem;
+}
+
+.titleContainer {
+  margin: 2rem auto;
+}
+.statementContainer {
+  margin: 1rem auto;
+}
+
+.linksContainer {
+  margin: 4rem auto;
+}
+.links {
+  color: rgb(113, 173, 247);
+  font-size: medium;
+}
+.links:hover {
+  color: rgb(68, 255, 0);
+  font-style: normal;
+}

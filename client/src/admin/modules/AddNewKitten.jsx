@@ -132,7 +132,8 @@ const AddNewKitten = () => {
         <br />
 
         {/*--- Reservation Price ---*/}
-        <label htmlFor="reservePrice">Price: </label>
+        <label htmlFor="reservePrice">Resevation Price: </label>
+        <br />
         <input
           name="reservePrice"
           type="number"
@@ -157,7 +158,7 @@ const AddNewKitten = () => {
           }}
           required
         >
-          <legend className="text-white">Sex:</legend>
+          <legend>Sex:</legend>
           <input id="male" type="radio" value="male" name="sex" />
           <label htmlFor="male">male</label>
           <input id="female" type="radio" value="female" name="sex" />
@@ -181,7 +182,7 @@ const AddNewKitten = () => {
           <input id="reserved" type="radio" value="reserved" name="status" />
           <label htmlFor="reserved">Reserved</label>
           <input id="sold" type="radio" value="sold" name="status" />
-          <label htmlFor="sold">Sold:</label>
+          <label htmlFor="sold">Sold</label>
         </fieldset>
 
         <br />

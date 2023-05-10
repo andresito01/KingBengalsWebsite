@@ -92,7 +92,7 @@ const KittenOptions = () => {
             <div></div>
             <div className={KittenOptionsCSS.deleteContainer}>
               <button type="button" onClick={() => deleteKitten(id)}>
-                Delete Litter
+                Delete Kitten
               </button>
             </div>
             {/*======   Display: litter's Picture  =====*/}
@@ -123,10 +123,11 @@ const KittenOptions = () => {
               <label htmlFor="picture">Picture:</label>
               <input name="picture" type="text" value={picture} readOnly />
               <br />
-              <label htmlFor="price">Price:</label>
+              <label htmlFor="price">Price ($):</label>
               <input name="price" type="text" value={price} readOnly />
               <br />
-              <label htmlFor="reservePrice">Reserve Price:</label>
+              <label htmlFor="reservePrice">Reservation Fee ($):</label>
+              <br />
               <input
                 name="reservePrice"
                 type="text"
@@ -161,7 +162,6 @@ const KittenOptions = () => {
                     name: e.target.value,
                   });
                 }}
-                required
               />
               <br />
               {/*--- Color ---*/}
@@ -175,7 +175,6 @@ const KittenOptions = () => {
                     color: e.target.value,
                   });
                 }}
-                required
               />
               <br />
               {/*--- Pattern ---*/}
@@ -189,7 +188,6 @@ const KittenOptions = () => {
                     pattern: e.target.value,
                   });
                 }}
-                required
               />
               <br />
 
@@ -204,12 +202,11 @@ const KittenOptions = () => {
                     picture: e.target.value,
                   });
                 }}
-                required
               />
               <br />
 
               {/*--- Price ---*/}
-              <label htmlFor="price">Price: </label>
+              <label htmlFor="price">Price ($): </label>
               <input
                 name="price"
                 type="number"
@@ -219,12 +216,12 @@ const KittenOptions = () => {
                     price: e.target.value,
                   });
                 }}
-                required
               />
               <br />
 
               {/*--- Reservation Price ---*/}
-              <label htmlFor="reservePrice">Reserve Price: </label>
+              <label htmlFor="reservePrice">Reservation Fee ($): </label>
+              <br />
               <input
                 name="reservePrice"
                 type="number"
@@ -234,7 +231,6 @@ const KittenOptions = () => {
                     reservePrice: e.target.value,
                   });
                 }}
-                required
               />
               <br />
 
@@ -247,13 +243,16 @@ const KittenOptions = () => {
                     sex: e.target.value,
                   });
                 }}
-                required
               >
-                <legend className="text-white">Sex:</legend>
-                <input id="male" type="radio" value="male" name="sex" />
-                <label htmlFor="male">male</label>
-                <input id="female" type="radio" value="female" name="sex" />
-                <label htmlFor="female">female</label>
+                <div>
+                  <input id="male" type="radio" value="male" name="sex" />
+                  <label htmlFor="male">male</label>
+                </div>
+                <div>
+                  <input id="female" type="radio" value="female" name="sex" />
+                  <label htmlFor="female">female</label>
+                </div>
+                <legend>Sex:</legend>
               </fieldset>
 
               {/*--- Status ---*/}
@@ -265,25 +264,32 @@ const KittenOptions = () => {
                     status: e.target.value,
                   });
                 }}
-                required
               >
-                <legend className="text-white">Status:</legend>
-                <input
-                  id="available"
-                  type="radio"
-                  value="available"
-                  name="status"
-                />
-                <label htmlFor="available">Available</label>
-                <input
-                  id="reserved"
-                  type="radio"
-                  value="reserved"
-                  name="status"
-                />
-                <label htmlFor="reserved">Reserved</label>
-                <input id="sold" type="radio" value="sold" name="status" />
-                <label htmlFor="sold">Sold:</label>
+                <legend>Status:</legend>
+
+                <div>
+                  <input
+                    id="available"
+                    type="radio"
+                    value="available"
+                    name="status"
+                  />
+                  <label htmlFor="available">Available</label>
+                </div>
+                <div>
+                  <input
+                    id="reserved"
+                    type="radio"
+                    value="reserved"
+                    name="status"
+                  />
+                  <label htmlFor="reserved">Reserved</label>
+                </div>
+
+                <div>
+                  <input id="sold" type="radio" value="sold" name="status" />
+                  <label htmlFor="sold">Sold:</label>
+                </div>
               </fieldset>
 
               <br />
