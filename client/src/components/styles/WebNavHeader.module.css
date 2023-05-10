@@ -81,22 +81,14 @@
 
 .headerKingBengals {
   font-family: lancelot;
-<<<<<<< HEAD
-  font-size: 5rem;
-=======
   font-size: 5.5rem;
->>>>>>> efec4f309f23f571e955a741b7ec92b428707f2b
   color: white;
   margin-bottom: 1.5rem;
 }
 
 .headerCattery {
   font-family: lancelot;
-<<<<<<< HEAD
-  font-size: 3rem;
-=======
   font-size: 3.5rem;
->>>>>>> efec4f309f23f571e955a741b7ec92b428707f2b
   color: white;
   margin-left: 9px;
   margin-bottom: 1rem;
@@ -125,11 +117,7 @@
 .link a {
   text-decoration: none;
   font-family: inika;
-<<<<<<< HEAD
-  font-size: 1.2rem; /*1.3rem;*/
-=======
   font-size: 1.2rem; /*1.7rem;*/
->>>>>>> efec4f309f23f571e955a741b7ec92b428707f2b
   color: white;
 }
 
