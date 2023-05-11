@@ -7,7 +7,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
 
 print('Running 3.0 Tests: Email Functionality')
 now = datetime.now()
@@ -27,9 +26,11 @@ total_start_time = time.time()
 start_time = time.time()
 try:
     driver.get('http://www.kingbengalscattery.com/contact')
+    text_field = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.ID, 'ContactUs_userName__EhqMV')))
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
-    text_field = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.ID, 'ContactUs_userName__EhqMV')))
+    driver.execute_script("arguments[0].scrollIntoView(true);", text_field)
+    time.sleep(1)
     text_field.send_keys("Steve Jones")
     result = text_field.get_attribute("value")
     expected_result = "Steve Jones"
@@ -41,8 +42,6 @@ except Exception as e:
     import traceback
     print(f'3.1 Test Failed: {e}')
     print(traceback.format_exc())
-driver.execute_script("document.body.style.animation = '';")
-driver.execute_script("document.body.style.overflow = '';")
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -51,10 +50,9 @@ sleep(1)
 # Test 3.2 email text field
 start_time = time.time()
 try:
-    driver.get('http://www.kingbengalscattery.com/contact')
-    driver.execute_script("document.body.style.animation = 'none';")
-    driver.execute_script("document.body.style.overflow = 'hidden';")
     text_field = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.ID, 'ContactUs_userEmail__N3w+q')))
+    driver.execute_script("arguments[0].scrollIntoView(true);", text_field)
+    time.sleep(1)
     text_field.send_keys("stevejones7653@gmail.com")
     result = text_field.get_attribute("value")
     expected_result = "stevejones7653@gmail.com"
@@ -66,8 +64,6 @@ except Exception as e:
     import traceback
     print(f'3.2 Test Failed: {e}')
     print(traceback.format_exc())
-driver.execute_script("document.body.style.animation = '';")
-driver.execute_script("document.body.style.overflow = '';")
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -76,10 +72,9 @@ sleep(1)
 # Test 3.3 message text field
 start_time = time.time()
 try:
-    driver.get('http://www.kingbengalscattery.com/contact')
-    driver.execute_script("document.body.style.animation = 'none';")
-    driver.execute_script("document.body.style.overflow = 'hidden';")
     text_field = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, '//*[@id="ContactUs_userMessage__6PVlY"]')))
+    driver.execute_script("arguments[0].scrollIntoView(true);", text_field)
+    time.sleep(1)
     text_field.send_keys("This is a test.")
     result = text_field.get_attribute("value")
     expected_result = "This is a test."
@@ -91,8 +86,6 @@ except Exception as e:
     import traceback
     print(f'3.3 Test Failed: {e}')
     print(traceback.format_exc())
-driver.execute_script("document.body.style.animation = '';")
-driver.execute_script("document.body.style.overflow = '';")
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -101,11 +94,9 @@ sleep(1)
 # Test 3.4 send button
 start_time = time.time()
 try:
-    driver.get('http://www.kingbengalscattery.com/contact')
-    driver.execute_script("document.body.style.animation = 'none';")
-    driver.execute_script("document.body.style.overflow = 'hidden';")
-    button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//input[@value='Send']")))
-    ActionChains(driver).move_to_element(button).perform()
+    button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'ContactUs_submitButton__KYcx8')))
+    driver.execute_script("arguments[0].scrollIntoView(true);", button)
+    time.sleep(1)
     button.click()
     time.sleep(5)
     confirmation_message = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Email sent successfully.')]")))

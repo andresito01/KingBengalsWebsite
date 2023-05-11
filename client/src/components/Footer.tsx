@@ -60,6 +60,7 @@ const Footer = () => {
         <li
           className={FooterCSS.footerLinks}
           onClick={() => navigate("/login")}
+          id="test5.1loginbtn"
         >
           sign in
         </li>

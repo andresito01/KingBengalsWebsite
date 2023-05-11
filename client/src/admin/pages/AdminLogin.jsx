@@ -57,7 +57,7 @@ const AdminLogin = () => {
         </div>
 
         <div className={AdminLoginCSS.googleButton}>
-          <GoogleButton onClick={() => handleGoogleSignIn()} />
+          <GoogleButton onClick={() => handleGoogleSignIn()} id='test5.1googlebtn'/>
         </div>
 
         <div className={AdminLoginCSS.linksContainer}>

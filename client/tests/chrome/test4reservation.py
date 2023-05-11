@@ -30,12 +30,14 @@ try:
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
     # Add item to cart
-    addButton = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'test4.1addbtn')))
+    addButton = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="test4.1addbtn"]')))
+    driver.execute_script("arguments[0].scrollIntoView();", addButton)
+    time.sleep(1)
     ActionChains(driver).move_to_element(addButton).perform()
     addButton.click()
-    time.sleep(1)
     # Just to see if the item was added to the cart
-    cartButton = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'test4.2cartbtn')))
+    cartButton = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.ID, 'test4.2cartbtn')))
+    driver.execute_script("arguments[0].scrollIntoView(true);", cartButton)
     cartButtonText = cartButton.text
     start_index = cartButtonText.find("(") + 1
     end_index = cartButtonText.find(")")
@@ -43,11 +45,13 @@ try:
     time.sleep(1)
     # Remove Item from cart
     removeBtn = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test4.1removebtn')))
-    ActionChains(driver).move_to_element(removeBtn).perform()
-    removeBtn.click()
+    #ActionChains(driver).move_to_element(removeBtn).perform()
+    driver.execute_script("arguments[0].scrollIntoView(true);", removeBtn)
     time.sleep(1)
+    removeBtn.click()
     # Just to see if the item was removed from the cart
-    cartButton = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'test4.2cartbtn')))
+    cartButton = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.ID, 'test4.2cartbtn')))
+    driver.execute_script("arguments[0].scrollIntoView(true);", cartButton)
     cartButtonText = cartButton.text
     start_index = cartButtonText.find("(") + 1
     end_index = cartButtonText.find(")")
@@ -77,23 +81,23 @@ try:
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
     # Add item to cart
-    addButton = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'test4.1addbtn')))
+    addButton = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test4.1addbtn')))
     ActionChains(driver).move_to_element(addButton).perform()
     addButton.click()
     time.sleep(1)
     # Open cart
-    cartButton = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'test4.2cartbtn')))
+    cartButton = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test4.2cartbtn')))
     ActionChains(driver).move_to_element(cartButton).perform()
     cartButton.click()
     time.sleep(1)
-    modalContent = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'test4.2cart')))
+    modalContent = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID, 'test4.2cart')))
     # Remove Item from cart
     removeBtn = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test4.3cartremove')))
     ActionChains(driver).move_to_element(removeBtn).perform()
     removeBtn.click()
     time.sleep(1)
     # Close Cart
-    closeCart = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.__class__, 'btn-close'))) # idk if work
+    closeCart = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.__class__, 'btn-close'))) # idk if work
     closeCart.click()
     time.sleep(1)
     if modalContent.is_displayed():
@@ -118,29 +122,29 @@ try:
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
     # Add item to cart
-    addButton = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'test4.1addbtn')))
+    addButton = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test4.1addbtn')))
     ActionChains(driver).move_to_element(addButton).perform()
     addButton.click()
     time.sleep(1)
     # Open Cart
-    cartButton = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'test4.2cartbtn')))
+    cartButton = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test4.2cartbtn')))
     ActionChains(driver).move_to_element(cartButton).perform()
     cartButton.click()
     time.sleep(1)
     # Cart Remove Button
-    cartRemoveButton = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'test4.3cartremove')))
+    cartRemoveButton = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test4.3cartremove')))
     ActionChains(driver).move_to_element(cartButton).perform()
     cartRemoveButton.click()
     time.sleep(1)
     # See if item was removed
-    cartItems = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'test4.3cartitems')))
+    cartItems = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID, 'test4.3cartitems')))
     itemRemoved = not cartItems.is_displayed()
     time.sleep(1)
     # Close Cart
-    closeCart = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.__class__, 'btn-close'))) # idk if work
+    closeCart = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.__class__, 'btn-close'))) # idk if work
     closeCart.click()
     time.sleep(1)
-    cartVisibility = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'test4.2cart')))
+    cartVisibility = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID, 'test4.2cart')))
     cartClosed = not cartVisibility.is_displayed()
     if itemRemoved and cartClosed:
         print(f'Test 4.3 Passed: Item Removed: {itemRemoved}')
@@ -150,7 +154,7 @@ try:
         print(f'                 Cart Closed: {cartClosed}')
 except Exception as e:
     import traceback
-    print(f'4.2 Test Failed: {e}')
+    print(f'4.3 Test Failed: {e}')
     print(traceback.format_exc())
 driver.execute_script("document.body.style.animation = '';")
 driver.execute_script("document.body.style.overflow = '';")
