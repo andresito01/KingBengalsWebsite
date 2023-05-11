@@ -52,9 +52,9 @@
   width: 50%;
   min-width: max-content;
   height: min-content;
-  margin-top: 2rem;
+  margin-top: 2vw;
   padding: 2vw 1vw;
-  font-size: 1.1rem;
+  font-size: var(--generic-text-size); /*1.1rem;*/
   background-color: var(--light-secondary-color); /* #fff;*/
   /*border: 0.2vw solid #ccc;
   border-radius: 1rem;
