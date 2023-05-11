@@ -15,6 +15,8 @@ const fontSizeQuote = { fontSize: "20px" };
 const Home = () => {
   return (
     <div className={HomeCSS.homePageContainer}>
+      <NavBarUnderLayer/>
+      
       <WebNavHeader />
 
       {/*>>>>>>>>>>>> Homepage Header Image <<<<<<<<<<<<*/}

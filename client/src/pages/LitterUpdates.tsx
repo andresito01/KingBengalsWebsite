@@ -3,6 +3,7 @@ import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import LitterUpdatesCSS from "./styles/LitterUpdates.module.css";
 import DisplayLitter from "../components/DisplayLitter";
+import NavBarUnderLayer from "../components/NavBarUnderLayer";
 
 const LitterUpdates: React.FC = () => {
   const fontSizeHeader = { fontSize: "50px" };
@@ -10,6 +11,7 @@ const LitterUpdates: React.FC = () => {
 
   return (
     <div className={LitterUpdatesCSS.litterUpdatesPage}>
+      <NavBarUnderLayer/>
       <WebNavHeader />
       <div className={LitterUpdatesCSS.litterInstructionContainer}>
         <h1 style={fontSizeHeader}>Check Out Our Litters!</h1>

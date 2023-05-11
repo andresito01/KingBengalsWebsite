@@ -5,13 +5,14 @@ import ReserveAKittenCSS from "./styles/ReserveAKitten.module.css";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 // import KittenReservationForm from '../components/KittenReservationForm';
-// import NavBarUnderLayer from "../components/NavBarUnderLayer";
+import NavBarUnderLayer from "../components/NavBarUnderLayer";
 import ReserveKittenStore from "../ReserveKittenStore/ReserveKittenStore";
 
 const ReserveAKitten = () => {
   return (
     <div className={ReserveAKittenCSS.reserveAKittenPage}>
       <div className={ReserveAKittenCSS.backgroundLayer}>
+        <NavBarUnderLayer/>
         <WebNavHeader />
         <div className={ReserveAKittenCSS.headerContainer}>
           <div className={ReserveAKittenCSS.headerContainerReserve}>
