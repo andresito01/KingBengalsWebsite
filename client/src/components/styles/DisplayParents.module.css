@@ -28,7 +28,7 @@
 
 .parentContainer img {
   object-fit: cover;
-  width: 100%;
+  width: 100%; /*50%*/
   border-style: double;
   border-color: var(--dark-primary-color);
   border-width: 10px;
@@ -42,14 +42,15 @@
   }
   to {
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(50%);
   }
 }
 
 .sliderInfo {
   animation-name: slideOpen;
   animation-duration: 0.5s;
-  width: 50%;
+  width: 100%;
+  color: black;
   min-width: max-content;
   height: min-content;
   margin-top: 2vw;
