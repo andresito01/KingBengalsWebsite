@@ -37,12 +37,13 @@
 .body {
   background-color: rgb(184, 144, 96, 0.95);
   overflow: hidden;
-  display: row; /*grid;*/
+  display: grid;
   grid-template-columns: 0.8fr 1fr;
   grid-template-rows: 1fr;
   row-gap: 2vh;
   align-self: start;
   align-content: center;
+ 
   padding: 1vw;
   /*opacity: 0.95;*/
   border-style: solid;
@@ -58,7 +59,7 @@
 
 .organizations {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   padding: 2vw;
   height: fit-content;
@@ -97,7 +98,7 @@
 .parentColumn {
   display: grid;
   margin: auto;
-  width: 100%;
+  width: 50%;
   margin-left: 40%; /*30vw*/
   /*padding: 5vw;*/
   align-content: center;
