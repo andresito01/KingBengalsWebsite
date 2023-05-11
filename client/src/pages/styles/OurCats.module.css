@@ -96,9 +96,11 @@
 .parentColumn {
   display: grid;
   margin: auto;
-  width: 50%;
-  margin-left: 30vw;
-  padding: 5vw;
+  width: 60%;
+  margin-left: 40%; /*30vw*/
+  /*padding: 5vw;*/
+  align-content: center;
+  align-self: center;
 }
 
 @media screen {
