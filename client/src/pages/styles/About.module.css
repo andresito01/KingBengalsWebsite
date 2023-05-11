@@ -14,7 +14,7 @@
     rgb(255, 174, 0),
     rgb(64, 29, 2)
   );
-  background-image: url("../../images/bengal-cat-coat-glitter.jpg");
+  background-image: var(--bg-image2);
   background-size: cover;
   background-attachment: fixed;
   white-space: pre-line;  
@@ -203,7 +203,7 @@
   border-style: solid;
   border-width: 10px;
   border-radius: 20px;
-  border-color: var(--dark-secondary-color);
+  border-color: var(--dark-primary-color);
 }
 
 .bold {

@@ -1,8 +1,8 @@
 @import "../../theme.css";
 
 .litterUpdatesPage {
-  background-image: url("../../images/kbengalsbgGradient.png");
-  background-size:unset;
+  background-image: var(--bg-image2);
+  background-size: cover;
   background-attachment: fixed;
   width: 100%;
 }
@@ -10,7 +10,7 @@
 .litterInstructionContainer {
   font-family: var(--generic-website-text);
   font-size: var(--generic-website-size);
-  opacity: 0.9;
+  /*opacity: 0.95;*/
   padding: 1%;
   display: flex;
   width: 70%;

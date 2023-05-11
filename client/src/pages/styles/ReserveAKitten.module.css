@@ -13,7 +13,7 @@
     rgb(255, 174, 0),
     rgb(64, 29, 2)
   );
-  background-image: url("../../images/kbengalsbgGradient.png");
+  background-image: var(--bg-image2);
   background-size: cover;
   background-attachment: fixed;
   width: 100%;

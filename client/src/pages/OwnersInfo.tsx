@@ -175,8 +175,8 @@ const KittenDevelopment = () => {
           </div>
           <h5>
             {" "}
-            <br /> <br /> <br /> <br />
-            <br /> At two months old, they can recieve their first dose of
+
+            <br /> At two months old (8 weeks), they can recieve their first dose of
             vaccines (see 'Medical Info & Vet Things' below). They have been
             completely weened off of their mother's milk. They have learned some
             social skills by interacting with their mother and other litter
@@ -209,7 +209,7 @@ const PrepareForKitten = () => {
           that can make the transition easier on you and your kitten.
         </h5>
         <a
-          href="https://www.youtube.com/watch?v=A_MjCqQoLLA"
+          href="https://www.youtube.com/watch?v=-5zdLYpKIOU"
           target="_blank"
           rel="noreferrer"
         >
@@ -278,7 +278,7 @@ const VetInfo = () => {
         <i>
           {" "}
           Again, consult with you vet regarding any concerns you may have
-          regarding your kitten's
+          about your kitten's
           <br /> health and/or behaviour.
         </i>{" "}
       </h5>
@@ -298,7 +298,7 @@ const KittenTraining = () => {
           {/*<h2 className={OwnersInfoCSS.bold}> Pic of a kitten in training </h2>*/}
           <img
             alt="headerImage"
-            src={require("../images/How-Do-I-Exercise-a-Bengal-Cat.jpg")}
+            src={require("../images/bengal cat leash training.jpg")}
             width="700"
             height="450"
           />
@@ -312,16 +312,13 @@ const KittenTraining = () => {
           # Training a kitten can seem like a challenging task. But it's totally
           doable and can be a LOT of fun.
           <br /> # There are many training courses and resourses you can find
-          online and/or in nearby pet training facilites. You can always look up
-          training videos on YouTube as well.
-          <br /> # There are many different types of training you can give to
-          your young kitten, such as litter training, house-breaking,
+          online and/or in nearby pet training facilites and YouTube.
+          <br /> # Different types of training: leash training, litter training, house-breaking,
           obedience-training, tricks, etc.
           <br /> # Cats have short attention spans, so your training sessions
-          shouldn't last any longer than five minutes.
-          <br /> # It will offer them some mental stimulation and help them be
-          better behaved, less anxious, and overall more happy. Training will
-          also serve as a great bonding activity.
+          shouldn't last any longer than five minutes or so.
+          <br /> # It will offer the kittens some mental stimulation and will also serve 
+          as a great bonding activity.
           <br /> # But remember, be patient, as kittens and cats in general have
           a very sensitive nature.
         </h5>

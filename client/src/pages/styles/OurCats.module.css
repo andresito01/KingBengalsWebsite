@@ -1,7 +1,7 @@
 @import "../../theme.css";
 
 .ourCatsPage {
-  background-image: url("../../images/kbengalsbgGradient.png");
+  background-image: var(--bg-image2);
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
@@ -35,30 +35,33 @@
 }
 
 .body {
-  background-color: rgb(184, 144, 96, 0.9);
+  background-color: rgb(184, 144, 96, 0.95);
   overflow: hidden;
-  display: grid;
+  display: row; /*grid;*/
   grid-template-columns: 0.8fr 1fr;
   grid-template-rows: 1fr;
   row-gap: 2vh;
   align-self: start;
   padding: 1vw;
-  opacity: 0.95;
+  /*opacity: 0.95;*/
   border-style: solid;
-  border-color: #6b462a;
+  border-color: var(--light-primary-color);/*#6b462a;*/
   border-width: 5px;
   border-radius: 20px;
   margin: auto;
   margin-top: 3vw;
   margin-bottom: 4vw;
-  width: 85%;
+  width: 90%;
   height: fit-content;
 }
 
 .organizations {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   padding: 2vw;
   height: fit-content;
+  align-content:center;
 }
 
 .organizationText {
@@ -73,14 +76,15 @@
 }
 
 .ticaBtn {
-  width: 60%;
-  height: 18%;
-  margin-left: 20%;
+  width: auto; /*60%;*/
+  height: auto; /*18%;*/
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: white;
   border-style: solid;
-  border-color: #6b462a;
+  border-color: var(--dark-secondary-color);
   border-radius: 10px;
-  border-width: 3px;
+  border-width: 5px;
   cursor: pointer;
 }
 
@@ -93,7 +97,7 @@
   display: grid;
   margin: auto;
   width: 100%;
-  margin-left: 15vw;
+  margin-left: 30vw;
 }
 @media screen {
   .parentColumn {
@@ -101,7 +105,7 @@
   }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1000px) {
   .body {
     display: flex;
     flex-direction: column-reverse;
@@ -111,4 +115,11 @@
     padding-left: 10%;
     padding-right: 10%;
   }
+
+  .ticaBtn {
+    width: 30vw;
+    align-self: center;
+    align-items: center;
+  }
+
 }

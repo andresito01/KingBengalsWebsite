@@ -19,24 +19,30 @@ const OurCats: React.FC = () => {
             them lots of love and affection so they feel right at home.
             <br></br>
             <br></br>
-            Treatment and care is given to our cats to boost energy, behavior,
+            Best treatment and care is given to our cats to boost their energy, behavior,
             and quality of life.
           </h3>
           <h3>
             <br></br>
             <br></br>
             <br></br>
-            Click the photos below to see additional information
+            Click the photos below to see additional information for each of out cats!
           </h3>
         </div>
       </div>
 
       {/* Parent Container and Records */}
       <div className={OurCatsCSS.body}>
+
+        {/* Parent and Slider Column */}
+        <div className={OurCatsCSS.parentColumn}>
+          <DisplayParents />
+        </div>
+
         {/* Organizations Column */}
         <div className={OurCatsCSS.organizations}>
           <p className={OurCatsCSS.organizationText}>
-            The International Cat Association (TICA) is the world's largest
+            All of our cats are registered with The International Cat Association (TICA). It is the world's largest
             genetic registry of pedigreed and household cats. As an official cat
             registrar, TICA maintains accurate records of cat breeding and
             pedigrees, provides cat shows and competitions, and offers a variety
@@ -49,8 +55,7 @@ const OurCats: React.FC = () => {
             competitions, which can help promote and improve the breed.
             <br></br>
             <br></br>
-            To learn more about TICA and what they do or what they stand for,
-            click the logo here.
+            To learn more about TICA and their mission, please click the logo on the right.
           </p>
           {/* Links to official organizations */}
           <a
@@ -69,9 +74,9 @@ const OurCats: React.FC = () => {
         </div>
 
         {/* Parent and Slider Column */}
-        <div className={OurCatsCSS.parentColumn}>
+        {/*<div className={OurCatsCSS.parentColumn}>
           <DisplayParents />
-        </div>
+        </div>*/}
       </div>
       <Footer />
     </div>
