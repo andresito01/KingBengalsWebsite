@@ -38,6 +38,7 @@ const AddNewParent = () => {
             });
           }}
           required
+          id="test5.2parentname"
         />
         <br />
 
@@ -53,6 +54,7 @@ const AddNewParent = () => {
             });
           }}
           required
+          id="test5.2parentattitude"
         />
         <br />
 
