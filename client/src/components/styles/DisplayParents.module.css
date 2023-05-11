@@ -1,28 +1,38 @@
 @import "../../theme.css";
 
 .parentContainer {
-  background-color: #6b462a;
+  /*display: flex;
+  flex-direction: row;*/
+  background-color: var(--dark-secondary-color);/* #6b462a;*/
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
-  max-width: 350px;
+  /*max-width: 350px;*/
+  width: fit-content; /*25vw;*/
   margin: auto;
-  padding: 1.2vw;
-  border-radius: 2vw;
+  padding: 1vw;
+  border-style: double;
+  border-color: var(--dark-primary-color);
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 .parentContainer h4 {
   /* font-size: var(--large-header-size); */
   margin-top: 0;
 }
-.parentContainer p {
-  /* font-size: var(--header-size); */
-}
+
+/*.parentContainer p {
+  /* font-size: var(--header-size);
+}*/
 
 .parentContainer img {
-  border-radius: 1vw;
   object-fit: cover;
   width: 100%;
+  border-style: double;
+  border-color: var(--dark-primary-color);
+  border-width: 10px;
+  border-radius: 20px;
 }
 
 @keyframes slideOpen {
@@ -46,10 +56,12 @@
   padding: 2vw 1vw;
   font-size: 1.1rem;
   background-color: var(--light-secondary-color); /* #fff;*/
-  border: 0.2vw solid #ccc;
+  /*border: 0.2vw solid #ccc;
   border-radius: 1rem;
   border-top-left-radius: 0rem;
-  border-bottom-left-radius: 0rem;
+  border-bottom-left-radius: 0rem;*/
+  border-color: var(--light-primary-color);
+  border-width: 10px 0px 5px 0px;
 
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
