@@ -18,6 +18,17 @@
   overflow: visible;
 }
 
+.headerContainer2 {      /*for NavBarUnderLayer*/
+  position: relative;
+  /*position: -webkit-sticky; /* For Safari */
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-color: #412804;
+  z-index: 1;
+  overflow: visible;
+}
+
 .leftImgContainer {
   position: absolute;
   bottom: 0px;
@@ -83,7 +94,7 @@
   font-family: lancelot;
   font-size: 5.5rem;
   color: white;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .headerCattery {
@@ -91,7 +102,7 @@
   font-size: 3.5rem;
   color: white;
   margin-left: 9px;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .rightImgContainer {
