@@ -5,6 +5,9 @@
   flex-direction: row;
   background-color: var(--dark-secondary-color);/* #6b462a;*/
   color: white;
+  align-self: center;
+  align-content: center;
+
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   /*max-width: 350px;*/
@@ -29,6 +32,7 @@
 .parentContainer img {
   object-fit: cover;
   width: 100%; /*50%*/
+  align-self: center;
   border-style: double;
   border-color: var(--dark-primary-color);
   border-width: 10px;
@@ -53,7 +57,7 @@
   color: black;
   min-width: max-content;
   height: min-content;
-  margin-top: 2vw;
+  /*margin-top: 2vw;*/
   padding: 2vw 1vw;
   font-size: var(--generic-text-size); /*1.1rem;*/
   background-color: var(--light-secondary-color); /* #fff;*/

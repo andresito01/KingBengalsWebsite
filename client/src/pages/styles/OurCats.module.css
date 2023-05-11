@@ -42,6 +42,7 @@
   grid-template-rows: 1fr;
   row-gap: 2vh;
   align-self: start;
+  align-content: center;
   padding: 1vw;
   /*opacity: 0.95;*/
   border-style: solid;
@@ -96,7 +97,7 @@
 .parentColumn {
   display: grid;
   margin: auto;
-  width: 60%;
+  width: 100%;
   margin-left: 40%; /*30vw*/
   /*padding: 5vw;*/
   align-content: center;
@@ -125,5 +126,4 @@
     align-self: center;
     align-items: center;
   }
-
 }
