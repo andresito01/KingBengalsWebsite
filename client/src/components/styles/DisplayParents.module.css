@@ -1,15 +1,16 @@
 @import "../../theme.css";
 
 .parentContainer {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  background-color: var(--dark-secondary-color);/* #6b462a;*/
+  flex-direction: row wrap;
+  background-color: var(--dark-secondary-color);
   color: white;
   align-content: center;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   /*max-width: 350px;*/
-  min-width: fit-content; /*25vw;*/
+  /* min-width: fit-content; */
   margin: auto;
   padding: 1vw;
   border-style: double;
@@ -29,7 +30,7 @@
 
 .parentContainer img {
   object-fit: cover;
-  width: 100%; /*50%*/
+  /* width: 100%; 50% */
   align-self: center;
   border-style: double;
   border-color: var(--dark-primary-color);
@@ -84,8 +85,8 @@
   text-overflow: ellipsis;
 }
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .parentContainer {
     flex-direction: column;
   }
-}
+} */
