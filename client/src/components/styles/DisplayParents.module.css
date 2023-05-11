@@ -1,14 +1,14 @@
 @import "../../theme.css";
 
 .parentContainer {
-  /*display: flex;
-  flex-direction: row;*/
+  display: flex;
+  flex-direction: row;
   background-color: var(--dark-secondary-color);/* #6b462a;*/
   color: white;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   /*max-width: 350px;*/
-  width: fit-content; /*25vw;*/
+  min-width: fit-content; /*25vw;*/
   margin: auto;
   padding: 1vw;
   border-style: double;
@@ -79,4 +79,10 @@
 .sliderInfo td {
   width: 65%;
   text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 1200px) {
+  .parentContainer {
+    flex-direction: column;
+  }
 }
