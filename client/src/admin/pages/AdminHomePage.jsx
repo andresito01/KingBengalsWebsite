@@ -30,28 +30,28 @@ const AdminHomePage = () => {
         <div className={AdminHomeCSS.linksContainer}>
           {/**********************      Options     *******************************/}
           <h2>Update:</h2>
-          <ul>
+          <div>
             <strong>
               <Link className={AdminHomeCSS.links} to="/adminParents">
-                <li>Parents</li>
+                <p>Parents</p>
               </Link>
             </strong>
             <strong>
               <Link className={AdminHomeCSS.links} to="/adminLitters">
-                <li>Litters</li>
+                <p>Litters</p>
               </Link>
             </strong>
             <strong>
               <Link className={AdminHomeCSS.links} to="/adminKittens">
-                <li>Kittens</li>
+                <p>Kittens</p>
               </Link>
             </strong>
             <strong>
               <Link className={AdminHomeCSS.links} to="/adminTestimonial">
-                <li>Testimonials</li>
+                <p>Testimonials</p>
               </Link>
             </strong>
-          </ul>
+          </div>
         </div>
       </div>
     </div>

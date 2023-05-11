@@ -20,8 +20,7 @@
 .testimonialTitle {
   width: 70%;
   max-width: 500px;
-  margin: auto;
-  margin-top: 2vw;
+  margin: 2rem auto;
   color: var(--light-primary-color);
   margin-top: 5vw;
   font-size: xx-large;
@@ -39,29 +38,28 @@
 /* >>>>>>>>>>>>>>>>>>    Testimonies' Container    <<<<<<<<<<<<<<<<<<*/
 .testimoniesContainer {
   width: 100%;
-  display: inline-flex;
-  position: relative;
+  display: flex;
   align-items: center;
-  white-space: nowrap;
-  overflow-x: scroll;
+  justify-content: center;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Container   <<<<<<<<<<<<<<<<<<*/
 .testimoniesRow {
-  width: 100%;
+  width: fit-content;
   height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
   overflow-x: scroll;
   scroll-behavior: smooth;
   align-items: center;
-  justify-items: center;
   position: relative;
+  gap: 3rem;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Container   <<<<<<<<<<<<<<<<<<*/
 .testimonyContainer {
   width: 320px;
-  margin: 3rem;
-  margin-top: rem;
+  min-width: 320px;
   position: relative;
   display: inline-block;
   white-space: normal;

@@ -13,7 +13,7 @@ const BusinessCertificate = () => {
           <section className={BusinessCertificateCSS.kbLogoContainer}>
             <img src={kb} alt="KB Logo" />
           </section>
-          {/*<h3>Certification</h3>*/}
+          <h3>Certification</h3>
         </div>
 
         <div className={BusinessCertificateCSS.businessCertificateText}>
