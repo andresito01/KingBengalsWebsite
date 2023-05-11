@@ -54,9 +54,16 @@
   font-size: x-large;
   /* font-weight: bold; */
 }
+.linksContainer p {
+  color: rgb(0, 154, 250);
+}
+.linksContainer p:hover {
+  color: rgb(68, 255, 0);
+}
 .links {
   color: rgb(0, 154, 250);
   font-size: large;
+  text-decoration: none;
 }
 .links:hover {
   color: rgb(68, 255, 0);

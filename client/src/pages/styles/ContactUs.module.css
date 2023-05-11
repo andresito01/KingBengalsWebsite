@@ -6,7 +6,7 @@
 }
 
 .bg {
-  background-image: var(--bg-image);
+  background-image: var(--bg-image2);
   background-attachment: fixed;
   background-size: 100%;
   align-items: center;
@@ -30,7 +30,9 @@
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   gap: 1rem;
-
+  border-style: solid;
+  border-color: var(--dark-primary-color);
+  border-width: 10px 0px 10px 0px
 }
 
 .mainContentContainer h1 {

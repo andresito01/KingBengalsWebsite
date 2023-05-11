@@ -8,7 +8,8 @@
 }
 
 :root {
-  --bg-image: url("./images/kbengalsbgGradient.png");
+  --bg-image1: url("./images/kbengalsbgGradient.png");
+  --bg-image2: url("./images/bengal-cat-coat-glitter.jpg");
   --light-primary-color: #e2b78e;
   --light-secondary-color: #ffe3c8;
   --dark-primary-color: #a87d48f5;

@@ -148,7 +148,7 @@ const PatternsSpotMarble = () => {
         <br /> Along with their personality, it's one of their defining
         characteristics that makes them unique.
         <br /> Althought, some may use the word 'exotic' to refer to their
-        uniqueness.
+        uniqueness in the feline kingdom.
         <br /> <br />{" "}
         <i>
           {" "}
@@ -158,10 +158,10 @@ const PatternsSpotMarble = () => {
       </h5>
 
       <div className={BreedInfoCSS.containerRowBox3}>
-        <div className={BreedInfoCSS.containerRow1}>
+        <div className={BreedInfoCSS.containerRow3}>
           <h2> Spotted </h2>
           {/*<div className={BreedInfoCSS.imgContainer}>*/}
-          <div className={BreedInfoCSS.imgContainer}>
+          <div className={BreedInfoCSS.imgContainer1}>
             <img
               alt="headerImage"
               src={require("../images/SpottedBengals.png")}
@@ -169,10 +169,10 @@ const PatternsSpotMarble = () => {
           </div>
         </div>
 
-        <div className={BreedInfoCSS.containerRow1}>
+        <div className={BreedInfoCSS.containerRow3}>
           <h2> Marbled </h2>
           {/*<div className={BreedInfoCSS.imgContainer}>*/}
-          <div className={BreedInfoCSS.imgContainer}>
+          <div className={BreedInfoCSS.imgContainer1}>
             <img
               alt="headerImage"
               src={require("../images/MarbledBengals.png")}
@@ -294,23 +294,23 @@ const BengalCatHealth = () => {
                 infections, blockages, tumours or toxins.
               </li>
             </ol>
-            <br />{" "}
-            <i>
-              {" "}
-              As always, be sure to consult with your vet regarding you cat's
-              overall health and wellbeing.
-            </i>
           </h5>
 
-          <div className={BreedInfoCSS.imgContainer}>
+          <div className={BreedInfoCSS.imgContainer2}>
             <img
               alt="headerImage"
               src={require("../images/Bengal-cat-health-problems-and-diseases.jpg")}
               width="500"
               height="auto"
             />
-          </div>
+          </div> 
+            
         </div>
+        <i>
+          {" "}
+          As always, be sure to consult with your vet regarding you cat's
+          overall health and wellbeing.
+        </i>
       </div>
     </div>
   );

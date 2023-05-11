@@ -34,16 +34,16 @@ const Parent = ({ parent }) => {
     <div onClick={changeSliderStatus} key={id} id="test2.1opencloseslider">
       <div className="flex col-2 my-8  items-top justify-center  ">
         {/***************   Parent(name & image)  ******************* */}
-        <div className="max-w-[350px]">
+        <div className="min-w-[50vw]">
           <div className={DisplayParentsCSS.parentContainer}>
-            <h4 className="text-2xl md:text-5xl">{name}</h4>
-            <p className="text-xl md:text-3xl">{sex}</p>
+            <h4 className="text-2xl md:text-5xl">{name}
+            <p className="text-xl md:text-3xl">{sex}</p> </h4>
 
             <div className="">
               <img alt={name} src={picture} />
             </div>
-          </div>
-        </div>
+          
+        
         {/***************   if slider is open  ******************* */}
         {isSliderOpen ? (
           // ***  display slider ***
@@ -77,6 +77,8 @@ const Parent = ({ parent }) => {
           </>
         ) : // ***  Else: display nothing ***
         null}
+        </div>
+        </div>
       </div>
     </div>
   );

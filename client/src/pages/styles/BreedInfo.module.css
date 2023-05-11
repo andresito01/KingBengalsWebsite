@@ -11,10 +11,11 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-image: url("../../images/kbengalsbgGradient.png"); /*pattern\ -\ b&w\ warm\ +\ wc\ edited.jpg");*/
+  background-image: var(--bg-image2);
   width: 100%;
   background-size: contain;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .topPictureContainer {
@@ -90,8 +91,8 @@ p.text {
   margin-top: 2vw;
   margin-bottom: 60px;
   padding: 10px 10px 10px 10px;
-  border-style: groove; /*solid;*/
-  border-color: rgba(255, 230, 207, 0.94);
+  border-style: solid;
+  border-color: var(--dark-secondary-color); /* rgba(255, 230, 207, 0.94);*/
   border-width: 10px;
   border-radius: 20px;
 }
@@ -179,6 +180,19 @@ p.text {
   /*justify-content: center;*/
 }
 
+.containerRow3 {
+  margin: 10px 10px 10px 10px;
+  background-color: #a87d48f5; /* #4E3A24;*/
+  flex: 1;
+  width: 45vw;
+  align-self: center;
+  /*height: auto;*/
+  position: relative;
+  border-radius: 10px;
+  align-content: center;
+  /*justify-content: center;*/
+}
+
 .containerRow2 {
   margin: 5px 5px 5px 5px;
   background-color: #ffe3c8;
@@ -207,16 +221,19 @@ p.text {
   border-color: var(--dark-primary-color);
   border-width: 10px;
   border-radius: 20px;
+  align-self: center;
   /*position: relative;*/
 }
 
 .imgContainer2 {
   max-width: 100%;
   height: auto;
+  align-self: center;
   border-style: double;
   border-color: var(--dark-secondary-color);
   border-width: 10px;
   border-radius: 20px;
+ 
 }
 
 .bold {
@@ -353,8 +370,10 @@ p.text {
     /*width: 80vw;*/
   }
 
-  .imgContainer {
-    width: fit-content;
+  .imgContainer2 {
+    width: 70%;
+    border-color: var(--dark-primary-color);
+    margin-bottom: 2vw;
   }
 
 }
