@@ -31,7 +31,7 @@ const Parent = ({ parent }) => {
 
   return (
     /*******************  on-click open/close slider  ************************/
-    <div onClick={changeSliderStatus} key={id}>
+    <div onClick={changeSliderStatus} key={id} id="test2.1opencloseslider">
       <div className="flex col-2 my-8  items-top justify-center  ">
         {/***************   Parent(name & image)  ******************* */}
         <div className="max-w-[350px]">

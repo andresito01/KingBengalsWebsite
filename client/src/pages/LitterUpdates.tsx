@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import LitterUpdatesCSS from "./styles/LitterUpdates.module.css";

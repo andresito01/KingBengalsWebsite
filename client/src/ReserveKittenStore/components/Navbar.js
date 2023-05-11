@@ -37,9 +37,9 @@ function NavbarComponent() {
       <Navbar expand="sm">
         <Navbar.Brand>Reserve A Kitten Shop</Navbar.Brand>
         <Navbar.Toggle />
-        <Button onClick={handleShow}>Cart ({productsCount} Items)</Button>
+        <Button onClick={handleShow} id="test4.2cartbtn">Cart ({productsCount} Items)</Button>
       </Navbar>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} id="test4.2cart">
         <Modal.Header closeButton>
           <Modal.Title>Shopping Cart</Modal.Title>
         </Modal.Header>

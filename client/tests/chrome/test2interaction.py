@@ -29,7 +29,7 @@ try:
     # Navigate to the our cats page
     driver.get('http://www.kingbengalscattery.com/ourcats')
     # Find the slider button by className
-    button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CLASS_NAME, 'DisplayParents_parentContainer__oiLQ9')))
+    button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test2.1opencloseslider')))
     # Simulate button click
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
@@ -37,10 +37,10 @@ try:
     ActionChains(driver).move_to_element(button).perform()
     button.click()
     # Wait for the slider to open
-    slider = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'SliderInfo_sliderInfo__pynim')))
+    slider = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'DisplayParents_sliderInfo__Ux5ef')))
     sliderOpened = slider.is_displayed()
     # Close slider
-    close_button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CLASS_NAME, 'SliderInfo_containerBtn__IWjZK')))
+    close_button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test2.1opencloseslider')))
     ActionChains(driver).move_to_element(close_button).perform()
     close_button.click()
     sliderClosed = not slider.is_displayed()
@@ -64,18 +64,17 @@ sleep(1)
 start_time = time.time()
 try:
     driver.get('http://www.kingbengalscattery.com/litterupdates')
-    #button = driver.find_element('LitterModal_containerBtn__OnUqG')
+    button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, 'test2.2openmodal')))
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
-    button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CLASS_NAME, 'LitterModal_containerBtn__OnUqG')))
-    # driver.execute_script("document.body.style.animation = 'none';")
-    # driver.execute_script("document.body.style.overflow = 'hidden';")
     driver.execute_script("arguments[0].scrollIntoView();", button)
-    time.sleep(1)
+    #time.sleep(1)
+    ActionChains(driver).move_to_element(button).perform()
     button.click()
-    modal = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, 'LitterModal_modalContainer__6PBFQ')))
+    modal = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, 'LitterModal_modalContainer__6PBFQ')))
     modalOpened = modal.is_displayed()
-    close_button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.LitterModal_closeBtn__K2Dn1 button')))
+    close_button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test2.2closebtn')))
+    ActionChains(driver).move_to_element(close_button).perform()
     close_button.click()
     modalClosed = not modal.is_displayed()
     if modalOpened and modalClosed:
@@ -98,19 +97,26 @@ sleep(1)
 start_time = time.time()
 try:
     driver.get('http://www.kingbengalscattery.com/ownersinfo')
-    link = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//a[@href='https://www.amazon.com/s?k=cat+products+for+bengal+cats&crid=2FTEFBBV6WRGU&sprefix=%2Caps%2C190&ref=nb_sb_ss_recent_1_0_recent']")))
-    url = link.get_attribute('href')
+    link = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="root"]/div/div/div[3]/div/a/div')))
+    link_url = link.get_attribute('href')
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
     driver.execute_script("arguments[0].scrollIntoView();", link)
+    ActionChains(driver).move_to_element(link).perform()
     link.click()
-    assert driver.current_url, url
+    driver.switch_to.window(driver.window_handles[-1])
+    expected_url = 'https://www.amazon.com/s?k=cat+products+for+bengal+cats&crid=2FTEFBBV6WRGU&sprefix=%2Caps%2C190&ref=nb_sb_ss_recent_1_0_recent'
+    WebDriverWait(driver, 10).until(EC.url_to_be(expected_url))
+    assert driver.current_url, expected_url
 except AssertionError:
     print(f'2.3 Test Failed: AssertionError')
 except Exception as e:
+    import traceback
     print(f'2.3 Test Failed: {e}')
+    print(traceback.format_exc())
 else:
     print(f'2.3 Test Passed: Link Accessed: {driver.current_url}')
+driver.switch_to.window(driver.window_handles[0])
 driver.execute_script("document.body.style.animation = '';")
 driver.execute_script("document.body.style.overflow = '';")
 end_time = time.time()
@@ -124,18 +130,26 @@ start_time = time.time()
 try:
     driver.get('http://www.kingbengalscattery.com/ownersinfo')
     link = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CLASS_NAME, 'OwnersInfo_button__WeZHS')))
-    url = link.get_attribute('href')
+    link_url = link.get_attribute('href')
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
     driver.execute_script("arguments[0].scrollIntoView();", link)
+    ActionChains(driver).move_to_element(link).perform()
     link.click()
-    assert driver.current_url, url
+    driver.switch_to.window(driver.window_handles[-1])
+    # just a temporary link, will need to be changed
+    expected_url = 'https://www.youtube.com/watch?v=A_MjCqQoLLA&ab_channel=TheBeatlesVEVO'
+    WebDriverWait(driver, 10).until(EC.url_to_be(expected_url))
+    assert driver.current_url, expected_url
 except AssertionError:
     print(f'2.4 Test Failed: AssertionError')
 except Exception as e:
+    import traceback
     print(f'2.4 Test Failed: {e}')
+    print(traceback.format_exc())
 else:
     print(f'2.4 Test Passed: Link Accessed: {driver.current_url}')
+driver.switch_to.window(driver.window_handles[0])
 driver.execute_script("document.body.style.animation = '';")
 driver.execute_script("document.body.style.overflow = '';")
 end_time = time.time()
@@ -148,19 +162,26 @@ sleep(1)
 start_time = time.time()
 try:
     driver.get('http://www.kingbengalscattery.com/ownersinfo')
-    link = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CLASS_NAME, 'Footer_instagramBtn__E7tth')))
-    url = link.get_attribute('href')
+    link = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test2.5instabtn')))
+    link_url = link.get_attribute('href')
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
     driver.execute_script("arguments[0].scrollIntoView();", link)
+    ActionChains(driver).move_to_element(link).perform()
     link.click()
-    assert driver.current_url, url
+    driver.switch_to.window(driver.window_handles[-1])
+    expected_url = 'https://www.instagram.com/kingbengals/?igshid=NTc4MTIwNjQ2YQ%3D%3D'
+    WebDriverWait(driver, 10).until(EC.url_to_be(expected_url))
+    assert driver.current_url, expected_url
 except AssertionError:
     print(f'2.5 Test Failed: AssertionError')
 except Exception as e:
+    import traceback
     print(f'2.5 Test Failed: {e}')
+    print(traceback.format_exc())
 else:
     print(f'2.5 Test Passed: Link Accessed: {driver.current_url}')
+driver.switch_to.window(driver.window_handles[0])
 driver.execute_script("document.body.style.animation = '';")
 driver.execute_script("document.body.style.overflow = '';")
 end_time = time.time()
@@ -173,11 +194,11 @@ sleep(1)
 start_time = time.time()
 try:
     driver.get('http://www.kingbengalscattery.com/ownersinfo')
-    contact = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CLASS_NAME, 'Footer_footerContainer__gV8Ik h4')))
-    #.Footer_footerContainer__gV8Ik h4
+    contact = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'test2.6contact')))
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
     driver.execute_script("arguments[0].scrollIntoView();", contact)
+    ActionChains(driver).move_to_element(contact).perform()
     contact.click()
     assert driver.current_url, 'http://www.kingbengalscattery.com/contact'
 except AssertionError:

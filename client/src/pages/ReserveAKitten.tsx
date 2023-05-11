@@ -5,7 +5,7 @@ import ReserveAKittenCSS from "./styles/ReserveAKitten.module.css";
 import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 // import KittenReservationForm from '../components/KittenReservationForm';
-import NavBarUnderLayer from "../components/NavBarUnderLayer";
+// import NavBarUnderLayer from "../components/NavBarUnderLayer";
 import ReserveKittenStore from "../ReserveKittenStore/ReserveKittenStore";
 
 const ReserveAKitten = () => {

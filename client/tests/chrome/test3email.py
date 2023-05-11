@@ -104,7 +104,7 @@ try:
     driver.get('http://www.kingbengalscattery.com/contact')
     driver.execute_script("document.body.style.animation = 'none';")
     driver.execute_script("document.body.style.overflow = 'hidden';")
-    button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ContactUs_submitButton__KYcx8"]')))
+    button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//input[@value='Send']")))
     ActionChains(driver).move_to_element(button).perform()
     button.click()
     time.sleep(5)

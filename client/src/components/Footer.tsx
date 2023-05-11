@@ -15,11 +15,11 @@ const Footer = () => {
         <section>
           <a
             className={FooterCSS.footerLinks}
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/kingbengals/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
             target="_blank"
             rel="noreferrer"
           >
-            <button className={FooterCSS.instagramBtn}>
+            <button className={FooterCSS.instagramBtn} id="test2.5instabtn">
               <img
                 alt="instaImg"
                 className={FooterCSS.instagramImg}
@@ -45,6 +45,7 @@ const Footer = () => {
         <h4
           className={FooterCSS.footerLinks}
           onClick={() => navigate("/contact")}
+          id="test2.6contact"
         >
           Contact us:
         </h4>

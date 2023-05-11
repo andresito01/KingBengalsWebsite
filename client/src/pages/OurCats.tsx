@@ -3,7 +3,7 @@ import WebNavHeader from "../components/WebNavHeader";
 import Footer from "../components/Footer";
 import OurCatsCSS from "./styles/OurCats.module.css";
 import DisplayParents from "../components/DisplayParents";
-import NavBarUnderLayer from "../components/NavBarUnderLayer";
+// import NavBarUnderLayer from "../components/NavBarUnderLayer";
 
 const OurCats: React.FC = () => {
   return (

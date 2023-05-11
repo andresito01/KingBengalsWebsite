@@ -12,12 +12,12 @@ function CartProduct(props) {
 
   return (
     <>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex" }} id="test4.3cartitems">
         <div>
           <h3>{productData.info.name}</h3>
           <p>{quantity} total</p>
           <p>${(quantity * productData.info.reservePrice).toFixed(2)}</p>
-          <Button size="sm" onClick={() => cart.deleteFromCart(id)}>
+          <Button size="sm" onClick={() => cart.deleteFromCart(id)} id="test4.3cartremove">
             Remove
           </Button>
         </div>

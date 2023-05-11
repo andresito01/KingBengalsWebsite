@@ -42,6 +42,7 @@ const Litter = ({ litter }) => {
       <div
         onClick={() => handleModalOpen()}
         className={DisplayLitterCSS.litterInfo}
+        id="test2.2openmodal"
       >
         <div>
           <h1>

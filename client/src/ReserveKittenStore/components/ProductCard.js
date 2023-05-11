@@ -21,6 +21,7 @@ function ProductCard(props) {
               variant="danger"
               onClick={() => cart.deleteFromCart(product.id)}
               className="my-2"
+              id="test4.1removebtn"
             >
               Remove from cart
             </Button>
@@ -29,6 +30,7 @@ function ProductCard(props) {
           <Button
             variant="primary"
             onClick={() => cart.addOneToCart(product.id)}
+            id="test4.1addbtn"
           >
             Add To Cart
           </Button>
