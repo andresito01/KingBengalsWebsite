@@ -36,41 +36,29 @@
 
 .body {
   background-color: rgb(184, 144, 96, 0.95);
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 0.8fr 1fr;
-  grid-template-rows: 1fr;
-  row-gap: 2vh;
-  align-self: start;
-  align-content: center;
- 
-  padding: 1vw;
-  /*opacity: 0.95;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
   border-style: solid;
-  border-color: var(--light-primary-color);/*#6b462a;*/
+  border-color: var(--light-primary-color); /*#6b462a;*/
   border-width: 5px;
   border-radius: 20px;
   margin: auto;
   margin-top: 3vw;
   margin-bottom: 4vw;
   width: 90%;
-  height: fit-content;
 }
 
 .organizations {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 2vw;
-  height: fit-content;
-  align-content:center;
+  min-width: 320px;
+  margin: auto;
+  width: 30%;
+  align-self: flex-start;
 }
 
 .organizationText {
-  /*border-left: #6b462a;
-  border-left-style: solid;
-  border-width: 2px;*/
-  padding-left: 1vw;
+  padding: 1rem;
   color: black;
   font-family: var(--generic-website-text);
   font-size: var(--header-font-size);
@@ -96,35 +84,5 @@
 }
 
 .parentColumn {
-  display: grid;
-  margin: auto;
-  width: 100%;
-  margin-left: 40%; /*30vw*/
-  /*padding: 5vw;*/
-  /*align-content: center;
-  align-self: center;*/
-}
-
-@media screen {
-  .parentColumn {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .body {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .headerContainerOurCats {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .ticaBtn {
-    width: 30vw;
-    align-self: center;
-    align-items: center;
-  }
+  width: 70%;
 }
