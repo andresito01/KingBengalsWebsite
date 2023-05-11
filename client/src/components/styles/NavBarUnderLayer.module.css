@@ -1,12 +1,283 @@
 @import "../../theme.css";
 
+@font-face {
+  font-family: inika;
+  src: url("../../fonts/Inika-Regular.ttf");
+}
+@font-face {
+  font-family: lancelot;
+  src: url("../../fonts/Lancelot-Regular.ttf");
+}
+
+/******************************************************************************/
+
 .headerUnderneathLayer {
     display: flex;
     position: relative; /*absolute;/*fixed; /*relative;*/
     top: 0;
     width: 100%;
-    height: 15.4vw;
+    height: auto;
+    /*height: 15.4vw;*/
     background-color: var(--dark-primary-color);
     z-index: 1;
     overflow: visible;
   }
+  /****************************************************************************/
+
+
+.headerContainer2 {
+  position: relative;
+  /*position: -webkit-sticky; /* For Safari */
+  top: 0;
+  width: 100%;
+  height: auto;
+  background-color: #412804;
+  z-index: 1;
+  overflow: visible;
+}
+
+.leftImgContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 15%;
+  background-image: url(".././../images/CatWebNavHeaderNoBackground.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logoContainer {
+  display: flex;
+  bottom: 0px;
+  width: 16vw;
+  height: auto;
+  position: absolute;
+  background-color: transparent;
+  align-content: center;
+}
+
+.logoImg {
+  display: flex;
+  bottom: 0;
+  width: 15rem;
+  height: auto;
+  position: absolute;
+  background-color: transparent;
+  align-content: center;
+}
+
+.middle {
+  position: relative;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 85%;
+}
+
+.middleNavLinks {
+  position: relative;
+  right: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 85%;
+}
+
+.headerTitleContainer {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: last baseline;
+}
+
+.headerKingBengals {
+  font-family: lancelot;
+  font-size: 5.5rem;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.headerCattery {
+  font-family: lancelot;
+  font-size: 3.5rem;
+  color: white;
+  margin-left: 9px;
+  margin-bottom: 1rem;
+}
+
+.rightImgContainer {
+  display: flex;
+  height: 100%;
+  align-self: flex-end;
+}
+
+.rightImgContainer #rightHeaderImg {
+  scale: 0.8;
+  margin-top: 2.5rem;
+}
+
+/* Navigation Links */
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.link a {
+  text-decoration: none;
+  font-family: inika;
+  font-size: 1.2rem; /*1.7rem;*/
+  color: white;
+}
+
+.link a.active {
+  color: rgba(226, 174, 110, 0.7);
+  text-decoration: underline;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.link a:hover {
+  cursor: pointer;
+  color: rgba(226, 174, 110, 0.7);
+}
+
+.navBtn {
+  display: none;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1213px) {
+  .navBtn {
+    display: block;
+    position: absolute; /*absolute;*/
+    right: 0;
+    top: 0;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .rightImgContainer #rightHeaderImg {
+    display: none;
+  }
+
+  .headerTitleContainer {
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .headerKingBengals {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .headerCattery {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .logoImg {
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 1213px) {
+  .middleResponsive {
+    position: relative;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 85%;
+  }
+
+  .navLinksResponsive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    align-self: flex-start;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(65, 40, 4, 1);
+    border-radius: 1rem;
+    box-shadow: #e2ae6ee0 0px 0px 60px 10px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navLinksResponsive .link {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navLinksResponsive .link:hover {
+    cursor: pointer;
+    background-color: rgba(226, 174, 110, 0.7);
+  }
+
+  .logoImgResponsive {
+    width: 10rem;
+  }
+
+  .logoResponsive {
+    position: sticky; /*absolute;*/
+    top: 0px;
+    left: 0px;
+    height: 90px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .logoImg {
+    width: 6rem;
+  }
+
+  .logoImgResponsive {
+    width: 6rem;
+  }
+
+  .headerKingBengals {
+    font-size: 2.5rem;
+  }
+
+  .headerCattery {
+    font-size: 1.5rem;
+  }
+
+  .logoResponsive {
+    height: 70px;
+  }
+}

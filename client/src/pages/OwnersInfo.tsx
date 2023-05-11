@@ -41,7 +41,7 @@ const OwnersInfoPageHeader = () => {
     <div className={OwnersInfoCSS.headerBackground}>
       <img
         alt="headerImage"
-        src={require("../images/bencat - OwnersInfo header image.jpg")}
+        src={require("../images/bencat - OwnersInfo header.jpg")}
       />
 
       {/*<div className={OwnersInfoCSS.headerOwnersInfo}>

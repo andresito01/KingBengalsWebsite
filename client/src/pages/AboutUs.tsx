@@ -11,7 +11,9 @@ const About = () => {
   const fontSizeParagraph = { fontSize: "20px" };
 
   return (
+    
     <div className={AboutCSS.aboutPage}>
+      <NavBarUnderLayer/>
       <WebNavHeader />
       <br />
       <header className={AboutCSS.header} style={fontSizeHeader}>

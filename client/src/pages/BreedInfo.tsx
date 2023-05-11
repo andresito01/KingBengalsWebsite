@@ -13,6 +13,9 @@ import NavBarUnderLayer from "../components/NavBarUnderLayer";
 const BreedInfo = () => {
   return (
     <div className={BreedInfoCSS.breedInfoPage}>
+      
+      <NavBarUnderLayer/>
+      
       <WebNavHeader />
 
       <div className={BreedInfoCSS.backgroundLayer}>
