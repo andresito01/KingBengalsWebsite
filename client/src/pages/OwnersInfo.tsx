@@ -10,7 +10,7 @@ import NavBarUnderLayer from "../components/NavBarUnderLayer";
 const OwnersInfo = () => {
   return (
     <div className={OwnersInfoCSS.backgroundLayer}>
-      {/*<NavBarUnderLayer/>*/}
+      <NavBarUnderLayer/>
 
       <WebNavHeader />
 

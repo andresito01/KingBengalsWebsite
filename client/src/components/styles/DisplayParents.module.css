@@ -5,9 +5,7 @@
   flex-direction: row;
   background-color: var(--dark-secondary-color);/* #6b462a;*/
   color: white;
-  align-self: center;
   align-content: center;
-
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
   /*max-width: 350px;*/
