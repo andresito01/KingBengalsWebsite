@@ -30,7 +30,12 @@ except AssertionError:
 except Exception as e:
     print(f'1.1 Test Failed: {e}')
 else:
-    print(f'1.1 Test Passed: {driver.current_url}')
+    print(f'1.1 Test Passed: Url Retrieved: {driver.current_url}')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    today = date.today()
+    print(f'Date: {today}')
+    print(f'Time: {current_time} \n')
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -47,7 +52,12 @@ except AssertionError:
 except Exception as e:
     print(f'1.2 Test Failed: {e}')
 else:
-    print(f'1.2 Test Passed: {driver.current_url}')
+    print(f'1.2 Test Passed: Url Retrieved: {driver.current_url}')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    today = date.today()
+    print(f'Date: {today}')
+    print(f'Time: {current_time} \n')
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -64,7 +74,12 @@ except AssertionError:
 except Exception as e:
     print(f'1.3 Test Failed: {e}')
 else:
-    print(f'1.3 Test Passed: {driver.current_url}')
+    print(f'1.3 Test Passed: Url Retrieved: {driver.current_url}')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    today = date.today()
+    print(f'Date: {today}')
+    print(f'Time: {current_time} \n')
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -81,7 +96,12 @@ except AssertionError:
 except Exception as e:
     print(f'1.4 Test Failed: {e}')
 else:
-    print(f'1.4 Test Passed: {driver.current_url}')
+    print(f'1.4 Test Passed: Url Retrieved: {driver.current_url}')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    today = date.today()
+    print(f'Date: {today}')
+    print(f'Time: {current_time} \n')
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -98,7 +118,12 @@ except AssertionError:
 except Exception as e:
     print(f'1.5 Test Failed: {e}')
 else:
-    print(f'1.5 Test Passed: {driver.current_url}')
+    print(f'1.5 Test Passed: Url Retrieved: {driver.current_url}')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    today = date.today()
+    print(f'Date: {today}')
+    print(f'Time: {current_time} \n')
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -115,7 +140,12 @@ except AssertionError:
 except Exception as e:
     print(f'1.6 Test Failed: {e}')
 else:
-    print(f'1.6 Test Passed: {driver.current_url}')
+    print(f'1.6 Test Passed: Url Retrieved: {driver.current_url}')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    today = date.today()
+    print(f'Date: {today}')
+    print(f'Time: {current_time} \n')
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -132,7 +162,12 @@ except AssertionError:
 except Exception as e:
     print(f'1.7 Test Failed: {e}')
 else:
-    print(f'1.7 Test Passed: {driver.current_url}')
+    print(f'1.7 Test Passed: Url Retrieved: {driver.current_url}')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    today = date.today()
+    print(f'Date: {today}')
+    print(f'Time: {current_time} \n')
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))
@@ -149,7 +184,12 @@ except AssertionError:
 except Exception as e:
     print(f'1.8 Test Failed: {e}')
 else:
-    print(f'1.8 Test Passed: {driver.current_url}')
+    print(f'1.8 Test Passed: Url Retrieved: {driver.current_url}')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    today = date.today()
+    print(f'Date: {today}')
+    print(f'Time: {current_time} \n')
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))

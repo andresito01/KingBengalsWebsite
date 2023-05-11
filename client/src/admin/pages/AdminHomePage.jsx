@@ -32,7 +32,7 @@ const AdminHomePage = () => {
           <h2>Update:</h2>
           <ul>
             <strong>
-              <Link className={AdminHomeCSS.links} to="/adminParents">
+              <Link className={AdminHomeCSS.links} to="/adminParents" id="test5.2parentbtn">
                 <li>Parents</li>
               </Link>
             </strong>

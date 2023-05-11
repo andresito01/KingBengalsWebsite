@@ -47,7 +47,7 @@ try:
     close_button.click()
     # 'try:' because it is looking for something that isn't there
     try:
-        WebDriverWait(driver, 3).until(EC.invisibility_of_element_located((By.CLASS_NAME, 'DisplayParents_sliderInfo__Ux5ef')))
+        WebDriverWait(driver, 3).until(EC.visibility_of_element_located((By.CLASS_NAME, 'DisplayParents_sliderInfo__Ux5ef')))
         sliderClosed = False
     except TimeoutException:
         sliderClosed = True
