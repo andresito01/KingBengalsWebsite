@@ -4,13 +4,15 @@ import Footer from "../components/Footer";
 import OurCatsCSS from "./styles/OurCats.module.css";
 import DisplayParents from "../components/DisplayParents";
 import NavBarUnderLayer from "../components/NavBarUnderLayer";
+import header from "../images/OurCatsHeader.png";
 
 const OurCats: React.FC = () => {
   return (
     <div className={OurCatsCSS.ourCatsPage}>
-      <NavBarUnderLayer/>
+      <NavBarUnderLayer />
       <WebNavHeader />
-      <div className={OurCatsCSS.headerBackground}>
+
+      {/* <div className={OurCatsCSS.headerBackground}>
         <div className={OurCatsCSS.headerContainerOurCats}>
           <h1>Meet Our Cats!</h1>
           <h3>
@@ -31,7 +33,9 @@ const OurCats: React.FC = () => {
             cats!
           </h3>
         </div>
-      </div>
+      </div> */}
+      <MissionStatement />
+      <OurCatsHeader />
 
       {/* Parent Container and Records */}
       <div className={OurCatsCSS.body}>
@@ -77,6 +81,42 @@ const OurCats: React.FC = () => {
         </div>
       </div>
       <Footer />
+    </div>
+  );
+};
+
+/* >>>>>>>>>>>>>>>>>>>>>>       OurCats Header     <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+const OurCatsHeader = () => {
+  return (
+    <div className={OurCatsCSS.ourCatsHeader}>
+      {/* Header Image */}
+      <img alt="headerImage" src={header} />
+    </div>
+  );
+};
+
+/* >>>>>>>>>>>>>>>>>>>>>>       Homepage Header     <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+const MissionStatement = () => {
+  return (
+    <div className={OurCatsCSS.missionStatement}>
+      <div className={OurCatsCSS.missionStatementText}>
+        <h1>Meet Our Cats!</h1>
+        <hr></hr>
+        <p>
+          We believe in quality genetics and pay close attention to our breeding
+          program to ensure those quality results we strive for. We provide our
+          cats with the best care and nutrition possible. We give them lots of
+          love and affection so they feel right at home.
+        </p>
+        <p>
+          Best treatment and care is given to our cats to boost their energy,
+          behavior, and quality of life.
+        </p>
+        <p>
+          Click the photos below to see additional information for each of out
+          cats!
+        </p>
+      </div>
     </div>
   );
 };

@@ -17,7 +17,10 @@
 }
 
 .parentContainer h4 {
-  margin-top: 0;
+  text-align: center;
+}
+.parentContainer p {
+  text-align: center;
 }
 
 .parentAndSlider {

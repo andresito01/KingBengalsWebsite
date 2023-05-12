@@ -36,10 +36,10 @@ const Parent = ({ parent }) => {
         {/***************   Parent(name & image)  ******************* */}
         <div>
           <div className={DisplayParentsCSS.parentContainer}>
-            <h4>
-              {name}
+            <div>
+              <h4>{name}</h4>
               <p>{sex}</p>
-            </h4>
+            </div>
             <br />
 
             <div className={DisplayParentsCSS.parentAndSlider}>
