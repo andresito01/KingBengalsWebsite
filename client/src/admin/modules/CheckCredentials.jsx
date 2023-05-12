@@ -4,6 +4,7 @@ import { UserAdmin } from "../context/AdminContext";
 import Footer from "../../components/Footer";
 import CheckingCredentialsCSS from "../styles/CheckingCredentials.module.css";
 import WebNavHeader from "../../components/WebNavHeader";
+import NavBarUnderLayer from "../../components/NavBarUnderLayer";
 
 const CheckCredentials = () => {
   const [isThisAdmin, setIsThisAdmin] = useState(false);
@@ -44,8 +45,10 @@ const CheckCredentials = () => {
   }, [counter]);
 
   return (
+    
     <div className={CheckingCredentialsCSS.checkingCredentialsContainer}>
-      <WebNavHeader />
+      <NavBarUnderLayer/>
+      
       <div className={CheckingCredentialsCSS.canvasContainer}>
         <div className={CheckingCredentialsCSS.titleContainer}>
           <h1>
@@ -55,7 +58,7 @@ const CheckCredentials = () => {
         </div>
         <div className={CheckingCredentialsCSS.statementContainer}>
           <p>
-            If this takes more than 3 secons please confirm that there is
+            If this takes more than 3 seconds, please confirm that there is
             internet connection. Contact support if the problem persist.
           </p>
         </div>
