@@ -16,7 +16,9 @@
 .loginContainer {
   width: 90%;
   padding: 2rem 4rem;
-  margin: 2rem 0rem;
+  margin: 2rem 1rem;
+  margin-top: 25vw;
+  margin-bottom: 10vw;
   max-width: 500px;
   height: fit-content;
 
