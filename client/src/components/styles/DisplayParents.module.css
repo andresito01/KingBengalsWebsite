@@ -2,35 +2,34 @@
 
 .parentContainer {
   width: 100%;
-  display: flex;
-  flex-direction: row wrap;
+  display: block;
+  max-width: 650px;
   background-color: var(--dark-secondary-color);
   color: white;
   align-content: center;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
-  /*max-width: 350px;*/
-  /* min-width: fit-content; */
-  margin: auto;
+  margin: 2rem;
   padding: 1vw;
   border-style: double;
   border-color: var(--dark-primary-color);
   border-width: 10px;
   border-radius: 20px;
+  gap: 10rem;
 }
 
 .parentContainer h4 {
-  /* font-size: var(--large-header-size); */
-  margin-top: 0;
+  /* margin-top: 0; */
 }
 
-/*.parentContainer p {
-  /* font-size: var(--header-size);
-}*/
-
-.parentContainer img {
+.parentAndSlider {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.parentAndSlider img {
+  width: 100%;
   object-fit: cover;
-  /* width: 100%; 50% */
   align-self: center;
   border-style: double;
   border-color: var(--dark-primary-color);
@@ -56,18 +55,14 @@
   color: black;
   min-width: max-content;
   height: min-content;
-  /*margin-top: 2vw;*/
+
   padding: 2vw 1vw;
   font-size: var(--generic-text-size); /*1.1rem;*/
   background-color: var(--light-secondary-color); /* #fff;*/
-  /*border: 0.2vw solid #ccc;
-  border-radius: 1rem;
-  border-top-left-radius: 0rem;
-  border-bottom-left-radius: 0rem;*/
   border-color: var(--light-primary-color);
   border-width: 10px 0px 5px 0px;
-
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .sliderInfo tr {

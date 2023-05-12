@@ -45,13 +45,15 @@
   border-width: 5px;
   border-radius: 20px;
   margin: auto;
+  padding: 2rem;
   margin-top: 3vw;
   margin-bottom: 4vw;
-  width: 90%;
+  width: 95%;
+  max-width: 1200px;
 }
 
 .organizations {
-  min-width: 320px;
+  min-width: 350px;
   margin: auto;
   width: 30%;
   align-self: flex-start;
@@ -84,5 +86,7 @@
 }
 
 .parentColumn {
-  width: 70%;
+  width: 65%;
+  min-width: 350px;
+  padding: 1rem 2rem;
 }
