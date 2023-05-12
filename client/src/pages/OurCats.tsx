@@ -37,8 +37,8 @@ const OurCats: React.FC = () => {
             competitions, which can help promote and improve the breed.
             <br></br>
             <br></br>
-            To learn more about TICA and their mission, please click the logo on
-            the right.
+            To learn more about TICA and their mission, please click the logo at
+            the bottom.
           </p>
           {/* Links to official organizations */}
           <a
