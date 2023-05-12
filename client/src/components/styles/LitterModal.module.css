@@ -156,6 +156,16 @@
   object-fit: cover;
 }
 
+.kittenName {
+  background-color: #edca9f3b;
+  border-color: #eec197;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .kittenInfo {
   background-color: #e2b78e;
   font-size: 14px;

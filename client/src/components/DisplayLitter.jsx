@@ -38,7 +38,7 @@ const Litter = ({ litter }) => {
     setIsModalOpen(!isModalOpen);
   };
   return (
-    <div className={DisplayLitterCSS.containerBtn} key={id}>
+    <div className={DisplayLitterCSS.LitterContainer} key={id}>
       <div
         onClick={() => handleModalOpen()}
         className={DisplayLitterCSS.litterInfo}

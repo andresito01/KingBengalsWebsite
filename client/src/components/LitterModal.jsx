@@ -10,9 +10,7 @@ const LitterModal = ({ litter, handleModalOpen }) => {
   const { getParentPicture } = ParentsData();
 
   return (
-    // <div className="fixed bg-orange-100/80 w-screen h-screen z-10 top-0 left-0 justify-center items-center ">
     <div className={LitterModalCSS.modalBackground}>
-      {/* <div className="relative bg-black  text-white text-5xl w-[380px] md:w-90% mx-auto my-4 rounded-3xl z-50"> */}
       <div className={LitterModalCSS.modalContainer}>
         <div className={LitterModalCSS.closeBtn}>
           <button onClick={() => handleModalOpen()} id="test2.2closebtn">
@@ -73,6 +71,9 @@ const DiplayKitten = ({ litterID }) => {
           <div className={LitterModalCSS.kittenContainer} key={id}>
             <div className={LitterModalCSS.kittenPicture}>
               <img src={picture} alt={name} />
+            </div>
+            <div className={LitterModalCSS.kittenName}>
+              <h4>{name}</h4>
             </div>
             <div className={LitterModalCSS.kittenInfo}>
               <p>
