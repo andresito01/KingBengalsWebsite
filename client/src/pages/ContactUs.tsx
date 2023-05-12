@@ -64,7 +64,6 @@ const ContactUs = () => {
 
   return (
     <div className={ContactUsCSS.contactUsPage}>
-      <NavBarUnderLayer/>
       <WebNavHeader />
       <div className={ContactUsCSS.bg}>
         <img

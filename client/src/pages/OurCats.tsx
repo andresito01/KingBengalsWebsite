@@ -9,7 +9,6 @@ import header from "../images/OurCatsHeader.png";
 const OurCats: React.FC = () => {
   return (
     <div className={OurCatsCSS.ourCatsPage}>
-      <NavBarUnderLayer />
       <WebNavHeader />
       <MissionStatement />
       <OurCatsHeaderImg />

@@ -15,7 +15,10 @@ const LitterModal = ({ litter, handleModalOpen }) => {
       {/* <div className="relative bg-black  text-white text-5xl w-[380px] md:w-90% mx-auto my-4 rounded-3xl z-50"> */}
       <div className={LitterModalCSS.modalContainer}>
         <div className={LitterModalCSS.closeBtn}>
-          <button onClick={() => handleModalOpen()} id="test2.2closebtn"> X </button>
+          <button onClick={() => handleModalOpen()} id="test2.2closebtn">
+            {" "}
+            X{" "}
+          </button>
         </div>
         <div className={LitterModalCSS.title}>
           <h1>Kittens for Sale!</h1>
@@ -64,7 +67,7 @@ const DiplayKitten = ({ litterID }) => {
     <div className={LitterModalCSS.kittensContainer}>
       {kittenList.map((kitten) => {
         const { id, info } = kitten;
-        const { name, color, pattern, picture, sex, status } = info;
+        const { name, color, pattern, picture, sex, status, price } = info;
         console.log(kitten);
         return (
           <div className={LitterModalCSS.kittenContainer} key={id}>
@@ -83,6 +86,9 @@ const DiplayKitten = ({ litterID }) => {
               </p>
               <p>
                 <b>Status: </b> {status}
+              </p>
+              <p>
+                <b>Price($): </b> {price}
               </p>
             </div>
           </div>

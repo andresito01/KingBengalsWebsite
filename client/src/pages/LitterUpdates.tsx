@@ -11,7 +11,6 @@ const LitterUpdates: React.FC = () => {
 
   return (
     <div className={LitterUpdatesCSS.litterUpdatesPage}>
-      <NavBarUnderLayer/>
       <WebNavHeader />
       <div className={LitterUpdatesCSS.litterInstructionContainer}>
         <h1 style={fontSizeHeader}>Check Out Our Litters!</h1>
