@@ -175,6 +175,10 @@
   .link {
     display: none;
   }
+  
+  .link2 {
+    display: none;
+  }
 
   .rightImgContainer #rightHeaderImg {
     display: none;

@@ -5,6 +5,7 @@ import { UserAdmin } from "../context/AdminContext";
 import WebNavHeader from "../../components/WebNavHeader";
 import Footer from "../../components/Footer";
 import InsufficientPermissionCSS from "../styles/InsufficientPermission.module.css";
+import NavBarUnderLayer from "../../components/NavBarUnderLayer";
 
 const InsufficientPermission = () => {
   const { isAdmin } = UserAdmin();
@@ -28,6 +29,7 @@ const InsufficientPermission = () => {
 
   return (
     <div className={InsufficientPermissionCSS.insufficientPermissionContainer}>
+      <NavBarUnderLayer/>
       <WebNavHeader />
       <div className={InsufficientPermissionCSS.canvasContainer}>
         <div className={InsufficientPermissionCSS.titleContainer}>

@@ -33,45 +33,45 @@ const NavBarUnderLayer = () => {
         </div>
         <div className={WebNavHeaderCSS.middleNavLinks} id="middleNavLinks">
           <div className={Mobile ? WebNavHeaderCSS.navLinksResponsive : WebNavHeaderCSS.navLinks} id="navLinks">
-            <div className={WebNavHeaderCSS.link}>
+            <div className={WebNavHeaderCSS.link2}>
               <NavLink to="/home" 
                 className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                  Home</NavLink>
+                  </NavLink>
             </div>
-            <div className={WebNavHeaderCSS.link}>
+            <div className={WebNavHeaderCSS.link2}>
               <NavLink to="/reserveakitten" 
                 className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                  ReserveKitten</NavLink>
+                  </NavLink>
             </div>
-            <div className={WebNavHeaderCSS.link}>
+            <div className={WebNavHeaderCSS.link2}>
               <NavLink to="/about" 
                 className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                  About</NavLink>
+                  </NavLink>
             </div>
-            <div className={WebNavHeaderCSS.link}>
+            <div className={WebNavHeaderCSS.link2}>
               <NavLink to="/ourcats" 
                 className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                  Cats</NavLink>
+                  </NavLink>
             </div>
-            <div className={WebNavHeaderCSS.link}>
+            <div className={WebNavHeaderCSS.link2}>
               <NavLink to="/litterupdates" 
                 className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                  Updates</NavLink>
+                  </NavLink>
             </div>
-            <div className={WebNavHeaderCSS.link}>
+            <div className={WebNavHeaderCSS.link2}>
               <NavLink to="/ownersinfo" 
                 className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                  Owners</NavLink>
+                  </NavLink>
             </div>
-            <div className={WebNavHeaderCSS.link}>
+            <div className={WebNavHeaderCSS.link2}>
               <NavLink to="/contact" 
                 className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                  Contact</NavLink>
+                  </NavLink>
             </div>
-            <div className={WebNavHeaderCSS.link}>
+            <div className={WebNavHeaderCSS.link2}>
               <NavLink to="/breedinfo" 
                 className={(navData) => navData.isActive ? WebNavHeaderCSS.active : ""}>
-                  Breed</NavLink>
+                  .</NavLink>
             </div>
           </div>
         </div>
