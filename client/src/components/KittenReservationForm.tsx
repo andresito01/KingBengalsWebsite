@@ -1,10 +1,15 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import KittenReservationFormCSS from "./styles/KittenReservationForm.module.css"
 import emailjs from '@emailjs/browser';
-import litterupdatesmodaljson from '../json/litterupdatesmodal.json';
+import { KittensData } from '../admin/context/KittensContext';
 import axios from 'axios';
 
 const KittenReservationForm = () => {
+
+  // Get Available Kittens from Firebase
+  const { kittenList } = KittensData();
+  const availableKittens = kittenList.filter((kitten:any) => kitten.info.status === "available");
+  
 
   // form states
   const [name, setName]=useState('');
@@ -12,11 +17,6 @@ const KittenReservationForm = () => {
   const [message, setMessage]=useState('');
   const [selectedKitten, setSelectedKitten] = useState("")
  
-
-
-  let kittenAvailableOptions = litterupdatesmodaljson.map((litterID) => (
-      litterID.kittens.filter((kitten) => kitten.kittenStatus === "Available")
-    )).flat(1)
 
   let emailJSVariables = {
       serviceId: process.env.REACT_APP_SERVICE_ID as string,
@@ -74,7 +74,7 @@ const KittenReservationForm = () => {
     setSelectedKitten(target.value);
   }
 
-
+  console.log(availableKittens)
   return (
     <div>
       <form className={KittenReservationFormCSS.formContainer} ref={form} onSubmit={sendEmail}>
@@ -98,12 +98,13 @@ const KittenReservationForm = () => {
 
           <label id={KittenReservationFormCSS.formLabel}>Select The Kitten You Want To Reserve</label>
           <div className={KittenReservationFormCSS.formKittenSelect}>
-          {kittenAvailableOptions.map((option, index) => {
+          
+          {availableKittens.map((kitten:any, index:any) => {
             return (
               <div className={KittenReservationFormCSS.availableKittenRadioOption} key={index}>
-                <input type='radio' name='kitten' value={option.kittenName} checked={selectedKitten === option.kittenName} onChange={onOptionChange}  />
-                <div className={KittenReservationFormCSS.availableKittenRadioOptionInner}><label>{option.kittenName}</label>
-                <img alt='Kitten' src={option.kittenPicture} style={{height:100,width:100}} /> </div>
+                <input type='radio' name='kitten' value={kitten.info.name} checked={selectedKitten === kitten.info.name} onChange={onOptionChange}  />
+                <div className={KittenReservationFormCSS.availableKittenRadioOptionInner}><label>{kitten.info.name}</label>
+                <img alt='Kitten' src={kitten.info.picture} style={{height:100,width:100}} /> </div>
               </div>
             )
           })}

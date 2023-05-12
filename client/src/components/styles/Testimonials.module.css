@@ -58,8 +58,9 @@
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Container   <<<<<<<<<<<<<<<<<<*/
 .testimonyContainer {
-  width: 320px;
-  min-width: 320px;
+  height: 35rem;
+  width: 20rem;
+  min-width: 20rem;
   position: relative;
   display: inline-block;
   white-space: normal;

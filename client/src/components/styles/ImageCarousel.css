@@ -16,6 +16,8 @@
   border-radius: var(--border-radius);
   border-style: solid;
   border-color: var(--light-primary-color);
+  position: relative;
+  z-index: -1;
 }
 
 .itemImg {

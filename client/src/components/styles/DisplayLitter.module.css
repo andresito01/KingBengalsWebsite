@@ -1,6 +1,7 @@
   @import "../../theme.css";
   
   .containerBtn {
+    height: 174px;
     width: 100%;
     padding: 0%;
     border-radius: 10px;

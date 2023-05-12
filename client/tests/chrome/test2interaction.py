@@ -145,8 +145,7 @@ try:
     time.sleep(1)
     link.click()
     driver.switch_to.window(driver.window_handles[-1])
-    # just a temporary link, will need to be changed
-    expected_url = 'https://www.youtube.com/watch?v=A_MjCqQoLLA&ab_channel=TheBeatlesVEVO'
+    expected_url = 'https://www.youtube.com/watch?v=-5zdLYpKIOU&ab_channel=Kurtis%26Chelsey'
     assert driver.current_url, expected_url
 except AssertionError:
     print(f'2.4 Test Failed: AssertionError')

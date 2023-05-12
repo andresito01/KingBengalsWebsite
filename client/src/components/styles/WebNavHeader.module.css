@@ -257,7 +257,7 @@
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 650px) {
   .logoImg {
     width: 6rem;
   }
