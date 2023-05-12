@@ -3,7 +3,7 @@
 .businessCertificateContainer {
   position: relative;
   width: 90%;
-  max-width: 500px;
+  max-width: 900px;
   margin: auto;
   border-radius: 2rem;
   position: relative;
@@ -31,7 +31,7 @@
 
 /* >>>>>>>>>>>>>>>>>> KingBengals' Logo <<<<<<<<<<<<<<<<<<<<<*/
 .kbLogoContainer {
-  width: 100px;
+  width: 150px;
 }
 .kbLogoContainer img {
   width: 100%;
@@ -42,7 +42,7 @@
 .businessCertificateText {
   width: 90%;
   margin: auto;
-  padding: 1rem;
+  /*padding: 1rem;*/
   color: rgb(254, 254, 254);
   text-align: left;
   font-size: large;
