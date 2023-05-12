@@ -11,31 +11,8 @@ const OurCats: React.FC = () => {
     <div className={OurCatsCSS.ourCatsPage}>
       <NavBarUnderLayer />
       <WebNavHeader />
-
-      {/* <div className={OurCatsCSS.headerBackground}>
-        <div className={OurCatsCSS.headerContainerOurCats}>
-          <h1>Meet Our Cats!</h1>
-          <h3>
-            We believe in quality genetics and pay close attention to our
-            breeding program to ensure those quality results we strive for. We
-            provide our cats with the best care and nutrition possible. We give
-            them lots of love and affection so they feel right at home.
-            <br></br>
-            <br></br>
-            Best treatment and care is given to our cats to boost their energy,
-            behavior, and quality of life.
-          </h3>
-          <h3>
-            <br></br>
-            <br></br>
-            <br></br>
-            Click the photos below to see additional information for each of out
-            cats!
-          </h3>
-        </div>
-      </div> */}
       <MissionStatement />
-      <OurCatsHeader />
+      <OurCatsHeaderImg />
 
       {/* Parent Container and Records */}
       <div className={OurCatsCSS.body}>
@@ -85,8 +62,8 @@ const OurCats: React.FC = () => {
   );
 };
 
-/* >>>>>>>>>>>>>>>>>>>>>>       OurCats Header     <<<<<<<<<<<<<<<<<<<<<<<<<<< */
-const OurCatsHeader = () => {
+/* >>>>>>>>>>>>>>>>>>>>>>       OurCats Header Img    <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+const OurCatsHeaderImg = () => {
   return (
     <div className={OurCatsCSS.ourCatsHeader}>
       {/* Header Image */}

@@ -29,9 +29,7 @@
   height: auto;
   position: relative;
   padding: 2rem;
-  /* background-color: var(--dark-primary-color); */
   background-color: rgb(184, 144, 96, 0.95);
-  /* opacity: var(--dark-bg-opacity); */
   color: rgb(255, 255, 255);
   border-width: 0px 0px 5px 0px;
   border-bottom: #e2b78e;

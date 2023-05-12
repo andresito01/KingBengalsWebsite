@@ -8,7 +8,6 @@
   align-content: center;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
-  /* margin: 2rem; */
   padding: 1vw;
   border-style: double;
   border-color: var(--dark-primary-color);
