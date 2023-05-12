@@ -3,32 +3,37 @@
 .parentContainer {
   width: 100%;
   display: block;
-  max-width: 650px;
   background-color: var(--dark-secondary-color);
   color: white;
   align-content: center;
   font-family: var(--generic-website-text);
   font-size: var(--generic-text-size);
-  margin: 2rem;
+  /* margin: 2rem; */
   padding: 1vw;
   border-style: double;
   border-color: var(--dark-primary-color);
   border-width: 10px;
   border-radius: 20px;
-  gap: 10rem;
 }
 
 .parentContainer h4 {
-  /* margin-top: 0; */
+  margin-top: 0;
 }
 
 .parentAndSlider {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
 }
-.parentAndSlider img {
-  width: 100%;
+
+.parentImg {
+  flex: 1;
+  min-width: 150px;
+  /* max-height: 300px; */
+  overflow: hidden;
+}
+.parentImg img {
+  height: 100%;
   object-fit: cover;
   align-self: center;
   border-style: double;
@@ -36,7 +41,6 @@
   border-width: 10px;
   border-radius: 20px;
 }
-
 @keyframes slideOpen {
   from {
     opacity: 0;
@@ -49,6 +53,7 @@
 }
 
 .sliderInfo {
+  flex: 1;
   animation-name: slideOpen;
   animation-duration: 0.5s;
   width: 100%;
@@ -79,9 +84,3 @@
   width: 65%;
   text-overflow: ellipsis;
 }
-
-/* @media only screen and (max-width: 1200px) {
-  .parentContainer {
-    flex-direction: column;
-  }
-} */

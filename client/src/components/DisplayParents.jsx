@@ -43,38 +43,38 @@ const Parent = ({ parent }) => {
             <br />
 
             <div className={DisplayParentsCSS.parentAndSlider}>
-              <img alt={name} src={picture} />
+              <div className={DisplayParentsCSS.parentImg}>
+                <img alt={name} src={picture} />
+              </div>
+
               {/***************   if slider is open  ******************* */}
               {isSliderOpen ? (
-                // ***  display slider ***
-                <>
-                  <div className={DisplayParentsCSS.sliderInfo}>
-                    <table>
-                      <tbody>
-                        <tr>
-                          <th>Lineage:</th>
-                          <td>{lineage}</td>
-                        </tr>
-                        <tr>
-                          <th>Status:</th>
-                          <td>{status}</td>
-                        </tr>
-                        <tr>
-                          <th>Attitude:</th>
-                          <td>{attitude}</td>
-                        </tr>
-                        <tr>
-                          <th>Pattern:</th>
-                          <td>{pattern}</td>
-                        </tr>
-                        <tr>
-                          <th>History:</th>
-                          <td>{history}</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </>
+                <div className={DisplayParentsCSS.sliderInfo}>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>Lineage:</th>
+                        <td>{lineage}</td>
+                      </tr>
+                      <tr>
+                        <th>Status:</th>
+                        <td>{status}</td>
+                      </tr>
+                      <tr>
+                        <th>Attitude:</th>
+                        <td>{attitude}</td>
+                      </tr>
+                      <tr>
+                        <th>Pattern:</th>
+                        <td>{pattern}</td>
+                      </tr>
+                      <tr>
+                        <th>History:</th>
+                        <td>{history}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               ) : // ***  Else: display nothing ***
               null}
             </div>
