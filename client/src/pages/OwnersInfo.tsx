@@ -10,8 +10,6 @@ import NavBarUnderLayer from "../components/NavBarUnderLayer";
 const OwnersInfo = () => {
   return (
     <div className={OwnersInfoCSS.backgroundLayer}>
-      <NavBarUnderLayer/>
-
       <WebNavHeader />
 
       <OwnersInfoPageHeader />
@@ -175,11 +173,10 @@ const KittenDevelopment = () => {
           </div>
           <h5>
             {" "}
-
-            <br /> At two months old (8 weeks), they can recieve their first dose of
-            vaccines (see 'Medical Info & Vet Things' below). They have been
-            completely weened off of their mother's milk. They have learned some
-            social skills by interacting with their mother and other litter
+            <br /> At two months old (8 weeks), they can recieve their first
+            dose of vaccines (see 'Medical Info & Vet Things' below). They have
+            been completely weened off of their mother's milk. They have learned
+            some social skills by interacting with their mother and other litter
             mates. They're ready to go to their new and forever home.{" "}
           </h5>
         </div>
@@ -277,8 +274,8 @@ const VetInfo = () => {
         <br />{" "}
         <i>
           {" "}
-          Again, consult with you vet regarding any concerns you may have
-          about your kitten's
+          Again, consult with you vet regarding any concerns you may have about
+          your kitten's
           <br /> health and/or behaviour.
         </i>{" "}
       </h5>
@@ -313,12 +310,12 @@ const KittenTraining = () => {
           doable and can be a LOT of fun.
           <br /> # There are many training courses and resourses you can find
           online and/or in nearby pet training facilites and YouTube.
-          <br /> # Different types of training: leash training, litter training, house-breaking,
-          obedience-training, tricks, etc.
+          <br /> # Different types of training: leash training, litter training,
+          house-breaking, obedience-training, tricks, etc.
           <br /> # Cats have short attention spans, so your training sessions
           shouldn't last any longer than five minutes or so.
-          <br /> # It will offer the kittens some mental stimulation and will also serve 
-          as a great bonding activity.
+          <br /> # It will offer the kittens some mental stimulation and will
+          also serve as a great bonding activity.
           <br /> # But remember, be patient, as kittens and cats in general have
           a very sensitive nature.
         </h5>

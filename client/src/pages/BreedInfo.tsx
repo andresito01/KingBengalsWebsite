@@ -13,9 +13,6 @@ import NavBarUnderLayer from "../components/NavBarUnderLayer";
 const BreedInfo = () => {
   return (
     <div className={BreedInfoCSS.breedInfoPage}>
-      
-      <NavBarUnderLayer/>
-      
       <WebNavHeader />
 
       <div className={BreedInfoCSS.backgroundLayer}>
@@ -306,8 +303,7 @@ const BengalCatHealth = () => {
               width="500"
               height="auto"
             />
-          </div> 
-            
+          </div>
         </div>
         <i>
           {" "}
