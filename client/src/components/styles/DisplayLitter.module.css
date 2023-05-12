@@ -1,183 +1,182 @@
-  @import "../../theme.css";
-  
-  .containerBtn {
-    height: 174px;
-    width: 100%;
-    padding: 0%;
-    border-radius: 10px;
-    border-width: 0;
-    position: relative;
-    cursor: pointer;
-  }
+@import "../../theme.css";
 
-  .modalBackground {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(200, 200, 200, 0.8);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-  }
+.litterContainer {
+  width: 100%;
+  padding: 0%;
+  border-radius: 10px;
+  border-width: 0;
+  position: relative;
+  cursor: pointer;
+}
 
-  .modalContainer {
-    max-width: 50%;
-    min-width: 380px;
-    max-height: 90%;
-    min-height: fit-content;
-    overflow-y: auto;
-    color: black;
-    border-radius: 12px;
-    background-color: #a87d48f5;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-  }
+.modalBackground {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.8);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
 
-  .modalContainer::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  .modalContainer::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
-  
-  .modalContainer::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 5px;
-  }
-  
-  .modalContainer::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-  }
+.modalContainer {
+  max-width: 50%;
+  min-width: 380px;
+  max-height: 90%;
+  min-height: fit-content;
+  overflow-y: auto;
+  color: black;
+  border-radius: 12px;
+  background-color: #a87d48f5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
 
-  .title {
-    width: 87%;
-    height: fit-content;
-    font-family: var(--font-inika);
-    font-size: var(--header-font-size);
-    display: inline-block;
-    background-color: #e2b78e;
-    text-align: center;
-    margin-top: -30px;
-    margin-left: 5%;
-    line-height: 0.8;
-    border-radius: 10px;
-  }
+.modalContainer::-webkit-scrollbar {
+  width: 10px;
+}
 
-  .gridLitterandParents {
-    display: grid;
-    grid-template-columns: 1fr 0.4fr 0.4fr;
-    grid-template-rows: 1fr;
-    width: 80%;
-    gap: 1vw;
-    margin-top: 1vw;
-    margin-left: 10%;
-  }
+.modalContainer::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
 
-  .litterImg {
-    width: 100%;
-    height: 95%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #e2b78e;
-    border-radius: 10px;
-  }
+.modalContainer::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
 
-  .litterImg img{
-    width: 100%;
-    height: 100%;
-  }
+.modalContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 
-  .litterParent {
-    padding-top: 12px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
+.title {
+  width: 87%;
+  height: fit-content;
+  font-family: var(--font-inika);
+  font-size: var(--header-font-size);
+  display: inline-block;
+  background-color: #e2b78e;
+  text-align: center;
+  margin-top: -30px;
+  margin-left: 5%;
+  line-height: 0.8;
+  border-radius: 10px;
+}
 
-  .litterParentPicture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 90%;
-    height: 70%;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #e2b78e;
-  }
+.gridLitterandParents {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr;
+  grid-template-rows: 1fr;
+  width: 80%;
+  gap: 1vw;
+  margin-top: 1vw;
+  margin-left: 10%;
+}
 
-  .litterParentPicture img {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-  }
+.litterImg {
+  width: 100%;
+  height: 95%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #e2b78e;
+  border-radius: 10px;
+}
 
-  .momAndDadText {
-    font-family: var(--header-text-font);
-    text-align: center;
-    font-size: var(--large-header-size);
-    word-spacing: 1.2em;
-  }
+.litterImg img {
+  width: 100%;
+  height: 100%;
+}
 
-  .kittenContainer{
-    margin-top: 5px;
-    width: 100%;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.7fr;
-    gap: 12px;
-  }
-  
-  .kittenPicture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #e2b78e;
-  }
+.litterParent {
+  padding-top: 12px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-  .kittenPicture img {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-  }
+.litterParentPicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 90%;
+  height: 70%;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #e2b78e;
+}
 
-  .kittenInfo {
-    background-color: #e2b78e;
-    font-size: 14px;
-    height: fit-content;
-    margin-top: -5px;
-    line-height: 1;
-    padding-top: 8px;
-    padding-left: 5px;
-    border-radius: 10px;
-  }
+.litterParentPicture img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
 
-  .closeBtn {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .closeBtn button {
-    background-color: white;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.momAndDadText {
+  font-family: var(--header-text-font);
+  text-align: center;
+  font-size: var(--large-header-size);
+  word-spacing: 1.2em;
+}
 
-  .litterInfo {
+.kittenContainer {
+  margin-top: 5px;
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.7fr;
+  gap: 12px;
+}
+
+.kittenPicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #e2b78e;
+}
+
+.kittenPicture img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.kittenInfo {
+  background-color: #e2b78e;
+  font-size: 14px;
+  height: fit-content;
+  margin-top: -5px;
+  line-height: 1;
+  padding-top: 8px;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeBtn button {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.litterInfo {
   font-family: var(--generic-website-text);
   font-size: var(--generic-website-size);
   color: black;
@@ -195,22 +194,22 @@
   border-radius: 10px;
 }
 
-.litterInfo h1{
+.litterInfo h1 {
   font-size: var(--header-font-size);
   line-height: 1;
   margin-top: -2px;
 }
 
-.litterInfo p{
+.litterInfo p {
   font-size: var(--generic-website-size);
   line-height: 1;
 }
 
-.litterInfo img{
+.litterInfo img {
   max-height: 85%;
   min-height: 80%;
   max-width: 100%;
   min-width: 70%;
-  margin: .1vw;
+  margin: 0.1vw;
   border-radius: 20px;
 }

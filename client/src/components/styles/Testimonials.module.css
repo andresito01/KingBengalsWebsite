@@ -115,7 +115,7 @@
 }
 
 .mdChevronLeft {
-  background-color: white;
+  background-color: var(--light-primary-color); /* white;*/
   left: 0px;
   border-radius: 1rem;
   position: absolute;
