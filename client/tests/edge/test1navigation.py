@@ -2,8 +2,8 @@ import time
 from time import sleep
 from datetime import datetime, date
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.edge.service import Service
+from selenium.webdriver.edge.options import Options
 
 print('Running 1.0 Tests: Navigation')
 now = datetime.now()
@@ -15,7 +15,7 @@ print(f'Start Time: {current_time} \n')
 # launch
 options = Options()
 options.add_argument('--headless')
-service = Service(executable_path='/chromedriver.exe')
+service = Service(executable_path='/msedgedriver.exe')
 driver = webdriver.Chrome(service=service, options=options)
 total_start_time = time.time()
 
@@ -57,7 +57,7 @@ else:
     current_time = now.strftime("%H:%M:%S")
     today = date.today()
     print(f'Date: {today}')
-    print(f'Time: {current_time}')
+    print(f'Time: {current_time} \n')
 end_time = time.time()
 elapsed_time = end_time - start_time
 print("Elapsed Time: {:.2f} seconds \n".format(elapsed_time))

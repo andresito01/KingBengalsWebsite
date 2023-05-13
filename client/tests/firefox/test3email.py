@@ -2,8 +2,8 @@ import time
 from time import sleep
 from datetime import datetime, date
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -18,7 +18,7 @@ print(f'Start Time: {current_time} \n')
 # launch
 options = Options()
 options.add_argument('--headless')
-service = Service(executable_path='/chromedriver.exe')
+service = Service(executable_path='/geckodriver.exe')
 driver = webdriver.Chrome(service=service, options=options)
 total_start_time = time.time()
 
@@ -36,11 +36,6 @@ try:
     expected_result = "Steve Jones"
     if result == expected_result:
         print(f'3.1 Test Passed: Value Entered: {result}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
     else:
         print(f'3.1 Test Failed: Value Entered: {result}')
 except Exception as e:
@@ -63,11 +58,6 @@ try:
     expected_result = "stevejones7653@gmail.com"
     if result == expected_result:
         print(f'3.2 Test Passed: Value Entered: {result}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
     else:
         print(f'3.2 Test Failed: Value Entered: {result}')
 except Exception as e:
@@ -90,11 +80,6 @@ try:
     expected_result = "This is a test."
     if result == expected_result:
         print(f'3.3 Test Passed: Value Entered: {result}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
     else:
         print(f'3.3 Test Failed: Value Entered: {result}')
 except Exception as e:
@@ -116,11 +101,6 @@ try:
     emailSent = True
     if emailSent:
         print(f'3.4 Test Passed: Email Was Sent: {emailSent}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
 except Exception as e:
     import traceback
     print(f'3.4 Test Failed: {e}')
@@ -156,7 +136,7 @@ try:
     message_text_field.send_keys("This is not a drill...")
     message_value = message_text_field.get_attribute("value")
     try:
-        # should not work 
+        # should not work
         send_button = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, 'ContactUs_submitButton__KYcx8')))
         driver.execute_script("arguments[0].scrollIntoView(true);", send_button)
         time.sleep(1)
@@ -167,11 +147,6 @@ try:
         print(f'                 Email Entered: {email_value}')
         print(f'                 Message Entered: {message_value}')
         print(f'                 Send Button Clicked but Threw Exception')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
 except Exception as e:
     import traceback
     print(f'3.5 Test Failed: {e}')

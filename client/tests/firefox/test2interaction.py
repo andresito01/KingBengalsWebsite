@@ -2,8 +2,8 @@ import time
 from time import sleep
 from datetime import datetime, date
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -19,7 +19,7 @@ print(f'Start Time: {current_time} \n')
 # launch
 options = Options()
 options.add_argument('--headless')
-service = Service(executable_path='/chromedriver.exe')
+service = Service(executable_path='/geckodriver.exe')
 driver = webdriver.Chrome(service=service, options=options)
 total_start_time = time.time()
 
@@ -53,11 +53,6 @@ try:
         sliderClosed = True
     if sliderOpened and sliderClosed:
         print(f'2.1 Test Passed: Slider Opened: {sliderOpened}, Slider Closed: {sliderClosed}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
     else:
         print(f'2.1 Test Failed: Slider Opened: {sliderOpened}, Slider Closed: {sliderClosed}')
 except Exception as e:
@@ -94,11 +89,6 @@ try:
         modalClosed = True
     if modalOpened and modalClosed:
         print(f'2.2 Test Passed: Modal Opened: {modalOpened}, Modal Closed: {modalClosed}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
     else:
         print(f'2.2 Test Failed: Modal Opened: {modalOpened}, Modal Closed: {modalClosed}')
 except Exception as e:
@@ -135,11 +125,6 @@ except Exception as e:
     print(traceback.format_exc())
 else:
     print(f'2.3 Test Passed: Link Accessed: {driver.current_url}')
-    now = datetime.now()
-    current_time = now.strftime("%H:%M:%S")
-    today = date.today()
-    print(f'Date: {today}')
-    print(f'Time: {current_time}')
 driver.switch_to.window(driver.window_handles[0])
 driver.execute_script("document.body.style.animation = '';")
 driver.execute_script("document.body.style.overflow = '';")
@@ -170,11 +155,6 @@ except Exception as e:
     print(traceback.format_exc())
 else:
     print(f'2.4 Test Passed: Link Accessed: {driver.current_url}')
-    now = datetime.now()
-    current_time = now.strftime("%H:%M:%S")
-    today = date.today()
-    print(f'Date: {today}')
-    print(f'Time: {current_time}')
 driver.switch_to.window(driver.window_handles[0])
 driver.execute_script("document.body.style.animation = '';")
 driver.execute_script("document.body.style.overflow = '';")
@@ -205,11 +185,6 @@ except Exception as e:
     print(traceback.format_exc())
 else:
     print(f'2.5 Test Passed: Link Accessed: {driver.current_url}')
-    now = datetime.now()
-    current_time = now.strftime("%H:%M:%S")
-    today = date.today()
-    print(f'Date: {today}')
-    print(f'Time: {current_time}')
 driver.switch_to.window(driver.window_handles[0])
 driver.execute_script("document.body.style.animation = '';")
 driver.execute_script("document.body.style.overflow = '';")
@@ -236,11 +211,6 @@ except Exception as e:
     print(f'2.6 Test Failed: {e}')
 else:
     print(f'2.6 Test Passed: Link Accessed: {driver.current_url}')
-    now = datetime.now()
-    current_time = now.strftime("%H:%M:%S")
-    today = date.today()
-    print(f'Date: {today}')
-    print(f'Time: {current_time}')
 driver.execute_script("document.body.style.animation = '';")
 driver.execute_script("document.body.style.overflow = '';")
 end_time = time.time()

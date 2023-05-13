@@ -2,8 +2,8 @@ import time
 from time import sleep
 from datetime import datetime, date
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.edge.service import Service
+from selenium.webdriver.edge.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -18,7 +18,7 @@ print(f'Start Time: {current_time} \n')
 # launch
 options = Options()
 options.add_argument('--headless')
-service = Service(executable_path='/chromedriver.exe')
+service = Service(executable_path='/msedgedriver.exe')
 driver = webdriver.Chrome(service=service, options=options)
 total_start_time = time.time()
 
@@ -36,11 +36,6 @@ try:
     expected_result = "Steve Jones"
     if result == expected_result:
         print(f'4.1 Test Passed: Value Entered: {result}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
     else:
         print(f'4.1 Test Failed: Value Entered: {result}')
 except Exception as e:
@@ -63,11 +58,6 @@ try:
     expected_result = "stevejones7653@gmail.com"
     if result == expected_result:
         print(f'4.2 Test Passed: Value Entered: {result}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
     else:
         print(f'4.2 Test Failed: Value Entered: {result}')
 except Exception as e:
@@ -90,11 +80,6 @@ try:
     expected_result = "This is a test."
     if result == expected_result:
         print(f'4.3 Test Passed: Value Entered: {result}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
     else:
         print(f'4.3 Test Failed: Value Entered: {result}')
 except Exception as e:
@@ -116,11 +101,6 @@ try:
     radioPressed = True
     if radioPressed:
         print(f'4.4 Test Passed: Radio Button Pressed: {radioPressed}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
 except Exception as e:
     import traceback
     print(f'4.4 Test Failed: {e}')
@@ -140,11 +120,6 @@ try:
     emailSent = True
     if emailSent:
         print(f'4.5 Test Passed: Email Was Sent: {emailSent}')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
 except Exception as e:
     import traceback
     print(f'4.5 Test Failed: {e}')
@@ -196,11 +171,6 @@ try:
         print(f'                 Email Entered: {email_value}')
         print(f'                 Message Entered: {message_value}')
         print(f'                 Send Button Clicked but Threw Exception')
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        today = date.today()
-        print(f'Date: {today}')
-        print(f'Time: {current_time}')
 except Exception as e:
     import traceback
     print(f'4.6 Test Failed: {e}')
