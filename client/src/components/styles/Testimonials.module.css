@@ -51,16 +51,16 @@
   flex-flow: row nowrap;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  align-items: center;
+  align-items: stretch;
   position: relative;
   gap: 3rem;
 }
 
 /* >>>>>>>>>>>>>>>>>>    Testimony's Container   <<<<<<<<<<<<<<<<<<*/
 .testimonyContainer {
-  height: 35rem;
+  margin: 2rem 0rem;
   width: 20rem;
-  min-width: 20rem;
+  min-width: 350px;
   position: relative;
   display: inline-block;
   white-space: normal;
